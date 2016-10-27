@@ -21,5 +21,6 @@ import 'script!./libs/renderers/CanvasRenderer.js';
 import 'script!./libs/classie.js';
 import 'script!./components/main.js';
 import 'script!./components/masthead.js';
+import 'script!./components/parallax.js';
 
 
