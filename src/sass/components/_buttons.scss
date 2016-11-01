@@ -3,6 +3,8 @@
 a {
     &.btn {
 
+        display: block;
+
         &.home {
 
             color: #f8f9d2;
@@ -12,7 +14,7 @@ a {
             text-transform: uppercase;
             text-align: center;
 
-            &#video {
+            &.video-btn {
                 height: 40px;
                 width: 170px;
                 line-height: 45px;

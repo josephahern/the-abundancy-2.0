@@ -9,12 +9,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 700px;
+
+        // parallax settings
+        height: 700px; /* fallback for older browsers */
         background-color: #441c12;
         background-image: url('../images/pattern_plus-sign_2x.png');
+        background-repeat: repeat;
         background-size: 83px 82px;
+        background-position-y: -500px;
 
         .text-block-one {
+
+            z-index: 2000;
+            position: relative;
 
             span {
 
@@ -96,12 +103,14 @@
         margin: 0;
         padding: 0;
         min-height: 700px;
-        background-image: url('../images/home/video-bg.jpg');
-        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: relative;
+        background-color: #c55227;
+        background: linear-gradient(to right bottom, #c55227 50%, #aa451f 50%);
+        transition: max-height 3s ease;
 
         h3 {
             font-family: $font-family-primary;
@@ -111,6 +120,11 @@
             color: #441c12;
             text-transform: uppercase;
             margin: 36px 0;
+            animation-name: fadeInAndDisplayBlock;
+            animation-timing-function: ease;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            position: relative;
 
             span {
                 color: #ff9b20;
@@ -118,23 +132,83 @@
 
         }
 
-        .video-object {
+        .video-container {
             display: block;
-            background-color: gray;;
-            width: 680px;
-            height: 370px;
+            background-color: gray;
+            width: 100%;
+            max-width: 680px;
+            height: auto;
+        }
+
+        .video-object {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+
+            iframe, object, embed {
+                position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            }
+        }
+
+        .video-btn {
+            position: relative;
+            animation-name: fadeInAndDisplayBlock;
+            animation-timing-function: ease;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+        }
+
+        @media only screen and (max-width: 420px) {
+            transition: min-height 2s ease;
+            min-height: 0px;
+
+            h3 {
+                animation-name: fadeOutAndDisplayNone;
+                animation-timing-function: ease;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+
+            .video-btn {
+                animation-name: fadeOutAndDisplayNone;
+                animation-timing-function: ease;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+
         }
 
     }
 
     .leadership {
-        min-height: 700px;
         background-color: #b1aea7;
         display: flex;
+        position: relative;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         padding: 155px 15px 80px 15px;
+        overflow: hidden;
+        transition: all 1s ease;
+
+        // Really cool diagonal div!!
+        &:after {
+            position: absolute;
+            top: 63%;
+            right: 0;
+            display:block;
+            width: 100%;
+            height: 100%;
+            background-color: #d0ceca;
+            content: '';
+            transform:skew(0deg,-35deg);
+            -ms-transform:skew(0deg,-35deg); /* IE 9 */
+            -webkit-transform:skew(0deg,-35deg); /* Safari and Chrome */
+            outline: 1px solid transparent;
+            -webkit-backface-visibility: hidden; // smooths out jagged lines on diagonal
+        }
 
         h3 {
             font-family: $font-family-primary;
@@ -162,6 +236,7 @@
             align-items: center;
             list-style-type: none;
             padding: 0;
+            z-index: 5000;
 
             li {
                 list-style-type: none;
@@ -217,6 +292,20 @@
                         margin-right: 4%;
                     }
 
+                }
+
+            }
+
+        }
+
+        @media only screen and (max-width: 750px) {
+            padding: 25px 15px 80px 15px;
+
+            h3 {
+                font-size: 24px;
+
+                span {
+                    color: #ffffff;
                 }
 
             }

@@ -1,16 +1,5 @@
-(function(window){
-
-    var parallax = document.querySelectorAll(".parallax"),
-        speed = 0.5;
-
-    window.onscroll = function(){
-        [].slice.call(parallax).forEach(function(el,i){
-
-            var windowYOffset = window.pageYOffset,
-                elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
-            el.style.backgroundPosition = elBackgrounPos;
-
-        });
-    };
-
-})(window);
+$("body").scroll(function() {
+    var scrolledY = $(".parallax").scrollTop();
+    $('.parallax').css('background-position-y',((scrolledY*0.2))+'px');
+    console.log(scrolledY);
+});
