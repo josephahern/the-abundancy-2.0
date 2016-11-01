@@ -1,44 +1,33 @@
 // Buttons
-.btn {
 
-    display: inline-block;
-    width: auto;
-    text-transform: uppercase;
-    border: 0.2rem solid white;
-    border-radius: 3rem;
-    background: white;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: .1rem;
-    transition: all .3s ease;
-    min-width: 230px;
+a {
+    &.btn {
 
-    .btn__icon {
-        fill: currentColor;
-    }
+        &.home {
 
-    &:hover {
-        color: $color-white;
-        background: transparent;
-    }
+            color: #f8f9d2;
+            font-family: $font-family-primary;
+            font-weight: bold;
+            font-size: 10px;
+            text-transform: uppercase;
+            text-align: center;
 
-    // Sizes
-    &--medium {
+            &#video {
+                height: 40px;
+                width: 170px;
+                line-height: 45px;
+                background-color: #441c12;
+                transition: all 0.3s ease;
+                margin-top: 48px;
 
-        padding: 1.5rem 4rem;
-        font-size: 1rem;
+                &:hover {
+                    color: #441c12;
+                    background-color: #f8f9d2;
+                }
 
-        .btn__text {
-            position: relative;
-            top: -2px;
-            left: 3px;
+            }
+
         }
 
     }
-
-    // Colors
-    &--shroom-haze {
-        color: $color-shroom-haze-1;
-    }
-
 }
