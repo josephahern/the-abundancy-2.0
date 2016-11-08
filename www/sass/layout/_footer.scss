@@ -1,0 +1,198 @@
+footer {
+    width: 100%;
+    background-color: #42403c;
+    min-height: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 0px 10px 0px;
+
+    .contain {
+        max-width: 1060px;
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        #footer-logo {
+            width: 220px;
+            height: 100%;
+
+            @media only screen and (max-width: 1060px) {
+                width: 180px;
+            }
+
+            @media only screen and (max-width: 970px) {
+                width: 145px;
+            }
+
+        }
+
+        .navigation {
+
+            font-family: 'Avenir', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 500;
+
+            a {
+
+                transition: all 0.3s ease;
+
+                &:link, &:visited, &:active {
+                    color: #fff;
+                }
+
+                &:hover {
+                    color: #c55227;
+                }
+
+            }
+
+        }
+
+        .social {
+
+            max-width: 160px;
+            width: 100%;
+            display:flex;
+            position: relative;
+
+            a {
+
+                width: 40px;
+                height: 40px;
+                display: inline;
+                background-size: 40px 40px;
+                opacity: 0.7;
+                transition: all 0.3s ease;
+                position: relative;
+                top: 12px;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                &.linkedin {
+                    background-image: url('../images/icons/social_icon-linkedin.png');
+                }
+
+                &.facebook {
+                    background-image: url('../images/icons/social_icon-facebook.png');
+                }
+
+                &.twitter {
+                    background-image: url('../images/icons/social_icon-twitter.png');
+                }
+
+                &.instagram {
+                    background-image: url('../images/icons/social_icon-instagram.png');
+                }
+
+            }
+
+            @media only screen and (max-width: 970px) {
+                max-width: 140px;
+
+                a {
+                    height: 35px;
+                    width: 35px;
+                    top: 6px;
+                    background-size: 35px 35px;
+                }
+
+            }
+
+        }
+
+        @media only screen and (max-width: 970px) {
+
+            .social {
+                max-width: 140px;
+
+                a {
+                    height: 35px;
+                    width: 35px;
+                    top: 6px;
+                }
+            }
+
+            .navigation {
+                font-size: 12px;
+            }
+
+
+
+        }
+
+        @media only screen and (max-width: 750px) {
+            max-width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .navigation {
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            .social {
+
+                max-width: 120px;
+                width: 100%;
+                display:flex;
+                position: relative;
+
+                a {
+
+                    width: 30px;
+                    height: 30px;
+                    display: inline;
+                    background-size: 30px 30px;
+                    opacity: 0.7;
+                    transition: all 0.3s ease;
+                    position: relative;
+                    top: 0px;
+
+                }
+
+            }
+
+        }
+
+        @media only screen and (max-width: 500px) {
+
+            .navigation {
+                font-size: 10px;
+            }
+
+        }
+
+        @media only screen and (max-width: 420px) {
+
+            .navigation {
+                font-size: 9px;
+            }
+
+        }
+
+    }
+
+    .copyright {
+        max-width: 1060px;
+        width: 100%;
+        padding: 0 20px;
+        text-align: left;
+        font-size: 10px;
+        margin-top: 15px;
+
+        @media only screen and (max-width: 750px) {
+            text-align: center;
+
+        }
+
+    }
+
+}

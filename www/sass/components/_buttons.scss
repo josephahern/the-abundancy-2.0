@@ -1,0 +1,94 @@
+// Buttons
+
+a {
+    &.btn {
+
+        display: block;
+
+        &.home {
+
+            color: #f8f9d2;
+            font-family: $font-family-primary;
+            font-weight: bold;
+            font-size: 10px;
+            text-transform: uppercase;
+            text-align: center;
+
+            &.video-btn {
+                height: 40px;
+                width: 170px;
+                line-height: 45px;
+                background-color: #441c12;
+                transition: all 0.3s ease;
+                margin-top: 48px;
+
+                &:hover {
+                    color: #441c12;
+                    background-color: #f8f9d2;
+                }
+
+            }
+
+        }
+
+        &.cases {
+            box-sizing: border-box;
+            display: inline-block;
+            color: #441c12;
+            font-family: $font-family-primary;
+            font-weight: bold;
+            font-size: 11px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 3px solid #c55227;
+
+            &.more {
+                height: 40px;
+                width: 140px;
+                line-height: 38px;
+                background-color: #ffffff;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: #ffffff;
+                    background-color: #c55227;
+                }
+
+                @media only screen and (max-width: 760px) {
+                    height: 50px;
+                    width: 110px;
+                    line-height: 48px;
+                }
+
+            }
+
+
+        }
+
+        &.contact {
+            display: inline-block;
+            color: #f8f9d2;
+            font-family: $font-family-primary;
+            font-weight: bold;
+            font-size: 11px;
+            text-transform: uppercase;
+            text-align: center;
+
+            &.submit-btn {
+                height: 40px;
+                width: 145px;
+                line-height: 44px;
+                background-color: #441c12;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: #441c12;
+                    background-color: #f8f9d2;
+                }
+
+            }
+
+        }
+
+    }
+}

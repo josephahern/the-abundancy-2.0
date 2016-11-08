@@ -1,0 +1,15 @@
+{
+    "name": "abundancy/website",
+    "description": "A composer.json file for the Abundancy 2.0 website build.",
+    "type": "project",
+    "require": {
+        "altorouter/altorouter": "^1.2",
+        "klein/klein": "^2.1"
+    },
+    "authors": [
+        {
+            "name": "Joe Ahern",
+            "email": "jrahern@rdnt.co"
+        }
+    ]
+}

@@ -1,0 +1,329 @@
+#home {
+
+    .masthead {
+        min-height: 700px;
+        background-color: blue;
+    }
+
+    .parallax {
+
+        position: relative;
+
+        .chosen-series {
+            position: absolute;
+            font-family: $font-family-primary;
+            font-weight: 500;
+            font-size: 18px;
+            color: #dddddc;
+            text-transform: uppercase;
+        }
+
+        .container {
+            margin: auto;
+            padding: 195px 125px;
+            background-color: #441c12;
+            background-image: url('../images/pattern_plus-sign_2x.png');
+            background-repeat: repeat;
+            background-size: 83px 82px;
+            background-position-y: -500px;
+
+            .text-block-one {
+
+                z-index: 2000;
+
+                span {
+
+                    display: block;
+                    text-transform: uppercase;
+
+                    &.small {
+                        font-family: $font-family-primary;
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: #dddddc;
+                    }
+
+                    &.medium {
+                        font-family: $font-family-primary;
+                        font-weight: bold;
+                        font-size: 36px;
+                        line-height: 46px;
+                        color: #dddddc;
+                    }
+
+                    &.large {
+                        font-family: $font-family-primary;
+                        font-weight: bold;
+                        font-size: 80px;
+                        line-height: 80px;
+                        color: #c55227;
+                        padding: 10px 0;
+                    }
+
+                    #small-chosen {
+                        display: inline;
+                    }
+
+                    @media only screen and (max-width: 420px) {}
+
+                }
+
+            }
+
+            .get-chosen {
+                font-family: $font-family-primary;
+                font-size: 60px;
+                font-weight: bold;
+                color: #f8f9d2;
+                text-transform: uppercase;
+                width: 100%;
+                display: block;
+                text-align: center;
+                margin-top: 400px;
+
+                span {
+                    color: #c55227;
+
+                }
+
+            }
+
+            .clients {
+                width: 100%;
+                padding: 50px 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                ul {
+                    width: 100%;
+                    max-width: 794px;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+
+                        list-style-type: none;
+                        margin: 20px 30px;
+                        padding: 0;
+                        display: flex;
+                        justify-items: center;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .video {
+        margin: 0;
+        padding: 0;
+        min-height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        background-color: #c55227;
+        background: linear-gradient(to right bottom, #c55227 50%, #aa451f 50%);
+        transition: max-height 3s ease;
+
+        h3 {
+            font-family: $font-family-primary;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 36px;
+            color: #441c12;
+            text-transform: uppercase;
+            margin: 36px 0;
+            position: relative;
+
+            span {
+                color: #ff9b20;
+            }
+
+        }
+
+        .video-container {
+            display: block;
+            background-color: gray;
+            width: 100%;
+            max-width: 680px;
+            height: auto;
+        }
+
+        .video-object {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+
+            iframe, object, embed {
+                position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            }
+        }
+
+        .video-btn {
+            position: relative;
+        }
+
+        @media only screen and (max-width: 420px) {
+            transition: min-height 2s ease;
+            min-height: 0px;
+
+        }
+
+    }
+
+    .leadership {
+        background-color: #b1aea7;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 155px 15px 80px 15px;
+        overflow: hidden;
+        transition: all 1s ease;
+
+        // Really cool diagonal div!!
+        &:after {
+            position: absolute;
+            top: 63%;
+            right: 0;
+            display:block;
+            width: 100%;
+            height: 100%;
+            background-color: #d0ceca;
+            content: '';
+            transform:skew(0deg,-35deg);
+            -ms-transform:skew(0deg,-35deg); /* IE 9 */
+            -webkit-transform:skew(0deg,-35deg); /* Safari and Chrome */
+            outline: 1px solid transparent;
+            -webkit-backface-visibility: hidden; // smooths out jagged lines on diagonal
+        }
+
+        h3 {
+            font-family: $font-family-primary;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 36px;
+            color: #42403c;
+            text-transform: uppercase;
+            display: block;
+            max-width: 896px;
+            width: 100%;
+            text-align: left;
+
+            span {
+                color: #ffffff;
+            }
+
+        }
+
+        ul {
+            width: 100%;
+            max-width: 896px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+            z-index: 5000;
+
+            li {
+                list-style-type: none;
+                width: 32%;
+                margin: 1%;
+                position: relative;
+
+                &:nth-of-type(3n) {
+                    margin-right: 0;
+                }
+
+                &:nth-of-type(3n+1) {
+                    margin-left: 0;
+                }
+
+                .details {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 10px;
+                    width: 100%;
+                    text-transform: uppercase;
+
+                    .name {
+                        font-family: $font-family-primary;
+                        font-weight: bold;
+                        font-size: 14px;
+                        color: #ffffff;
+                        display: block;
+                        margin-bottom: 3px;
+                    }
+
+                    .title {
+                        font-family: $font-family-primary;
+                        font-weight: 500;
+                        font-size: 10px;
+                        color: #f8f9d2;
+                        display: block;
+                    }
+
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                @media only screen and (max-width: 750px) {
+                    width: 48%;
+
+                    margin: 0 0 3% 0;
+
+                    &:nth-child(odd) {
+                        margin-right: 4%;
+                    }
+
+                }
+
+            }
+
+        }
+
+        @media only screen and (max-width: 750px) {
+            padding: 25px 15px 80px 15px;
+
+            h3 {
+                font-size: 24px;
+
+                span {
+                    color: #ffffff;
+                }
+
+            }
+
+        }
+
+    }
+
+}
