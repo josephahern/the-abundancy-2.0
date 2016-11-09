@@ -6,14 +6,14 @@
                 <h1>Our Culture</h1>
                 <h2>We are inventors</h2>
                 <div class='instagram-feed'>
-                    <div class="box"><img src="http://placehold.it/500" alt="Image"></div>
-                    <div class="box"><img src="http://placehold.it/500" alt="Image"></div>
-                    <div class="box"><img src="http://placehold.it/500" alt="Image"></div>
-                    <div class="box"><img src="http://placehold.it/500" alt="Image"></div>
-                    <div class="box"><img src="http://placehold.it/500" alt="Image"></div>
-                    <div class="box"><img src="http://placehold.it/500" alt="Image"></div>
-                    <div class="box"><img src="http://placehold.it/500" alt="Image"></div>
-                    <div class="box"><img src="http://placehold.it/500" alt="Image"></div>
+                    <div class="box"><img src="http://lorempixel.com/500/500/abstract/1" alt="Image"></div>
+                    <div class="box"><img src="http://lorempixel.com/500/500/abstract/2" alt="Image"></div>
+                    <div class="box"><img src="http://lorempixel.com/500/500/abstract/3" alt="Image"></div>
+                    <div class="box"><img src="http://lorempixel.com/500/500/abstract/4" alt="Image"></div>
+                    <div class="box"><img src="http://lorempixel.com/500/500/abstract/5" alt="Image"></div>
+                    <div class="box"><img src="http://lorempixel.com/500/500/abstract/6" alt="Image"></div>
+                    <div class="box"><img src="http://lorempixel.com/500/500/abstract/7" alt="Image"></div>
+                    <div class="box"><img src="http://lorempixel.com/500/500/abstract/8" alt="Image"></div>
                 </div>
             </div>
         </section>
@@ -30,7 +30,7 @@
             <div class="value even">
                 <div class="block title">
                     <div class="number">2</div>
-                    <div class="text">Be Curious.<span>.</span></div>
+                    <div class="text">Be Curious<span>.</span></div>
                 </div>
                 <div class="block infograph">
                     <img src="http://placehold.it/175" alt="Image">

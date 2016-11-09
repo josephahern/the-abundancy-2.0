@@ -24,6 +24,7 @@
 <script src="js/libs/renderers/Projector.js"></script>
 <script src="js/libs/renderers/CanvasRenderer.js"></script>
 <script src="js/libs/classie.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <!-- <script src="js/components/main.js"></script> -->
 
 <!-- Main Script File -->

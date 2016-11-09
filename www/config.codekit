@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19137",
+"creatorBuild": "19127",
 "files": {
 	"\/composer.json": {
 		"fileType": 524288,
@@ -141,6 +141,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/home\/clients\/campbells.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6651,
+		"inputAbbreviatedPath": "\/images\/home\/clients\/campbells.png",
+		"outputAbbreviatedPath": "\/images\/home\/clients\/campbells.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/home\/clients\/caterpillar.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -178,20 +189,9 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4970,
+		"initialSize": 4782,
 		"inputAbbreviatedPath": "\/images\/home\/clients\/lincoln_park_zoo.png",
 		"outputAbbreviatedPath": "\/images\/home\/clients\/lincoln_park_zoo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/home\/clients\/mead_johnson.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19570,
-		"inputAbbreviatedPath": "\/images\/home\/clients\/mead_johnson.png",
-		"outputAbbreviatedPath": "\/images\/home\/clients\/mead_johnson.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -222,9 +222,9 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4479,
+		"initialSize": 4478,
 		"inputAbbreviatedPath": "\/images\/home\/clients\/uscellular.png",
-		"outputAbbreviatedPath": "\/images\/home\/clients\/uscellular.png",
+		"outputAbbreviatedPath": "\/images\/home\/clients\/us cellular.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -449,6 +449,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/menu\/theabundancy-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5760,
+		"inputAbbreviatedPath": "\/images\/menu\/theabundancy-logo.png",
+		"outputAbbreviatedPath": "\/images\/menu\/theabundancy-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/pattern_plus-sign_2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -596,6 +607,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/libs\/Tween.min.js",
 		"outputAbbreviatedPath": "\/js\/libs\/min\/Tween.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/app-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/app-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/app-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1603,7 +1625,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Joseph Ahern",
+"lastSavedByUser": "Joe Ahern",
 "manualImportLinks": {
 	},
 "projectAttributes": {

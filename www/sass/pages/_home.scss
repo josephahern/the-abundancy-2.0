@@ -9,6 +9,16 @@
 
         position: relative;
 
+        .triangle {
+            width: 27px;
+            height: 29px;
+            display: block;
+            position: absolute;
+            background-image:url(http://i.imgur.com/zH82VEm.png);
+            background-size: 27px 29px;
+            transform: scale(0.3);
+        }
+
         .chosen-series {
             position: absolute;
             font-family: $font-family-primary;

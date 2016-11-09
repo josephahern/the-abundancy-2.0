@@ -3,6 +3,20 @@
     .primary {
 
         padding-bottom: 50px;
+        position: relative;
+        overflow: hidden;
+        background-color: #c55227;
+
+        &:after {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 100%;
+            height: 85%;
+            display: block;
+            content: '';
+            background: linear-gradient(to right bottom, #c55227 50%, #aa451f 50%);
+        }
 
         .video-container {
             display: block;
@@ -18,6 +32,7 @@
                 height: 0;
                 overflow: hidden;
                 max-width: 100%;
+                z-index: 500;
 
                 iframe, object, embed {
                     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
@@ -32,10 +47,16 @@
             font-size: 28px;
             font-weight: normal;
             color: #ffffff;
+            z-index: 500;
 
             span {
                 font-weight: bold;
                 color: #f8f9d2;
+            }
+
+            @media only screen and (max-width: 750px) {
+                font-size: 22px;
+                padding: 0 20px;
             }
 
         }
@@ -71,6 +92,7 @@
                     background-image: url(../images/pattern_plus-sign_2x.png);
                     background-repeat: repeat;
                     background-size: 83px 82px;
+                    background-attachment: fixed;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -125,6 +147,81 @@
 
         }
 
+        @media only screen and (max-width: 750px) {
+
+            .step {
+
+                &.even {
+                    flex-direction: column;
+                }
+
+                &.odd {
+                    flex-direction: column;
+                }
+
+                .block {
+
+                    width: 100%;
+                    min-height: 0px;
+                    display: block;
+
+                    &.title {
+                        background-color: #441c12;
+                        background-image: url(../images/pattern_plus-sign_2x.png);
+                        background-repeat: repeat;
+                        background-size: 83px 82px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        .number {
+                            font-family: $font-family-primary;
+                            font-weight: bold;
+                            font-size: 28px;
+                            color: #c55227;
+                            margin: 20px 0 5px 0;
+                        }
+
+                        .text {
+
+                            font-family: $font-family-primary;
+                            font-weight: bold;
+                            font-size: 22px;
+                            color: #f8f9d2;
+                            padding-bottom: 5px;
+                            display: inline-block;
+                            border-bottom: 4px solid #c55227;
+
+                            span {
+                                color: #c55227;
+                            }
+
+                        }
+
+                    }
+
+                    &.infograph {
+
+                        padding: 30px 20px;
+
+                        img {
+                            display: none;
+                        }
+
+                        .summary {
+                            font-size: 20px;
+                            text-align: center;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
     }
 
     .capabilities {
@@ -168,8 +265,33 @@
 
         }
 
+        @media only screen and (max-width: 750px) {
+
+            padding-top: 50px;
+            padding-bottom: 35px;
+
+            .column {
+
+                .title {
+
+                    text-align: center;
+
+                }
+
+                .container {
+
+                    flex-direction: column;
+
+                    .block {
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                }
+
+            }
+        }
+
     }
-
-
 
 }

@@ -2,6 +2,20 @@
 <div id="container"></div>
 <div id="home">
     <div class="parallax" id="intro">
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
         <div class="container">
             <div class="text-block-one">
                 <span class="medium">We combine</span>
@@ -13,13 +27,14 @@
                 <span class="small">to create custom solutions that help brands <span i>get chosen.</span></span>
             </div>
             <div class="get-chosen">Get chosen<span>.</span></div>
+            <a href="/approach" class="btn home parallax-btn">Our Approach</a>
             <section class="clients">
                 <ul>
                     <li><a href="#"><img src="images/home/clients/uscellular.png"  width="123" alt="U.S. Cellular"></a></li>
                     <li><a href="#"><img src="images/home/clients/lincoln_park_zoo.png" width="113" alt="Lincoln Park Zoo"></a></li>
                     <li><a href="#"><img src="images/home/clients/sunpower.png" width="141" alt="Sun Power"></a></li>
                     <li><a href="#"><img src="images/home/clients/ulta.png" width="81" alt="Ulta"></a></li>
-                    <li><a href="#"><img src="images/home/clients/mead_johnson.png" width="145" alt="Mead Johnson"></a></li>
+                    <li><a href="#"><img src="images/home/clients/campbells.png" width="145" alt="Campbell's"></a></li>
                     <li><a href="#"><img src="images/home/clients/conagra.png" width="92" alt="ConAgra Foods"></a></li>
                     <li><a href="#"><img src="images/home/clients/jackson_hewitt.png" width="136" alt="Jackson Hewitt"></a></li>
                     <li><a href="#"><img src="images/home/clients/caterpillar.png" width="100" alt="Caterpillar"></a></li>

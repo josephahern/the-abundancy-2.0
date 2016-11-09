@@ -11,13 +11,16 @@
 <div id="stats">Curious?</div>
 
 <nav id="menu">
+    <button class="close-button" id="close-button">Close Menu</button>
     <a href="/approach">OUR APPROACH</a>
     <a href="/case-studies">OUR WORK</a>
     <a href="/culture">OUR CULTURE</a>
     <a href="/contact">CONTACT + CAREERS</a>
+    <a href="/" id="menu-logo">
+        <img src="images/menu/theabundancy-logo.png" alt="The Abundancy">
+    </a>
 </nav>
 
-<button class="close-button" id="close-button">Close Menu</button>
 <button class="menu-button" id="open-button"></button>
 
 <div id="scroll-down">
