@@ -34,7 +34,7 @@
                 <iframe src='https://player.vimeo.com/video/43417094' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
             </div>
         </div>
-        <a href="#" class="btn home video-btn">See More Work</a>
+        <a href="/case-studies" class="btn home video-btn">See More Work</a>
     </section>
     <section class="leadership">
         <h3>Nice to meet you<span>.</span></h3>

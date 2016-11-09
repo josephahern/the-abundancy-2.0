@@ -1,46 +1,37 @@
-#menu {
-    overflow: hidden;
-    width: 100%;
+nav#menu {
+    width: 240px;
+    display: block;
+    background: #b4bad2;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+    -webkit-transform: translate3d(5000px,0,0);
+    transform: translate3d(5000px,0,0);
+    -webkit-transition: -webkit-transform 800ms ease-out;
+    transition: transform 800ms ease-out;
+
+    a {
+        color: #381b15;
+        transition: all 300ms;
+
+        &:hover, :focus {
+            color: #c94e50;
+            transition: all 300ms;
+        }
+
+    }
+
+
 }
+
 
 .menu-wrap a {
-    color: #381b15;
-    transition: all 300ms;
+
 }
 
-.menu-wrap a:hover,
-.menu-wrap a:focus {
-    color: #c94e50;
-    transition: all 300ms;
-}
 
-.content-wrap {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-}
-
-.content {
-    position: relative;
-    background: #b4bad2;
-}
-
-.content:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.3);
-    content: '';
-    opacity: 0;
-    -webkit-transform: translate3d(100%,0,0);
-    transform: translate3d(100%,0,0);
-    -webkit-transition: opacity 0.4s, -webkit-transform 0s 0.4s;
-    transition: opacity 0.4s, transform 0s 0.4s;
-    -webkit-transition-timing-function: cubic-bezier(0.15, 0.4, 0.32, 0.99);
-    transition-timing-function: cubic-bezier(0.15, 0.4, 0.32, 0.99);
-}
 
 /* Menu Button */
 .menu-button {
@@ -99,115 +90,4 @@
 .close-button:after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-}
-
-/* Menu */
-.menu-wrap {
-    position: absolute;
-    z-index: 1001;
-    overflow: hidden;
-    width: 320px;
-    height: 100%;
-    background: #9bb7ae;
-    padding: 2.5em 0 0;
-    font-size: 1.4em;
-    -webkit-transform: translate3d(5000px,0,0);
-    transform: translate3d(5000px,0,0);
-    -webkit-transition: -webkit-transform 800ms ease-out;
-    transition: transform 800ms ease-out;
-
-}
-
-.menu,
-.icon-list {
-    height: 100%;
-}
-
-.icon-list {
-    margin-left: 20px;
-    width: 300px;
-    -webkit-transform: translate3d(0,100%,0);
-    transform: translate3d(0,100%,0);
-}
-
-.icon-list a {
-    display: block;
-    padding: 0.8em;
-    -webkit-transform: translate3d(0,500px,0);
-    transform: translate3d(0,500px,0);
-}
-
-.icon-list,
-.icon-list a {
-    -webkit-transition: -webkit-transform 0s 0.4s;
-    transition: transform 0s 0.4s;
-    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-}
-
-.icon-list a:nth-child(2) {
-    -webkit-transform: translate3d(0,1000px,0);
-    transform: translate3d(0,1000px,0);
-}
-
-.icon-list a:nth-child(3) {
-    -webkit-transform: translate3d(0,1500px,0);
-    transform: translate3d(0,1500px,0);
-}
-
-.icon-list a:nth-child(4) {
-    -webkit-transform: translate3d(0,2000px,0);
-    transform: translate3d(0,2000px,0);
-}
-
-.icon-list a:nth-child(5) {
-    -webkit-transform: translate3d(0,2500px,0);
-    transform: translate3d(0,2500px,0);
-}
-
-.icon-list a:nth-child(6) {
-    -webkit-transform: translate3d(0,3000px,0);
-    transform: translate3d(0,3000px,0);
-}
-
-.icon-list a span {
-    margin-left: 0;
-    font-family: 'Futura', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-}
-
-/* Shown menu */
-.show-menu .menu-wrap {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    -webkit-transition: -webkit-transform 800ms;
-    transition: transform 800ms;
-    -webkit-transition-timing-function: cubic-bezier(0.15, 0.4, 0.32, 0.99);
-    transition-timing-function: cubic-bezier(0.15, 0.4, 0.32, 0.99);
-}
-
-.show-menu .icon-list,
-.show-menu .icon-list a {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    -webkit-transition: -webkit-transform 0.8s;
-    transition: transform 0.8s;
-    -webkit-transition-timing-function: cubic-bezier(0.15, 0.4, 0.32, 0.99);
-    transition-timing-function: cubic-bezier(0.15, 0.4, 0.32, 0.99);
-}
-
-.show-menu .icon-list a {
-    -webkit-transition-duration: 0.9s;
-    transition-duration: 0.9s;
-}
-
-.show-menu .content:before {
-    opacity: 1;
-    -webkit-transition: opacity 0.8s;
-    transition: opacity 0.8s;
-    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
 }

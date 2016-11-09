@@ -1,11 +1,65 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
-$routes = new \Klein\Klein();
+//
+//
+//
+// Initialize AltoRouter. Don't move.
 
-$routes->respond('GET', '/hello-world', function () {
-    return 'Hello World!';
-});
+$router = new AltoRouter();
 
-$routes->dispatch();
+//
+// Home Page
+//
+
+$router->map( 'GET', '/', function() {
+    require __DIR__ . '/php/views/home.php';
+}, 'home');
+
+//
+// Our Approach Page
+//
+
+$router->map( 'GET', '/approach', function() {
+    require __DIR__ . '/php/views/approach.php';
+}, 'approach');
+
+//
+// Our Work Page
+//
+
+$router->map( 'GET', '/case-studies', function() {
+    require __DIR__ . '/php/views/cases.php';
+}, 'cases');
+
+//
+// Culture Page
+//
+
+$router->map( 'GET', '/culture', function() {
+    require __DIR__ . '/php/views/culture.php';
+}, 'culture');
+
+
+//
+// Contact Page
+//
+
+$router->map( 'GET', '/contact', function() {
+    require __DIR__ . '/php/views/contact.php';
+}, 'contact');
+
+//
+//
+//
+// Router matching and callback firing. Don't move.
+
+$match = $router->match();
+
+if( $match && is_callable( $match['target'] ) ) {
+    call_user_func_array( $match['target'], $match['params'] );
+} else {
+    // no route was matched
+    header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
+}

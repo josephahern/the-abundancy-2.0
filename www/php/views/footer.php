@@ -15,7 +15,20 @@
     <div class="copyright">&copy; The Abundancy 2016</div>
 </footer>
 
-<script src="js/libs.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+<!-- Addt'l Dependencies -->
+<script src="js/libs/three.min.js"></script>
+<script src="js/libs/controls/OrbitControls.js"></script>
+<script src="js/libs/renderers/Projector.js"></script>
+<script src="js/libs/renderers/CanvasRenderer.js"></script>
+<script src="js/libs/classie.js"></script>
+<!-- <script src="js/components/main.js"></script> -->
+
+<!-- Main Script File -->
+
 <script src="js/app.js"></script>
+
 </body>
 </html>

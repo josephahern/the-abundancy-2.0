@@ -65,9 +65,7 @@
         $(".menu-wrap").css("transform", "translate3d(" + (window.innerWidth+500) + "px," + ( $(document).scrollTop() ) + "px,0)");
 
     });
-
-
+    
     init();
-
-
+    
 })();

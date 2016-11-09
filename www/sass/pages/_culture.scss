@@ -1,0 +1,159 @@
+#culture {
+
+  .primary {
+
+    padding-bottom: 50px;
+
+    .instagram-feed {
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .box {
+
+        margin-bottom: 10px;
+
+        // First three images
+        &:nth-child(n+1):nth-child(-n+3){
+          width: 32%;
+        }
+        // Images four and five
+        &:nth-child(n+4):nth-child(-n+5){
+          width: 49%;
+        }
+        // Last three images
+        &:nth-child(n+6):nth-child(-n+8){
+          width: 32%;
+        }
+
+        img {
+          width: 100%;
+        }
+
+      }
+
+    }
+
+  }
+
+  .values {
+
+    width: 100%;
+    display: block;
+    min-height: 320px;
+
+    .value {
+
+      display: flex;
+
+      &.even {
+        flex-direction: row;
+      }
+
+      &.odd {
+        flex-direction: row-reverse;
+      }
+
+      .block {
+
+        width: 50%;
+        min-height: 310px;
+        display: block;
+
+        &.title {
+          background-color: #84827e;
+          background-size: 83px 82px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .number {
+            font-family: $font-family-primary;
+            font-weight: bold;
+            font-size: 50px;
+            color: #aac3bc;
+            margin-bottom: 20px;
+          }
+
+          .text {
+
+            font-family: $font-family-primary;
+            font-weight: bold;
+            font-size: 36px;
+            color: #f8f9d2;
+            padding-bottom: 5px;
+            display: inline-block;
+            border-bottom: 4px solid #aac3bc;
+            margin-bottom: 35px;
+
+            span {
+              color: #aac3bc;
+            }
+
+          }
+
+        }
+
+        &.infograph{
+          background-color: #aac3bc;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+      }
+
+    }
+
+  }
+
+  .capabilities {
+    background-color: #dddddc;
+    min-height: 260px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    display: block;
+
+    .column {
+
+      .title {
+        font-family: $font-family-primary;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #c55227;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .block {
+
+          width: percentage(1/3);
+
+          span {
+            display: block;
+            font-family: $font-family-primary;
+            font-weight: bold;
+            font-size: 21px;
+            color: #42403c;
+            margin-bottom: 15px;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+
+
+}
