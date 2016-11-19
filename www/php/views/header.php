@@ -4,11 +4,10 @@
     <title>The Abundancy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body id="content">
-<div id="loader"></div>
-<div id="stats">Curious?</div>
 
 <nav id="menu">
     <button class="close-button" id="close-button">Close Menu</button>

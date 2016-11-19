@@ -16,6 +16,30 @@
             });
         }
 
+        /* On Scroll Line Animation */
+
+        if($(".vertical-title").length){
+
+            $(window).scroll(function() { //when window is scrolled
+
+                $(".vertical-title").each(function(){
+
+                    var eTop = $(this).offset().top; //get the offset top of the element
+                    var distanceFromTop = eTop - $(window).scrollTop();
+
+                    if(distanceFromTop < 375 && !$(this).hasClass("active")){
+                        console.log("activated!");
+                        $(this).addClass("active");
+                    }
+
+                });
+
+            });
+
+
+
+        }
+
     //PAGES
 
         /* Home */
@@ -24,19 +48,27 @@
             console.log("The Abundancy / Home");
 
             $(".triangle").each(function(){
-                let triangle = $(this),
+                var triangle = $(this),
                     randomDecimal = generateDecimal();
 
                 TweenMax.set(triangle,{ top: generateStringPercentage(), left: generateStringPercentage(), scale:randomDecimal} );
 
-                let bezier_path = [{ top: generateStringPercentage(), left: generateStringPercentage() }, { top: generateStringPercentage(), left: generateStringPercentage() }, { top: generateStringPercentage(), left: generateStringPercentage() }];
+                var bezier_path = [{ top: generateStringPercentage(), left: generateStringPercentage() }, { top: generateStringPercentage(), left: generateStringPercentage() }, { top: generateStringPercentage(), left: generateStringPercentage() }];
 
                 TweenMax.to(triangle, 50, { bezier: { type: 'thru', values: bezier_path,curviness: 1, autoRotate: true}, ease: Power1.easeInOut, yoyo: true, repeat:-1});
 
             });
+            
+            $(".leadership li").on("click", function(){
+                $(".modal").toggleClass("open");
+            });
 
+            $(".modal-button").on("click", function(){
+                $(".modal").toggleClass("open");
+            });
+            
             function generateStringPercentage() {
-                let min = 0,
+                var min = 0,
                     max = 100,
                     percentage = Math.floor(Math.random() * (max - min + 1) + min).toString() + "%";
                 return percentage;
@@ -61,6 +93,26 @@
         /* Our Culture */
         if($("#culture").length){
             console.log("The Abundancy / Our Culture");
+
+            var token = '390074368.1439f97.94f68308db0542b1bd4fe81f4abac769',
+                num_photos = 8;
+
+            $.ajax({
+                url: 'https://api.instagram.com/v1/users/self/media/recent',
+                dataType: 'jsonp',
+                type: 'GET',
+                data: {access_token: token, count: num_photos},
+                success: function(data){
+                    console.log(data);
+                    for( num in data.data ){
+                        $('.instagram-feed').append('<div class="box"><img src="'+data.data[num].images.standard_resolution.url+'"></div>');
+                    }
+                },
+                error: function(data){
+                    console.log(data);
+                }
+            });
+
         }
 
         /* Contact + Careers */
@@ -74,6 +126,26 @@
 
             $( ".input-field" ).blur(function() {
                 $(this).parent().removeClass("input-filled");
+            });
+
+            // Recruiter box
+            $.ajax({
+                url: 'https://jsapi.recruiterbox.com/v1/openings?client_name=theabundancy',
+                contentType: 'application/json',
+                success: function(response) {
+
+                    for(var x = 0; x < response.objects.length; x++){
+
+                        var position = response.objects[x];
+                        var formatted = '<li>' + '<div class="position">' + position.title + '<br />' +
+                                        position.location.city + ', ' + position.location.state + ', ' + position.location.country +
+                                        '</div>' + '<div class="type">' + position.position_type + '</div>' +
+                                        '<a href="'+ position.hosted_url +'" class="read-more" target="_blank">' + position.position_type + '</a>' +
+                                        '</li>';
+                        $(".openings").append(formatted);
+                    }
+
+                }
             });
 
         }

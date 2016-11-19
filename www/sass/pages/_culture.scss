@@ -18,38 +18,64 @@
       background: linear-gradient(to right bottom, #84827e 50%, #bcbcb8 50%);
     }
 
-    .instagram-feed {
+    .column {
+      position: relative;
 
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      .vertical-title {
 
+        top: calc(24% - 120px);
+        left: -13%;
 
-      .box {
-        z-index: 500;
-        margin-bottom: 10px;
-
-        // First three images
-        &:nth-child(n+1):nth-child(-n+3){
-          width: 32%;
+        .number {
+          color: #aac3bc;
         }
-        // Images four and five
-        &:nth-child(n+4):nth-child(-n+5){
-          width: 49%;
+        .line {
+          background-color: #f8f9d2;
         }
-        // Last three images
-        &:nth-child(n+6):nth-child(-n+8){
-          width: 32%;
+        .text {
+          color: #f8f9d2;
+          margin-top: 35px;
         }
 
-        img {
-          width: 100%;
+      }
+
+      .instagram-feed {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+        min-height: 1000px;
+
+        .box {
+          z-index: 500;
+          margin-bottom: 10px;
+
+          // First three images
+          &:nth-child(n+1):nth-child(-n+3){
+            width: 32%;
+          }
+          // Images four and five
+          &:nth-child(n+4):nth-child(-n+5){
+            width: 49%;
+          }
+          // Last three images
+          &:nth-child(n+6):nth-child(-n+8){
+            width: 32%;
+          }
+
+          img {
+            width: 100%;
+          }
+
         }
 
       }
 
     }
+
+
 
   }
 
@@ -76,6 +102,8 @@
         width: 50%;
         min-height: 310px;
         display: block;
+        position: relative;
+        overflow: hidden;
 
         &.title {
           background-color: #84827e;
@@ -91,6 +119,7 @@
             font-size: 50px;
             color: #aac3bc;
             margin-bottom: 20px;
+            z-index: 1000;
           }
 
           .text {
@@ -103,6 +132,7 @@
             display: inline-block;
             border-bottom: 4px solid #aac3bc;
             margin-bottom: 35px;
+            z-index: 1000;
 
             span {
               color: #aac3bc;
@@ -118,6 +148,62 @@
           justify-content: center;
           align-items: center;
           flex-direction: column;
+        }
+
+        .letters {
+          display: block;
+          position: absolute;
+          z-index: 500;
+
+          &#letter-v {
+            width: 166px;
+            height: 158px;
+            background-image: url('../images/culture/letters/letters-v.png');
+            background-size: 166px 158px;
+            top: 5%;
+            left: 3%;
+          }
+          &#letter-a {
+            width: 166px;
+            height: 158px;
+            background-image: url('../images/culture/letters/letters-a.png');
+            background-size: 166px 158px;
+            bottom: 5%;
+            right: 3%;
+          }
+          &#letter-l {
+            width: 91px;
+            height: 158px;
+            background-image: url('../images/culture/letters/letters-l.png');
+            background-size: 91px 158px;
+            left: 3%;
+            bottom: 5%;
+          }
+          &#letter-u {
+            width: 139px;
+            height: 162px;
+            background-image: url('../images/culture/letters/letters-u.png');
+            background-size: 139px 162px;
+            left: 3%;
+            bottom: 5%;
+          }
+          &#letter-e {
+            width: 91px;
+            height: 159px;
+            background-image: url('../images/culture/letters/letters-e.png');
+            background-size: 91px 158px;
+            top: 5%;
+            right: 3%;
+          }
+          &#letter-s {
+            width: 117px;
+            height: 167px;
+            background-image: url('../images/culture/letters/letters-s.png');
+            background-size: 117px 167px;
+            right: 3%;
+            bottom: 5%;
+          }
+
         }
 
         @media only screen and (max-width: 750px){

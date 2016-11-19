@@ -16,6 +16,7 @@
             display: block;
             content: '';
             background: linear-gradient(to right bottom, #c55227 50%, #aa451f 50%);
+            z-index: -1;
         }
 
         .video-container {

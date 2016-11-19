@@ -85,6 +85,52 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+.vertical-title {
+  position: absolute;
+  left: -5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  z-index: 5000;
+}
+.vertical-title .number {
+  color: #000000;
+  font-family: "Futura LT Pro", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.vertical-title .line {
+  height: 0px;
+  width: 1px;
+  margin-bottom: 10px;
+  background-color: #000000;
+  transform-origin: 100% 50%;
+  transition: height 2s ease;
+}
+.vertical-title .text {
+  font-family: "Futura LT Pro", sans-serif;
+  font-size: 12px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+  margin-top: 20px;
+}
+.vertical-title.active .line {
+  height: 120px;
+}
+@media only screen and (max-width: 1250px) {
+  .vertical-title {
+    opacity: 0;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -130,7 +176,7 @@ section {
 
 .primary {
   background-color: #c55227;
-  padding: 120px 0 40px 0;
+  padding: 120px 15px 40px 15px;
 }
 .primary h1 {
   font-family: "Futura LT Pro", sans-serif;
@@ -282,6 +328,112 @@ img {
   }
 }
 
+ul .modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border: 10px solid #84827e;
+  z-index: 5000;
+  padding: 40px;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ul .modal .modal-button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  overflow: hidden;
+  text-indent: 1em;
+  font-size: 1em;
+  border: none;
+  background: transparent;
+  color: transparent;
+  opacity: 0.7;
+  cursor: pointer;
+}
+ul .modal .modal-button:before, ul .modal .modal-button:after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: #c65027;
+}
+ul .modal .modal-button:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+ul .modal .modal-button:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+ul .modal .modal-button:hover {
+  opacity: 1;
+}
+ul .modal .who {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+ul .modal .who .name {
+  font-family: "Futura LT Pro", sans-serif;
+  color: #42403c;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+}
+ul .modal .who .seperator {
+  font-family: "Futura LT Pro", sans-serif;
+  color: #42403c;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+}
+ul .modal .who .title {
+  font-family: "Futura LT Pro", sans-serif;
+  color: #42403c;
+  font-size: 18px;
+  font-weight: 300;
+  display: inline-block;
+  text-transform: uppercase;
+}
+ul .modal .left {
+  width: 49%;
+}
+ul .modal .left img {
+  width: 100%;
+}
+ul .modal .right {
+  width: 49%;
+}
+ul .modal .right .i_am_a {
+  font-family: "Futura LT Pro", sans-serif;
+  color: #c55227;
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+ul .modal .right .text {
+  font-family: "Klinic Slab", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #42403c;
+  display: block;
+}
+ul .modal.open {
+  display: flex;
+}
+
 nav#menu {
   width: 320px;
   display: block;
@@ -291,7 +443,7 @@ nav#menu {
   position: fixed;
   right: -320px;
   top: 0;
-  z-index: 1001;
+  z-index: 8001;
   font-family: 'Futura', sans-serif;
   font-size: 1.4em;
   font-weight: 400;
@@ -651,70 +803,129 @@ footer .copyright {
 }
 #home .video {
   margin: 0;
-  padding: 0;
-  min-height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 35px 0;
+  display: block;
   position: relative;
   background-color: #c55227;
   background: linear-gradient(to right bottom, #c55227 50%, #aa451f 50%);
   transition: max-height 3s ease;
+  overflow: hidden;
 }
-#home .video h3 {
+#home .video .column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 700px;
+  position: relative;
+}
+#home .video .column h3 {
   font-family: "Futura LT Pro", sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
   color: #441c12;
   text-transform: uppercase;
-  margin: 36px 0;
+  margin: 0 0 36px 0;
   position: relative;
+  z-index: 1000;
 }
-#home .video h3 span {
+#home .video .column h3 span {
   color: #ff9b20;
 }
-#home .video .video-container {
+#home .video .column .vertical-title {
+  top: calc(50% - 120px);
+}
+#home .video .column .vertical-title .number {
+  color: #95aea7;
+}
+#home .video .column .vertical-title .line {
+  background-color: #f8f9d2;
+}
+#home .video .column .vertical-title .text {
+  color: #f8f9d2;
+}
+#home .video .column .video-container {
   display: block;
   background-color: gray;
   width: 100%;
   max-width: 680px;
   height: auto;
+  z-index: 5000;
 }
-#home .video .video-object {
+#home .video .column .video-object {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
 }
-#home .video .video-object iframe, #home .video .video-object object, #home .video .video-object embed {
+#home .video .column .video-object iframe, #home .video .column .video-object object, #home .video .column .video-object embed {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-#home .video .video-btn {
+#home .video .column .video-btn {
   position: relative;
+  z-index: 5000;
 }
-@media only screen and (max-width: 420px) {
-  #home .video {
+@media only screen and (max-width: 750px) {
+  #home .video .column {
     transition: min-height 2s ease;
     min-height: 0px;
   }
 }
+#home .video .letters {
+  display: block;
+  position: absolute;
+  z-index: 500;
+}
+#home .video .letters#letter-w {
+  width: 230px;
+  height: 239px;
+  background-image: url("../images/home/letters/letters-w.png");
+  background-size: 230px 239px;
+  top: 35%;
+  left: -4%;
+}
+#home .video .letters#letter-o {
+  width: 168px;
+  height: 161px;
+  background-image: url("../images/home/letters/letters-o.png");
+  background-size: 168px 161px;
+  left: 27%;
+  bottom: 8%;
+}
+#home .video .letters#letter-r {
+  width: 127px;
+  height: 151px;
+  background-image: url("../images/home/letters/letters-r.png");
+  background-size: 127px 151px;
+  left: 44%;
+  top: -3%;
+}
+#home .video .letters#letter-k {
+  width: 181px;
+  height: 194px;
+  background-image: url("../images/home/letters/letters-k.png");
+  background-size: 181px 194px;
+  right: 3%;
+  bottom: 5%;
+}
+@media only screen and (max-width: 750px) {
+  #home .video .letters {
+    display: none;
+  }
+}
 #home .leadership {
   background-color: #b1aea7;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: block;
   padding: 155px 15px 80px 15px;
   overflow: hidden;
   transition: all 1s ease;
+  position: relative;
 }
 #home .leadership:after {
   position: absolute;
@@ -733,7 +944,14 @@ footer .copyright {
   outline: 1px solid transparent;
   -webkit-backface-visibility: hidden;
 }
-#home .leadership h3 {
+#home .leadership .column {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#home .leadership .column h3 {
   font-family: "Futura LT Pro", sans-serif;
   font-weight: bold;
   font-size: 36px;
@@ -745,10 +963,23 @@ footer .copyright {
   width: 100%;
   text-align: left;
 }
-#home .leadership h3 span {
+#home .leadership .column h3 span {
   color: #ffffff;
 }
-#home .leadership ul {
+#home .leadership .column .vertical-title {
+  top: calc(20% - 120px);
+}
+#home .leadership .column .vertical-title .number {
+  color: #c55227;
+}
+#home .leadership .column .vertical-title .line {
+  background-color: #f8f9d2;
+}
+#home .leadership .column .vertical-title .text {
+  color: #441c12;
+  margin-top: 35px;
+}
+#home .leadership .column ul {
   width: 100%;
   max-width: 896px;
   display: flex;
@@ -757,27 +988,38 @@ footer .copyright {
   list-style-type: none;
   padding: 0;
   z-index: 5000;
+  position: relative;
 }
-#home .leadership ul li {
+#home .leadership .column ul:hover > li {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+#home .leadership .column ul:hover > li:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+#home .leadership .column ul li {
   list-style-type: none;
   width: 32%;
   margin: 1%;
   position: relative;
+  transition: opacity 0.3s ease;
 }
-#home .leadership ul li:nth-of-type(3n) {
+#home .leadership .column ul li:nth-of-type(3n) {
   margin-right: 0;
 }
-#home .leadership ul li:nth-of-type(3n+1) {
+#home .leadership .column ul li:nth-of-type(3n+1) {
   margin-left: 0;
 }
-#home .leadership ul li .details {
+#home .leadership .column ul li .details {
   position: absolute;
   bottom: 20px;
   left: 10px;
   width: 100%;
   text-transform: uppercase;
 }
-#home .leadership ul li .details .name {
+#home .leadership .column ul li .details .name {
   font-family: "Futura LT Pro", sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -785,35 +1027,48 @@ footer .copyright {
   display: block;
   margin-bottom: 3px;
 }
-#home .leadership ul li .details .title {
+#home .leadership .column ul li .details .title {
   font-family: "Futura LT Pro", sans-serif;
   font-weight: 500;
   font-size: 10px;
   color: #f8f9d2;
   display: block;
 }
-#home .leadership ul li img {
+#home .leadership .column ul li .modal-content {
+  display: none;
+}
+#home .leadership .column ul li img {
   width: 100%;
   height: 100%;
+  opacity: 1;
 }
 @media only screen and (max-width: 750px) {
-  #home .leadership ul li {
+  #home .leadership .column ul li {
     width: 48%;
-    margin: 0 0 3% 0;
   }
-  #home .leadership ul li:nth-child(odd) {
-    margin-right: 4%;
+  #home .leadership .column ul li:nth-of-type(3n) {
+    margin-right: 1%;
+  }
+  #home .leadership .column ul li:nth-of-type(3n+1) {
+    margin-left: 1%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #home .leadership .column ul {
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #home .leadership .column h3 {
+    font-size: 24px;
+  }
+  #home .leadership .column h3 span {
+    color: #ffffff;
   }
 }
 @media only screen and (max-width: 750px) {
   #home .leadership {
     padding: 25px 15px 80px 15px;
-  }
-  #home .leadership h3 {
-    font-size: 24px;
-  }
-  #home .leadership h3 span {
-    color: #ffffff;
   }
 }
 
@@ -832,6 +1087,7 @@ footer .copyright {
   display: block;
   content: '';
   background: linear-gradient(to right bottom, #c55227 50%, #aa451f 50%);
+  z-index: -1;
 }
 #approach .primary .video-container {
   display: block;
@@ -1153,26 +1409,45 @@ footer .copyright {
   content: '';
   background: linear-gradient(to right bottom, #84827e 50%, #bcbcb8 50%);
 }
-#culture .primary .instagram-feed {
+#culture .primary .column {
+  position: relative;
+}
+#culture .primary .column .vertical-title {
+  top: calc(24% - 120px);
+  left: -13%;
+}
+#culture .primary .column .vertical-title .number {
+  color: #aac3bc;
+}
+#culture .primary .column .vertical-title .line {
+  background-color: #f8f9d2;
+}
+#culture .primary .column .vertical-title .text {
+  color: #f8f9d2;
+  margin-top: 35px;
+}
+#culture .primary .column .instagram-feed {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 40px;
+  min-height: 1000px;
 }
-#culture .primary .instagram-feed .box {
+#culture .primary .column .instagram-feed .box {
   z-index: 500;
   margin-bottom: 10px;
 }
-#culture .primary .instagram-feed .box:nth-child(n+1):nth-child(-n+3) {
+#culture .primary .column .instagram-feed .box:nth-child(n+1):nth-child(-n+3) {
   width: 32%;
 }
-#culture .primary .instagram-feed .box:nth-child(n+4):nth-child(-n+5) {
+#culture .primary .column .instagram-feed .box:nth-child(n+4):nth-child(-n+5) {
   width: 49%;
 }
-#culture .primary .instagram-feed .box:nth-child(n+6):nth-child(-n+8) {
+#culture .primary .column .instagram-feed .box:nth-child(n+6):nth-child(-n+8) {
   width: 32%;
 }
-#culture .primary .instagram-feed .box img {
+#culture .primary .column .instagram-feed .box img {
   width: 100%;
 }
 #culture .values {
@@ -1193,6 +1468,8 @@ footer .copyright {
   width: 50%;
   min-height: 310px;
   display: block;
+  position: relative;
+  overflow: hidden;
 }
 #culture .values .value .block.title {
   background-color: #84827e;
@@ -1208,6 +1485,7 @@ footer .copyright {
   font-size: 50px;
   color: #aac3bc;
   margin-bottom: 20px;
+  z-index: 1000;
 }
 #culture .values .value .block.title .text {
   font-family: "Futura LT Pro", sans-serif;
@@ -1218,6 +1496,7 @@ footer .copyright {
   display: inline-block;
   border-bottom: 4px solid #aac3bc;
   margin-bottom: 35px;
+  z-index: 1000;
 }
 #culture .values .value .block.title .text span {
   color: #aac3bc;
@@ -1228,6 +1507,59 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+#culture .values .value .block .letters {
+  display: block;
+  position: absolute;
+  z-index: 500;
+}
+#culture .values .value .block .letters#letter-v {
+  width: 166px;
+  height: 158px;
+  background-image: url("../images/culture/letters/letters-v.png");
+  background-size: 166px 158px;
+  top: 5%;
+  left: 3%;
+}
+#culture .values .value .block .letters#letter-a {
+  width: 166px;
+  height: 158px;
+  background-image: url("../images/culture/letters/letters-a.png");
+  background-size: 166px 158px;
+  bottom: 5%;
+  right: 3%;
+}
+#culture .values .value .block .letters#letter-l {
+  width: 91px;
+  height: 158px;
+  background-image: url("../images/culture/letters/letters-l.png");
+  background-size: 91px 158px;
+  left: 3%;
+  bottom: 5%;
+}
+#culture .values .value .block .letters#letter-u {
+  width: 139px;
+  height: 162px;
+  background-image: url("../images/culture/letters/letters-u.png");
+  background-size: 139px 162px;
+  left: 3%;
+  bottom: 5%;
+}
+#culture .values .value .block .letters#letter-e {
+  width: 91px;
+  height: 159px;
+  background-image: url("../images/culture/letters/letters-e.png");
+  background-size: 91px 158px;
+  top: 5%;
+  right: 3%;
+}
+#culture .values .value .block .letters#letter-s {
+  width: 117px;
+  height: 167px;
+  background-image: url("../images/culture/letters/letters-s.png");
+  background-size: 117px 167px;
+  right: 3%;
+  bottom: 5%;
 }
 @media only screen and (max-width: 750px) {
   #culture .values .value .block {
@@ -1277,10 +1609,29 @@ footer .copyright {
 #contact #contact-form {
   background-color: #c55227;
   padding: 120px 20px 55px 20px;
+  display: block;
+}
+#contact #contact-form .column {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
-#contact #contact-form h1 {
+#contact #contact-form .column .vertical-title {
+  left: -15%;
+  top: calc(55% - 125px);
+}
+#contact #contact-form .column .vertical-title .number {
+  color: #aac3bc;
+}
+#contact #contact-form .column .vertical-title .line {
+  background-color: #aac3bc;
+  margin-bottom: 25px;
+}
+#contact #contact-form .column .vertical-title .text {
+  color: #441c12;
+  margin-top: 35px;
+}
+#contact #contact-form .column h1 {
   font-family: "Futura LT Pro", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -1289,7 +1640,7 @@ footer .copyright {
   margin-bottom: 5px;
   display: block;
 }
-#contact #contact-form h2 {
+#contact #contact-form .column h2 {
   font-family: "Futura LT Pro", sans-serif;
   font-weight: bold;
   font-size: 36px;
@@ -1297,16 +1648,16 @@ footer .copyright {
   text-transform: uppercase;
   display: block;
 }
-#contact #contact-form .fields {
+#contact #contact-form .column .fields {
   display: flex;
   padding-top: 55px;
   flex-direction: row;
 }
-#contact #contact-form .fields .left {
+#contact #contact-form .column .fields .left {
   width: 40%;
   display: block;
 }
-#contact #contact-form .fields .left .input {
+#contact #contact-form .column .fields .left .input {
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -1315,7 +1666,7 @@ footer .copyright {
   vertical-align: top;
   margin-bottom: 27px;
 }
-#contact #contact-form .fields .left .input .input-field {
+#contact #contact-form .column .fields .left .input .input-field {
   position: relative;
   display: block;
   float: right;
@@ -1333,7 +1684,7 @@ footer .copyright {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
-#contact #contact-form .fields .left .input .input-label {
+#contact #contact-form .column .fields .left .input .input-label {
   display: inline-block;
   float: right;
   color: #f3dcd4;
@@ -1354,7 +1705,7 @@ footer .copyright {
   text-align: left;
   pointer-events: none;
 }
-#contact #contact-form .fields .left .input .input-content {
+#contact #contact-form .column .fields .left .input .input-content {
   font-family: "Futura LT Pro", sans-serif;
   font-weight: normal;
   font-size: 21px;
@@ -1367,8 +1718,8 @@ footer .copyright {
   -webkit-transition: -webkit-transform 0.3s 0.3s;
   transition: transform 0.3s 0.3s;
 }
-#contact #contact-form .fields .left .input .input-label::before,
-#contact #contact-form .fields .left .input .input-label::after {
+#contact #contact-form .column .fields .left .input .input-label::before,
+#contact #contact-form .column .fields .left .input .input-label::after {
   content: '';
   position: absolute;
   top: 0;
@@ -1378,14 +1729,14 @@ footer .copyright {
   -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
 }
-#contact #contact-form .fields .left .input .input-label::before {
+#contact #contact-form .column .fields .left .input .input-label::before {
   border-top: 2px solid #f3dcd4;
   -webkit-transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
   transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-#contact #contact-form .fields .left .input .input-label::after {
+#contact #contact-form .column .fields .left .input .input-label::after {
   z-index: -1;
   background: #f3dcd4;
   -webkit-transform: scale3d(1, 0, 1);
@@ -1393,32 +1744,32 @@ footer .copyright {
   -webkit-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
 }
-#contact #contact-form .fields .left .input .input-field:focus,
-#contact #contact-form .fields .left .input .input-filled .input-field {
+#contact #contact-form .column .fields .left .input .input-field:focus,
+#contact #contact-form .column .fields .left .input .input-filled .input-field {
   opacity: 1;
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
   outline: 0;
 }
-#contact #contact-form .fields .left .input .input-field:focus + .input-label .input-content,
-#contact #contact-form .fields .left .input .input-filled .input-content {
+#contact #contact-form .column .fields .left .input .input-field:focus + .input-label .input-content,
+#contact #contact-form .column .fields .left .input .input-filled .input-content {
   -webkit-transform: translate3d(0, -80%, 0);
   transform: translate3d(0, -80%, 0);
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
-#contact #contact-form .fields .left .input .input-field:focus + .input-label::before,
-#contact #contact-form .fields .left .input .input-filled .input-label::before {
+#contact #contact-form .column .fields .left .input .input-field:focus + .input-label::before,
+#contact #contact-form .column .fields .left .input .input-filled .input-label::before {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-#contact #contact-form .fields .left .input .input-field:focus + .input-label::before,
-#contact #contact-form .fields .left .input .input-filled .input-label::before {
+#contact #contact-form .column .fields .left .input .input-field:focus + .input-label::before,
+#contact #contact-form .column .fields .left .input .input-filled .input-label::before {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-#contact #contact-form .fields .left .input .input-field:focus + .input-label::after,
-#contact #contact-form .fields .left .input .input-filled .input-label::after {
+#contact #contact-form .column .fields .left .input .input-field:focus + .input-label::after,
+#contact #contact-form .column .fields .left .input .input-filled .input-label::after {
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
   -webkit-transition-delay: 0.3s;
@@ -1426,11 +1777,11 @@ footer .copyright {
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
-#contact #contact-form .fields .right {
+#contact #contact-form .column .fields .right {
   width: 60%;
   display: block;
 }
-#contact #contact-form .fields .right textarea {
+#contact #contact-form .column .fields .right textarea {
   display: block;
   width: 100%;
   height: 290px;
@@ -1444,49 +1795,49 @@ footer .copyright {
   font-size: 18px;
   color: #ffffff;
 }
-#contact #contact-form .fields .right textarea:focus {
+#contact #contact-form .column .fields .right textarea:focus {
   outline: 0;
 }
-#contact #contact-form .fields .right textarea::-webkit-input-placeholder {
+#contact #contact-form .column .fields .right textarea::-webkit-input-placeholder {
   /* Chrome */
   color: #ffffff;
   opacity: 0.8;
 }
-#contact #contact-form .fields .right textarea:-ms-input-placeholder {
+#contact #contact-form .column .fields .right textarea:-ms-input-placeholder {
   /* IE 10+ */
   color: #ffffff;
   opacity: 0.8;
 }
-#contact #contact-form .fields .right textarea::-moz-placeholder {
+#contact #contact-form .column .fields .right textarea::-moz-placeholder {
   /* Firefox 19+ */
   color: #ffffff;
   opacity: 0.8;
 }
-#contact #contact-form .fields .right textarea:-moz-placeholder {
+#contact #contact-form .column .fields .right textarea:-moz-placeholder {
   /* Firefox 4 - 18 */
   color: #ffffff;
   opacity: 0.8;
 }
-#contact #contact-form .bottom {
+#contact #contact-form .column .bottom {
   display: block;
   width: 100%;
   text-align: right;
 }
 @media only screen and (max-width: 680px) {
-  #contact #contact-form .fields {
+  #contact #contact-form .column .fields {
     flex-direction: column;
   }
-  #contact #contact-form .fields .left {
+  #contact #contact-form .column .fields .left {
     width: 100%;
   }
-  #contact #contact-form .fields .left .input {
+  #contact #contact-form .column .fields .left .input {
     width: 100%;
     max-width: 100%;
   }
-  #contact #contact-form .fields .right {
+  #contact #contact-form .column .fields .right {
     width: 100%;
   }
-  #contact #contact-form .bottom {
+  #contact #contact-form .column .bottom {
     margin-top: 20px;
     text-align: center;
   }
@@ -1494,14 +1845,32 @@ footer .copyright {
 #contact #jobs {
   padding: 55px 20px 55px 20px;
   background-color: #ffffff;
+  display: block;
 }
-#contact #jobs .recruiter-box {
+#contact #jobs .column {
+  position: relative;
+}
+#contact #jobs .column .vertical-title {
+  left: -15%;
+  top: calc(40% - 120px);
+}
+#contact #jobs .column .vertical-title .number {
+  color: #c55227;
+}
+#contact #jobs .column .vertical-title .line {
+  background-color: #c55227;
+}
+#contact #jobs .column .vertical-title .text {
+  color: #aac3bc;
+  margin-top: 25px;
+}
+#contact #jobs .column .recruiter-box {
   display: flex;
 }
-#contact #jobs .recruiter-box .left {
+#contact #jobs .column .recruiter-box .left {
   width: 70%;
 }
-#contact #jobs .recruiter-box .left h2 {
+#contact #jobs .column .recruiter-box .left h2 {
   font-family: "Futura LT Pro", sans-serif;
   font-weight: bold;
   font-size: 36px;
@@ -1509,13 +1878,13 @@ footer .copyright {
   text-transform: uppercase;
   margin-bottom: 35px;
 }
-#contact #jobs .recruiter-box .left ul.openings {
+#contact #jobs .column .recruiter-box .left ul.openings {
   list-style-type: none;
   padding: 0;
   display: block;
   width: 100%;
 }
-#contact #jobs .recruiter-box .left ul.openings li {
+#contact #jobs .column .recruiter-box .left ul.openings li {
   list-style-type: none;
   display: flex;
   width: 90%;
@@ -1524,21 +1893,21 @@ footer .copyright {
   border-bottom: 1px solid #dddddc;
   position: relative;
 }
-#contact #jobs .recruiter-box .left ul.openings li:first-child {
+#contact #jobs .column .recruiter-box .left ul.openings li:first-child {
   padding-top: 0px;
 }
-#contact #jobs .recruiter-box .left ul.openings li:last-child {
+#contact #jobs .column .recruiter-box .left ul.openings li:last-child {
   padding-bottom: 0px;
   border-bottom: none;
 }
-#contact #jobs .recruiter-box .left ul.openings li .position {
+#contact #jobs .column .recruiter-box .left ul.openings li .position {
   font-family: "Klinic Slab", sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #000000;
   width: 60%;
 }
-#contact #jobs .recruiter-box .left ul.openings li .type {
+#contact #jobs .column .recruiter-box .left ul.openings li .type {
   width: 20%;
   font-family: "Futura LT Pro", sans-serif;
   font-weight: bold;
@@ -1548,7 +1917,7 @@ footer .copyright {
   position: relative;
   top: 4px;
 }
-#contact #jobs .recruiter-box .left ul.openings li .read-more {
+#contact #jobs .column .recruiter-box .left ul.openings li .read-more {
   width: 20%;
   font-family: "Futura LT Pro", sans-serif;
   font-weight: bold;
@@ -1559,15 +1928,16 @@ footer .copyright {
   position: relative;
   top: 4px;
 }
-#contact #jobs .recruiter-box .right {
+#contact #jobs .column .recruiter-box .right {
   padding: 25px 20px;
   width: 30%;
   min-width: 300px;
+  max-height: 375px;
   background-color: #dddddc;
   display: flex;
   flex-direction: column;
 }
-#contact #jobs .recruiter-box .right address {
+#contact #jobs .column .recruiter-box .right address {
   color: #000000;
   font-style: normal;
   font-weight: normal;
@@ -1576,12 +1946,12 @@ footer .copyright {
   line-height: 28px;
   display: block;
 }
-#contact #jobs .recruiter-box .right address span {
+#contact #jobs .column .recruiter-box .right address span {
   font-weight: bold;
   margin-bottom: 5px;
   display: block;
 }
-#contact #jobs .recruiter-box .right .directions {
+#contact #jobs .column .recruiter-box .right .directions {
   font-family: "Futura LT Pro", sans-serif;
   font-weight: bold;
   font-size: 11px;
@@ -1590,7 +1960,7 @@ footer .copyright {
   margin-top: 10px;
   display: block;
 }
-#contact #jobs .recruiter-box .right hr {
+#contact #jobs .column .recruiter-box .right hr {
   border: none;
   height: 1px;
   /* Set the hr color */
@@ -1601,10 +1971,10 @@ footer .copyright {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-#contact #jobs .recruiter-box .right span {
+#contact #jobs .column .recruiter-box .right span {
   display: block;
 }
-#contact #jobs .recruiter-box .right span.digits-title {
+#contact #jobs .column .recruiter-box .right span.digits-title {
   font-family: "Futura LT Pro", sans-serif;
   font-weight: bold;
   font-size: 11px;
@@ -1612,14 +1982,14 @@ footer .copyright {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-#contact #jobs .recruiter-box .right span.digits {
+#contact #jobs .column .recruiter-box .right span.digits {
   font-family: "Futura LT Pro", sans-serif;
   font-weight: bold;
   font-size: 24px;
   color: #42403c;
   text-transform: uppercase;
 }
-#contact #jobs .recruiter-box .right span.follow {
+#contact #jobs .column .recruiter-box .right span.follow {
   font-family: "Futura LT Pro", sans-serif;
   font-weight: bold;
   font-size: 11px;
@@ -1627,13 +1997,13 @@ footer .copyright {
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-#contact #jobs .recruiter-box .right .social {
+#contact #jobs .column .recruiter-box .right .social {
   max-width: 160px;
   width: 100%;
   display: flex;
   position: relative;
 }
-#contact #jobs .recruiter-box .right .social a {
+#contact #jobs .column .recruiter-box .right .social a {
   width: 40px;
   height: 40px;
   display: inline;
@@ -1643,30 +2013,91 @@ footer .copyright {
   position: relative;
   left: -10px;
 }
-#contact #jobs .recruiter-box .right .social a:hover {
+#contact #jobs .column .recruiter-box .right .social a:hover {
   opacity: 1;
 }
-#contact #jobs .recruiter-box .right .social a.linkedin {
+#contact #jobs .column .recruiter-box .right .social a.linkedin {
   background-image: url("../images/contact/social_icon-linkedin.png");
 }
-#contact #jobs .recruiter-box .right .social a.facebook {
+#contact #jobs .column .recruiter-box .right .social a.facebook {
   background-image: url("../images/contact/social_icon-facebook.png");
 }
-#contact #jobs .recruiter-box .right .social a.twitter {
+#contact #jobs .column .recruiter-box .right .social a.twitter {
   background-image: url("../images/contact/social_icon-twitter.png");
 }
-#contact #jobs .recruiter-box .right .social a.instagram {
+#contact #jobs .column .recruiter-box .right .social a.instagram {
   background-image: url("../images/contact/social_icon-instagram.png");
 }
 @media only screen and (max-width: 970px) {
-  #contact #jobs .recruiter-box .right .social {
+  #contact #jobs .column .recruiter-box .right .social {
     max-width: 140px;
   }
-  #contact #jobs .recruiter-box .right .social a {
+  #contact #jobs .column .recruiter-box .right .social a {
     height: 35px;
     width: 35px;
     top: 6px;
     background-size: 35px 35px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  #contact #jobs .column .recruiter-box {
+    flex-direction: column;
+  }
+  #contact #jobs .column .recruiter-box .left {
+    width: 100%;
+    padding: 20px;
+  }
+  #contact #jobs .column .recruiter-box .left h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  #contact #jobs .column .recruiter-box .left ul.openings li {
+    width: 100%;
+  }
+  #contact #jobs .column .recruiter-box .right {
+    width: 100%;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  #contact #jobs .column .recruiter-box .right address {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #contact #jobs .column .recruiter-box .right address span {
+    margin-bottom: 0px;
+  }
+  #contact #jobs .column .recruiter-box .right span {
+    display: block;
+  }
+  #contact #jobs .column .recruiter-box .right span.digits-title {
+    font-family: "Futura LT Pro", sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: #84827e;
+    text-transform: uppercase;
+    margin-top: 3px;
+    margin-bottom: 10px;
+  }
+  #contact #jobs .column .recruiter-box .right span.digits {
+    font-family: "Futura LT Pro", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #42403c;
+    text-transform: uppercase;
+  }
+  #contact #jobs .column .recruiter-box .right span.follow {
+    font-family: "Futura LT Pro", sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: #42403c;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  #contact #jobs .column .recruiter-box .right hr {
+    display: none;
   }
 }
 @media only screen and (max-width: 680px) {

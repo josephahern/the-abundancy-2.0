@@ -3,11 +3,15 @@
 <div id="contact">
     <section class="row" id="contact-form">
         <div class="column">
-            <div>
-                <h1>Contact Us</h1>
-                <h2>Let's be friends</h2>
-                <div class="fields">
-                    <div class="left">
+            <h1>Contact Us</h1>
+            <h2>Let's be friends</h2>
+            <div class="vertical-title">
+                <span class="number">01</span>
+                <span class="line"></span>
+                <span class="text">A Handy Form</span>
+            </div>
+            <div class="fields">
+                <div class="left">
                     <span class="input">
 					    <input class="input-field" type="text" id="input-10">
 					    <label class="input-label" for="input-10">
@@ -32,19 +36,23 @@
                             <span class="input-content">I am a</span>
                         </label>
 				    </span>
-                    </div>
-                    <div class="right">
-                        <textarea name="message" id="contact-message" placeholder="Type message here"></textarea>
-                    </div>
                 </div>
-                <div class="bottom">
-                    <a href="" class="btn contact submit-btn">Submit</a>
+                <div class="right">
+                    <textarea name="message" id="contact-message" placeholder="Type message here"></textarea>
                 </div>
+            </div>
+            <div class="bottom">
+                <a href="" class="btn contact submit-btn">Submit</a>
             </div>
         </div>
     </section>
     <section class="row" id="jobs">
         <div class="column">
+            <div class="vertical-title">
+                <span class="number">02</span>
+                <span class="line"></span>
+                <span class="text">Get Paid</span>
+            </div>
             <div class="recruiter-box">
                 <div class="left">
                     <h2>We've got jobs</h2>

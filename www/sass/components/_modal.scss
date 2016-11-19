@@ -1,0 +1,125 @@
+ul .modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border: 10px solid #84827e;
+  z-index: 5000;
+  padding: 40px;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .modal-button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    overflow: hidden;
+    text-indent: 1em;
+    font-size: 1em;
+    border: none;
+    background: transparent;
+    color: transparent;
+    opacity: 0.7;
+    cursor: pointer;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      width: 3px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      background: #c65027;
+    }
+
+    &:before {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+  }
+
+  .who {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+
+    .name {
+      font-family: $font-family-primary;
+      color: #42403c;
+      font-size: 18px;
+      font-weight: bold;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+
+    .seperator {
+      font-family: $font-family-primary;
+      color: #42403c;
+      font-size: 18px;
+      font-weight: bold;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+
+    .title {
+      font-family: $font-family-primary;
+      color: #42403c;
+      font-size: 18px;
+      font-weight: 300;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+
+  }
+
+  .left {
+    width: 49%;
+
+    img {
+      width: 100%;
+    }
+
+  }
+
+  .right {
+    width: 49%;
+
+    .i_am_a {
+      font-family: $font-family-primary;
+      color: #c55227;
+      font-size: 28px;
+      font-weight: bold;
+      display: block;
+      text-transform: uppercase;
+    }
+
+    .text {
+      font-family: $font-family-secondary;
+      font-weight: 300;
+      font-size: 16px;
+      color: #42403c;
+      display: block;
+    }
+
+  }
+
+  &.open {
+    display: flex;
+  }
+
+}
