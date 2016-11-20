@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    background-color: #42403c;
+    background-color: $abundancy-slate;
     min-height: 145px;
     display: flex;
     justify-content: center;
@@ -46,7 +46,7 @@ footer {
                 }
 
                 &:hover {
-                    color: #c55227;
+                    color: $abundancy-copper;
                 }
 
             }

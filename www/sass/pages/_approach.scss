@@ -5,7 +5,7 @@
         padding-bottom: 50px;
         position: relative;
         overflow: hidden;
-        background-color: #c55227;
+        background-color: $abundancy-copper;
 
         &:after {
             position: absolute;
@@ -15,7 +15,7 @@
             height: 85%;
             display: block;
             content: '';
-            background: linear-gradient(to right bottom, #c55227 50%, #aa451f 50%);
+            background: linear-gradient(to right bottom, $abundancy-copper 50%, #aa451f 50%);
             z-index: -1;
         }
 
@@ -52,7 +52,7 @@
 
             span {
                 font-weight: bold;
-                color: #f8f9d2;
+                color: $abundancy-cream;
             }
 
             @media only screen and (max-width: 750px) {
@@ -89,7 +89,7 @@
                 display: block;
 
                 &.title {
-                    background-color: #441c12;
+                    background-color: $abundancy-brown;
                     background-image: url(../images/pattern_plus-sign_2x.png);
                     background-repeat: repeat;
                     background-size: 83px 82px;
@@ -103,7 +103,7 @@
                         font-family: $font-family-primary;
                         font-weight: bold;
                         font-size: 50px;
-                        color: #c55227;
+                        color: $abundancy-copper;
                         margin-bottom: 20px;
                     }
 
@@ -112,14 +112,14 @@
                         font-family: $font-family-primary;
                         font-weight: bold;
                         font-size: 36px;
-                        color: #f8f9d2;
+                        color: $abundancy-cream;
                         padding-bottom: 5px;
                         display: inline-block;
                         border-bottom: 4px solid #c55227;
                         margin-bottom: 35px;
 
                         span {
-                            color: #c55227;
+                            color: $abundancy-copper;
                         }
 
                     }
@@ -139,7 +139,7 @@
                         font-family: $font-family-secondary;
                         font-weight: normal;
                         font-size: 24px;
-                        color: #42403c;
+                        color: $abundancy-slate;
                     }
 
                 }
@@ -167,7 +167,7 @@
                     display: block;
 
                     &.title {
-                        background-color: #441c12;
+                        background-color: $abundancy-brown;
                         background-image: url(../images/pattern_plus-sign_2x.png);
                         background-repeat: repeat;
                         background-size: 83px 82px;
@@ -180,7 +180,7 @@
                             font-family: $font-family-primary;
                             font-weight: bold;
                             font-size: 28px;
-                            color: #c55227;
+                            color: $abundancy-copper;
                             margin: 20px 0 5px 0;
                         }
 
@@ -189,13 +189,13 @@
                             font-family: $font-family-primary;
                             font-weight: bold;
                             font-size: 22px;
-                            color: #f8f9d2;
+                            color: $abundancy-cream;
                             padding-bottom: 5px;
                             display: inline-block;
-                            border-bottom: 4px solid #c55227;
+                            border-bottom: 4px solid $abundancy-copper;
 
                             span {
-                                color: #c55227;
+                                color: $abundancy-copper;
                             }
 
                         }
@@ -226,7 +226,7 @@
     }
 
     .capabilities {
-        background-color: #dddddc;
+        background-color: $abundancy-off-white;
         min-height: 260px;
         padding-top: 55px;
         padding-bottom: 55px;
@@ -257,7 +257,7 @@
                         font-family: $font-family-primary;
                         font-weight: bold;
                         font-size: 21px;
-                        color: #42403c;
+                        color: $abundancy-slate;
                         margin-bottom: 15px;
                     }
                 }

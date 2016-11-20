@@ -27,13 +27,13 @@
         left: -13%;
 
         .number {
-          color: #aac3bc;
+          color: $abundancy-foam-green;
         }
         .line {
-          background-color: #f8f9d2;
+          background-color: $abundancy-cream;
         }
         .text {
-          color: #f8f9d2;
+          color: $abundancy-cream;
           margin-top: 35px;
         }
 
@@ -117,7 +117,7 @@
             font-family: $font-family-primary;
             font-weight: bold;
             font-size: 50px;
-            color: #aac3bc;
+            color: $abundancy-foam-green;
             margin-bottom: 20px;
             z-index: 1000;
           }
@@ -127,15 +127,15 @@
             font-family: $font-family-primary;
             font-weight: bold;
             font-size: 36px;
-            color: #f8f9d2;
+            color: $abundancy-cream;
             padding-bottom: 5px;
             display: inline-block;
-            border-bottom: 4px solid #aac3bc;
+            border-bottom: 4px solid $abundancy-foam-green;
             margin-bottom: 35px;
             z-index: 1000;
 
             span {
-              color: #aac3bc;
+              color: $abundancy-foam-green;
             }
 
           }
@@ -143,7 +143,7 @@
         }
 
         &.infograph{
-          background-color: #aac3bc;
+          background-color: $abundancy-foam-green;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -231,7 +231,7 @@
   }
 
   .capabilities {
-    background-color: #dddddc;
+    background-color: $abundancy-off-white;
     min-height: 260px;
     padding-top: 55px;
     padding-bottom: 55px;
@@ -243,7 +243,7 @@
         font-family: $font-family-primary;
         font-weight: bold;
         text-transform: uppercase;
-        color: #c55227;
+        color: $abundancy-copper;
         display: block;
         margin-bottom: 20px;
       }
@@ -262,7 +262,7 @@
             font-family: $font-family-primary;
             font-weight: bold;
             font-size: 21px;
-            color: #42403c;
+            color: $abundancy-slate;
             margin-bottom: 15px;
           }
         }

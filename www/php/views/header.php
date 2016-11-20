@@ -4,11 +4,16 @@
     <title>The Abundancy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- Web Fonts -->
+    <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/b8898fd3-6341-4d29-97da-84247416006a.css"/>
+    <!-- CSS Dependencies -->
     <link rel="stylesheet" href="css/animate.css">
+    <!-- Primary Stylesheet -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body id="content">
 
+<!-- Primary Navigation -->
 <nav id="menu">
     <button class="close-button" id="close-button">Close Menu</button>
     <a href="/approach">OUR APPROACH</a>
@@ -19,6 +24,7 @@
         <img src="images/menu/theabundancy-logo.png" alt="The Abundancy">
     </a>
 </nav>
+<!-- end Primary Navigation -->
 
 <button class="menu-button" id="open-button"></button>
 

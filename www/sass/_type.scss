@@ -1,41 +1,3 @@
-// FUTURA
-
-@font-face {
-    font-family: 'Futura LT Pro';
-    src: url('fonts/futura/FuturaLTPro-Light.eot');
-    src: url('fonts/futura/FuturaLTPro-Light.eot?#iefix') format('embedded-opentype'),
-    url('fonts/futura/FuturaLTPro-Light.woff2') format('woff2'),
-    url('fonts/futura/FuturaLTPro-Light.woff') format('woff'),
-    url('fonts/futura/FuturaLTPro-Light.ttf') format('truetype'),
-    url('fonts/futura/FuturaLTPro-Light.svg#FuturaLTPro-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura LT Pro';
-    src: url('fonts/futura/FuturaLTPro-Medium.eot');
-    src: url('fonts/futura/FuturaLTPro-Medium.eot?#iefix') format('embedded-opentype'),
-    url('fonts/futura/FuturaLTPro-Medium.woff2') format('woff2'),
-    url('fonts/futura/FuturaLTPro-Medium.woff') format('woff'),
-    url('fonts/futura/FuturaLTPro-Medium.ttf') format('truetype'),
-    url('fonts/futura/FuturaLTPro-Medium.svg#FuturaLTPro-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura LT Pro';
-    src: url('fonts/futura/FuturaLTPro-Bold.eot');
-    src: url('fonts/futura/FuturaLTPro-Bold.eot?#iefix') format('embedded-opentype'),
-    url('fonts/futura/FuturaLTPro-Bold.woff2') format('woff2'),
-    url('fonts/futura/FuturaLTPro-Bold.woff') format('woff'),
-    url('fonts/futura/FuturaLTPro-Bold.ttf') format('truetype'),
-    url('fonts/futura/FuturaLTPro-Bold.svg#FuturaLTPro-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
 // KLINIC
 
 @font-face {
@@ -136,7 +98,7 @@
 
 // Typography
 
-$font-family-primary: 'Futura LT Pro', sans-serif;
+$font-family-primary: 'Futura W01', sans-serif;
 $font-family-secondary: 'Klinic Slab', sans-serif;
 
 html {
@@ -152,7 +114,7 @@ h1,h2,h3,h4,h5,h6 {
 .vertical-title {
 
     position: absolute;
-    left: -5%;
+    left: -15%;
     display: flex;
     flex-direction: column;
     justify-content: center;

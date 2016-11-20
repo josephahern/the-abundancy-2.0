@@ -3,31 +3,13 @@
 <div id="stats">Curious?</div>
 <div id="container"></div>
 <div id="home">
-    <div class="parallax" id="intro">
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="container">
+    <div class="parallax row" id="intro">
+        <div class="column">
+            <div class="vertical-title">
+                <span class="number">01</span>
+                <span class="line"></span>
+                <span class="text">On the Dailys</span>
+            </div>
             <div class="text-block-one">
                 <span class="medium">We combine</span>
                 <span class="large">
@@ -35,7 +17,7 @@
                     Technology<br />
                     &amp; Analytics<br />
                 </span>
-                <span class="small">to create custom solutions that help brands <span i>get chosen.</span></span>
+                <span class="small">to create custom solutions that help brands <span>get chosen.</span></span>
             </div>
             <div class="get-chosen">Get chosen<span>.</span></div>
             <a href="/approach" class="btn home parallax-btn">Our Approach</a>
@@ -104,9 +86,9 @@
                     </div>
                     <div class="modal-content">
                         <span class="modal-name">Andrew Swinand</span>
-                        <span class="modal-title">CEO</span>
-                        <span class="modal-i_am_a">Adjective</span>
-                        <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
+                        <span class="modal-title">Founder & CEO</span>
+                        <span class="modal-i_am_a">I am a Veteran</span>
+                        <span class="modal-bio">Andrew is our fearless leader and resident tall guy. He was President of Starcom MediaVest Group, partnering with world’s biggest brands like P&G, Coke, Disney, Microsoft, and Samsung. Prior to that, he worked at P&G in brand management in Beauty Care. Andrew has been named one of the “40 under 40” by Crain’s Chicago Business, and was inducted into the American Advertising Federation Hall of Achievement in 2008. He proudly served his country as a platoon leader in the U.S. Army, and has a passion for growing everything from gardens to new companies.</span>
                     </div>
                     <img src="images/home/leadership/andrew_swinand.png">
                 </li>

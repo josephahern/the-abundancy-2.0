@@ -2,7 +2,7 @@
 
     #contact-form {
 
-        background-color: #c55227;
+        background-color: $abundancy-copper;
         padding: 120px 20px 55px 20px;
         display: block;
 
@@ -19,16 +19,16 @@
                 top: calc(55% - 125px);
 
                 .number {
-                    color: #aac3bc;
+                    color: $abundancy-foam-green;
                 }
 
                 .line {
-                    background-color: #aac3bc;
+                    background-color: $abundancy-foam-green;
                     margin-bottom: 25px;
                 }
 
                 .text {
-                    color: #441c12;
+                    color: $abundancy-brown;
                     margin-top: 35px;
                 }
             }
@@ -37,7 +37,7 @@
                 font-family: $font-family-primary;
                 font-weight: 500;
                 font-size: 18px;
-                color: #f8f9d2;
+                color: $abundancy-cream;
                 text-transform: uppercase;
                 margin-bottom: 5px;
                 display: block;
@@ -118,7 +118,7 @@
                             font-weight: normal;
                             font-size: 21px;
                             line-height: 26px;
-                            color: #f8f9d2;
+                            color: $abundancy-cream;
                             padding: 10px 0;
                             position: relative;
                             display: block;
@@ -296,15 +296,15 @@
                 top: calc(40% - 120px);
 
                 .number {
-                    color: #c55227;
+                    color: $abundancy-copper;
                 }
 
                 .line {
-                    background-color: #c55227;
+                    background-color: $abundancy-copper;
                 }
 
                 .text {
-                    color: #aac3bc;
+                    color: $abundancy-foam-green;
                     margin-top: 25px;
                 }
 
@@ -322,7 +322,7 @@
                         font-family: $font-family-primary;
                         font-weight: bold;
                         font-size: 36px;
-                        color: #c55227;
+                        color: $abundancy-copper;
                         text-transform: uppercase;
                         margin-bottom: 35px;
                     }
@@ -341,7 +341,7 @@
                             width: 90%;
                             color: #000;
                             padding: 20px 0;
-                            border-bottom: 1px solid #dddddc;
+                            border-bottom: 1px solid $abundancy-off-white;
                             position: relative;
 
                             &:first-child {
@@ -377,7 +377,7 @@
                                 font-family: $font-family-primary;
                                 font-weight: bold;
                                 font-size: 11px;
-                                color: #c55227;
+                                color: $abundancy-copper;
                                 text-transform: uppercase;
                                 text-align: center;
                                 position: relative;
@@ -394,7 +394,7 @@
                     width: 30%;
                     min-width: 300px;
                     max-height: 375px;
-                    background-color: #dddddc;
+                    background-color: $abundancy-off-white;
                     display: flex;
                     flex-direction: column;
 
@@ -419,7 +419,7 @@
                         font-family: $font-family-primary;
                         font-weight: bold;
                         font-size: 11px;
-                        color: #c55227;
+                        color: $abundancy-copper;
                         text-transform: uppercase;
                         margin-top: 10px;
                         display: block;
@@ -452,7 +452,7 @@
                             font-family: $font-family-primary;
                             font-weight: bold;
                             font-size: 24px;
-                            color: #42403c;
+                            color: $abundancy-slate;
                             text-transform: uppercase;
                         }
 
@@ -460,7 +460,7 @@
                             font-family: $font-family-primary;
                             font-weight: bold;
                             font-size: 11px;
-                            color: #42403c;
+                            color: $abundancy-slate;
                             text-transform: uppercase;
                             margin-bottom: 5px;
                         }
@@ -586,7 +586,7 @@
                                 font-family: $font-family-primary;
                                 font-weight: bold;
                                 font-size: 22px;
-                                color: #42403c;
+                                color: $abundancy-slate;
                                 text-transform: uppercase;
                             }
 
@@ -594,7 +594,7 @@
                                 font-family: $font-family-primary;
                                 font-weight: bold;
                                 font-size: 11px;
-                                color: #42403c;
+                                color: $abundancy-slate;
                                 text-transform: uppercase;
                                 margin-top: 15px;
                                 margin-bottom: 0px;
@@ -677,7 +677,7 @@
                             font-family: $font-family-primary;
                             font-weight: bold;
                             font-size: 22px;
-                            color: #42403c;
+                            color: $abundancy-slate;
                             text-transform: uppercase;
                         }
 
@@ -685,7 +685,7 @@
                             font-family: $font-family-primary;
                             font-weight: bold;
                             font-size: 11px;
-                            color: #42403c;
+                            color: $abundancy-slate;
                             text-transform: uppercase;
                             margin-top: 15px;
                             margin-bottom: 0px;

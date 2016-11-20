@@ -54,14 +54,14 @@ section {
 // Primary page titles
 .primary {
 
-    background-color: #c55227;
+    background-color: $abundancy-copper;
     padding: 120px 15px 40px 15px;
 
     h1 {
         font-family: $font-family-primary;
         font-weight: 500;
         font-size: 18px;
-        color: #f8f9d2;
+        color: $abundancy-cream;
         text-transform: uppercase;
     }
 

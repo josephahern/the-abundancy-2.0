@@ -8,6 +8,14 @@
     .parallax {
 
         position: relative;
+        background-color: $abundancy-brown;
+        background-image: url('../images/pattern_plus-sign_2x.png');
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: 83px 82px;
+        background-position-y: -500px;
+        padding-top: 195px;
+        padding-bottom: 125px;
 
         .triangle {
             width: 27px;
@@ -24,23 +32,37 @@
             font-family: $font-family-primary;
             font-weight: 500;
             font-size: 18px;
-            color: #dddddc;
+            color: $abundancy-off-white;
             text-transform: uppercase;
         }
 
-        .container {
-            margin: auto;
-            padding: 195px 125px;
-            background-color: #441c12;
-            background-image: url('../images/pattern_plus-sign_2x.png');
-            background-attachment: fixed;
-            background-repeat: repeat;
-            background-size: 83px 82px;
-            background-position-y: -500px;
+        .column {
+
+            display: flex;
+            position: relative;
+            justify-content: center;
+            flex-direction: column;
+
+            .vertical-title {
+
+                top: calc(15% - 120px);
+
+                .number {
+                    color: #95aea7;
+                }
+                .line {
+                    background-color: $abundancy-cream;
+                }
+                .text {
+                    color: $abundancy-copper;
+                }
+
+            }
 
             .text-block-one {
 
                 z-index: 2000;
+                max-width: 895px;
 
                 span {
 
@@ -49,9 +71,14 @@
 
                     &.small {
                         font-family: $font-family-primary;
-                        font-weight: 500;
+                        font-weight: bold;
                         font-size: 18px;
-                        color: #dddddc;
+                        color: $abundancy-off-white;
+
+                        span {
+                            display: inline-block;
+                        }
+
                     }
 
                     &.medium {
@@ -59,7 +86,7 @@
                         font-weight: bold;
                         font-size: 36px;
                         line-height: 46px;
-                        color: #dddddc;
+                        color: $abundancy-off-white;
                     }
 
                     &.large {
@@ -67,8 +94,8 @@
                         font-weight: bold;
                         font-size: 80px;
                         line-height: 80px;
-                        color: #c55227;
-                        padding: 10px 0;
+                        color: $abundancy-copper;
+                        padding: 0 0 15px;
                     }
 
                     #small-chosen {
@@ -85,7 +112,7 @@
                 font-family: $font-family-primary;
                 font-size: 60px;
                 font-weight: bold;
-                color: #f8f9d2;
+                color:$abundancy-cream;
                 text-transform: uppercase;
                 width: 100%;
                 display: block;
@@ -93,7 +120,7 @@
                 margin-top: 400px;
 
                 span {
-                    color: #c55227;
+                    color: $abundancy-copper;
 
                 }
 
@@ -149,8 +176,8 @@
         padding: 35px 0;
         display: block;
         position: relative;
-        background-color: #c55227;
-        background: linear-gradient(to right bottom, #c55227 50%, #aa451f 50%);
+        background-color: $abundancy-copper;
+        background: linear-gradient(to right bottom, $abundancy-copper 50%, #aa451f 50%);
         transition: max-height 3s ease;
         overflow: hidden;
 
@@ -168,14 +195,14 @@
                 font-weight: bold;
                 font-size: 36px;
                 line-height: 36px;
-                color: #441c12;
+                color: $abundancy-brown;
                 text-transform: uppercase;
                 margin: 0 0 36px 0;
                 position: relative;
                 z-index: 1000;
 
                 span {
-                    color: #ff9b20;
+                    color: $abundancy-gold;
                 }
 
             }
@@ -188,10 +215,10 @@
                     color: #95aea7;
                 }
                 .line {
-                    background-color: #f8f9d2;
+                    background-color: $abundancy-cream;
                 }
                 .text {
-                    color: #f8f9d2;
+                    color: $abundancy-cream;
                 }
 
             }
@@ -278,7 +305,7 @@
     }
 
     .leadership {
-        background-color: #b1aea7;
+        background-color: $abundancy-beige;
         display: block;
         padding: 155px 15px 80px 15px;
         overflow: hidden;
@@ -315,7 +342,7 @@
                 font-weight: bold;
                 font-size: 36px;
                 line-height: 36px;
-                color: #42403c;
+                color: $abundancy-slate;
                 text-transform: uppercase;
                 display: block;
                 max-width: 896px;
@@ -333,13 +360,13 @@
                 top: calc(20% - 120px);
 
                 .number {
-                    color: #c55227;
+                    color: $abundancy-copper;
                 }
                 .line {
-                    background-color: #f8f9d2;
+                    background-color: $abundancy-cream;
                 }
                 .text {
-                    color: #441c12;
+                    color: $abundancy-brown;
                     margin-top: 35px;
                 }
 
@@ -402,7 +429,7 @@
                             font-family: $font-family-primary;
                             font-weight: 500;
                             font-size: 10px;
-                            color: #f8f9d2;
+                            color: $abundancy-cream;
                             display: block;
                         }
 

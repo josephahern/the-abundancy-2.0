@@ -1,25 +1,4 @@
 @font-face {
-  font-family: 'Futura LT Pro';
-  src: url("fonts/futura/FuturaLTPro-Light.eot");
-  src: url("fonts/futura/FuturaLTPro-Light.eot?#iefix") format("embedded-opentype"), url("fonts/futura/FuturaLTPro-Light.woff2") format("woff2"), url("fonts/futura/FuturaLTPro-Light.woff") format("woff"), url("fonts/futura/FuturaLTPro-Light.ttf") format("truetype"), url("fonts/futura/FuturaLTPro-Light.svg#FuturaLTPro-Light") format("svg");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Futura LT Pro';
-  src: url("fonts/futura/FuturaLTPro-Medium.eot");
-  src: url("fonts/futura/FuturaLTPro-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/futura/FuturaLTPro-Medium.woff2") format("woff2"), url("fonts/futura/FuturaLTPro-Medium.woff") format("woff"), url("fonts/futura/FuturaLTPro-Medium.ttf") format("truetype"), url("fonts/futura/FuturaLTPro-Medium.svg#FuturaLTPro-Medium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Futura LT Pro';
-  src: url("fonts/futura/FuturaLTPro-Bold.eot");
-  src: url("fonts/futura/FuturaLTPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/futura/FuturaLTPro-Bold.woff2") format("woff2"), url("fonts/futura/FuturaLTPro-Bold.woff") format("woff"), url("fonts/futura/FuturaLTPro-Bold.ttf") format("truetype"), url("fonts/futura/FuturaLTPro-Bold.svg#FuturaLTPro-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
   font-family: 'Klinic Slab';
   src: url("fonts/klinic/KlinicSlab-Light.eot");
   src: url("fonts/klinic/KlinicSlab-Light.eot?#iefix") format("embedded-opentype"), url("fonts/klinic/KlinicSlab-Light.woff2") format("woff2"), url("fonts/klinic/KlinicSlab-Light.woff") format("woff"), url("fonts/klinic/KlinicSlab-Light.ttf") format("truetype"), url("fonts/klinic/KlinicSlab-Light.svg#KlinicSlab-Light") format("svg");
@@ -87,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .vertical-title {
   position: absolute;
-  left: -5%;
+  left: -15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .vertical-title .number {
   color: #000000;
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -113,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: height 2s ease;
 }
 .vertical-title .text {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-size: 12px;
   color: #000000;
   text-transform: uppercase;
@@ -149,11 +128,11 @@ body, html {
 html {
   height: 100%;
   min-height: 100%;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 body {
-  color: white;
+  color: #FFFFFF;
   position: relative;
   min-height: 100%;
 }
@@ -175,18 +154,18 @@ section {
 }
 
 .primary {
-  background-color: #c55227;
+  background-color: #C55227;
   padding: 120px 15px 40px 15px;
 }
 .primary h1 {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  color: #f8f9d2;
+  color: #F8F9D2;
   text-transform: uppercase;
 }
 .primary h2 {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 36px;
   color: #ffffff;
@@ -217,8 +196,8 @@ a.btn {
   display: block;
 }
 a.btn.home {
-  color: #f8f9d2;
-  font-family: "Futura LT Pro", sans-serif;
+  color: #F8F9D2;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 10px;
   text-transform: uppercase;
@@ -228,38 +207,38 @@ a.btn.home.parallax-btn {
   height: 40px;
   width: 150px;
   line-height: 38px;
-  background-color: #441c12;
+  background-color: #441C12;
   transition: all 0.3s ease;
   margin: auto;
   margin-top: 35px;
-  border: 3px solid #c55227;
+  border: 3px solid #C55227;
 }
 a.btn.home.parallax-btn:hover {
-  color: #441c12;
-  background-color: #f8f9d2;
+  color: #441C12;
+  background-color: #F8F9D2;
 }
 a.btn.home.video-btn {
   height: 40px;
   width: 170px;
   line-height: 45px;
-  background-color: #441c12;
+  background-color: #441C12;
   transition: all 0.3s ease;
   margin-top: 48px;
 }
 a.btn.home.video-btn:hover {
-  color: #441c12;
-  background-color: #f8f9d2;
+  color: #441C12;
+  background-color: #F8F9D2;
 }
 a.btn.cases {
   box-sizing: border-box;
   display: inline-block;
-  color: #441c12;
-  font-family: "Futura LT Pro", sans-serif;
+  color: #441C12;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 11px;
   text-transform: uppercase;
   text-align: center;
-  border: 3px solid #c55227;
+  border: 3px solid #C55227;
 }
 a.btn.cases.more {
   height: 40px;
@@ -270,7 +249,7 @@ a.btn.cases.more {
 }
 a.btn.cases.more:hover {
   color: #ffffff;
-  background-color: #c55227;
+  background-color: #C55227;
 }
 @media only screen and (max-width: 760px) {
   a.btn.cases.more {
@@ -281,8 +260,8 @@ a.btn.cases.more:hover {
 }
 a.btn.contact {
   display: inline-block;
-  color: #f8f9d2;
-  font-family: "Futura LT Pro", sans-serif;
+  color: #F8F9D2;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 11px;
   text-transform: uppercase;
@@ -292,12 +271,12 @@ a.btn.contact.submit-btn {
   height: 40px;
   width: 145px;
   line-height: 44px;
-  background-color: #441c12;
+  background-color: #441C12;
   transition: all 0.3s ease;
 }
 a.btn.contact.submit-btn:hover {
-  color: #441c12;
-  background-color: #f8f9d2;
+  color: #441C12;
+  background-color: #F8F9D2;
 }
 
 img {
@@ -383,24 +362,24 @@ ul .modal .who {
   margin-bottom: 10px;
 }
 ul .modal .who .name {
-  font-family: "Futura LT Pro", sans-serif;
-  color: #42403c;
+  font-family: "Futura W01", sans-serif;
+  color: #42403C;
   font-size: 18px;
   font-weight: bold;
   display: inline-block;
   text-transform: uppercase;
 }
 ul .modal .who .seperator {
-  font-family: "Futura LT Pro", sans-serif;
-  color: #42403c;
+  font-family: "Futura W01", sans-serif;
+  color: #42403C;
   font-size: 18px;
   font-weight: bold;
   display: inline-block;
   text-transform: uppercase;
 }
 ul .modal .who .title {
-  font-family: "Futura LT Pro", sans-serif;
-  color: #42403c;
+  font-family: "Futura W01", sans-serif;
+  color: #42403C;
   font-size: 18px;
   font-weight: 300;
   display: inline-block;
@@ -416,8 +395,8 @@ ul .modal .right {
   width: 49%;
 }
 ul .modal .right .i_am_a {
-  font-family: "Futura LT Pro", sans-serif;
-  color: #c55227;
+  font-family: "Futura W01", sans-serif;
+  color: #C55227;
   font-size: 28px;
   font-weight: bold;
   display: block;
@@ -427,7 +406,7 @@ ul .modal .right .text {
   font-family: "Klinic Slab", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color: #42403c;
+  color: #42403C;
   display: block;
 }
 ul .modal.open {
@@ -535,7 +514,7 @@ nav#menu .close-button:after {
 
 footer {
   width: 100%;
-  background-color: #42403c;
+  background-color: #42403C;
   min-height: 145px;
   display: flex;
   justify-content: center;
@@ -578,7 +557,7 @@ footer .contain .navigation a:link, footer .contain .navigation a:visited, foote
   color: #fff;
 }
 footer .contain .navigation a:hover {
-  color: #c55227;
+  color: #C55227;
 }
 footer .contain .social {
   max-width: 160px;
@@ -693,6 +672,14 @@ footer .copyright {
 }
 #home .parallax {
   position: relative;
+  background-color: #441C12;
+  background-image: url("../images/pattern_plus-sign_2x.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 83px 82px;
+  background-position-y: -500px;
+  padding-top: 195px;
+  padding-bottom: 125px;
 }
 #home .parallax .triangle {
   width: 27px;
@@ -705,68 +692,80 @@ footer .copyright {
 }
 #home .parallax .chosen-series {
   position: absolute;
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  color: #dddddc;
+  color: #DDDDDC;
   text-transform: uppercase;
 }
-#home .parallax .container {
-  margin: auto;
-  padding: 195px 125px;
-  background-color: #441c12;
-  background-image: url("../images/pattern_plus-sign_2x.png");
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-size: 83px 82px;
-  background-position-y: -500px;
+#home .parallax .column {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
 }
-#home .parallax .container .text-block-one {
+#home .parallax .column .vertical-title {
+  top: calc(15% - 120px);
+}
+#home .parallax .column .vertical-title .number {
+  color: #95aea7;
+}
+#home .parallax .column .vertical-title .line {
+  background-color: #F8F9D2;
+}
+#home .parallax .column .vertical-title .text {
+  color: #C55227;
+}
+#home .parallax .column .text-block-one {
   z-index: 2000;
+  max-width: 895px;
 }
-#home .parallax .container .text-block-one span {
+#home .parallax .column .text-block-one span {
   display: block;
   text-transform: uppercase;
 }
-#home .parallax .container .text-block-one span.small {
-  font-family: "Futura LT Pro", sans-serif;
-  font-weight: 500;
+#home .parallax .column .text-block-one span.small {
+  font-family: "Futura W01", sans-serif;
+  font-weight: bold;
   font-size: 18px;
-  color: #dddddc;
+  color: #DDDDDC;
 }
-#home .parallax .container .text-block-one span.medium {
-  font-family: "Futura LT Pro", sans-serif;
+#home .parallax .column .text-block-one span.small span {
+  display: inline-block;
+}
+#home .parallax .column .text-block-one span.medium {
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 46px;
-  color: #dddddc;
+  color: #DDDDDC;
 }
-#home .parallax .container .text-block-one span.large {
-  font-family: "Futura LT Pro", sans-serif;
+#home .parallax .column .text-block-one span.large {
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 80px;
   line-height: 80px;
-  color: #c55227;
-  padding: 10px 0;
+  color: #C55227;
+  padding: 0 0 15px;
 }
-#home .parallax .container .text-block-one span #small-chosen {
+#home .parallax .column .text-block-one span #small-chosen {
   display: inline;
 }
-#home .parallax .container .get-chosen {
-  font-family: "Futura LT Pro", sans-serif;
+#home .parallax .column .get-chosen {
+  font-family: "Futura W01", sans-serif;
   font-size: 60px;
   font-weight: bold;
-  color: #f8f9d2;
+  color: #F8F9D2;
   text-transform: uppercase;
   width: 100%;
   display: block;
   text-align: center;
   margin-top: 400px;
 }
-#home .parallax .container .get-chosen span {
-  color: #c55227;
+#home .parallax .column .get-chosen span {
+  color: #C55227;
 }
-#home .parallax .container .clients {
+#home .parallax .column .clients {
   width: 100%;
   padding: 50px 0;
   margin: 0;
@@ -774,7 +773,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
 }
-#home .parallax .container .clients ul {
+#home .parallax .column .clients ul {
   width: 100%;
   max-width: 794px;
   display: -webkit-box;
@@ -792,7 +791,7 @@ footer .copyright {
   margin: 0;
   padding: 0;
 }
-#home .parallax .container .clients ul li {
+#home .parallax .column .clients ul li {
   list-style-type: none;
   margin: 20px 30px;
   padding: 0;
@@ -806,8 +805,8 @@ footer .copyright {
   padding: 35px 0;
   display: block;
   position: relative;
-  background-color: #c55227;
-  background: linear-gradient(to right bottom, #c55227 50%, #aa451f 50%);
+  background-color: #C55227;
+  background: linear-gradient(to right bottom, #C55227 50%, #aa451f 50%);
   transition: max-height 3s ease;
   overflow: hidden;
 }
@@ -820,18 +819,18 @@ footer .copyright {
   position: relative;
 }
 #home .video .column h3 {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
-  color: #441c12;
+  color: #441C12;
   text-transform: uppercase;
   margin: 0 0 36px 0;
   position: relative;
   z-index: 1000;
 }
 #home .video .column h3 span {
-  color: #ff9b20;
+  color: #FF9B20;
 }
 #home .video .column .vertical-title {
   top: calc(50% - 120px);
@@ -840,10 +839,10 @@ footer .copyright {
   color: #95aea7;
 }
 #home .video .column .vertical-title .line {
-  background-color: #f8f9d2;
+  background-color: #F8F9D2;
 }
 #home .video .column .vertical-title .text {
-  color: #f8f9d2;
+  color: #F8F9D2;
 }
 #home .video .column .video-container {
   display: block;
@@ -920,7 +919,7 @@ footer .copyright {
   }
 }
 #home .leadership {
-  background-color: #b1aea7;
+  background-color: #B1AEA7;
   display: block;
   padding: 155px 15px 80px 15px;
   overflow: hidden;
@@ -952,11 +951,11 @@ footer .copyright {
   flex-direction: column;
 }
 #home .leadership .column h3 {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
-  color: #42403c;
+  color: #42403C;
   text-transform: uppercase;
   display: block;
   max-width: 896px;
@@ -970,13 +969,13 @@ footer .copyright {
   top: calc(20% - 120px);
 }
 #home .leadership .column .vertical-title .number {
-  color: #c55227;
+  color: #C55227;
 }
 #home .leadership .column .vertical-title .line {
-  background-color: #f8f9d2;
+  background-color: #F8F9D2;
 }
 #home .leadership .column .vertical-title .text {
-  color: #441c12;
+  color: #441C12;
   margin-top: 35px;
 }
 #home .leadership .column ul {
@@ -1020,7 +1019,7 @@ footer .copyright {
   text-transform: uppercase;
 }
 #home .leadership .column ul li .details .name {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 14px;
   color: #ffffff;
@@ -1028,10 +1027,10 @@ footer .copyright {
   margin-bottom: 3px;
 }
 #home .leadership .column ul li .details .title {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: 500;
   font-size: 10px;
-  color: #f8f9d2;
+  color: #F8F9D2;
   display: block;
 }
 #home .leadership .column ul li .modal-content {
@@ -1076,7 +1075,7 @@ footer .copyright {
   padding-bottom: 50px;
   position: relative;
   overflow: hidden;
-  background-color: #c55227;
+  background-color: #C55227;
 }
 #approach .primary:after {
   position: absolute;
@@ -1086,7 +1085,7 @@ footer .copyright {
   height: 85%;
   display: block;
   content: '';
-  background: linear-gradient(to right bottom, #c55227 50%, #aa451f 50%);
+  background: linear-gradient(to right bottom, #C55227 50%, #aa451f 50%);
   z-index: -1;
 }
 #approach .primary .video-container {
@@ -1121,7 +1120,7 @@ footer .copyright {
 }
 #approach .primary .statement span {
   font-weight: bold;
-  color: #f8f9d2;
+  color: #F8F9D2;
 }
 @media only screen and (max-width: 750px) {
   #approach .primary .statement {
@@ -1149,7 +1148,7 @@ footer .copyright {
   display: block;
 }
 #approach .steps .step .block.title {
-  background-color: #441c12;
+  background-color: #441C12;
   background-image: url(../images/pattern_plus-sign_2x.png);
   background-repeat: repeat;
   background-size: 83px 82px;
@@ -1160,24 +1159,24 @@ footer .copyright {
   align-items: center;
 }
 #approach .steps .step .block.title .number {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 50px;
-  color: #c55227;
+  color: #C55227;
   margin-bottom: 20px;
 }
 #approach .steps .step .block.title .text {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 36px;
-  color: #f8f9d2;
+  color: #F8F9D2;
   padding-bottom: 5px;
   display: inline-block;
   border-bottom: 4px solid #c55227;
   margin-bottom: 35px;
 }
 #approach .steps .step .block.title .text span {
-  color: #c55227;
+  color: #C55227;
 }
 #approach .steps .step .block.infograph {
   background-color: #ffffff;
@@ -1192,7 +1191,7 @@ footer .copyright {
   font-family: "Klinic Slab", sans-serif;
   font-weight: normal;
   font-size: 24px;
-  color: #42403c;
+  color: #42403C;
 }
 @media only screen and (max-width: 750px) {
   #approach .steps .step.even {
@@ -1207,7 +1206,7 @@ footer .copyright {
     display: block;
   }
   #approach .steps .step .block.title {
-    background-color: #441c12;
+    background-color: #441C12;
     background-image: url(../images/pattern_plus-sign_2x.png);
     background-repeat: repeat;
     background-size: 83px 82px;
@@ -1217,23 +1216,23 @@ footer .copyright {
     align-items: center;
   }
   #approach .steps .step .block.title .number {
-    font-family: "Futura LT Pro", sans-serif;
+    font-family: "Futura W01", sans-serif;
     font-weight: bold;
     font-size: 28px;
-    color: #c55227;
+    color: #C55227;
     margin: 20px 0 5px 0;
   }
   #approach .steps .step .block.title .text {
-    font-family: "Futura LT Pro", sans-serif;
+    font-family: "Futura W01", sans-serif;
     font-weight: bold;
     font-size: 22px;
-    color: #f8f9d2;
+    color: #F8F9D2;
     padding-bottom: 5px;
     display: inline-block;
-    border-bottom: 4px solid #c55227;
+    border-bottom: 4px solid #C55227;
   }
   #approach .steps .step .block.title .text span {
-    color: #c55227;
+    color: #C55227;
   }
   #approach .steps .step .block.infograph {
     padding: 30px 20px;
@@ -1247,14 +1246,14 @@ footer .copyright {
   }
 }
 #approach .capabilities {
-  background-color: #dddddc;
+  background-color: #DDDDDC;
   min-height: 260px;
   padding-top: 55px;
   padding-bottom: 55px;
   display: block;
 }
 #approach .capabilities .column .title {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #c55227;
@@ -1271,10 +1270,10 @@ footer .copyright {
 }
 #approach .capabilities .column .container .block span {
   display: block;
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 21px;
-  color: #42403c;
+  color: #42403C;
   margin-bottom: 15px;
 }
 @media only screen and (max-width: 750px) {
@@ -1316,10 +1315,10 @@ footer .copyright {
   max-width: 380px;
 }
 #cases .case .small .block .title {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 32px;
-  color: #c55227;
+  color: #C55227;
   display: block;
   background-color: transparent;
   margin: 0;
@@ -1417,13 +1416,13 @@ footer .copyright {
   left: -13%;
 }
 #culture .primary .column .vertical-title .number {
-  color: #aac3bc;
+  color: #AAC3BC;
 }
 #culture .primary .column .vertical-title .line {
-  background-color: #f8f9d2;
+  background-color: #F8F9D2;
 }
 #culture .primary .column .vertical-title .text {
-  color: #f8f9d2;
+  color: #F8F9D2;
   margin-top: 35px;
 }
 #culture .primary .column .instagram-feed {
@@ -1480,29 +1479,29 @@ footer .copyright {
   align-items: center;
 }
 #culture .values .value .block.title .number {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 50px;
-  color: #aac3bc;
+  color: #AAC3BC;
   margin-bottom: 20px;
   z-index: 1000;
 }
 #culture .values .value .block.title .text {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 36px;
-  color: #f8f9d2;
+  color: #F8F9D2;
   padding-bottom: 5px;
   display: inline-block;
-  border-bottom: 4px solid #aac3bc;
+  border-bottom: 4px solid #AAC3BC;
   margin-bottom: 35px;
   z-index: 1000;
 }
 #culture .values .value .block.title .text span {
-  color: #aac3bc;
+  color: #AAC3BC;
 }
 #culture .values .value .block.infograph {
-  background-color: #aac3bc;
+  background-color: #AAC3BC;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1575,17 +1574,17 @@ footer .copyright {
   }
 }
 #culture .capabilities {
-  background-color: #dddddc;
+  background-color: #DDDDDC;
   min-height: 260px;
   padding-top: 55px;
   padding-bottom: 55px;
   display: block;
 }
 #culture .capabilities .column .title {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  color: #c55227;
+  color: #C55227;
   display: block;
   margin-bottom: 20px;
 }
@@ -1599,15 +1598,15 @@ footer .copyright {
 }
 #culture .capabilities .column .container .block span {
   display: block;
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 21px;
-  color: #42403c;
+  color: #42403C;
   margin-bottom: 15px;
 }
 
 #contact #contact-form {
-  background-color: #c55227;
+  background-color: #C55227;
   padding: 120px 20px 55px 20px;
   display: block;
 }
@@ -1621,27 +1620,27 @@ footer .copyright {
   top: calc(55% - 125px);
 }
 #contact #contact-form .column .vertical-title .number {
-  color: #aac3bc;
+  color: #AAC3BC;
 }
 #contact #contact-form .column .vertical-title .line {
-  background-color: #aac3bc;
+  background-color: #AAC3BC;
   margin-bottom: 25px;
 }
 #contact #contact-form .column .vertical-title .text {
-  color: #441c12;
+  color: #441C12;
   margin-top: 35px;
 }
 #contact #contact-form .column h1 {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  color: #f8f9d2;
+  color: #F8F9D2;
   text-transform: uppercase;
   margin-bottom: 5px;
   display: block;
 }
 #contact #contact-form .column h2 {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 36px;
   color: #ffffff;
@@ -1672,7 +1671,7 @@ footer .copyright {
   float: right;
   border: none;
   border-radius: 0;
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-size: 18px;
   font-weight: normal;
   -webkit-appearance: none;
@@ -1706,11 +1705,11 @@ footer .copyright {
   pointer-events: none;
 }
 #contact #contact-form .column .fields .left .input .input-content {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: normal;
   font-size: 21px;
   line-height: 26px;
-  color: #f8f9d2;
+  color: #F8F9D2;
   padding: 10px 0;
   position: relative;
   display: block;
@@ -1855,13 +1854,13 @@ footer .copyright {
   top: calc(40% - 120px);
 }
 #contact #jobs .column .vertical-title .number {
-  color: #c55227;
+  color: #C55227;
 }
 #contact #jobs .column .vertical-title .line {
-  background-color: #c55227;
+  background-color: #C55227;
 }
 #contact #jobs .column .vertical-title .text {
-  color: #aac3bc;
+  color: #AAC3BC;
   margin-top: 25px;
 }
 #contact #jobs .column .recruiter-box {
@@ -1871,10 +1870,10 @@ footer .copyright {
   width: 70%;
 }
 #contact #jobs .column .recruiter-box .left h2 {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 36px;
-  color: #c55227;
+  color: #C55227;
   text-transform: uppercase;
   margin-bottom: 35px;
 }
@@ -1890,7 +1889,7 @@ footer .copyright {
   width: 90%;
   color: #000;
   padding: 20px 0;
-  border-bottom: 1px solid #dddddc;
+  border-bottom: 1px solid #DDDDDC;
   position: relative;
 }
 #contact #jobs .column .recruiter-box .left ul.openings li:first-child {
@@ -1909,7 +1908,7 @@ footer .copyright {
 }
 #contact #jobs .column .recruiter-box .left ul.openings li .type {
   width: 20%;
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 11px;
   color: #000000;
@@ -1919,10 +1918,10 @@ footer .copyright {
 }
 #contact #jobs .column .recruiter-box .left ul.openings li .read-more {
   width: 20%;
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 11px;
-  color: #c55227;
+  color: #C55227;
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -1933,7 +1932,7 @@ footer .copyright {
   width: 30%;
   min-width: 300px;
   max-height: 375px;
-  background-color: #dddddc;
+  background-color: #DDDDDC;
   display: flex;
   flex-direction: column;
 }
@@ -1952,10 +1951,10 @@ footer .copyright {
   display: block;
 }
 #contact #jobs .column .recruiter-box .right .directions {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 11px;
-  color: #c55227;
+  color: #C55227;
   text-transform: uppercase;
   margin-top: 10px;
   display: block;
@@ -1975,7 +1974,7 @@ footer .copyright {
   display: block;
 }
 #contact #jobs .column .recruiter-box .right span.digits-title {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 11px;
   color: #84827e;
@@ -1983,17 +1982,17 @@ footer .copyright {
   margin-bottom: 10px;
 }
 #contact #jobs .column .recruiter-box .right span.digits {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 24px;
-  color: #42403c;
+  color: #42403C;
   text-transform: uppercase;
 }
 #contact #jobs .column .recruiter-box .right span.follow {
-  font-family: "Futura LT Pro", sans-serif;
+  font-family: "Futura W01", sans-serif;
   font-weight: bold;
   font-size: 11px;
-  color: #42403c;
+  color: #42403C;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
@@ -2072,7 +2071,7 @@ footer .copyright {
     display: block;
   }
   #contact #jobs .column .recruiter-box .right span.digits-title {
-    font-family: "Futura LT Pro", sans-serif;
+    font-family: "Futura W01", sans-serif;
     font-weight: bold;
     font-size: 11px;
     color: #84827e;
@@ -2081,17 +2080,17 @@ footer .copyright {
     margin-bottom: 10px;
   }
   #contact #jobs .column .recruiter-box .right span.digits {
-    font-family: "Futura LT Pro", sans-serif;
+    font-family: "Futura W01", sans-serif;
     font-weight: bold;
     font-size: 22px;
-    color: #42403c;
+    color: #42403C;
     text-transform: uppercase;
   }
   #contact #jobs .column .recruiter-box .right span.follow {
-    font-family: "Futura LT Pro", sans-serif;
+    font-family: "Futura W01", sans-serif;
     font-weight: bold;
     font-size: 11px;
-    color: #42403c;
+    color: #42403C;
     text-transform: uppercase;
     margin-top: 15px;
     margin-bottom: 0px;
@@ -2136,7 +2135,7 @@ footer .copyright {
     display: block;
   }
   #contact #jobs .recruiter-box .right span.digits-title {
-    font-family: "Futura LT Pro", sans-serif;
+    font-family: "Futura W01", sans-serif;
     font-weight: bold;
     font-size: 11px;
     color: #84827e;
@@ -2145,17 +2144,17 @@ footer .copyright {
     margin-bottom: 10px;
   }
   #contact #jobs .recruiter-box .right span.digits {
-    font-family: "Futura LT Pro", sans-serif;
+    font-family: "Futura W01", sans-serif;
     font-weight: bold;
     font-size: 22px;
-    color: #42403c;
+    color: #42403C;
     text-transform: uppercase;
   }
   #contact #jobs .recruiter-box .right span.follow {
-    font-family: "Futura LT Pro", sans-serif;
+    font-family: "Futura W01", sans-serif;
     font-weight: bold;
     font-size: 11px;
-    color: #42403c;
+    color: #42403C;
     text-transform: uppercase;
     margin-top: 15px;
     margin-bottom: 0px;
@@ -2270,11 +2269,11 @@ animation-timing-function: linear;
 }
 
 .color-copper {
-  color: #c55227;
+  color: #C55227;
 }
 
 .color-gold {
-  color: #ff9b20;
+  color: #FF9B20;
 }
 
 .slide {
@@ -2304,18 +2303,18 @@ animation-timing-function: linear;
   left: 0;
   width: 100%;
   height: 75%;
-  background: -moz-linear-gradient(top, rgba(68, 28, 18, 0) 0%, #441c12 100%);
+  background: -moz-linear-gradient(top, rgba(68, 28, 18, 0) 0%, #441C12 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(68, 28, 18, 0) 0%, #441c12 100%);
+  background: -webkit-linear-gradient(top, rgba(68, 28, 18, 0) 0%, #441C12 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(68, 28, 18, 0) 0%, #441c12 100%);
+  background: linear-gradient(to bottom, rgba(68, 28, 18, 0) 0%, #441C12 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00441c12', endColorstr='#441c12',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00441c12', endColorstr=$abundancy-brown,GradientType=0 );
   /* IE6-9 */
 }
 
 #home-second {
-  background: #441c12;
+  background: #441C12;
 }
 
 .text-box {
