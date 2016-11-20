@@ -4,6 +4,16 @@
 <div id="container"></div>
 <div id="home">
     <div class="parallax row" id="intro">
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
         <div class="column">
             <div class="vertical-title">
                 <span class="number">01</span>
