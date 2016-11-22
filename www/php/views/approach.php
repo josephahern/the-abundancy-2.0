@@ -4,7 +4,15 @@
     <section class="row primary">
         <div class="column">
             <h1>Our Approach</h1>
-            <h2>We're all about the janes</h2>
+            <div class="title-shuffle">
+                <h2>We're all about</h2>
+                <div id="shuffler">
+                    <span class="option">the Janes</span>
+                    <span class="option">the Sams</span>
+                    <span class="option">the Benjamins</span>
+                    <span class="option">People</span>
+                </div>
+            </div>
             <div class='video-container'>
                 <div class="video-object">
                     <iframe src='https://player.vimeo.com/video/43417094' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
@@ -16,7 +24,7 @@
         </div>
     </section>
     <section class="steps">
-        <div class="step odd">
+        <div class="step odd parallax">
             <div class="block title">
                 <div class="number">1</div>
                 <div class="text">Listen Up<span>.</span></div>
@@ -26,7 +34,7 @@
                 <div class="summary">We analyze search and behavioral data to understand what people are seeking now, and in the future.</div>
             </div>
         </div>
-        <div class="step even">
+        <div class="step even parallax">
             <div class="block title">
                 <div class="number">2</div>
                 <div class="text">Matter More<span>.</span></div>
@@ -36,7 +44,7 @@
                 <div class="summary">Based on this data, we create content and experiences that respect and respond to people’s desires.</div>
             </div>
         </div>
-        <div class="step odd">
+        <div class="step odd parallax">
             <div class="block title">
                 <div class="number">3</div>
                 <div class="text">Connect Better<span>.</span></div>
@@ -46,7 +54,7 @@
                 <div class="summary">Using new technology, we efficiently reach people with the right message at the right moment.</div>
             </div>
         </div>
-        <div class="step even">
+        <div class="step even parallax">
             <div class="block title">
                 <div class="number">4</div>
                 <div class="text">Learn Faster<span>.</span></div>

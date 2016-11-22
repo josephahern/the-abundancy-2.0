@@ -12,13 +12,13 @@
             <div class="block">
                 <span class="title">U.S. Cellular<sup>&reg;</sup></span>
                 <span class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque massa sit amet ornare elementum.</span>
-                <a href="#" class="btn cases more">More</a>
+                <a href="/case-studies/us-cellular" class="btn cases more">More</a>
             </div>
         </div>
-        <div class="large"></div>
+        <div class="large wow slideInRight"></div>
     </div>
     <div class="case" id="ulta-case">
-        <div class="large"></div>
+        <div class="large wow slideInLeft"></div>
         <div class="small">
             <div class="block">
                 <span class="title">Ulta</span>
@@ -35,10 +35,10 @@
                 <a href="#" class="btn cases more">More</a>
             </div>
         </div>
-        <div class="large"></div>
+        <div class="large wow slideInRight"></div>
     </div>
     <div class="case" id="jh-case">
-        <div class="large"></div>
+        <div class="large wow slideInLeft"></div>
         <div class="small">
             <div class="block">
                 <span class="title">Jackson Hewitt</span>

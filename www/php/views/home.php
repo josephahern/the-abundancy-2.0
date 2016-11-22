@@ -4,16 +4,6 @@
 <div id="container"></div>
 <div id="home">
     <div class="parallax row" id="intro">
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
         <div class="column">
             <div class="vertical-title">
                 <span class="number">01</span>
@@ -37,7 +27,7 @@
                     <li><a href="#"><img src="images/home/clients/lincoln_park_zoo.png" width="113" alt="Lincoln Park Zoo"></a></li>
                     <li><a href="#"><img src="images/home/clients/sunpower.png" width="141" alt="Sun Power"></a></li>
                     <li><a href="#"><img src="images/home/clients/ulta.png" width="81" alt="Ulta"></a></li>
-                    <li><a href="#"><img src="images/home/clients/campbells.png" width="145" alt="Campbell's"></a></li>
+                    <li><a href="#"><img src="images/home/clients/campbells.png" width="100" alt="Campbell's"></a></li>
                     <li><a href="#"><img src="images/home/clients/conagra.png" width="92" alt="ConAgra Foods"></a></li>
                     <li><a href="#"><img src="images/home/clients/jackson_hewitt.png" width="136" alt="Jackson Hewitt"></a></li>
                     <li><a href="#"><img src="images/home/clients/caterpillar.png" width="100" alt="Caterpillar"></a></li>
@@ -100,7 +90,7 @@
                         <span class="modal-i_am_a">I am a Veteran</span>
                         <span class="modal-bio">Andrew is our fearless leader and resident tall guy. He was President of Starcom MediaVest Group, partnering with world’s biggest brands like P&G, Coke, Disney, Microsoft, and Samsung. Prior to that, he worked at P&G in brand management in Beauty Care. Andrew has been named one of the “40 under 40” by Crain’s Chicago Business, and was inducted into the American Advertising Federation Hall of Achievement in 2008. He proudly served his country as a platoon leader in the U.S. Army, and has a passion for growing everything from gardens to new companies.</span>
                     </div>
-                    <img src="images/home/leadership/andrew_swinand.png">
+                    <img src="images/home/leadership/andrew_swinand.jpg">
                 </li>
                 <li data-person="brenda_strong">
                     <div class="details">
@@ -113,7 +103,7 @@
                         <span class="modal-i_am_a">Adjective</span>
                         <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
                     </div>
-                    <img src="images/home/leadership/brenda_strong.png">
+                    <img src="images/home/leadership/brenda_strong.jpg">
                 </li>
                 <li data-person="brain_schinazi">
                     <div class="details">
@@ -126,7 +116,7 @@
                         <span class="modal-i_am_a">Adjective</span>
                         <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
                     </div>
-                    <img src="images/home/leadership/brian_schinazi.png">
+                    <img src="images/home/leadership/brian_schinazi.jpg">
                 </li>
                 <li data-person="bryan_simkins">
                     <div class="details">
@@ -139,7 +129,7 @@
                         <span class="modal-i_am_a">Adjective</span>
                         <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
                     </div>
-                    <img src="images/home/leadership/bryan_simkins.png">
+                    <img src="images/home/leadership/bryan_simkins.jpg">
                 </li>
                 <li data-person="caitlin_winkworth">
                     <div class="details">
@@ -152,7 +142,7 @@
                         <span class="modal-i_am_a">Adjective</span>
                         <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
                     </div>
-                    <img src="images/home/leadership/caitlin_winkworth.png">
+                    <img src="images/home/leadership/caitlin_winkworth.jpg">
                 </li>
                 <li data-person="chris_marshall">
                     <div class="details">
@@ -165,7 +155,7 @@
                         <span class="modal-i_am_a">Adjective</span>
                         <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
                     </div>
-                    <img src="images/home/leadership/chris_marshall.png">
+                    <img src="images/home/leadership/chris_marshall.jpg">
                 </li>
                 <li data-person="david_brown">
                     <div class="details">
@@ -178,7 +168,7 @@
                         <span class="modal-i_am_a">Adjective</span>
                         <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
                     </div>
-                    <img src="images/home/leadership/david_brown.png">
+                    <img src="images/home/leadership/david_brown.jpg">
                 </li>
                 <li data-person="debbie_myszynski">
                     <div class="details">
@@ -191,7 +181,7 @@
                         <span class="modal-i_am_a">Adjective</span>
                         <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
                     </div>
-                    <img src="images/home/leadership/deb_myszynski.png">
+                    <img src="images/home/leadership/deb_myszynski.jpg">
                 </li>
                 <li data-person="katie_newman">
                     <div class="details">
@@ -204,7 +194,7 @@
                         <span class="modal-i_am_a">Adjective</span>
                         <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
                     </div>
-                    <img src="images/home/leadership/katie_newman.png">
+                    <img src="images/home/leadership/katie_newman.jpg">
                 </li>
                 <li data-person="larry_byrne">
                     <div class="details">
@@ -217,7 +207,7 @@
                         <span class="modal-i_am_a">Adjective</span>
                         <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
                     </div>
-                    <img src="images/home/leadership/larry_byrne.png">
+                    <img src="images/home/leadership/larry_byrne.jpg">
                 </li>
                 <li data-person="melissa_healy">
                     <div class="details">
@@ -230,7 +220,7 @@
                         <span class="modal-i_am_a">Adjective</span>
                         <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
                     </div>
-                    <img src="images/home/leadership/melissa_healy.png">
+                    <img src="images/home/leadership/melissa_healy.jpg">
                 </li>
                 <li data-person="suzanna_michaels">
                     <div class="details">
@@ -243,7 +233,7 @@
                         <span class="modal-i_am_a">Adjective</span>
                         <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
                     </div>
-                    <img src="images/home/leadership/suzanne_michaels.png">
+                    <img src="images/home/leadership/suzanne_michaels.jpg">
                 </li>
                 <li data-person="stephanie_ridley">
                     <div class="details">
@@ -256,7 +246,7 @@
                         <span class="modal-i_am_a">Adjective</span>
                         <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
                     </div>
-                    <img src="images/home/leadership/stephanie_ridley.png">
+                    <img src="images/home/leadership/stephanie_ridley.jpg">
                 </li>
                 <li data-person=tom_hack">
                     <div class="details">
@@ -269,7 +259,7 @@
                         <span class="modal-i_am_a">Adjective</span>
                         <span class="modal-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus.</span>
                     </div>
-                    <img src="images/home/leadership/tom_hack.png">
+                    <img src="images/home/leadership/tom_hack.jpg">
                 </li>
             </ul>
         </div>

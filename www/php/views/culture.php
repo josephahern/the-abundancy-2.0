@@ -9,7 +9,14 @@
                     <span class="text">In the wild</span>
                 </div>
                 <h1>Our Culture</h1>
-                <h2>We are inventors</h2>
+                <div class="title-shuffle">
+                    <h2>We are</h2>
+                    <div id="shuffler">
+                        <span class="option">inventors</span>
+                        <span class="option">cat lovers</span>
+                        <span class="option">cooks</span>
+                    </div>
+                </div>
                 <div class='instagram-feed'>
                 </div>
             </div>

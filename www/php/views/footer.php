@@ -33,6 +33,13 @@
 <script src="js/app.js"></script>
 <script>
     new WOW().init();
+    $(document).ready(function(){
+        $("#shuffler").slotMachine({
+            active	: 1,
+            delay	: 450,
+            auto	: 1500
+        });
+    });
 </script>
 </body>
 </html>

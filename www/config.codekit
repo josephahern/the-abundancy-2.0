@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19127",
+"creatorBuild": "19137",
 "files": {
 	"\/composer.json": {
 		"fileType": 524288,
@@ -231,7 +231,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2443,
+		"initialSize": 2386,
 		"inputAbbreviatedPath": "\/images\/home\/clients\/caterpillar.png",
 		"outputAbbreviatedPath": "\/images\/home\/clients\/caterpillar.png",
 		"outputPathIsOutsideProject": 0,
@@ -253,7 +253,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4644,
+		"initialSize": 4615,
 		"inputAbbreviatedPath": "\/images\/home\/clients\/jackson_hewitt.png",
 		"outputAbbreviatedPath": "\/images\/home\/clients\/jackson_hewitt.png",
 		"outputPathIsOutsideProject": 0,
@@ -297,7 +297,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4479,
+		"initialSize": 4478,
 		"inputAbbreviatedPath": "\/images\/home\/clients\/uscellular.png",
 		"outputAbbreviatedPath": "\/images\/home\/clients\/us cellular.png",
 		"outputPathIsOutsideProject": 0,
@@ -1804,7 +1804,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Joe Ahern",
+"lastSavedByUser": "Joseph Ahern",
 "manualImportLinks": {
 	},
 "projectAttributes": {

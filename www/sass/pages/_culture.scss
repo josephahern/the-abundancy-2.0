@@ -7,6 +7,33 @@
     overflow: hidden;
     background-color: #84827e;
 
+    .title-shuffle {
+
+      h2 {
+        display: inline-block;
+      }
+
+      #shuffler {
+        width: 400px;
+        height: 41px;
+        display: inline-block;
+        overflow: hidden;
+        margin-left: 6px;
+
+        .option {
+          display: block;
+          width: 100%;
+          height: 50px;
+          font-size: 36px;
+          font-family: $font-family-primary;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+      }
+
+    }
+
     &:after {
       position: absolute;
       bottom: 0;

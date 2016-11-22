@@ -7,6 +7,34 @@
         overflow: hidden;
         background-color: $abundancy-copper;
 
+        .title-shuffle {
+
+            h2 {
+                display: inline-block;
+            }
+
+            #shuffler {
+                width: 400px;
+                height: 42px;
+                display: inline-block;
+                overflow: hidden;
+                margin-left: 6px;
+
+                .option {
+                    display: block;
+                    width: 100%;
+                    height: 50px;
+                    font-size: 36px;
+                    font-family: $font-family-primary;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+
+            }
+
+        }
+
+
         &:after {
             position: absolute;
             bottom: 0px;

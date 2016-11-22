@@ -33,6 +33,11 @@ $router->map( 'GET', '/case-studies', function() {
     require __DIR__ . '/php/views/cases.php';
 }, 'cases');
 
+$router->map( 'GET', '/case-studies/us-cellular', function() {
+    require __DIR__ . '/php/views/case-studies/uscellular.php';
+}, 'uscellular');
+
+
 //
 // Culture Page
 //

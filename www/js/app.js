@@ -40,12 +40,33 @@
 
         }
 
+        /* Parallax */
+        if($(".parallax").length){
+
+            var parallax = document.querySelectorAll(".parallax"),
+                speed = 0.15;
+
+            window.onscroll = function(){
+                [].slice.call(parallax).forEach(function(el,i){
+
+                    var windowYOffset = window.pageYOffset,
+                        elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
+
+                    el.style.backgroundPosition = elBackgrounPos;
+
+                });
+            };
+
+        }
+
     //PAGES
 
         /* Home */
         if($("#home").length){
 
             console.log("The Abundancy / Home");
+
+            var modal = $(".modal");
 
             $(".triangle").each(function(){
                 var triangle = $(this),
@@ -58,13 +79,20 @@
                 TweenMax.to(triangle, 50, { bezier: { type: 'thru', values: bezier_path,curviness: 1, autoRotate: true}, ease: Power1.easeInOut, yoyo: true, repeat:-1});
 
             });
-            
+
             $(".leadership li").on("click", function(){
-                $(".modal").toggleClass("open");
+
+                modal.css({top: $(this).position().top});
+                modal.toggleClass("open animated fadeInUp");
+
+                $('html, body').animate({
+                    scrollTop: (modal.offset().top - modal.outerHeight())
+                }, 2000);
+                
             });
 
             $(".modal-button").on("click", function(){
-                $(".modal").toggleClass("open");
+                $(".modal").toggleClass("open animated fadeInUp");
             });
             
             function generateStringPercentage() {
