@@ -2,7 +2,7 @@
 
   .primary {
 
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     position: relative;
     overflow: hidden;
     background-color: #84827e;
@@ -102,7 +102,33 @@
 
     }
 
+    #background-logo {
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+      z-index: 400;
+    }
 
+    .bottom-title {
+      font-family: $font-family-primary;
+      font-size: 21px;
+      font-weight: bold;
+      color: $abundancy-slate;
+      width: 100%;
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      z-index: 1000;
+
+      @media only screen and (max-width: 750px){
+        width: 50%;
+        transition: all 0.3s ease;
+      }
+
+    }
 
   }
 

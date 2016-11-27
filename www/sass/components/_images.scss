@@ -4,3 +4,33 @@ img {
   max-width: 100%;
   display: inline-block;
 }
+
+.bouncing-logo {
+  display: block;
+  width: 123px;
+  height: 92px;
+  background-image: url('../images/icons/bouncing_icon.png');
+  position: absolute;
+
+  &.icon-1 {
+    -webkit-animation: moveX1 80s linear 0s infinite alternate, moveY1 80s linear 0s infinite alternate;
+    -moz-animation: moveX1 80s linear 0s infinite alternate, moveY1 80s linear 0s infinite alternate;
+    -o-animation: moveX1 80s linear 0s infinite alternate, moveY1 80s linear 0s infinite alternate;
+    animation: moveX1 80s linear 0s infinite alternate, moveY1 80s linear 0s infinite alternate;
+  }
+
+  &.icon-2 {
+    -webkit-animation: moveX2 60s linear 0s infinite alternate, moveY2 60s linear 0s infinite alternate;
+    -moz-animation: moveX2 60s linear 0s infinite alternate, moveY2 60s linear 0s infinite alternate;
+    -o-animation: moveX2 60s linear 0s infinite alternate, moveY2 60s linear 0s infinite alternate;
+    animation: moveX2 60s linear 0s infinite alternate, moveY2 60s linear 0s infinite alternate;
+  }
+
+  &.icon-3 {
+    -webkit-animation: moveX3 70s linear 0s infinite alternate, moveY3 70s linear 0s infinite alternate;
+    -moz-animation: moveX3 70s linear 0s infinite alternate, moveY3 70s linear 0s infinite alternate;
+    -o-animation: moveX3 70s linear 0s infinite alternate, moveY3 70s linear 0s infinite alternate;
+    animation: moveX3 70s linear 0s infinite alternate, moveY3 70s linear 0s infinite alternate;
+  }
+
+}

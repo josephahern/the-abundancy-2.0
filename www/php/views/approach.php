@@ -2,6 +2,9 @@
 
 <div id="approach">
     <section class="row primary">
+        <div class="bouncing-logo icon-1"></div>
+        <div class="bouncing-logo icon-2"></div>
+        <div class="bouncing-logo icon-3"></div>
         <div class="column">
             <h1>Our Approach</h1>
             <div class="title-shuffle">

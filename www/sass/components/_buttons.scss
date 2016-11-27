@@ -17,16 +17,17 @@ a {
             &.parallax-btn {
                 height: 40px;
                 width: 150px;
-                line-height: 38px;
-                background-color: $abundancy-brown;
+                line-height: 37px;
+                background-color: transparent;
                 transition: all 0.3s ease;
                 margin: auto;
                 margin-top: 35px;
                 border: 3px solid $abundancy-copper;
 
                 &:hover {
-                    color: $abundancy-brown;
-                    background-color: $abundancy-cream;
+                    color: $abundancy-foam-green;
+                    background-color: transparent;
+                    border: 3px solid $abundancy-brown;
                 }
             }
 

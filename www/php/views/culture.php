@@ -20,6 +20,8 @@
                 <div class='instagram-feed'>
                 </div>
             </div>
+            <img id="background-logo" src="images/culture/background-logo.png">
+            <span class="bottom-title">We Stand By Six Things</span>
         </section>
     <section class="values">
             <div class="value odd">

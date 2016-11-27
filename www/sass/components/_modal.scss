@@ -4,13 +4,17 @@ ul .modal {
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  border: 10px solid #84827e;
+  border: 10px solid $abundancy-foam-green;
   z-index: 5000;
   padding: 40px;
   display: none;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media only screen and (max-width: 750px){
+    flex-direction: column;
+  }
 
   .modal-button {
     width: 30px;
@@ -94,6 +98,10 @@ ul .modal {
       width: 100%;
     }
 
+    @media only screen and (max-width: 750px){
+      width: 100%;
+    }
+
   }
 
   .right {
@@ -114,6 +122,10 @@ ul .modal {
       font-size: 16px;
       color: $abundancy-slate;
       display: block;
+    }
+
+    @media only screen and (max-width: 750px){
+      width: 100%;
     }
 
   }

@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19137",
+"creatorBuild": "19127",
 "files": {
 	"\/composer.json": {
 		"fileType": 524288,
@@ -150,6 +150,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/culture\/background-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14496,
+		"inputAbbreviatedPath": "\/images\/culture\/background-logo.png",
+		"outputAbbreviatedPath": "\/images\/culture\/background-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/culture\/letters\/letters-a.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -231,7 +242,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2386,
+		"initialSize": 2443,
 		"inputAbbreviatedPath": "\/images\/home\/clients\/caterpillar.png",
 		"outputAbbreviatedPath": "\/images\/home\/clients\/caterpillar.png",
 		"outputPathIsOutsideProject": 0,
@@ -253,7 +264,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4615,
+		"initialSize": 4644,
 		"inputAbbreviatedPath": "\/images\/home\/clients\/jackson_hewitt.png",
 		"outputAbbreviatedPath": "\/images\/home\/clients\/jackson_hewitt.png",
 		"outputPathIsOutsideProject": 0,
@@ -264,7 +275,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4782,
+		"initialSize": 4970,
 		"inputAbbreviatedPath": "\/images\/home\/clients\/lincoln_park_zoo.png",
 		"outputAbbreviatedPath": "\/images\/home\/clients\/lincoln_park_zoo.png",
 		"outputPathIsOutsideProject": 0,
@@ -293,167 +304,222 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/clients\/uscellular.png": {
+	"\/images\/home\/clients\/us cellular.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 4478,
+		"inputAbbreviatedPath": "\/images\/home\/clients\/us cellular.png",
+		"outputAbbreviatedPath": "\/images\/home\/clients\/us cellular.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/home\/clients\/uscellular.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4479,
 		"inputAbbreviatedPath": "\/images\/home\/clients\/uscellular.png",
 		"outputAbbreviatedPath": "\/images\/home\/clients\/us cellular.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/andrew_swinand.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/andrew_swinand.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 63420,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/andrew_swinand.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/andrew_swinand.png",
+		"initialSize": 34812,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/andrew_swinand.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/andrew_swinand.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/brenda_strong.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/brenda_strong.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 67879,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/brenda_strong.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/brenda_strong.png",
+		"initialSize": 39205,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/brenda_strong.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/brenda_strong.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/brian_schinazi.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/brian_schinazi.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 69393,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/brian_schinazi.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/brian_schinazi.png",
+		"initialSize": 38051,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/brian_schinazi.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/brian_schinazi.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/bryan_simkins.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/bryan_simkins.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 70905,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/bryan_simkins.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/bryan_simkins.png",
+		"initialSize": 38781,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/bryan_simkins.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/bryan_simkins.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/caitlin_winkworth.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/caitlin_winkworth.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 75395,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/caitlin_winkworth.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/caitlin_winkworth.png",
+		"initialSize": 42021,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/caitlin_winkworth.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/caitlin_winkworth.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/chris_marshall.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/chris_marshall.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 224753,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/chris_marshall.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/chris_marshall.png",
+		"initialSize": 29291,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/chris_marshall.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/chris_marshall.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/david_brown.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/david_brown.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 269219,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/david_brown.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/david_brown.png",
+		"initialSize": 32253,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/david_brown.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/david_brown.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/deb_myszynski.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/deb_myszynski.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 67041,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/deb_myszynski.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/deb_myszynski.png",
+		"initialSize": 36121,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/deb_myszynski.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/deb_myszynski.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/katie_newman.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/eric_langshur.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 340779,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/katie_newman.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/katie_newman.png",
+		"initialSize": 33967,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/eric_langshur.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/eric_langshur.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/larry_byrne.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/katie_newman.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 63791,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/larry_byrne.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/larry_byrne.png",
+		"initialSize": 33980,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/katie_newman.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/katie_newman.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/melissa_healy.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/larry_byrne.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 71888,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/melissa_healy.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/melissa_healy.png",
+		"initialSize": 33612,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/larry_byrne.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/larry_byrne.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/stephanie_ridley.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/linda_wolf.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 68176,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/stephanie_ridley.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/stephanie_ridley.png",
+		"initialSize": 40945,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/linda_wolf.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/linda_wolf.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/suzanne_michaels.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/mary_baglivo.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 61806,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/suzanne_michaels.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/suzanne_michaels.png",
+		"initialSize": 41022,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/mary_baglivo.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/mary_baglivo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/home\/leadership\/tom_hack.png": {
-		"fileType": 32768,
+	"\/images\/home\/leadership\/melissa_healy.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 62771,
-		"inputAbbreviatedPath": "\/images\/home\/leadership\/tom_hack.png",
-		"outputAbbreviatedPath": "\/images\/home\/leadership\/tom_hack.png",
+		"initialSize": 39418,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/melissa_healy.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/melissa_healy.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/home\/leadership\/stephanie_ridley.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37396,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/stephanie_ridley.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/stephanie_ridley.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/home\/leadership\/suzanne_michaels.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32704,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/suzanne_michaels.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/suzanne_michaels.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/home\/leadership\/tim_suther.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35224,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/tim_suther.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/tim_suther.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/home\/leadership\/tom_hack.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30970,
+		"inputAbbreviatedPath": "\/images\/home\/leadership\/tom_hack.jpg",
+		"outputAbbreviatedPath": "\/images\/home\/leadership\/tom_hack.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -498,6 +564,17 @@
 		"initialSize": 14710,
 		"inputAbbreviatedPath": "\/images\/home\/letters\/letters-w.png",
 		"outputAbbreviatedPath": "\/images\/home\/letters\/letters-w.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/bouncing_icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3579,
+		"inputAbbreviatedPath": "\/images\/icons\/bouncing_icon.png",
+		"outputAbbreviatedPath": "\/images\/icons\/bouncing_icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -698,23 +775,23 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/libs\/leadership.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/libs\/leadership.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/js\/libs\/leadership-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
 	"\/js\/libs\/min\/jquery.slotmachine.min-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/libs\/min\/jquery.slotmachine.min-min.js",
 		"outputAbbreviatedPath": "\/js\/libs\/min\/min\/jquery.slotmachine.min-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/libs\/min\/modernizr-min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/libs\/min\/modernizr-min.js",
+		"outputAbbreviatedPath": "\/js\/libs\/min\/min\/modernizr-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -791,6 +868,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/php\/views\/approach.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/php\/views\/case-studies\/uscellular.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/php\/views\/case-studies\/uscellular.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1804,7 +1890,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Joseph Ahern",
+"lastSavedByUser": "Joe Ahern",
 "manualImportLinks": {
 	},
 "projectAttributes": {

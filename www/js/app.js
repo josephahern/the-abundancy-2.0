@@ -28,7 +28,6 @@
                     var distanceFromTop = eTop - $(window).scrollTop();
 
                     if(distanceFromTop < 375 && !$(this).hasClass("active")){
-                        console.log("activated!");
                         $(this).addClass("active");
                     }
 
@@ -59,6 +58,17 @@
 
         }
 
+        /* Text Shuffle */
+
+        if($("#shuffler").length){
+
+            $("#shuffler").slotMachine({
+                auto : 1000,
+                direction: 'up'
+            });
+
+        }
+
     //PAGES
 
         /* Home */
@@ -82,6 +92,16 @@
 
             $(".leadership li").on("click", function(){
 
+                var name = $(this).find(".modal-name").text(),
+                    title = $(this).find(".modal-title").text(),
+                    iAmA = $(this).find(".modal-i_am_a").text(),
+                    bio = $(this).find(".modal-bio").text();
+
+                modal.find(".name").text(name);
+                modal.find(".title").text(title);
+                modal.find(".i_am_a").text(iAmA);
+                modal.find(".text").text(bio);
+
                 modal.css({top: $(this).position().top});
                 modal.toggleClass("open animated fadeInUp");
 
@@ -94,7 +114,31 @@
             $(".modal-button").on("click", function(){
                 $(".modal").toggleClass("open animated fadeInUp");
             });
-            
+
+            $(window).scroll(function() {
+
+                var chosenSmallOffsetTop = $("#get-chosen-small").offset().top,
+                    chosenLargeOffsetTop = $("#get-chosen-large").offset().top,
+                    chosenSmallOffsetLeft = $("#get-chosen-small").offset().left,
+                    chosenLargeOffsetLeft = $("#get-chosen-large").offset().left,
+                    distanceFromTop = chosenSmallOffsetTop - $(window).scrollTop();
+
+                if(distanceFromTop < 425 && chosenSmallOffsetTop <= chosenLargeOffsetTop){
+
+                    var distanceTopDifference = (425 - distanceFromTop),
+                        distanceLeftDifference = -((chosenSmallOffsetLeft - chosenLargeOffsetLeft) * (chosenLargeOffsetLeft/chosenSmallOffsetLeft));
+
+                    var fontSize = ((60 - 18) * (chosenSmallOffsetTop/chosenLargeOffsetTop));
+
+                    $("#get-chosen-small").css({
+                        top: distanceTopDifference,
+                        fontSize: fontSize + "px"
+                    });
+
+                }
+
+            });
+
             function generateStringPercentage() {
                 var min = 0,
                     max = 100,
