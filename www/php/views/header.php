@@ -17,7 +17,7 @@
 <nav id="menu">
     <button class="close-button" id="close-button">Close Menu</button>
     <a href="/approach">OUR APPROACH</a>
-    <a href="/case-studies">OUR WORK</a>
+    <a href="/work">OUR WORK</a>
     <a href="/culture">OUR CULTURE</a>
     <a href="/contact">CONTACT + CAREERS</a>
     <a href="/" id="menu-logo">

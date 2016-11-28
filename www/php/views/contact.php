@@ -56,32 +56,7 @@
             <div class="recruiter-box">
                 <div class="left">
                     <h2>We've got jobs</h2>
-                    <ul class="openings">
-                        <li>
-                            <div class="position">
-                                Sales Associate for Transparent Media Partners<br />
-                                Chicago, Illinois, United States
-                            </div>
-                            <div class="type">Full Time</div>
-                            <a href="#" class="read-more">Read More</a>
-                        </li>
-                        <li>
-                            <div class="position">
-                                Senior Strategist for The Abundancy<br />
-                                Chicago, Illinois, United States
-                            </div>
-                            <div class="type">Full Time</div>
-                            <a href="#" class="read-more">Read More</a>
-                        </li>
-                        <li>
-                            <div class="position">
-                                Copywriter for The Abundancy<br />
-                                Chicago, Illinois, United States
-                            </div>
-                            <div class="type">Full Time</div>
-                            <a href="#" class="read-more">Read More</a>
-                        </li>
-                    </ul>
+                    <ul class="openings"></ul>
                 </div>
                 <div class="right">
                     <div class="top">

@@ -4,6 +4,19 @@
 <div id="container"></div>
 <div id="home">
     <div class="parallax row" id="intro">
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
         <div class="column">
             <div class="vertical-title">
                 <span class="number">01</span>
@@ -11,13 +24,18 @@
                 <span class="text">On the Dailys</span>
             </div>
             <div class="text-block-one">
-                <span class="medium">We combine</span>
-                <span class="large">
-                    Creative<br />
+                <div class="medium">We combine</div>
+                <div class="large">
+                    Creative,<br />
                     Technology<br />
                     &amp; Analytics<br />
-                </span>
-                <span class="small">to create custom solutions that help brands <span id="get-chosen-small">get chosen.</span></span>
+                </div>
+                <div class="small">
+                    <span>to create custom solutions that help brands</span>
+                    <span class="wrapper">
+                        <div id="get-chosen-small">get chosen<span>.</span></div>
+                    </span>
+                </div>
             </div>
             <div class="get-chosen"><span id="get-chosen-large">Get chosen<span>.</span></span></div>
             <a href="/approach" class="btn home parallax-btn">Our Approach</a>
@@ -28,14 +46,14 @@
                     <span class="text">Brands like these</span>
                 </div>
                 <ul>
-                    <li><a href="#"><img src="images/home/clients/uscellular.png"  width="123" alt="U.S. Cellular"></a></li>
-                    <li><a href="#"><img src="images/home/clients/lincoln_park_zoo.png" width="113" alt="Lincoln Park Zoo"></a></li>
-                    <li><a href="#"><img src="images/home/clients/sunpower.png" width="141" alt="Sun Power"></a></li>
-                    <li><a href="#"><img src="images/home/clients/ulta.png" width="81" alt="Ulta"></a></li>
-                    <li><a href="#"><img src="images/home/clients/campbells.png" width="100" alt="Campbell's"></a></li>
-                    <li><a href="#"><img src="images/home/clients/conagra.png" width="92" alt="ConAgra Foods"></a></li>
-                    <li><a href="#"><img src="images/home/clients/jackson_hewitt.png" width="136" alt="Jackson Hewitt"></a></li>
-                    <li><a href="#"><img src="images/home/clients/caterpillar.png" width="100" alt="Caterpillar"></a></li>
+                    <li><a href="#"><img src="images/home/clients/uscellular.png" alt="U.S. Cellular"></a></li>
+                    <li><a href="#"><img src="images/home/clients/lincoln_park_zoo.png" alt="Lincoln Park Zoo"></a></li>
+                    <li><a href="#"><img src="images/home/clients/sunpower.png" alt="Sun Power"></a></li>
+                    <li><a href="#"><img src="images/home/clients/ulta.png" alt="Ulta"></a></li>
+                    <li><a href="#"><img src="images/home/clients/campbells.png" alt="Campbell's"></a></li>
+                    <li><a href="#"><img src="images/home/clients/conagra.png" alt="ConAgra Foods"></a></li>
+                    <li><a href="#"><img src="images/home/clients/jackson_hewitt.png" alt="Jackson Hewitt"></a></li>
+                    <li><a href="#"><img src="images/home/clients/caterpillar.png" alt="Caterpillar"></a></li>
                 </ul>
             </section>
         </div>
@@ -56,7 +74,7 @@
                     <iframe src='https://player.vimeo.com/aaeed76f-563a-41c1-b424-8f0a7bb358f7' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                 </div>
             </div>
-            <a href="/case-studies" class="btn home video-btn">See More Work</a>
+            <a href="/work" class="btn home video-btn">See More Work</a>
         </div>
         <div class="letters wow fadeInLeft" id="letter-w"></div>
         <div class="letters wow fadeInUp" id="letter-o"></div>

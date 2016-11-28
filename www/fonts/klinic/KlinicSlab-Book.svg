@@ -1,8 +1,8 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
-<svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20120731 at Tue Nov  1 00:00:00 2016
+Created by FontForge 20161013 at Sat Feb 16 05:03:08 2013
  By ,,,
 Joe Prince A^(c)2013. All Rights Reserved.
 </metadata>
@@ -20,7 +20,7 @@ Joe Prince A^(c)2013. All Rights Reserved.
     cap-height="609"
     bbox="-43 -271 1121 943"
     underline-thickness="50"
-    underline-position="-50"
+    underline-position="-150"
     unicode-range="U+0020-FB06"
   />
 <missing-glyph horiz-adv-x="425" 
@@ -2476,6 +2476,21 @@ q-46 14 -92 14q-79 0 -120 -47t-41 -127.5t43 -128t117.5 -47.5t143.5 43v-49q-67 -4
     <hkern g1="bracketleft.smcp" u2="&#x32;" k="14" />
     <hkern g1="bracketleft.smcp" u2="&#x30;" k="18" />
     <hkern g1="bracketright.smcp" u2="]" k="14" />
+    <hkern g1="zero"
+	g2="J,Jcircumflex"
+	k="15" />
+    <hkern g1="zero"
+	g2="T,Tcommaaccent,Tcaron,Tbar,uni021A"
+	k="15" />
+    <hkern g1="zero"
+	g2="U,Ugrave,Uacute,Ucircumflex,Udieresis,Utilde,Umacron,Ubreve,Uring,Uhungarumlaut,Uogonek"
+	k="15" />
+    <hkern g1="zero"
+	g2="W,Wcircumflex"
+	k="32" />
+    <hkern g1="zero"
+	g2="Y,Yacute,Ycircumflex,Ydieresis"
+	k="46" />
     <hkern g1="one"
 	g2="J,Jcircumflex"
 	k="14" />

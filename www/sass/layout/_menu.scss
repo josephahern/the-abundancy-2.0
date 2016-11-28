@@ -1,11 +1,11 @@
 nav#menu {
     width: 320px;
+    height: 100%;
+    min-height: 390px;
     display: block;
     background: #9bb7ae;
-    min-height: 500px;
-    height: 80%;
     position: fixed;
-    right: -320px;
+    right: -100%;
     top: 0;
     z-index: 8001;
     font-family: 'Futura', sans-serif;
@@ -13,7 +13,7 @@ nav#menu {
     font-weight: 400;
     letter-spacing: 0.05em;
     padding: 2.5em 0 2.5em 0.5em;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 
     &.open {
         right: 0;
@@ -85,6 +85,10 @@ nav#menu {
     .close-button:after {
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
+    }
+
+    @media only screen and (max-width: 550px){
+        width: 100%;
     }
 
 }

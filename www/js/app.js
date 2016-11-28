@@ -78,6 +78,7 @@
 
             var modal = $(".modal");
 
+            // Background flying triangles
             $(".triangle").each(function(){
                 var triangle = $(this),
                     randomDecimal = generateDecimal();
@@ -90,6 +91,7 @@
 
             });
 
+            // Leadership profile squares
             $(".leadership li").on("click", function(){
 
                 var name = $(this).find(".modal-name").text(),
@@ -111,33 +113,64 @@
                 
             });
 
+            // Modal close button
             $(".modal-button").on("click", function(){
                 $(".modal").toggleClass("open animated fadeInUp");
             });
 
-            $(window).scroll(function() {
+            // Animate Get Chosen text
 
-                var chosenSmallOffsetTop = $("#get-chosen-small").offset().top,
-                    chosenLargeOffsetTop = $("#get-chosen-large").offset().top,
-                    chosenSmallOffsetLeft = $("#get-chosen-small").offset().left,
-                    chosenLargeOffsetLeft = $("#get-chosen-large").offset().left,
-                    distanceFromTop = chosenSmallOffsetTop - $(window).scrollTop();
+            var chosenSmall = $("#get-chosen-small"),
+                chosenLarge = $("#get-chosen-large"),
+                chosenLargeOffsetTop = chosenLarge.offset().top;
 
-                if(distanceFromTop < 425 && chosenSmallOffsetTop <= chosenLargeOffsetTop){
+            var totalDistanceNeededToTravel = chosenLarge.offset().top - chosenSmall.offset().top;
+            var totalLeftDistanceNeededToTravel = chosenSmall.offset().left - chosenLarge.offset().left;
 
-                    var distanceTopDifference = (425 - distanceFromTop),
-                        distanceLeftDifference = -((chosenSmallOffsetLeft - chosenLargeOffsetLeft) * (chosenLargeOffsetLeft/chosenSmallOffsetLeft));
+            function animateGetChosen() {
 
-                    var fontSize = ((60 - 18) * (chosenSmallOffsetTop/chosenLargeOffsetTop));
+                if ($(window).width() > 680) {
 
-                    $("#get-chosen-small").css({
-                        top: distanceTopDifference,
-                        fontSize: fontSize + "px"
-                    });
+                    var bigTextBlockOffsetTop = $(".text-block-one .large").offset().top,
+                        distanceFromTop = bigTextBlockOffsetTop - $(window).scrollTop();
+
+                    var totalDistanceTraveled = totalDistanceNeededToTravel - (chosenLarge.offset().top - chosenSmall.offset().top),
+                        percentageTraveled = totalDistanceTraveled / totalDistanceNeededToTravel;
+
+                    if(distanceFromTop < 100 && chosenSmall.offset().top <= chosenLargeOffsetTop){
+
+                        var distanceTopDifference = (100 - distanceFromTop);
+
+                        var fontSize = 18 + ((60 - 18) * percentageTraveled);
+
+                        if (fontSize >= 60) {
+
+                            fontSize = 60;
+
+                            chosenSmall.css({
+                                color: '#F8F9D2'
+                            });
+
+                            chosenSmall.find("span").css({
+                                color: '#C55227'
+                            });
+                            
+                        }
+
+                        var leftOffset = -(totalLeftDistanceNeededToTravel * percentageTraveled);
+
+                        chosenSmall.css({
+                            top: distanceTopDifference,
+                            left: leftOffset,
+                            fontSize: fontSize + "px",
+                            lineHeight: fontSize + "px"
+                        });
+
+                    }
 
                 }
 
-            });
+            }
 
             function generateStringPercentage() {
                 var min = 0,
@@ -149,7 +182,20 @@
             function generateDecimal(){
                 return (Math.random()).toFixed(2);
             }
-            
+
+            function initHome(){
+                animateGetChosen();
+            }
+
+            // window.scroll()
+            $(window).scroll(function() {
+                animateGetChosen();
+            });
+
+            // window.resize()
+
+            initHome();
+
         }
 
         /* Our Approach */
@@ -211,8 +257,8 @@
                         var position = response.objects[x];
                         var formatted = '<li>' + '<div class="position">' + position.title + '<br />' +
                                         position.location.city + ', ' + position.location.state + ', ' + position.location.country +
-                                        '</div>' + '<div class="type">' + position.position_type + '</div>' +
-                                        '<a href="'+ position.hosted_url +'" class="read-more" target="_blank">' + position.position_type + '</a>' +
+                                        '</div>' + '<div class="type">' + position.position_type.replace(/[_-]/g, " ") + '</div>' +
+                                        '<a href="'+ position.hosted_url +'" class="read-more" target="_blank">READ MORE</a>' +
                                         '</li>';
                         $(".openings").append(formatted);
                     }

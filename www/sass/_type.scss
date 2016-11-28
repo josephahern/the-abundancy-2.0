@@ -2,98 +2,14 @@
 
 @font-face {
     font-family: 'Klinic Slab';
-    src: url('fonts/klinic/KlinicSlab-Light.eot');
-    src: url('fonts/klinic/KlinicSlab-Light.eot?#iefix') format('embedded-opentype'),
-    url('fonts/klinic/KlinicSlab-Light.woff2') format('woff2'),
-    url('fonts/klinic/KlinicSlab-Light.woff') format('woff'),
-    url('fonts/klinic/KlinicSlab-Light.ttf') format('truetype'),
-    url('fonts/klinic/KlinicSlab-Light.svg#KlinicSlab-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Klinic Slab';
-    src: url('fonts/klinic/KlinicSlab-LightItalic.eot');
-    src: url('fonts/klinic/KlinicSlab-LightItalic.eot?#iefix') format('embedded-opentype'),
-    url('fonts/klinic/KlinicSlab-LightItalic.woff2') format('woff2'),
-    url('fonts/klinic/KlinicSlab-LightItalic.woff') format('woff'),
-    url('fonts/klinic/KlinicSlab-LightItalic.ttf') format('truetype'),
-    url('fonts/klinic/KlinicSlab-LightItalic.svg#KlinicSlab-LightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Klinic Slab Book';
-    src: url('fonts/klinic/KlinicSlab-Book.eot');
-    src: url('fonts/klinic/KlinicSlab-Book.eot?#iefix') format('embedded-opentype'),
-    url('fonts/klinic/KlinicSlab-Book.woff2') format('woff2'),
-    url('fonts/klinic/KlinicSlab-Book.woff') format('woff'),
-    url('fonts/klinic/KlinicSlab-Book.ttf') format('truetype'),
-    url('fonts/klinic/KlinicSlab-Book.svg#KlinicSlab-Book') format('svg');
+    src: url('../fonts/klinic/KlinicSlab-Book.eot');
+    src: url('../fonts/klinic/KlinicSlab-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/klinic/KlinicSlab-Book.woff2') format('woff2'),
+    url('../fonts/klinic/KlinicSlab-Book.woff') format('woff'),
+    url('../fonts/klinic/KlinicSlab-Book.ttf') format('truetype'),
+    url('../fonts/klinic/KlinicSlab-Book.svg#KlinicSlab-Book') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Klinic Slab Book';
-    src: url('fonts/klinic/KlinicSlab-BookItalic.eot');
-    src: url('fonts/klinic/KlinicSlab-BookItalic.eot?#iefix') format('embedded-opentype'),
-    url('fonts/klinic/KlinicSlab-BookItalic.woff2') format('woff2'),
-    url('fonts/klinic/KlinicSlab-BookItalic.woff') format('woff'),
-    url('fonts/klinic/KlinicSlab-BookItalic.ttf') format('truetype'),
-    url('fonts/klinic/KlinicSlab-BookItalic.svg#KlinicSlab-BookItalic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Klinic Slab';
-    src: url('fonts/klinic/KlinicSlab-Medium.eot');
-    src: url('fonts/klinic/KlinicSlab-Medium.eot?#iefix') format('embedded-opentype'),
-    url('fonts/klinic/KlinicSlab-Medium.woff2') format('woff2'),
-    url('fonts/klinic/KlinicSlab-Medium.woff') format('woff'),
-    url('fonts/klinic/KlinicSlab-Medium.ttf') format('truetype'),
-    url('fonts/klinic/KlinicSlab-Medium.svg#KlinicSlab-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Klinic Slab';
-    src: url('fonts/klinic/KlinicSlab-MediumItalic.eot');
-    src: url('fonts/klinic/KlinicSlab-MediumItalic.eot?#iefix') format('embedded-opentype'),
-    url('fonts/klinic/KlinicSlab-MediumItalic.woff2') format('woff2'),
-    url('fonts/klinic/KlinicSlab-MediumItalic.woff') format('woff'),
-    url('fonts/klinic/KlinicSlab-MediumItalic.ttf') format('truetype'),
-    url('fonts/klinic/KlinicSlab-MediumItalic.svg#KlinicSlab-MediumItalic') format('svg');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Klinic Slab';
-    src: url('fonts/klinic/KlinicSlab-Bold.eot');
-    src: url('fonts/klinic/KlinicSlab-Bold.eot?#iefix') format('embedded-opentype'),
-    url('fonts/klinic/KlinicSlab-Bold.woff2') format('woff2'),
-    url('fonts/klinic/KlinicSlab-Bold.woff') format('woff'),
-    url('fonts/klinic/KlinicSlab-Bold.ttf') format('truetype'),
-    url('fonts/klinic/KlinicSlab-Bold.svg#KlinicSlab-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Klinic Slab';
-    src: url('fonts/klinic/KlinicSlab-BoldItalic.eot');
-    src: url('fonts/klinic/KlinicSlab-BoldItalic.eot?#iefix') format('embedded-opentype'),
-    url('fonts/klinic/KlinicSlab-BoldItalic.woff2') format('woff2'),
-    url('fonts/klinic/KlinicSlab-BoldItalic.woff') format('woff'),
-    url('fonts/klinic/KlinicSlab-BoldItalic.ttf') format('truetype'),
-    url('fonts/klinic/KlinicSlab-BoldItalic.svg#KlinicSlab-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
 }
 
 // Typography
@@ -162,6 +78,21 @@ h1,h2,h3,h4,h5,h6 {
 
     @media only screen and (max-width: 1250px) {
         opacity: 0;
+    }
+
+    @media only screen and (max-width: 680px) {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+
+        .number, .line {
+            display: none;
+        }
+
+        .text {
+            transform: rotate(0deg);
+            font-size: 12px;
+        }
+
     }
 
 }

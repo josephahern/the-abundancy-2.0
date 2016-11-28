@@ -11,6 +11,9 @@ img {
   height: 92px;
   background-image: url('../images/icons/bouncing_icon.png');
   position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  transition-delay: 1.5s;
 
   &.icon-1 {
     -webkit-animation: moveX1 80s linear 0s infinite alternate, moveY1 80s linear 0s infinite alternate;
@@ -31,6 +34,12 @@ img {
     -moz-animation: moveX3 70s linear 0s infinite alternate, moveY3 70s linear 0s infinite alternate;
     -o-animation: moveX3 70s linear 0s infinite alternate, moveY3 70s linear 0s infinite alternate;
     animation: moveX3 70s linear 0s infinite alternate, moveY3 70s linear 0s infinite alternate;
+  }
+
+  @media only screen and (max-width: 750px) {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
 
 }

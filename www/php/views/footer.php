@@ -2,8 +2,8 @@
     <div class="contain">
         <img src="images/the_abundancy-logo-w-text.png" id="footer-logo" alt="The Abundancy">
         <div class="navigation">
-            <a href="#">Our Approach</a> | <a href="#">Our Work</a> | <a href="#">Our Culture</a> | <a href="#">Contact Us</a> |
-            <a href="#">Careers</a>
+            <a href="/approach">Our Approach</a> | <a href="/work">Our Work</a> | <a href="/culture">Our Culture</a> | <a href="/contact">Contact Us</a> |
+            <a href="/contact">Careers</a>
         </div>
         <div class="social">
             <a href="#" class="linkedin"></a>

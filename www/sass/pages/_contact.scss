@@ -370,6 +370,7 @@
                                 text-align: center;
                                 position: relative;
                                 top: 4px;
+                                text-transform: capitalize;
                             }
 
                             .read-more {
@@ -393,7 +394,7 @@
                     padding: 25px 20px;
                     width: 30%;
                     min-width: 300px;
-                    max-height: 375px;
+                    max-height: 390px;
                     background-color: $abundancy-off-white;
                     display: flex;
                     flex-direction: column;

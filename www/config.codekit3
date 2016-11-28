@@ -56,10 +56,16 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/css\/main-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/css\/main.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/main.css.map",
+		"oF": 0
 		},
 	"\/fonts\/futura\/184895ac-545b-450b-9d3a-c0a0a7620977.woff": {
 		"ft": 8192,
@@ -129,210 +135,6 @@
 		"oAP": "\/fonts\/futura\/e2b9cbeb-fa8e-41cd-8a6a-46044b29ba52.woff",
 		"oF": 0
 		},
-	"\/fonts\/klinic\/KlinicSlab-Bold.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold_1.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold_1.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold_1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold_1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold_1.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold_1.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold_1.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold_1.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold_1.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold_1.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold_2.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold_2.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold_2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold_2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold_2.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold_2.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold_2.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold_2.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Bold_2.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Bold_2.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic_1.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic_1.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic_1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic_1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic_1.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic_1.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic_1.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic_1.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic_1.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic_1.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic_2.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic_2.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic_2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic_2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic_2.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic_2.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic_2.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic_2.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BoldItalic_2.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BoldItalic_2.woff2",
-		"oF": 0
-		},
 	"\/fonts\/klinic\/KlinicSlab-Book.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -365,584 +167,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/fonts\/klinic\/KlinicSlab-Book.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Book_1.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Book_1.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Book_1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Book_1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Book_1.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Book_1.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Book_1.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Book_1.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Book_1.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Book_1.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Book_2.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Book_2.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Book_2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Book_2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Book_2.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Book_2.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Book_2.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Book_2.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Book_2.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Book_2.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic_1.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic_1.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic_1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic_1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic_1.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic_1.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic_1.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic_1.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic_1.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic_1.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic_2.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic_2.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic_2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic_2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic_2.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic_2.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic_2.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic_2.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-BookItalic_2.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-BookItalic_2.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light_1.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light_1.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light_1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light_1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light_1.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light_1.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light_1.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light_1.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light_1.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light_1.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light_2.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light_2.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light_2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light_2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light_2.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light_2.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light_2.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light_2.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Light_2.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Light_2.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic_1.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic_1.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic_1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic_1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic_1.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic_1.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic_1.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic_1.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic_1.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic_1.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic_2.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic_2.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic_2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic_2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic_2.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic_2.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic_2.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic_2.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-LightItalic_2.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-LightItalic_2.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium_1.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium_1.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium_1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium_1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium_1.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium_1.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium_1.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium_1.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium_1.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium_1.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium_2.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium_2.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium_2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium_2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium_2.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium_2.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium_2.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium_2.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-Medium_2.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-Medium_2.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic_1.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic_1.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic_1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic_1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic_1.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic_1.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic_1.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic_1.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic_1.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic_1.woff2",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic_2.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic_2.eot",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic_2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic_2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic_2.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic_2.ttf",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic_2.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic_2.woff",
-		"oF": 0
-		},
-	"\/fonts\/klinic\/KlinicSlab-MediumItalic_2.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/klinic\/KlinicSlab-MediumItalic_2.woff2",
 		"oF": 0
 		},
 	"\/images\/arrow-1.png": {
@@ -1024,6 +248,14 @@
 		"oAP": "\/images\/contact\/social_icon-twitter.png",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/images\/culture\/background-logo.png": {
+		"ft": 32768,
+		"iS": 14496,
+		"oA": 0,
+		"oAP": "\/images\/culture\/background-logo.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/images\/culture\/be-curious_icon.svg": {
 		"ft": 2097152,
@@ -1391,6 +623,14 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/images\/icons\/bouncing_icon.png": {
+		"ft": 32768,
+		"iS": 3579,
+		"oA": 0,
+		"oAP": "\/images\/icons\/bouncing_icon.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/icons\/octicon-bug.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1657,7 +897,7 @@
 	"\/js\/min\/app-min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/js\/min\/min\/app-min-min.js",
 		"oF": 0,
 		"sC": 1,
@@ -1665,20 +905,8 @@
 		},
 	"\/php\/views\/approach.php": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/php\/views\/approach.php",
-		"oF": 1
-		},
-	"\/php\/views\/case-studies\/uscellular.php": {
-		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/php\/views\/case-studies\/uscellular.php",
-		"oF": 0
-		},
-	"\/php\/views\/cases.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/php\/views\/cases.php",
+		"oAP": "\/php\/views\/approach.php",
 		"oF": 0
 		},
 	"\/php\/views\/contact.php": {
@@ -1689,13 +917,13 @@
 		},
 	"\/php\/views\/culture.php": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/php\/views\/culture.php",
 		"oF": 0
 		},
 	"\/php\/views\/footer.php": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/php\/views\/footer.php",
 		"oF": 0
 		},
@@ -1705,10 +933,22 @@
 		"oAP": "\/php\/views\/header.php",
 		"oF": 0
 		},
-	"\/php\/views\/home.php": {
+	"\/php\/views\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/php\/views\/index.php",
+		"oF": 0
+		},
+	"\/php\/views\/work.php": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/php\/views\/home.php",
+		"oAP": "\/php\/views\/work.php",
+		"oF": 0
+		},
+	"\/php\/views\/work\/uscellular.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/php\/views\/work\/uscellular.php",
 		"oF": 0
 		},
 	"\/sass\/_scaffolding.scss": {
@@ -1842,12 +1082,12 @@
 		"uL": 1
 		},
 	"\/sass\/main.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
 		"oAP": "\/css\/main.css",
 		"oF": 0,

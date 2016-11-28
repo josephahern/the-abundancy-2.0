@@ -29,6 +29,14 @@ a {
                     background-color: transparent;
                     border: 3px solid $abundancy-brown;
                 }
+
+                @media only screen and (max-width: 750px) {
+                    margin: 55px 0 0 0;
+                    border: 2px solid $abundancy-copper;
+                    width: 175px;
+                    transition: all 0.3s ease;
+                }
+
             }
 
             &.video-btn {
@@ -42,6 +50,10 @@ a {
                 &:hover {
                     color: $abundancy-brown;
                     background-color: $abundancy-cream;
+                }
+
+                @media only screen and (max-width: 750px) {
+                    margin-top: 35px;
                 }
 
             }

@@ -14,7 +14,7 @@ $router = new AltoRouter();
 //
 
 $router->map( 'GET', '/', function() {
-    require __DIR__ . '/php/views/home.php';
+    require __DIR__ . '/php/views/index.php';
 }, 'home');
 
 //
@@ -29,12 +29,12 @@ $router->map( 'GET', '/approach', function() {
 // Our Work Page
 //
 
-$router->map( 'GET', '/case-studies', function() {
-    require __DIR__ . '/php/views/cases.php';
+$router->map( 'GET', '/work', function() {
+    require __DIR__ . '/php/views/work.php';
 }, 'cases');
 
-$router->map( 'GET', '/case-studies/us-cellular', function() {
-    require __DIR__ . '/php/views/case-studies/uscellular.php';
+$router->map( 'GET', '/work/us-cellular', function() {
+    require __DIR__ . '/php/views/work/uscellular.php';
 }, 'uscellular');
 
 
