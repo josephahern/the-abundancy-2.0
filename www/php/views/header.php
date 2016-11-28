@@ -27,6 +27,7 @@
 <!-- end Primary Navigation -->
 
 <button class="menu-button" id="open-button"></button>
+<a href="/" id="theabundancy"></a>
 
 <div id="scroll-down">
     <div class="scroll-down-text">SCROLL</div>

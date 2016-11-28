@@ -143,18 +143,33 @@
 
                         var fontSize = 18 + ((60 - 18) * percentageTraveled);
 
-                        if (fontSize >= 60) {
+                        if (fontSize >= 59) {
 
                             fontSize = 60;
 
                             chosenSmall.css({
-                                color: '#F8F9D2'
+                                color: '#F8F9D2',
+                                top: chosenLarge.offset().top - 31,
+                                left: chosenLarge.offset().left,
+                                fontSize: 60 + "px",
+                                lineHeight: 60 + "px",
+                                transition: "all 0.4s ease"
                             });
 
                             chosenSmall.find("span").css({
-                                color: '#C55227'
+                                color: '#C55227',
+                                fontSize: "60px",
+                                lineHeight: "60px"
                             });
-                            
+
+                            setTimeout(function(){
+                                $(".btn.home.parallax-btn").addClass("animated fadeIn");
+                            }, 500);
+
+                            setTimeout(function(){
+                                $(".clients ul").addClass("animated fadeIn");
+                            }, 1000);
+
                         }
 
                         var leftOffset = -(totalLeftDistanceNeededToTravel * percentageTraveled);

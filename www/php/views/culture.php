@@ -12,9 +12,15 @@
                 <div class="title-shuffle">
                     <h2>We are</h2>
                     <div id="shuffler">
-                        <span class="option">inventors</span>
-                        <span class="option">cat lovers</span>
-                        <span class="option">cooks</span>
+                        <span class="option">inventors.</span>
+                        <span class="option">cat lovers.</span>
+                        <span class="option">cooks.</span>
+                        <span class="option">makers.</span>
+                        <span class="option">musicians.</span>
+                        <span class="option">thinkers.</span>
+                        <span class="option">runners.</span>
+                        <span class="option">weirdos.</span>
+                        <span class="option">friends.</span>
                     </div>
                 </div>
                 <div class='instagram-feed'>

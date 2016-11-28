@@ -1,3 +1,21 @@
+#theabundancy {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 25px;
+    width: 70px;
+    height: 52px;
+    background-image: url('../images/the_abundancy-nav-logo.png');
+    background-size: 70px 52px;
+
+    &:hover{
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+    }
+
+}
+
 nav#menu {
     width: 320px;
     height: 100%;

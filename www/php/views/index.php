@@ -21,7 +21,7 @@
             <div class="vertical-title">
                 <span class="number">01</span>
                 <span class="line"></span>
-                <span class="text">On the Dailys</span>
+                <span class="text">On the Daily</span>
             </div>
             <div class="text-block-one">
                 <div class="medium">We combine</div>
@@ -71,7 +71,7 @@
             </div>
             <div class='video-container'>
                 <div class="video-object">
-                    <iframe src='https://player.vimeo.com/aaeed76f-563a-41c1-b424-8f0a7bb358f7' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    <iframe src='https://player.vimeo.com/video/172634506' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                 </div>
             </div>
             <a href="/work" class="btn home video-btn">See More Work</a>

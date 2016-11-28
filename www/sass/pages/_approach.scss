@@ -35,7 +35,7 @@
         }
 
 
-        &:after {
+        .after {
             position: absolute;
             bottom: 0px;
             right: 0px;
@@ -44,7 +44,7 @@
             display: block;
             content: '';
             background: linear-gradient(to right bottom, $abundancy-copper 50%, #aa451f 50%);
-            z-index: -1;
+            z-index: 1;
         }
 
         .video-container {
