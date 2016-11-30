@@ -5,6 +5,8 @@
         background-color: $abundancy-copper;
         padding: 120px 20px 55px 20px;
         display: block;
+        position: relative;
+        overflow: hidden;
 
         .column {
 
@@ -203,6 +205,7 @@
                 .right {
                     width: 60%;
                     display: block;
+                    z-index: 600;
 
                     textarea {
                         display: block;

@@ -48,10 +48,9 @@
             window.onscroll = function(){
                 [].slice.call(parallax).forEach(function(el,i){
 
-                    var windowYOffset = window.pageYOffset,
-                        elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
+                    var windowYOffset = window.pageYOffset;
 
-                    el.style.backgroundPosition = elBackgrounPos;
+                    el.style.backgroundPosition = "0 " + (windowYOffset * speed) + "px";
 
                 });
             };
@@ -63,8 +62,9 @@
         if($("#shuffler").length){
 
             $("#shuffler").slotMachine({
-                auto : 1000,
-                direction: 'up'
+                active	: 1,
+                delay	: 450,
+                auto	: 1500
             });
 
         }
@@ -131,15 +131,14 @@
 
                 if ($(window).width() > 680) {
 
-                    var bigTextBlockOffsetTop = $(".text-block-one .large").offset().top,
-                        distanceFromTop = bigTextBlockOffsetTop - $(window).scrollTop();
-
+                    var distanceFromTop = $(".parallax .small").offset().top - $(window).scrollTop();
+                    console.log(distanceFromTop);
                     var totalDistanceTraveled = totalDistanceNeededToTravel - (chosenLarge.offset().top - chosenSmall.offset().top),
                         percentageTraveled = totalDistanceTraveled / totalDistanceNeededToTravel;
 
-                    if(distanceFromTop < 100 && chosenSmall.offset().top <= chosenLargeOffsetTop){
+                    if(distanceFromTop < 350 && !chosenSmall.hasClass("complete")){
 
-                        var distanceTopDifference = (100 - distanceFromTop);
+                        var distanceTopDifference = (350 - distanceFromTop);
 
                         var fontSize = 18 + ((60 - 18) * percentageTraveled);
 
@@ -161,6 +160,8 @@
                                 fontSize: "60px",
                                 lineHeight: "60px"
                             });
+
+                            chosenSmall.addClass("complete");
 
                             setTimeout(function(){
                                 $(".btn.home.parallax-btn").addClass("animated fadeIn");
@@ -208,6 +209,10 @@
             });
 
             // window.resize()
+            $(window).resize(function() {
+                animateGetChosen();
+            });
+
 
             initHome();
 
@@ -228,7 +233,7 @@
             console.log("The Abundancy / Our Culture");
 
             var token = '390074368.1439f97.94f68308db0542b1bd4fe81f4abac769',
-                num_photos = 8;
+                num_photos = 15;
 
             $.ajax({
                 url: 'https://api.instagram.com/v1/users/self/media/recent',
@@ -237,9 +242,20 @@
                 data: {access_token: token, count: num_photos},
                 success: function(data){
                     console.log(data);
+
+                    var imageCount = 0;
+
                     for( num in data.data ){
-                        $('.instagram-feed').append('<div class="box"><img src="'+data.data[num].images.standard_resolution.url+'"></div>');
+                        if (imageCount >= 8){
+                            break;
+                        }
+                        if (data.data[num].type != 'video'){
+                            $('.instagram-feed').append('<div class="box"><img src="'+data.data[num].images.standard_resolution.url+'"><div class="insta-overlay"><div class="insta-heart">'+ data.data[num].likes.count + '</div><div class="insta-comments">'+ data.data[num].comments.count + '</div></div></div>');
+                            imageCount++;
+                        }
+                        console.log(imageCount);
                     }
+
                 },
                 error: function(data){
                     console.log(data);

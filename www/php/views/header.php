@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/b8898fd3-6341-4d29-97da-84247416006a.css"/>
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="http://josex2r.github.io/jQuery-SlotMachine/dist/jquery.slotmachine.css">
     <!-- Primary Stylesheet -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -27,7 +28,9 @@
 <!-- end Primary Navigation -->
 
 <button class="menu-button" id="open-button"></button>
-<a href="/" id="theabundancy"></a>
+<div class="home-logo">
+    <a href="/" id="theabundancy"></a>
+</div>
 
 <div id="scroll-down">
     <div class="scroll-down-text">SCROLL</div>

@@ -17,7 +17,7 @@ a {
             &.parallax-btn {
                 height: 40px;
                 width: 150px;
-                line-height: 37px;
+                line-height: 36px;
                 background-color: transparent;
                 transition: all 0.3s ease;
                 margin: auto;
@@ -28,7 +28,7 @@ a {
                 &:hover {
                     color: $abundancy-foam-green;
                     background-color: transparent;
-                    border: 3px solid $abundancy-brown;
+                    border: 3px solid $abundancy-beige;
                 }
 
                 @media only screen and (max-width: 750px) {
@@ -44,14 +44,14 @@ a {
             &.video-btn {
                 height: 40px;
                 width: 170px;
-                line-height: 45px;
+                line-height: 41px;
                 background-color: $abundancy-brown;
                 transition: all 0.3s ease;
                 margin-top: 48px;
 
                 &:hover {
-                    color: $abundancy-brown;
-                    background-color: $abundancy-cream;
+                    color: $abundancy-foam-green;
+                    background-color: $abundancy-slate;
                 }
 
                 @media only screen and (max-width: 750px) {
@@ -76,7 +76,7 @@ a {
             &.more {
                 height: 40px;
                 width: 140px;
-                line-height: 38px;
+                line-height: 36px;
                 background-color: #ffffff;
                 transition: all 0.3s ease;
 

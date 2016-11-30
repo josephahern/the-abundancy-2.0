@@ -1,22 +1,8 @@
 <?php include 'header.php'; ?>
 <div id="loader"></div>
-<div id="stats">Curious?</div>
 <div id="container"></div>
 <div id="home">
     <div class="parallax row" id="intro">
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="triangle"></div>
         <div class="column">
             <div class="vertical-title">
                 <span class="number">01</span>
@@ -177,8 +163,8 @@
                     </div>
                     <div class="modal-content">
                         <span class="modal-name">Chris Marshall</span>
-                        <span class="modal-title">I am a boater</span>
-                        <span class="modal-i_am_a">Group Analytics Director</span>
+                        <span class="modal-title">Group Analytics Director</span>
+                        <span class="modal-i_am_a">I am a boater</span>
                         <span class="modal-bio">Chris is our guide to Chicago's dive bars. Previously, he was Analytics Director at Starcom, where he developed and implemented custom analytics connecting user-level data across multiple platforms. Currently, he’s developing a suite of solutions for The Abundancy that bridge qualitative and quantitative analytics. When not slaving over a hot computer, Chris enjoys contemplative strolls along Chicago’s harbors with his family.</span>
                     </div>
                     <img src="images/home/leadership/chris_marshall.jpg">
@@ -274,7 +260,7 @@
                     </div>
                     <img src="images/home/leadership/stephanie_ridley.jpg">
                 </li>
-                <li data-person=tom_hack">
+                <li data-person="tom_hack">
                     <div class="details">
                         <span class="name">Tom Hack</span>
                         <span class="title">Executive Finance Director</span>
@@ -286,6 +272,58 @@
                         <span class="modal-bio">Tom knows where the gold’s at. He is a Certified Public Accountant who came to us from working as VP Finance Director at Starcom MediaVest Group, prior to which he was an audit professional with KPMG. When not crunching our numbers, he serves as a volunteer tax preparer for the Illinois Center for Economic Progress and a youth mentor with Spark, and keeps busy spending time with his wife and three kids. Tom is outdoors as much as humanly possible.</span>
                     </div>
                     <img src="images/home/leadership/tom_hack.jpg">
+                </li>
+                <li data-person="eric_langshur">
+                    <div class="details">
+                        <span class="name">Eric Langshur</span>
+                        <span class="title">Board Member</span>
+                    </div>
+                    <div class="modal-content">
+                        <span class="modal-name">Eric Langshur</span>
+                        <span class="modal-title">Board Member</span>
+                        <span class="modal-i_am_a">I am a Canadian</span>
+                        <span class="modal-bio">Eric is co-founder of Abundant Venture Partners, and co-founder and CEO of AVIA, the nation’s leading health care system innovator network. He is also co-founder and director of LIFE CrossTraining and PatientWisdom, and a director for Healthfinch, PUSH Wellness, Ardent IO and Transparent Media Partners. Before focusing on value-based entrepreneurship, he held top corporate executive positions at United Technologies Corporation and Bombardier Aerospace. Eric holds an MBA from Columbia University, and lives in Chicago with his wife Sharon and their three children.</span>
+                    </div>
+                    <img src="images/home/leadership/eric_langshur.jpg">
+                </li>
+                <li data-person="mary_baglivo">
+                    <div class="details">
+                        <span class="name">Mary Baglivo</span>
+                        <span class="title">Board Member</span>
+                    </div>
+                    <div class="modal-content">
+                        <span class="modal-name">Mary Baglivo</span>
+                        <span class="modal-title">Board Member</span>
+                        <span class="modal-i_am_a">I am a Jersey Girl</span>
+                        <span class="modal-bio">Mary is Vice President Global Marketing and Chief Marketing Officer at Northwestern University, and on the board of directors for Host Hotels & Resorts and PVH Corp. She served as Chairman & CEO Americas at Saatchi & Saatchi, and president of Arnold Worldwide. Mary has received the AAF Diversity Achievement Award for Industry Career Achiever, and was named Advertising Woman of the Year by Advertising Women of New York.</span>
+                    </div>
+                    <img src="images/home/leadership/mary_baglivo.jpg">
+                </li>
+                <li data-person=linda_wolf">
+                    <div class="details">
+                        <span class="name">Linda S. Wolf</span>
+                        <span class="title">Board Member</span>
+                    </div>
+                    <div class="modal-content">
+                        <span class="modal-name">Linda S. Wolf</span>
+                        <span class="modal-title">Board Member</span>
+                        <span class="modal-i_am_a">I am a Curious Cook</span>
+                        <span class="modal-bio">Linda was Chairman and CEO of Leo Burnett Worldwide from 2001 to 2005, and CEO of Leo Burnett USA from 1996 through 2000. Today she is a Director of Wal-Mart Stores Inc., InnerWorkings, Inc, and Wrapports, LLC. She serves on the Board of Trustees of Janus Funds, and is a member of the Board of Directors of Lurie Children’s Hospital, The Chicago Council on Global Affairs, the Rehabilitation Institute of Chicago, and The Chicago Community Trust.</span>
+                    </div>
+                    <img src="images/home/leadership/linda_wolf.jpg">
+                </li>
+                <li data-person="tim_suther">
+                    <div class="details">
+                        <span class="name">Tim Suther</span>
+                        <span class="title">Board Member</span>
+                    </div>
+                    <div class="modal-content">
+                        <span class="modal-name">Tim Suther</span>
+                        <span class="modal-title">Board Member</span>
+                        <span class="modal-i_am_a">I am a Live Music Devotee</span>
+                        <span class="modal-bio">Tim is a customer experience champion, data-infused product innovator, and transformative strategist and operator. He’s served as managing director of JPMorgan Chase, Chief Marketing & Strategy Officer of Acxiom, and is a member of the North American Advisory Board for CMO Council. He has been recognized as a Top CMO by ExecRank, a Social Media Marketing Top CMO on Twitter, and he received the CMO club President’s Award in 2015.</span>
+                    </div>
+                    <img src="images/home/leadership/tim_suther.jpg">
                 </li>
             </ul>
         </div>

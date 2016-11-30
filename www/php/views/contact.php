@@ -2,6 +2,9 @@
 
 <div id="contact">
     <section class="row" id="contact-form">
+        <div class="bouncing-logo icon-1"></div>
+        <div class="bouncing-logo icon-2"></div>
+        <div class="bouncing-logo icon-3"></div>
         <div class="column">
             <h1>Contact Us</h1>
             <h2>Let's be friends</h2>

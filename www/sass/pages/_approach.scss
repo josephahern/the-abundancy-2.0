@@ -5,7 +5,7 @@
         padding-bottom: 50px;
         position: relative;
         overflow: hidden;
-        background-color: $abundancy-copper;
+        background: linear-gradient(to right bottom, $abundancy-copper 50%, #aa451f 50%);
 
         .title-shuffle {
 
@@ -15,10 +15,12 @@
 
             #shuffler {
                 width: 400px;
-                height: 42px;
+                height: 43px;
+                position: relative;
+                top: 2px;
+                padding-left: 7px;
                 display: inline-block;
                 overflow: hidden;
-                margin-left: 6px;
 
                 .option {
                     display: block;
@@ -32,19 +34,6 @@
 
             }
 
-        }
-
-
-        .after {
-            position: absolute;
-            bottom: 0px;
-            right: 0px;
-            width: 100%;
-            height: 85%;
-            display: block;
-            content: '';
-            background: linear-gradient(to right bottom, $abundancy-copper 50%, #aa451f 50%);
-            z-index: 1;
         }
 
         .video-container {
@@ -74,9 +63,10 @@
 
             font-family: $font-family-primary;
             font-size: 28px;
-            font-weight: normal;
+            font-weight: 300;
             color: #ffffff;
             z-index: 500;
+            margin-top: 75px;
 
             span {
                 font-weight: bold;
@@ -100,7 +90,7 @@
 
         width: 100%;
         display: block;
-        min-height: 320px;
+        min-height: 350px;
 
         .step {
 
@@ -117,7 +107,7 @@
             .block {
 
                 width: 50%;
-                min-height: 320px;
+                min-height: 350px;
                 display: block;
 
                 &.title {
@@ -136,7 +126,7 @@
                         font-weight: bold;
                         font-size: 50px;
                         color: $abundancy-copper;
-                        margin-bottom: 20px;
+                        margin-bottom: 10px;
                     }
 
                     .text {
@@ -165,12 +155,16 @@
                     align-items: center;
                     flex-direction: column;
 
+                    img {
+                        margin-bottom: 20px;
+                    }
+
                     .summary {
                         max-width: 380px;
                         width: 100%;
                         font-family: $font-family-secondary;
                         font-weight: normal;
-                        font-size: 24px;
+                        font-size: 21px;
                         color: $abundancy-slate;
                     }
 
@@ -264,23 +258,28 @@
 
         .column {
 
-            .title {
-                font-family: $font-family-primary;
-                font-weight: bold;
-                text-transform: uppercase;
-                color: #c55227;
-                display: block;
-                margin-bottom: 20px;
-            }
-
             .container {
                 width: 100%;
                 display: flex;
                 flex-direction: row;
+                justify-content: space-between;
 
                 .block {
 
-                    width: percentage(1/3);
+                    width: percentage(1/4);
+
+                    &.title {
+                        font-family: $font-family-primary;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: #c55227;
+                        margin-bottom: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 32px;
+                        width: percentage(1/3);
+                    }
 
                     span {
                         display: block;

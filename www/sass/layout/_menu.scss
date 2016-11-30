@@ -1,13 +1,26 @@
+.home-logo {
+    width: 1000px;
+    position: fixed;
+    left: calc(50% - 500px);
+    z-index: 4005;
+
+    @media only screen and (max-width: 1030px) {
+        width: 100%;
+        padding-left: 15px;
+        left: 0;
+        margin: 0;
+    }
+
+}
+
 #theabundancy {
     display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    margin: 25px;
+    margin-top: 25px;
     width: 70px;
     height: 52px;
     background-image: url('../images/the_abundancy-nav-logo.png');
     background-size: 70px 52px;
+    z-index: 5005;
 
     &:hover{
         opacity: 0.7;

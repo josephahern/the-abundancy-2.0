@@ -6,6 +6,7 @@
         display: flex;
         flex-direction: row;
         transition: all 0.3s ease;
+        background-color: #ffffff;
 
         .small {
             background-color: #ffffff;
@@ -48,7 +49,7 @@
                     display: block;
                     font-family: $font-family-secondary;
                     font-weight: normal;
-                    font-size: 18px;
+                    font-size: 21px;
                     color: #000000;
                     max-width: 380px;
                     width: 100%;
@@ -67,16 +68,16 @@
             transition: all 0.3s ease;
         }
 
-        &#uscc-case .large{
+        &#uscc-case .large {
             background-image: url('../images/cases/panel_uscellular-bg.png');
         }
-        &#ulta-case .large{
+        &#ulta-case .large {
             background-image: url('../images/cases/panel_ulta-bg.png');
         }
-        &#sunpower-case .large{
+        &#sunpower-case .large {
             background-image: url('../images/cases/panel_sunpower-bg.png');
         }
-        &#jh-case .large{
+        &#jh-case .large {
             background-image: url('../images/cases/panel_jacksonhewitt-bg.png');
         }
 

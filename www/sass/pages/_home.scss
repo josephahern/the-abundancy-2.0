@@ -473,7 +473,6 @@
             display: flex;
             position: relative;
             justify-content: center;
-            align-items: center;
             flex-direction: column;
 
             h3 {
@@ -484,7 +483,7 @@
                 color: $abundancy-slate;
                 text-transform: uppercase;
                 display: block;
-                max-width: 896px;
+                max-width: 1000px;
                 width: 100%;
                 text-align: left;
 
@@ -522,13 +521,13 @@
 
             ul {
                 width: 100%;
-                max-width: 896px;
+                max-width: 1000px;
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
                 list-style-type: none;
                 padding: 0;
-                z-index: 5000;
+                z-index: 4000;
                 position: relative;
 
                 &:hover > li {
@@ -549,7 +548,6 @@
                 li {
                     list-style-type: none;
                     width: 32%;
-                    max-height: 271px;
                     margin: 1%;
                     position: relative;
                     background-color: $abundancy-beige;
@@ -614,6 +612,7 @@
                         opacity: 1;
                         -webkit-backface-visibility: hidden;
                         z-index: -1;
+                        display: block;
                         transition: opacity 0.3s ease;
                     }
 

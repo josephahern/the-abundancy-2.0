@@ -15,10 +15,12 @@
 
       #shuffler {
         width: 400px;
-        height: 41px;
+        height: 43px;
+        position: relative;
+        top: 2px;
+        padding-left: 7px;
         display: inline-block;
         overflow: hidden;
-        margin-left: 6px;
 
         .option {
           display: block;
@@ -78,6 +80,7 @@
         .box {
           z-index: 500;
           margin-bottom: 10px;
+          position: relative;
 
           // First three images
           &:nth-child(n+1):nth-child(-n+3){
@@ -94,9 +97,68 @@
 
           img {
             width: 100%;
+            display: block;
           }
 
         }
+
+        .insta-overlay {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(0,0,0,0.5);
+          color: #ffffff;
+          font-family: $font-family-primary;
+          font-weight: bold;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+
+          .insta-heart {
+            margin-right: 45px;
+            position: relative;
+
+            &:after {
+              content: '';
+              height: 15px;
+              width: 15px;
+              position: absolute;
+              left: -18px;
+              top: 4px;
+              background-image: $icon-heart;
+              background-size: 15px 15px;
+            }
+
+          }
+
+          .insta-comments {
+
+            position: relative;
+
+            &:after {
+              content: '';
+              height: 15px;
+              width: 15px;
+              position: absolute;
+              left: -20px;
+              top: 4px;
+              background-image: $icon-comments;
+              background-size: 15px 15px;
+            }
+          }
+
+          &:hover {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            cursor: pointer;
+          }
+
+        }
+
 
       }
 
