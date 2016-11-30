@@ -34,7 +34,7 @@ $router->map( 'GET', '/work', function() {
 }, 'cases');
 
 $router->map( 'GET', '/work/us-cellular', function() {
-    require __DIR__ . '/php/views/work/uscellular.php';
+    require __DIR__ . '/php/views/uscellular.php';
 }, 'uscellular');
 
 

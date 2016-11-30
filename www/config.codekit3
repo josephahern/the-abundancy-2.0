@@ -169,6 +169,38 @@
 		"oAP": "\/fonts\/klinic\/KlinicSlab-Book.woff2",
 		"oF": 0
 		},
+	"\/images\/approach\/graph-icon.png": {
+		"ft": 32768,
+		"iS": 3535,
+		"oA": 0,
+		"oAP": "\/images\/approach\/graph-icon.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/approach\/lightbulb-icon.png": {
+		"ft": 32768,
+		"iS": 5521,
+		"oA": 0,
+		"oAP": "\/images\/approach\/lightbulb-icon.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/approach\/mail-icon.png": {
+		"ft": 32768,
+		"iS": 3470,
+		"oA": 0,
+		"oAP": "\/images\/approach\/mail-icon.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/approach\/stars-icon.png": {
+		"ft": 32768,
+		"iS": 5537,
+		"oA": 0,
+		"oAP": "\/images\/approach\/stars-icon.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/arrow-1.png": {
 		"ft": 32768,
 		"iS": 419,
@@ -496,6 +528,62 @@
 		"iS": 33967,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/eric_langshur.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/home\/leadership\/gif\/andrew_swinand.gif": {
+		"ft": 4194304,
+		"iS": 5220638,
+		"oA": 0,
+		"oAP": "\/images\/home\/leadership\/gif\/andrew_swinand.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/home\/leadership\/gif\/bryan_simkins.gif": {
+		"ft": 4194304,
+		"iS": 3556330,
+		"oA": 0,
+		"oAP": "\/images\/home\/leadership\/gif\/bryan_simkins.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/home\/leadership\/gif\/caitlin_winkworth.gif": {
+		"ft": 4194304,
+		"iS": 3760488,
+		"oA": 0,
+		"oAP": "\/images\/home\/leadership\/gif\/caitlin_winkworth.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/home\/leadership\/gif\/eric_langshur.gif": {
+		"ft": 4194304,
+		"iS": 3023478,
+		"oA": 0,
+		"oAP": "\/images\/home\/leadership\/gif\/eric_langshur.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/home\/leadership\/gif\/larry_byrne.gif": {
+		"ft": 4194304,
+		"iS": 4899020,
+		"oA": 0,
+		"oAP": "\/images\/home\/leadership\/gif\/larry_byrne.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/home\/leadership\/gif\/suzanne_michaels.gif": {
+		"ft": 4194304,
+		"iS": 5029729,
+		"oA": 0,
+		"oAP": "\/images\/home\/leadership\/gif\/suzanne_michaels.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/home\/leadership\/gif\/tom_hack.gif": {
+		"ft": 4194304,
+		"iS": 4235188,
+		"oA": 0,
+		"oAP": "\/images\/home\/leadership\/gif\/tom_hack.gif",
 		"oF": 0,
 		"opt": 0
 		},
@@ -947,16 +1035,16 @@
 		"oAP": "\/php\/views\/index.php",
 		"oF": 0
 		},
+	"\/php\/views\/uscellular.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/php\/views\/uscellular.php",
+		"oF": 0
+		},
 	"\/php\/views\/work.php": {
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/php\/views\/work.php",
-		"oF": 0
-		},
-	"\/php\/views\/work\/uscellular.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/php\/views\/work\/uscellular.php",
 		"oF": 0
 		},
 	"\/sass\/_scaffolding.scss": {
@@ -1115,19 +1203,6 @@
 		"oS": 1,
 		"uL": 1
 		},
-	"\/sass\/pages\/_cases.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_cases.css",
-		"oF": 0,
-		"oS": 1,
-		"uL": 1
-		},
 	"\/sass\/pages\/_contact.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1163,6 +1238,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/_home.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"\/sass\/pages\/_uscellular.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_uscellular.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"\/sass\/pages\/_work.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_work.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1

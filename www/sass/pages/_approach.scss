@@ -2,7 +2,7 @@
 
     .primary {
 
-        padding-bottom: 50px;
+        padding-bottom: 75px;
         position: relative;
         overflow: hidden;
         background: linear-gradient(to right bottom, $abundancy-copper 50%, #aa451f 50%);
@@ -11,10 +11,14 @@
 
             h2 {
                 display: inline-block;
+
+                span {
+                    display: inline-block;
+                }
+
             }
 
             #shuffler {
-                width: 400px;
                 height: 43px;
                 position: relative;
                 top: 2px;
@@ -30,6 +34,31 @@
                     font-family: $font-family-primary;
                     font-weight: bold;
                     text-transform: uppercase;
+                }
+
+            }
+
+            @media only screen and (max-width: 690px) {
+
+                h2 {
+                    font-size: 22px;
+                    transition: all 0.3s ease;
+
+                    span {
+                        display: none;
+                    }
+
+                }
+
+                #shuffler {
+
+                    height: 26px;
+                    padding-left: 3px;
+
+                    .option {
+                        font-size: 22px;
+                    }
+
                 }
 
             }
@@ -57,6 +86,10 @@
                 }
             }
 
+            @media only screen and (max-width: 750px) {
+                margin-top: 5px;
+            }
+
         }
 
         .statement {
@@ -66,7 +99,7 @@
             font-weight: 300;
             color: #ffffff;
             z-index: 500;
-            margin-top: 75px;
+            margin-top: 50px;
 
             span {
                 font-weight: bold;
@@ -76,12 +109,39 @@
             @media only screen and (max-width: 750px) {
                 font-size: 20px;
                 padding: 0 20px;
+                margin-top: 25px;
+            }
+
+        }
+
+        .bottom-title {
+            font-family: "Futura W01", sans-serif;
+            font-size: 21px;
+            font-weight: bold;
+            color: #ffffff;
+            width: 100%;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            z-index: 1000;
+
+            @media only screen and (max-width: 750px) {
+                font-size: 16px;
             }
 
         }
 
         @media only screen and (max-width: 750px) {
-            padding: 0 0 35px 0;
+            padding: 85px 15px 75px 15px
+        }
+
+        @media only screen and (max-width: 690px) {
+            h1 {
+                font-size: 12px;
+            }
         }
 
     }
@@ -90,7 +150,7 @@
 
         width: 100%;
         display: block;
-        min-height: 350px;
+        min-height: 340px;
 
         .step {
 
@@ -107,7 +167,7 @@
             .block {
 
                 width: 50%;
-                min-height: 350px;
+                min-height: 340px;
                 display: block;
 
                 &.title {
@@ -266,7 +326,7 @@
 
                 .block {
 
-                    width: percentage(1/4);
+                    display: inline-block;
 
                     &.title {
                         font-family: $font-family-primary;
@@ -278,7 +338,6 @@
                         justify-content: center;
                         align-items: center;
                         font-size: 32px;
-                        width: percentage(1/3);
                     }
 
                     span {
@@ -305,7 +364,6 @@
                 .title {
 
                     text-align: center;
-
                 }
 
                 .container {
@@ -315,6 +373,17 @@
                     .block {
                         width: 100%;
                         text-align: center;
+
+                        &.title {
+                            font-size: 22px;
+                            margin-bottom: 15px;
+                        }
+
+                        span {
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                        }
+
                     }
 
                 }

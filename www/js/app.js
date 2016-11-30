@@ -63,7 +63,7 @@
 
             $("#shuffler").slotMachine({
                 active	: 1,
-                delay	: 450,
+                delay	: 400,
                 auto	: 1500
             });
 
@@ -103,6 +103,7 @@
                 modal.find(".title").text(title);
                 modal.find(".i_am_a").text(iAmA);
                 modal.find(".text").text(bio);
+                modal.find("img").attr("src", "images/home/leadership/gif/" + $(this).attr("data-person") + ".gif");
 
                 modal.css({top: $(this).position().top});
                 modal.toggleClass("open animated fadeInUp");

@@ -7,22 +7,23 @@
     <!-- Web Fonts -->
     <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/b8898fd3-6341-4d29-97da-84247416006a.css"/>
     <!-- CSS Dependencies -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="/css/animate.css">
     <link rel="stylesheet" href="http://josex2r.github.io/jQuery-SlotMachine/dist/jquery.slotmachine.css">
     <!-- Primary Stylesheet -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body id="content">
 
 <!-- Primary Navigation -->
 <nav id="menu">
     <button class="close-button" id="close-button">Close Menu</button>
+    <a href="/">HOME</a>
     <a href="/approach">OUR APPROACH</a>
     <a href="/work">OUR WORK</a>
     <a href="/culture">OUR CULTURE</a>
     <a href="/contact">CONTACT + CAREERS</a>
     <a href="/" id="menu-logo">
-        <img src="images/menu/theabundancy-logo.png" alt="The Abundancy">
+        <img src="/images/menu/theabundancy-logo.png" alt="The Abundancy">
     </a>
 </nav>
 <!-- end Primary Navigation -->

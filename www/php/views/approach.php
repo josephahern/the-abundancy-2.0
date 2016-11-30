@@ -8,7 +8,7 @@
         <div class="column">
             <h1>Our Approach</h1>
             <div class="title-shuffle">
-                <h2>We're all about</h2>
+                <h2><span>We're</span> all about</h2>
                 <div id="shuffler">
                     <span class="option">the Janes</span>
                     <span class="option">the Sams</span>
@@ -22,8 +22,9 @@
                 </div>
             </div>
             <div class="statement">
-                <span>We help brands get chosen.</span> People have enough choices to get exactly what they want &mdash; the only question is whether they'll get it from you. We help your brand matter to the right people in the right moments. Here's how.
+                <span>We help brands get chosen.</span> People have enough choices to get exactly what they want &mdash; the only question is whether they'll get it from you. We help your brand matter to the right people in the right moments.
             </div>
+            <div class="bottom-title">Here's How</div>
         </div>
     </section>
     <section class="steps">
@@ -71,7 +72,7 @@
     <section class="row capabilities">
         <div class="column">
             <div class="container">
-                <span class="block title">Everything We Do</span>
+                <span class="block title">What We Do</span>
                 <div class="block">
                     <span>Insights & Analytics</span>
                     <span>Strategic Planning</span>
