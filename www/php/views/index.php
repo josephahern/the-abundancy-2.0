@@ -3,6 +3,21 @@
 <div id="container"></div>
 <div id="home">
     <div class="parallax row" id="intro">
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
         <div class="column">
             <div class="vertical-title">
                 <span class="number">01</span>
@@ -76,21 +91,6 @@
                 <span class="text">The Bigwigs</span>
             </div>
             <ul>
-                <div class="modal">
-                    <div class="modal-button"></div>
-                    <div class="who">
-                        <span class="name">Name Here</span>
-                        <span class="seperator">/</span>
-                        <span class="title">Title</span>
-                    </div>
-                    <div class="left">
-                        <img src="/images/home/leadership/gif/andrew.gif" alt="image">
-                    </div>
-                    <div class="right">
-                        <div class="i_am_a">I am a gourmand</div>
-                        <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus. Nunc massa mauris, egestas eget quam ut, lobortis hendrerit quam. In libero felis, vulputate id gravida at, iaculis nec lectus. Curabitur lobortis gravida nibh, a venenatis neque malesu ada semper.</span>
-                    </div>
-                </div>
                 <li data-person="andrew_swinand">
                     <div class="details">
                         <span class="name">Andrew Swinand</span>
@@ -328,6 +328,23 @@
             </ul>
         </div>
     </section>
+    <div class="modal-contain">
+        <div class="modal">
+            <div class="modal-button"></div>
+            <div class="who">
+                <span class="name">Name Here</span>
+                <span class="seperator">/</span>
+                <span class="title">Title</span>
+            </div>
+            <div class="left">
+                <img src="/images/home/leadership/gif/andrew.gif" alt="image">
+            </div>
+            <div class="right">
+                <div class="i_am_a">I am a gourmand</div>
+                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus. Nunc massa mauris, egestas eget quam ut, lobortis hendrerit quam. In libero felis, vulputate id gravida at, iaculis nec lectus. Curabitur lobortis gravida nibh, a venenatis neque malesu ada semper.</span>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script type="x-shader/x-vertex" id="vertexshader">

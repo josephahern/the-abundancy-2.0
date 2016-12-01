@@ -28,9 +28,9 @@
 </nav>
 <!-- end Primary Navigation -->
 
-<button class="menu-button" id="open-button"></button>
 <div class="home-logo">
     <a href="/" id="theabundancy"></a>
+    <button class="menu-button" id="open-button"></button>
 </div>
 
 <div id="scroll-down">

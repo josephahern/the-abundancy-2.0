@@ -52,7 +52,7 @@
 
         #shuffler {
 
-          height: 26px;
+          height: 27px;
           padding-left: 3px;
 
           .option {
@@ -108,8 +108,9 @@
 
         .box {
           z-index: 500;
-          margin-bottom: 10px;
+          margin-bottom: 20px;
           position: relative;
+          overflow: hidden;
 
           // First three images
           &:nth-child(n+1):nth-child(-n+3){
@@ -129,10 +130,10 @@
             display: block;
           }
 
-          @media only screen and (max-width: 750px){
+          @media only screen and (max-width: 690px){
 
             &:nth-child(n+1):nth-child(-n+3){
-              width: 100%;
+              width: 90%;
             }
 
             &:nth-child(n+4):nth-child(-n+5){
@@ -202,8 +203,17 @@
             cursor: pointer;
           }
 
+          @media only screen and (max-width: 750px){
+            height: 90%;
+          }
+
         }
 
+        @media only screen and (max-width: 690px){
+          justify-content: center;
+          margin-top: 20px;
+          min-height: 0;
+        }
 
       }
 
@@ -233,6 +243,15 @@
       @media only screen and (max-width: 750px){
         font-size: 16px;
         transition: all 0.3s ease;
+      }
+
+    }
+
+    @media only screen and (max-width: 690px){
+      padding-top: 85px;
+
+      h1 {
+        font-size: 12px;
       }
 
     }
@@ -369,15 +388,22 @@
         @media only screen and (max-width: 750px){
           min-height: 0px;
 
+          .letters {
+            display: none;
+          }
+
           &.title {
 
             .number {
-              font-size: 26px;
-              margin: 20px 0 5px 0;
+              font-size: 24px;
+              margin: 15px 0 5px 0;
+              position: relative;
+              top: 10px;
             }
             .text {
               font-size: 20px;
               padding-bottom: 5px;
+              border-bottom: 2px solid $abundancy-foam-green;
             }
 
           }

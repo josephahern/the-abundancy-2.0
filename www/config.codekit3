@@ -833,6 +833,12 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/images\/svg\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/images\/svg\/index.html",
+		"oF": 0
+		},
 	"\/images\/the_abundancy-logo-w-text.png": {
 		"ft": 32768,
 		"iS": 11120,
@@ -1186,8 +1192,8 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "\/css\/main.css",
-		"oF": 0,
-		"oS": 1,
+		"oF": 1,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/sass\/pages\/_approach.scss": {

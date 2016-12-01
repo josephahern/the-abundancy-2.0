@@ -105,18 +105,18 @@
                 modal.find(".text").text(bio);
                 modal.find("img").attr("src", "images/home/leadership/gif/" + $(this).attr("data-person") + ".gif");
 
-                modal.css({top: $(this).position().top});
-                modal.toggleClass("open animated fadeInUp");
+                $(".modal-contain").toggleClass("open");
+                modal.toggleClass("animated fadeInUp");
 
-                $('html, body').animate({
-                    scrollTop: (modal.offset().top - modal.outerHeight())
-                }, 2000);
+                $("html").addClass("noscroll");
                 
             });
 
             // Modal close button
             $(".modal-button").on("click", function(){
-                $(".modal").toggleClass("open animated fadeInUp");
+                $(".modal-contain").toggleClass("open");
+                $(".modal").toggleClass("animated fadeInUp");
+                $("html").removeClass("noscroll");
             });
 
             // Animate Get Chosen text
@@ -222,6 +222,38 @@
         /* Our Approach */
         if($("#approach").length){
             console.log("The Abundancy / Our Approach");
+
+            // Graph SVG Iconography
+
+            layer8();
+            setInterval(layer8(), 6000);
+
+            function layer8(){
+                drawLine("#Layer_8 #line-8-1",0,2,"ease-in-out");
+                drawLine("#Layer_8 #line-8-2",1900,0.5,"linear");
+                drawLine("#Layer_8 #line-8-3",1900,0.5,"linear");
+            }
+
+            setTimeout(function(){
+                document.getElementById("bolt-lines").classList.remove("bolt-before");
+                document.getElementById("bolt-lines").classList.add("bolt-after");
+            },3000);
+
+            // ID OF LINE, DELAY OF START, LENGTH TO COMPLETE, EASING
+            function drawLine(pathToDraw,delay,duration,easing){
+                var path = document.querySelector(pathToDraw);
+                var length = path.getTotalLength();
+                path.style.transition = path.style.WebkitTransition = "none";
+                path.style.strokeDasharray = length + " " + length;
+                path.style.strokeDashoffset = length;
+                path.getBoundingClientRect();
+                path.style.transition = path.style.WebkitTransition = "stroke-dashoffset " + duration + "s " + easing;
+                setTimeout(function(){
+                    path.style.strokeDashoffset = "0";
+                },delay);
+
+            }
+
         }
 
         /* Our Work */
@@ -271,11 +303,17 @@
             console.log("The Abundancy / Contact + Careers");
 
             $( ".input-field" ).focus(function() {
-                $(this).parent().addClass("input-filled");
+                if(!$(this).hasClass("input-filled")){
+                    $(this).parent().addClass("input-filled");
+                }
             });
 
             $( ".input-field" ).blur(function() {
-                $(this).parent().removeClass("input-filled");
+
+                if($(this).val() === '') {
+                    $(this).parent().removeClass("input-filled");
+                }
+
             });
 
             // Recruiter box
