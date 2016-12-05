@@ -40,7 +40,11 @@ img {
   @media only screen and (max-width: 750px) {
     display: none;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
   }
 
 }
@@ -125,10 +129,24 @@ img {
   }
 
   &.shapes-icon {
+    height: 190px;
+
+    @media only screen and (max-width: 750px){
+      width: 95px;
+    }
 
   }
 
   &.bolt-icon {
+    width: 150px;
+    height: 152px;
+
+    @media only screen and (max-width: 750px){
+      width: 100px;
+      position: relative;
+      top: -7px;
+      height: 150px;
+    }
 
   }
 
@@ -440,7 +458,7 @@ img {
   100%       {transform: scale(1);}
 }
 
-#cover {
+#COVER{
   animation: bolt 0.75s ease-out;
   animation-delay: 0.25s;
   animation-fill-mode: forwards;
@@ -453,7 +471,7 @@ img {
 .bolt-before {
   transform: scale(0);
   animation: bolt-lines 2s ease-in-out;
-  animation-delay: 0;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
 }
 
@@ -462,4 +480,12 @@ img {
   animation-fill-mode: none;
   animation-delay: 2s;
   animation: bolt-lines-after 3s ease-in-out infinite;
+}
+
+#LINES1,
+#LINES2 {
+  opacity: 0;
+  animation-fill-mode: none;
+  animation: punch 3s ease-in-out infinite;
+  animation-delay: 3s;
 }

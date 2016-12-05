@@ -1,16 +1,264 @@
 .case-study {
+  background-color: #ffffff;
 
   .primary {
     min-height: 500px;
-    background-color: blue;
     display: flex;
     padding-bottom: 0;
     position: relative;
+    background-image: url("/images/cases/uscellular/masthead.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
     p {
       font-family: $font-family-secondary;
       font-size: 21px;
       max-width: 550px;
+    }
+
+  }
+
+  .row {
+
+    &.stats {
+      background-color: #ffffff;
+      padding-top: 75px;
+      padding-bottom: 100px;
+      position: relative;
+
+      .column {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media only screen and (max-width: 750px) {
+          align-items: center;
+        }
+
+      }
+
+      .left {
+        display: inline-block;
+      }
+
+      .divider {
+        display: block;
+        height: 7px;
+        background-color: $abundancy-copper;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 30px;
+
+        @media only screen and (max-width: 750px) {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          height: 4px;
+        }
+
+      }
+
+      .percentage {
+        font-family: $font-family-primary;
+        font-weight: 300;
+        font-size: 75px;
+        display: block;
+        color: $abundancy-copper;
+        text-align: center;
+
+        @media only screen and (max-width: 750px) {
+          font-size: 46px;
+        }
+
+
+      }
+
+      .subtext {
+        font-family: $font-family-primary;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        display: block;
+        color: $abundancy-slate;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: 750px) {
+          font-size: 10px;
+        }
+
+      }
+
+      img {
+        max-width: 720px;
+        width: 100%;
+
+      }
+
+    }
+
+    &.approach {
+      background-color: $abundancy-copper;
+      max-height: 360px;
+      overflow: visible;
+
+      .column {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .title {
+        font-family: $font-family-primary;
+        font-weight: 700;
+        font-size: 32px;
+        color: $abundancy-cream;
+        margin-top: 45px;
+        display: block;
+      }
+
+      p {
+        font-family: $font-family-secondary;
+        font-size: 21px;
+        color: #ffffff;
+      }
+
+      img {
+        max-width: 335px;
+        width: 100%;
+        position: relative;
+        top: -140px;
+      }
+
+    }
+
+    &.quote{
+      background-color: #ffffff;
+      color: $abundancy-copper;
+      padding-top: 90px;
+      padding-bottom: 50px;
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        margin-bottom: 25px;
+      }
+
+      .text {
+        font-family: $font-family-secondary;
+        font-size: 32px;
+        display: inline-block;
+        max-width: 530px;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .name {
+        font-family: $font-family-primary;
+        font-weight: 700;
+        font-size: 18px;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .title {
+        font-family: $font-family-primary;
+        font-weight: 500;
+        font-size: 12px;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+    }
+
+    &.services {
+      background-color: #84827e;
+      max-height: 490px;
+      overflow: visible;
+
+      .column {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+      }
+
+      .left {
+        display: inline-block;
+        margin-left: 75px;
+      }
+
+      .title {
+        font-family: $font-family-primary;
+        font-weight: 700;
+        font-size: 36px;
+        display: block;
+        color: $abundancy-cream;
+        margin-top: 100px;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          display: block;
+          color: #ffffff;
+          font-family: $font-family-primary;
+          font-weight: 700;
+          font-size: 21px;
+          margin-bottom: 10px;
+        }
+
+      }
+
+      img {
+        width: 100%;
+        max-width: 590px;
+        position: relative;
+        top: -60px;
+      }
+
+    }
+
+    &.next {
+      margin-top: 10px;
+      min-height: 158px;
+      width: 100%;
+      background-image: url("/images/cases/uscellular/next-sunpower.jpg");
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .text {
+        font-family: $font-family-primary;
+        font-weight: 300;
+        color: $abundancy-cream;
+        font-size: 18px;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .title {
+        font-family: $font-family-primary;
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 28px;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
     }
 
   }

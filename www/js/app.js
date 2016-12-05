@@ -62,9 +62,10 @@
         if($("#shuffler").length){
 
             $("#shuffler").slotMachine({
-                active	: 1,
-                delay	: 400,
-                auto	: 1500
+                active : 1,
+                delay : 400,
+                auto : 1500,
+                spins: 2
             });
 
         }
@@ -122,8 +123,7 @@
             // Animate Get Chosen text
 
             var chosenSmall = $("#get-chosen-small"),
-                chosenLarge = $("#get-chosen-large"),
-                chosenLargeOffsetTop = chosenLarge.offset().top;
+                chosenLarge = $("#get-chosen-large");
 
             var totalDistanceNeededToTravel = chosenLarge.offset().top - chosenSmall.offset().top;
             var totalLeftDistanceNeededToTravel = chosenSmall.offset().left - chosenLarge.offset().left;
@@ -133,7 +133,7 @@
                 if ($(window).width() > 680) {
 
                     var distanceFromTop = $(".parallax .small").offset().top - $(window).scrollTop();
-                    console.log(distanceFromTop);
+
                     var totalDistanceTraveled = totalDistanceNeededToTravel - (chosenLarge.offset().top - chosenSmall.offset().top),
                         percentageTraveled = totalDistanceTraveled / totalDistanceNeededToTravel;
 
@@ -143,16 +143,14 @@
 
                         var fontSize = 18 + ((60 - 18) * percentageTraveled);
 
-                        if (fontSize >= 59) {
-
-                            fontSize = 60;
+                        if (distanceFromTop < -40) {
 
                             chosenSmall.css({
                                 color: '#F8F9D2',
-                                top: chosenLarge.offset().top - 31,
-                                left: chosenLarge.offset().left,
-                                fontSize: 60 + "px",
-                                lineHeight: 60 + "px",
+                                top: totalDistanceNeededToTravel,
+                                left: -(totalLeftDistanceNeededToTravel),
+                                fontSize: "60px",
+                                lineHeight: "60px",
                                 transition: "all 0.4s ease"
                             });
 
@@ -174,13 +172,27 @@
 
                         }
 
-                        var leftOffset = -(totalLeftDistanceNeededToTravel * percentageTraveled);
+                        else {
+
+                            var leftOffset = -(totalLeftDistanceNeededToTravel * percentageTraveled);
+
+                            chosenSmall.css({
+                                top: distanceTopDifference,
+                                left: leftOffset,
+                                fontSize: fontSize + "px",
+                                lineHeight: fontSize + "px"
+                            });
+
+                        }
+
+                    } else if (distanceFromTop > 350 && !chosenSmall.hasClass("complete")) {
 
                         chosenSmall.css({
-                            top: distanceTopDifference,
-                            left: leftOffset,
-                            fontSize: fontSize + "px",
-                            lineHeight: fontSize + "px"
+                            color: '#DDDDDC',
+                            top: 0,
+                            left: 0,
+                            fontSize: 18 + "px",
+                            lineHeight: 18 + "px"
                         });
 
                     }
@@ -234,11 +246,6 @@
                 drawLine("#Layer_8 #line-8-3",1900,0.5,"linear");
             }
 
-            setTimeout(function(){
-                document.getElementById("bolt-lines").classList.remove("bolt-before");
-                document.getElementById("bolt-lines").classList.add("bolt-after");
-            },3000);
-
             // ID OF LINE, DELAY OF START, LENGTH TO COMPLETE, EASING
             function drawLine(pathToDraw,delay,duration,easing){
                 var path = document.querySelector(pathToDraw);
@@ -283,7 +290,7 @@
                             break;
                         }
                         if (data.data[num].type != 'video'){
-                            $('.instagram-feed').append('<div class="box"><img src="'+data.data[num].images.standard_resolution.url+'"><div class="insta-overlay"><div class="insta-heart">'+ data.data[num].likes.count + '</div><div class="insta-comments">'+ data.data[num].comments.count + '</div></div></div>');
+                            $('.instagram-feed').append('<div class="box"><img src="'+data.data[num].images.standard_resolution.url+'"><a class="insta-overlay" href="'+ data.data[num].link +'" target="_blank"><div class="insta-heart">'+ data.data[num].likes.count + '</div><div class="insta-comments">'+ data.data[num].comments.count + '</div></a></div>');
                             imageCount++;
                         }
                         console.log(imageCount);
@@ -294,6 +301,12 @@
                     console.log(data);
                 }
             });
+
+            // Graph SVG Iconography
+
+            setTimeout(function(){
+                $("#bolt-lines").removeClass("bolt-before").addClass("bolt-after");
+            },3000);
 
         }
 
@@ -315,6 +328,8 @@
                 }
 
             });
+
+            $('.dropdown').fancySelect();
 
             // Recruiter box
             $.ajax({

@@ -28,6 +28,11 @@
 
             @media only screen and (max-width: 750px) {
                 display: none;
+                -webkit-transition: none !important;
+                -moz-transition: none !important;
+                -o-transition: none !important;
+                -ms-transition: none !important;
+                transition: none !important;
             }
 
         }
@@ -103,7 +108,7 @@
                                     position: relative;
                                     top: 0;
                                     left: 0;
-                                    transition: all 0.1s ease;
+                                    //transition: all 0.1s ease;
                                     display: block;
                                     width: 500px;
 

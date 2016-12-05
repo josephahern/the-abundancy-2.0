@@ -135,10 +135,10 @@
                 <div class="block infograph">
                     <div class="svg-icon shapes-icon">
                         <svg version="1.1" id="Layer_5" class="shapes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                            <circle id="CIRCLE-MAIN" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" cx="100" cy="100" r="69.5"/>
-                            <circle class="shape" id="CIRCLE" fill="#FFFFFF" stroke="#000000" stroke-width="5" stroke-miterlimit="10" cx="38.6" cy="61.1" r="33.6"/>
-                            <rect class="shape" id="SQUARE" x="68.3" y="130" fill="#FFFFFF" stroke="#000000" stroke-width="5" stroke-miterlimit="10" width="60.5" height="60.5"/>
-                            <polygon class="shape" id="TRIANGE" fill="#FFFFFF" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="128.8,91.7 159.7,28.9 195,91.7 "/>
+                            <circle id="CIRCLE-MAIN" fill="none" stroke="#f8f9d2" stroke-width="5" stroke-miterlimit="10" cx="100" cy="100" r="69.5"/>
+                            <circle class="shape" id="CIRCLE" fill="#aac3bc" stroke="#84827e" stroke-width="5" stroke-miterlimit="10" cx="38.6" cy="61.1" r="33.6"/>
+                            <rect class="shape" id="SQUARE" x="68.3" y="130" fill="#aac3bc" stroke="#84827e" stroke-width="5" stroke-miterlimit="10" width="60.5" height="60.5"/>
+                            <polygon class="shape" id="TRIANGE" fill="#aac3bc" stroke="#84827e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="128.8,91.7 159.7,28.9 195,91.7 "/>
                         </svg>
                     </div>
                 </div>
@@ -151,20 +151,20 @@
                 </div>
                 <div class="block infograph">
                     <div class="svg-icon bolt-icon">
-                        <svg version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                            <polygon id="BOLT" fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="137,5 73,86.7 109.9,86.7 89.6,145.8 158.4,63.7 120.4,63.7 "/>
-                            <rect id="COVER" x="68.7" y="2.3" fill="#FFFFFF" width="97" height="146"/>
+                        <svg version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 33 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                            <polygon id="BOLT" fill="none" stroke="#84827e"" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="137,5 73,86.7 109.9,86.7 89.6,145.8 158.4,63.7 120.4,63.7 "/>
+                            <rect id="COVER" x="68.7" y="2.3" fill="#AAC3BC" width="97" height="146"/>
 
                             <g id="bolt-lines" class="bolt-before">
-                                <line id="LINE1" fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="33.1575" x1="68.4" y1="99" x2="83" y2="128.8"/>
-                                <line id="LINE2" fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="57.3" y1="131.8" x2="72.5" y2="139.3"/>
-                                <line id="LINE3" fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="35.0094" x1="41.6" y1="167" x2="73" y2="151.5"/>
-                                <line id="LINE4" fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="85" y1="161.4" x2="72.5" y2="195"/>
+                                <line id="LINE1" fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="33.1575" x1="68.4" y1="99" x2="83" y2="128.8"/>
+                                <line id="LINE2" fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="57.3" y1="131.8" x2="72.5" y2="139.3"/>
+                                <line id="LINE3" fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="35.0094" x1="41.6" y1="167" x2="73" y2="151.5"/>
+                                <line id="LINE4" fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="85" y1="161.4" x2="72.5" y2="195"/>
                                 <g id="LINE5">
-                                    <line fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="105" y1="157.2" x2="112.5" y2="163.8"/>
-                                    <line fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="117.3" y1="168.1" x2="124.8" y2="174.7"/>
+                                    <line fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="105" y1="157.2" x2="112.5" y2="163.8"/>
+                                    <line fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="117.3" y1="168.1" x2="124.8" y2="174.7"/>
                                 </g>
-                                <line id="LINE6" fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="110.9" y1="141.2" x2="142.5" y2="125.4"/>
+                                <line id="LINE6" fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="110.9" y1="141.2" x2="142.5" y2="125.4"/>
                             </g>
                         </svg>
                     </div>

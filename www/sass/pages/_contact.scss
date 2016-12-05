@@ -33,6 +33,11 @@
                     color: $abundancy-brown;
                     margin-top: 35px;
                 }
+
+                @media only screen and (max-width: 750px){
+                    display: none;
+                }
+
             }
 
             h1 {
@@ -256,8 +261,17 @@
 
             @media only screen and (max-width: 680px) {
 
+                h1 {
+                    font-size: 12px;
+                }
+
+                h2 {
+                    font-size: 22px;
+                }
+
                 .fields {
 
+                    padding-top: 10px;
                     flex-direction: column;
 
                     .left {
@@ -281,6 +295,12 @@
 
 
             }
+        }
+
+        @media only screen and (max-width: 750px) {
+
+            padding-top: 85px;
+
         }
 
     }
@@ -311,6 +331,10 @@
                 .text {
                     color: $abundancy-foam-green;
                     margin-top: 25px;
+                }
+
+                @media only screen and (max-width: 750px){
+                    display: none;
                 }
 
             }

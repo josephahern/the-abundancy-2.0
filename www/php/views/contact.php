@@ -28,16 +28,22 @@
                         </label>
 				    </span>
                     <span class="input">
-					    <input class="input-field" type="text" id="input-10">
-					    <label class="input-label" for="input-10">
-                            <span class="input-content">Subject</span>
-                        </label>
+					    <select class="dropdown">
+                            <option value="">Subject</option>
+                            <option>General Inquiry</option>
+                            <option>New Business</option>
+                            <option>Careers</option>
+                        </select>
 				    </span>
                     <span class="input">
-					    <input class="input-field" type="text" id="input-10">
-					    <label class="input-label" for="input-10">
-                            <span class="input-content">I am a</span>
-                        </label>
+					    <select class="dropdown">
+                            <option value="">I am a</option>
+                            <option>Backseat Driver</option>
+                            <option>Shower Singer</option>
+                            <option>Beer Snob</option>
+                            <option>Stamp Collector</option>
+                            <option>Early Riser</option>
+                        </select>
 				    </span>
                 </div>
                 <div class="right">

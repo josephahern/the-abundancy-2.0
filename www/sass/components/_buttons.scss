@@ -113,8 +113,8 @@ a {
                 transition: all 0.3s ease;
 
                 &:hover {
-                    color: $abundancy-brown;
-                    background-color: $abundancy-cream;
+                    color: $abundancy-foam-green;
+                    background-color: $abundancy-slate;
                 }
 
             }
@@ -122,4 +122,139 @@ a {
         }
 
     }
+}
+
+// fancy select
+
+div.fancy-select {
+    position: relative;
+    font-weight: bold;
+    font-size: 13px;
+    color: #46565D;
+}
+
+div.fancy-select.disabled {
+    opacity: 0.5;
+}
+
+
+div.fancy-select select:focus + div.trigger.open {
+    box-shadow: none;
+}
+
+div.fancy-select div.trigger {
+    cursor: pointer;
+    padding: 10px 0px 9px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    border-bottom: 2px solid #f3dcd4;
+    font-family: $font-family-primary;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+    color: #F8F9D2;
+    width: 100%;
+
+    transition: all 240ms ease-out;
+    -webkit-transition: all 240ms ease-out;
+    -moz-transition: all 240ms ease-out;
+    -ms-transition: all 240ms ease-out;
+    -o-transition: all 240ms ease-out;
+}
+
+div.fancy-select div.trigger:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 19px;
+    height: 11px;
+    background-image: url("/images/icons/down-arrow.png");
+    background-size: 19px 11px;
+    top: 21px;
+    right: 9px;
+}
+
+div.fancy-select ul.options {
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5005;
+    max-height: 200px;
+    overflow: auto;
+    background: $abundancy-cream;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    width: 100%;
+
+    transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.open {
+    visibility: visible;
+    top: 0px;
+    opacity: 1;
+
+    /* have to use a non-visibility transition to prevent this iOS issue (bug?): */
+    /*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
+    transition: opacity 300ms ease-out, top 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, top 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing {
+    top: auto;
+    bottom: 40px;
+
+    transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing.open {
+    top: auto;
+    bottom: 50px;
+
+    transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+
+div.fancy-select ul.options li {
+    padding: 8px 12px;
+    color: $abundancy-copper;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: $font-family-primary;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+    transition: all 150ms ease-out;
+    -webkit-transition: all 150ms ease-out;
+    -moz-transition: all 150ms ease-out;
+    -ms-transition: all 150ms ease-out;
+    -o-transition: all 150ms ease-out;
+}
+
+div.fancy-select ul.options li.selected {
+    background: rgba(43,134,134,0.3);
+    color: rgba(255,255,255,0.75);
+}
+
+div.fancy-select ul.options li.hover {
+    color: #fff;
 }

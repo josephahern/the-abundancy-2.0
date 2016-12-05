@@ -7,45 +7,53 @@
                 <p>U.S. Cellular was competing with telecom companies that had louder voices and larger budgets. They called us to find a smarter way to attract people to their pre-paid services. We knew just the thing.</p>
             </div>
         </section>
-        <div class="case" id="uscc-case">
-            <div class="small">
-                <div class="block">
-                    <span class="title">U.S. Cellular<sup>&reg;</sup></span>
-                    <span class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque massa sit amet ornare elementum.</span>
-                    <a href="/case-studies/us-cellular" class="btn cases more">More</a>
+        <div class="row stats">
+            <div class="column">
+                <div class="left">
+                    <span class="percentage">853%</span>
+                    <span class="subtext">Increase in sales <br />the first 6 weeks</span>
+                    <div class="divider"></div>
+                    <span class="percentage">461%</span>
+                    <span class="subtext">Increase in good <br />intent responses</span>
                 </div>
-            </div>
-            <div class="large"></div>
-        </div>
-        <div class="case" id="ulta-case">
-            <div class="large"></div>
-            <div class="small">
-                <div class="block">
-                    <span class="title">Ulta</span>
-                    <span class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque massa sit amet ornare elementum.</span>
-                    <a href="#" class="btn cases more">More</a>
-                </div>
+                <img src="/images/cases/uscellular/laptop.png" alt="">
             </div>
         </div>
-        <div class="case" id="sunpower-case">
-            <div class="small">
-                <div class="block">
-                    <span class="title">Sunpower</span>
-                    <span class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque massa sit amet ornare elementum.</span>
-                    <a href="#" class="btn cases more">More</a>
+        <div class="row approach">
+            <div class="column">
+                <img src="/images/cases/uscellular/phone.png" alt="" class="wow fadeInUp">
+                <div class="right">
+                    <span class="title">The Approach</span>
+                    <p>To get U.S. Cellular chosen, we developed a fast and furious test-and-learn plan to uncover what content was most effective. We cut time-to-market dramatically—from three months down to three weeks—to allow us to react faster to results. Then we dynamically deployed more than 50 tests per quarter and optimized real-time based on our learnings. Listening to real users got a big response.</p>
                 </div>
             </div>
-            <div class="large"></div>
         </div>
-        <div class="case" id="jh-case">
-            <div class="large"></div>
-            <div class="small">
-                <div class="block">
-                    <span class="title">Jackson Hewitt</span>
-                    <span class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque massa sit amet ornare elementum.</span>
-                    <a href="#" class="btn cases more">More</a>
-                </div>
+        <div class="row quote">
+            <div class="column">
+                <img src="/images/cases/uscellular/quote-icon.png" alt="">
+                <span class="text">Search is telling us what people want now and what they’ll need next.</span>
+                <span class="name">Chris Marshall</span>
+                <span class="title">Group Analytics Director</span>
             </div>
+        </div>
+        <div class="row services">
+            <div class="column">
+                <div class="left">
+                    <span class="title">Services</span>
+                    <ul>
+                        <li>Intent Analytics</li>
+                        <li>Content Strategy</li>
+                        <li>Creative Development</li>
+                        <li>Site Analysis</li>
+                        <li>Testing and Optimization</li>
+                    </ul>
+                </div>
+                <img src="/images/cases/uscellular/phone2.png" alt="" class="wow fadeInRight">
+            </div>
+        </div>
+        <div class="row next">
+            <span class="text">Next Case Study</span>
+            <span class="title">Sunpower</span>
         </div>
     </div>
 <?php include 'footer.php'; ?>

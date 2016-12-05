@@ -26,12 +26,13 @@
 <script src="/js/libs/renderers/CanvasRenderer.js"></script>
 <script src="/js/libs/classie.js"></script>
 <script src="/js/libs/wow.min.js"></script>
+<script src="/js/libs/fancySelect.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <!-- <script src="js/components/main.js"></script> -->
 
 <!-- Main Script File -->
 
-<script src="js/app.js"></script>
+<script src="/js/app.js"></script>
 <script>
     new WOW().init();
 </script>
