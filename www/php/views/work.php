@@ -36,7 +36,7 @@
             <div class="block">
                 <span class="title">Jackson Hewitt<sup>&reg;</sup></span>
                 <span class="blurb">We shrank Jackson Hewitt’s acquisition costs by rethinking their site experience.</span>
-                <a href="/work/us-cellular" class="btn cases more">Read More</a>
+                <a href="/work/jackson-hewitt" class="btn cases more">Read More</a>
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@
             <div class="block">
                 <span class="title">SunPower<sup>&reg;</sup></span>
                 <span class="blurb">Our immersive web content made SunPower stand out and secured new dealers.</span>
-                <a href="/work/us-cellular" class="btn cases more">Read More</a>
+                <a href="/work/sunpower" class="btn cases more">Read More</a>
             </div>
         </div>
     </div>

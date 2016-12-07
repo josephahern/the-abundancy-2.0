@@ -37,6 +37,14 @@ $router->map( 'GET', '/work/us-cellular', function() {
     require __DIR__ . '/php/views/uscellular.php';
 }, 'uscellular');
 
+$router->map( 'GET', '/work/jackson-hewitt', function() {
+    require __DIR__ . '/php/views/jacksonhewitt.php';
+}, 'jacksonhewitt');
+
+$router->map( 'GET', '/work/sunpower', function() {
+    require __DIR__ . '/php/views/sunpower.php';
+}, 'sunpower');
+
 
 //
 // Culture Page

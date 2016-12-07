@@ -1,4 +1,4 @@
-#uscellular.case-study {
+#sunpower.case-study {
   background-color: #ffffff;
 
   .primary {
@@ -6,7 +6,7 @@
     display: flex;
     padding-bottom: 0;
     position: relative;
-    background-image: url("/images/cases/uscellular/masthead.jpg");
+    background-image: url("/images/cases/sunpower/masthead.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -22,7 +22,6 @@
         left: 1px;
         top: -4px;
       }
-
 
     }
 
@@ -81,7 +80,7 @@
         margin-top: 50px;
 
         @media only screen and (max-width: 750px) {
-          margin-top: 10px;
+          margin-top: 0px;
         }
 
       }
@@ -148,7 +147,7 @@
         width: 75%;
 
         @media only screen and (max-width: 550px) {
-          max-width: 275px;
+          max-width: 245px;
         }
 
 

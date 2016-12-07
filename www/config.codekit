@@ -106,6 +106,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/cases\/jh\/laptop.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/cases\/jh\/laptop.png",
+		"outputAbbreviatedPath": "\/images\/cases\/jh\/laptop.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cases\/jh\/masthead.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 229069,
+		"inputAbbreviatedPath": "\/images\/cases\/jh\/masthead.jpg",
+		"outputAbbreviatedPath": "\/images\/cases\/jh\/masthead.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cases\/jh\/next-sunpower.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/cases\/jh\/next-sunpower.jpg",
+		"outputAbbreviatedPath": "\/images\/cases\/jh\/next-sunpower.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cases\/jh\/phone.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/cases\/jh\/phone.png",
+		"outputAbbreviatedPath": "\/images\/cases\/jh\/phone.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cases\/jh\/phone2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/cases\/jh\/phone2.png",
+		"outputAbbreviatedPath": "\/images\/cases\/jh\/phone2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/cases\/panel_jacksonhewitt-bg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -146,6 +201,72 @@
 		"initialSize": 1.24509e+06,
 		"inputAbbreviatedPath": "\/images\/cases\/panel_uscellular-bg.png",
 		"outputAbbreviatedPath": "\/images\/cases\/panel_uscellular-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cases\/sunpower\/laptop.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 225226,
+		"inputAbbreviatedPath": "\/images\/cases\/sunpower\/laptop.png",
+		"outputAbbreviatedPath": "\/images\/cases\/sunpower\/laptop.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cases\/sunpower\/masthead.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 602037,
+		"inputAbbreviatedPath": "\/images\/cases\/sunpower\/masthead.jpg",
+		"outputAbbreviatedPath": "\/images\/cases\/sunpower\/masthead.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cases\/sunpower\/next-sunpower.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 480412,
+		"inputAbbreviatedPath": "\/images\/cases\/sunpower\/next-sunpower.jpg",
+		"outputAbbreviatedPath": "\/images\/cases\/sunpower\/next-sunpower.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cases\/sunpower\/phone.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 545136,
+		"inputAbbreviatedPath": "\/images\/cases\/sunpower\/phone.png",
+		"outputAbbreviatedPath": "\/images\/cases\/sunpower\/phone.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cases\/sunpower\/phone2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 665166,
+		"inputAbbreviatedPath": "\/images\/cases\/sunpower\/phone2.png",
+		"outputAbbreviatedPath": "\/images\/cases\/sunpower\/phone2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cases\/sunpower\/quote-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 701,
+		"inputAbbreviatedPath": "\/images\/cases\/sunpower\/quote-icon.png",
+		"outputAbbreviatedPath": "\/images\/cases\/sunpower\/quote-icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -388,6 +509,28 @@
 		"initialSize": 4970,
 		"inputAbbreviatedPath": "\/images\/home\/clients\/lincoln_park_zoo.png",
 		"outputAbbreviatedPath": "\/images\/home\/clients\/lincoln_park_zoo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/home\/clients\/ounce.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5758,
+		"inputAbbreviatedPath": "\/images\/home\/clients\/ounce.png",
+		"outputAbbreviatedPath": "\/images\/home\/clients\/ounce.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/home\/clients\/sephora.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4244,
+		"inputAbbreviatedPath": "\/images\/home\/clients\/sephora.png",
+		"outputAbbreviatedPath": "\/images\/home\/clients\/sephora.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -696,6 +839,17 @@
 		"initialSize": 527,
 		"inputAbbreviatedPath": "\/images\/icons\/down-arrow.png",
 		"outputAbbreviatedPath": "\/images\/icons\/down-arrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/quote-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/icons\/quote-icon.png",
+		"outputAbbreviatedPath": "\/images\/icons\/quote-icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1069,6 +1223,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/php\/views\/jacksonhewitt.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/php\/views\/jacksonhewitt.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/php\/views\/sunpower.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/php\/views\/sunpower.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/php\/views\/uscellular.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1320,6 +1492,38 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/pages\/_home.scss",
 		"outputAbbreviatedPath": "\/css\/_home.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/pages\/_jacksonhewitt.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/pages\/_jacksonhewitt.scss",
+		"outputAbbreviatedPath": "\/css\/_jacksonhewitt.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/pages\/_sunpower.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/pages\/_sunpower.scss",
+		"outputAbbreviatedPath": "\/css\/_sunpower.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -2068,7 +2272,7 @@
 	"iconImageName": "compass_darkGray"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -2222,7 +2426,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "http:\/\/theabundancy.dev:8888\/",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,

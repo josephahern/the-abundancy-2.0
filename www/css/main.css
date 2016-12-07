@@ -627,7 +627,6 @@ div.fancy-select {
   position: relative;
   font-weight: bold;
   font-size: 13px;
-  color: #46565D;
 }
 
 div.fancy-select.disabled {
@@ -675,16 +674,17 @@ div.fancy-select ul.options {
   list-style: none;
   margin: 0;
   position: absolute;
-  top: -10px;
+  top: 30px;
   left: 0;
   visibility: hidden;
   opacity: 0;
   z-index: 5005;
   max-height: 200px;
   overflow: auto;
-  background: #F8F9D2;
+  background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   width: 100%;
+  padding: 0;
   transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
   -webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
   -moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
@@ -694,7 +694,7 @@ div.fancy-select ul.options {
 
 div.fancy-select ul.options.open {
   visibility: visible;
-  top: 0px;
+  top: 45px;
   opacity: 1;
   /* have to use a non-visibility transition to prevent this iOS issue (bug?): */
   /*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
@@ -742,8 +742,8 @@ div.fancy-select ul.options li {
 }
 
 div.fancy-select ul.options li.selected {
-  background: rgba(43, 134, 134, 0.3);
-  color: rgba(255, 255, 255, 0.75);
+  background: #db734c;
+  color: #fff;
 }
 
 div.fancy-select ul.options li.hover {
@@ -3884,10 +3884,10 @@ footer .copyright {
   }
 }
 
-.case-study {
+#uscellular.case-study {
   background-color: #ffffff;
 }
-.case-study .primary {
+#uscellular.case-study .primary {
   min-height: 500px;
   display: flex;
   padding-bottom: 0;
@@ -3896,87 +3896,158 @@ footer .copyright {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.case-study .primary p {
+@media only screen and (max-width: 680px) {
+  #uscellular.case-study .primary h2 {
+    font-size: 22px;
+  }
+}
+#uscellular.case-study .primary h2 sup {
+  font-size: 50%;
+  position: relative;
+  left: 1px;
+  top: -4px;
+}
+#uscellular.case-study .primary .column {
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 680px) {
+  #uscellular.case-study .primary .column {
+    margin-bottom: 0;
+  }
+}
+#uscellular.case-study .primary p {
   font-family: "Klinic Slab", sans-serif;
   font-size: 21px;
   max-width: 550px;
+  margin-top: 10px;
 }
-.case-study .row.stats {
+@media only screen and (max-width: 680px) {
+  #uscellular.case-study .primary p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  #uscellular.case-study .primary {
+    min-height: 0px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #uscellular.case-study .primary {
+    background-position-x: -100px;
+  }
+}
+#uscellular.case-study .row.stats {
   background-color: #ffffff;
   padding-top: 75px;
   padding-bottom: 100px;
   position: relative;
 }
-.case-study .row.stats .column {
+#uscellular.case-study .row.stats .column {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 @media only screen and (max-width: 750px) {
-  .case-study .row.stats .column {
+  #uscellular.case-study .row.stats .column {
     align-items: center;
   }
 }
-.case-study .row.stats .left {
+#uscellular.case-study .row.stats .left {
   display: inline-block;
+  margin-top: 50px;
 }
-.case-study .row.stats .divider {
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.stats .left {
+    margin-top: 10px;
+  }
+}
+#uscellular.case-study .row.stats .divider {
   display: block;
   height: 7px;
   background-color: #C55227;
-  width: 100%;
-  margin-top: 40px;
+  width: 75%;
+  margin-top: 25px;
   margin-bottom: 30px;
 }
 @media only screen and (max-width: 750px) {
-  .case-study .row.stats .divider {
+  #uscellular.case-study .row.stats .divider {
     margin-top: 10px;
     margin-bottom: 10px;
     height: 4px;
   }
 }
-.case-study .row.stats .percentage {
+#uscellular.case-study .row.stats .percentage {
   font-family: "Futura W01", sans-serif;
   font-weight: 300;
   font-size: 75px;
   display: block;
   color: #C55227;
-  text-align: center;
+  text-align: left;
 }
 @media only screen and (max-width: 750px) {
-  .case-study .row.stats .percentage {
+  #uscellular.case-study .row.stats .percentage {
     font-size: 46px;
   }
 }
-.case-study .row.stats .subtext {
+@media only screen and (max-width: 550px) {
+  #uscellular.case-study .row.stats .percentage {
+    font-size: 24px;
+  }
+}
+#uscellular.case-study .row.stats .subtext {
   font-family: "Futura W01", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 22px;
   display: block;
   color: #42403C;
   text-transform: uppercase;
+  max-width: 275px;
 }
-@media only screen and (max-width: 750px) {
-  .case-study .row.stats .subtext {
-    font-size: 10px;
+@media only screen and (max-width: 850px) {
+  #uscellular.case-study .row.stats .subtext {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
-.case-study .row.stats img {
-  max-width: 720px;
-  width: 100%;
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.stats .subtext {
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
-.case-study .row.approach {
+#uscellular.case-study .row.stats img {
+  max-width: 720px;
+  width: 75%;
+}
+@media only screen and (max-width: 550px) {
+  #uscellular.case-study .row.stats img {
+    max-width: 275px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.stats {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+#uscellular.case-study .row.approach {
   background-color: #C55227;
   max-height: 360px;
   overflow: visible;
 }
-.case-study .row.approach .column {
+#uscellular.case-study .row.approach .column {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
 }
-.case-study .row.approach .title {
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.approach .column {
+    height: 185px;
+    align-items: center;
+  }
+}
+#uscellular.case-study .row.approach .title {
   font-family: "Futura W01", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -3984,33 +4055,60 @@ footer .copyright {
   margin-top: 45px;
   display: block;
 }
-.case-study .row.approach p {
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.approach .title {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+}
+#uscellular.case-study .row.approach p {
   font-family: "Klinic Slab", sans-serif;
   font-size: 21px;
   color: #ffffff;
+  max-width: 460px;
 }
-.case-study .row.approach img {
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.approach p {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+#uscellular.case-study .row.approach img {
   max-width: 335px;
-  width: 100%;
+  width: 35%;
   position: relative;
-  top: -140px;
+  top: -100px;
 }
-.case-study .row.quote {
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.approach img {
+    top: 0;
+    max-width: 125px;
+  }
+}
+#uscellular.case-study .row.approach .right {
+  margin-left: 80px;
+}
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.approach .right {
+    margin-left: 10px;
+  }
+}
+#uscellular.case-study .row.quote {
   background-color: #ffffff;
   color: #C55227;
   padding-top: 90px;
   padding-bottom: 50px;
 }
-.case-study .row.quote .column {
+#uscellular.case-study .row.quote .column {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.case-study .row.quote img {
+#uscellular.case-study .row.quote img {
   margin-bottom: 25px;
 }
-.case-study .row.quote .text {
+#uscellular.case-study .row.quote .text {
   font-family: "Klinic Slab", sans-serif;
   font-size: 32px;
   display: inline-block;
@@ -4018,36 +4116,68 @@ footer .copyright {
   text-align: center;
   margin-bottom: 25px;
 }
-.case-study .row.quote .name {
+#uscellular.case-study .row.quote .name {
   font-family: "Futura W01", sans-serif;
   font-weight: 700;
   font-size: 18px;
   display: inline-block;
   text-transform: uppercase;
 }
-.case-study .row.quote .title {
+#uscellular.case-study .row.quote .title {
   font-family: "Futura W01", sans-serif;
   font-weight: 500;
   font-size: 12px;
   display: inline-block;
   text-transform: uppercase;
 }
-.case-study .row.services {
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.quote {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  #uscellular.case-study .row.quote img {
+    width: 30px;
+    margin-bottom: 15px;
+  }
+  #uscellular.case-study .row.quote .text {
+    font-size: 21px;
+    margin-bottom: 15px;
+  }
+  #uscellular.case-study .row.quote .name {
+    font-size: 14px;
+  }
+  #uscellular.case-study .row.quote .title {
+    font-size: 10px;
+  }
+}
+#uscellular.case-study .row.services {
   background-color: #84827e;
   max-height: 490px;
+  height: auto;
   overflow: visible;
 }
-.case-study .row.services .column {
+#uscellular.case-study .row.services .column {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
 }
-.case-study .row.services .left {
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.services .column {
+    align-items: center;
+    height: 170px;
+  }
+}
+#uscellular.case-study .row.services .left {
   display: inline-block;
   margin-left: 75px;
 }
-.case-study .row.services .title {
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.services .left {
+    margin-left: 0;
+  }
+}
+#uscellular.case-study .row.services .title {
   font-family: "Futura W01", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -4056,13 +4186,20 @@ footer .copyright {
   margin-top: 100px;
   margin-bottom: 20px;
 }
-.case-study .row.services ul {
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.services .title {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+#uscellular.case-study .row.services ul {
   list-style: none;
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-.case-study .row.services ul li {
+#uscellular.case-study .row.services ul li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -4073,13 +4210,29 @@ footer .copyright {
   font-size: 21px;
   margin-bottom: 10px;
 }
-.case-study .row.services img {
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.services ul li {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+}
+#uscellular.case-study .row.services img {
   width: 100%;
   max-width: 590px;
   position: relative;
   top: -60px;
 }
-.case-study .row.next {
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.services img {
+    width: 100%;
+    max-width: 200px;
+    position: relative;
+    top: -10px;
+  }
+}
+#uscellular.case-study .row.next {
   margin-top: 10px;
   min-height: 158px;
   width: 100%;
@@ -4090,7 +4243,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
 }
-.case-study .row.next .text {
+#uscellular.case-study .row.next .text {
   font-family: "Futura W01", sans-serif;
   font-weight: 300;
   color: #F8F9D2;
@@ -4098,7 +4251,759 @@ footer .copyright {
   display: inline-block;
   text-transform: uppercase;
 }
-.case-study .row.next .title {
+#uscellular.case-study .row.next .title {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 28px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+#jackson-hewitt.case-study {
+  background-color: #ffffff;
+}
+#jackson-hewitt.case-study .primary {
+  min-height: 500px;
+  display: flex;
+  padding-bottom: 0;
+  position: relative;
+  background-image: url("/images/cases/jh/masthead.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 680px) {
+  #jackson-hewitt.case-study .primary h2 {
+    font-size: 22px;
+  }
+}
+#jackson-hewitt.case-study .primary h2 sup {
+  font-size: 50%;
+  position: relative;
+  left: 1px;
+  top: -4px;
+}
+#jackson-hewitt.case-study .primary .column {
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 680px) {
+  #jackson-hewitt.case-study .primary .column {
+    margin-bottom: 0;
+  }
+}
+#jackson-hewitt.case-study .primary p {
+  font-family: "Klinic Slab", sans-serif;
+  font-size: 21px;
+  max-width: 550px;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 680px) {
+  #jackson-hewitt.case-study .primary p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  #jackson-hewitt.case-study .primary {
+    min-height: 0px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #jackson-hewitt.case-study .primary {
+    background-position-x: -100px;
+  }
+}
+#jackson-hewitt.case-study .row.stats {
+  background-color: #ffffff;
+  padding-top: 75px;
+  padding-bottom: 100px;
+  position: relative;
+}
+#jackson-hewitt.case-study .row.stats .column {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.stats .column {
+    align-items: center;
+  }
+}
+#jackson-hewitt.case-study .row.stats .left {
+  display: inline-block;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.stats .left {
+    margin-top: 0px;
+  }
+}
+#jackson-hewitt.case-study .row.stats .divider {
+  display: block;
+  height: 7px;
+  background-color: #C55227;
+  width: 75%;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.stats .divider {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 4px;
+  }
+}
+#jackson-hewitt.case-study .row.stats .percentage {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 300;
+  font-size: 75px;
+  display: block;
+  color: #C55227;
+  text-align: left;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.stats .percentage {
+    font-size: 46px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #jackson-hewitt.case-study .row.stats .percentage {
+    font-size: 24px;
+  }
+}
+#jackson-hewitt.case-study .row.stats .subtext {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  display: block;
+  color: #42403C;
+  text-transform: uppercase;
+  max-width: 275px;
+}
+@media only screen and (max-width: 850px) {
+  #jackson-hewitt.case-study .row.stats .subtext {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.stats .subtext {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+#jackson-hewitt.case-study .row.stats img {
+  max-width: 720px;
+  width: 75%;
+}
+@media only screen and (max-width: 550px) {
+  #jackson-hewitt.case-study .row.stats img {
+    max-width: 245px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.stats {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+#jackson-hewitt.case-study .row.approach {
+  background-color: #C55227;
+  max-height: 360px;
+  overflow: visible;
+}
+#jackson-hewitt.case-study .row.approach .column {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.approach .column {
+    height: 185px;
+    align-items: center;
+  }
+}
+#jackson-hewitt.case-study .row.approach .title {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #F8F9D2;
+  margin-top: 45px;
+  display: block;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.approach .title {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+}
+#jackson-hewitt.case-study .row.approach p {
+  font-family: "Klinic Slab", sans-serif;
+  font-size: 21px;
+  color: #ffffff;
+  max-width: 460px;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.approach p {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+#jackson-hewitt.case-study .row.approach img {
+  max-width: 335px;
+  width: 35%;
+  position: relative;
+  top: -100px;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.approach img {
+    top: 0;
+    max-width: 125px;
+  }
+}
+#jackson-hewitt.case-study .row.approach .right {
+  margin-left: 80px;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.approach .right {
+    margin-left: 10px;
+  }
+}
+#jackson-hewitt.case-study .row.quote {
+  background-color: #ffffff;
+  color: #C55227;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+#jackson-hewitt.case-study .row.quote .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#jackson-hewitt.case-study .row.quote img {
+  margin-bottom: 25px;
+}
+#jackson-hewitt.case-study .row.quote .text {
+  font-family: "Klinic Slab", sans-serif;
+  font-size: 32px;
+  display: inline-block;
+  max-width: 530px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+#jackson-hewitt.case-study .row.quote .name {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+#jackson-hewitt.case-study .row.quote .title {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.quote {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  #jackson-hewitt.case-study .row.quote img {
+    width: 30px;
+    margin-bottom: 15px;
+  }
+  #jackson-hewitt.case-study .row.quote .text {
+    font-size: 21px;
+    margin-bottom: 15px;
+  }
+  #jackson-hewitt.case-study .row.quote .name {
+    font-size: 14px;
+  }
+  #jackson-hewitt.case-study .row.quote .title {
+    font-size: 10px;
+  }
+}
+#jackson-hewitt.case-study .row.services {
+  background-color: #84827e;
+  max-height: 490px;
+  height: auto;
+  overflow: visible;
+}
+#jackson-hewitt.case-study .row.services .column {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.services .column {
+    align-items: center;
+    height: 170px;
+  }
+}
+#jackson-hewitt.case-study .row.services .left {
+  display: inline-block;
+  margin-left: 75px;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.services .left {
+    margin-left: 0;
+  }
+}
+#jackson-hewitt.case-study .row.services .title {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  display: block;
+  color: #F8F9D2;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.services .title {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+#jackson-hewitt.case-study .row.services ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#jackson-hewitt.case-study .row.services ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  color: #ffffff;
+  font-family: "Futura W01", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.services ul li {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+}
+#jackson-hewitt.case-study .row.services img {
+  width: 100%;
+  max-width: 590px;
+  position: relative;
+  top: -60px;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.services img {
+    width: 100%;
+    max-width: 200px;
+    position: relative;
+    top: -10px;
+  }
+}
+#jackson-hewitt.case-study .row.next {
+  margin-top: 10px;
+  min-height: 158px;
+  width: 100%;
+  background-image: url("/images/cases/uscellular/next-sunpower.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#jackson-hewitt.case-study .row.next .text {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 300;
+  color: #F8F9D2;
+  font-size: 18px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+#jackson-hewitt.case-study .row.next .title {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 28px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+#sunpower.case-study {
+  background-color: #ffffff;
+}
+#sunpower.case-study .primary {
+  min-height: 500px;
+  display: flex;
+  padding-bottom: 0;
+  position: relative;
+  background-image: url("/images/cases/sunpower/masthead.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 680px) {
+  #sunpower.case-study .primary h2 {
+    font-size: 22px;
+  }
+}
+#sunpower.case-study .primary h2 sup {
+  font-size: 50%;
+  position: relative;
+  left: 1px;
+  top: -4px;
+}
+#sunpower.case-study .primary .column {
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 680px) {
+  #sunpower.case-study .primary .column {
+    margin-bottom: 0;
+  }
+}
+#sunpower.case-study .primary p {
+  font-family: "Klinic Slab", sans-serif;
+  font-size: 21px;
+  max-width: 550px;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 680px) {
+  #sunpower.case-study .primary p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  #sunpower.case-study .primary {
+    min-height: 0px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #sunpower.case-study .primary {
+    background-position-x: -100px;
+  }
+}
+#sunpower.case-study .row.stats {
+  background-color: #ffffff;
+  padding-top: 75px;
+  padding-bottom: 100px;
+  position: relative;
+}
+#sunpower.case-study .row.stats .column {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.stats .column {
+    align-items: center;
+  }
+}
+#sunpower.case-study .row.stats .left {
+  display: inline-block;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.stats .left {
+    margin-top: 0px;
+  }
+}
+#sunpower.case-study .row.stats .divider {
+  display: block;
+  height: 7px;
+  background-color: #C55227;
+  width: 75%;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.stats .divider {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 4px;
+  }
+}
+#sunpower.case-study .row.stats .percentage {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 300;
+  font-size: 75px;
+  display: block;
+  color: #C55227;
+  text-align: left;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.stats .percentage {
+    font-size: 46px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #sunpower.case-study .row.stats .percentage {
+    font-size: 24px;
+  }
+}
+#sunpower.case-study .row.stats .subtext {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  display: block;
+  color: #42403C;
+  text-transform: uppercase;
+  max-width: 275px;
+}
+@media only screen and (max-width: 850px) {
+  #sunpower.case-study .row.stats .subtext {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.stats .subtext {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+#sunpower.case-study .row.stats img {
+  max-width: 720px;
+  width: 75%;
+}
+@media only screen and (max-width: 550px) {
+  #sunpower.case-study .row.stats img {
+    max-width: 245px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.stats {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+#sunpower.case-study .row.approach {
+  background-color: #C55227;
+  max-height: 360px;
+  overflow: visible;
+}
+#sunpower.case-study .row.approach .column {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.approach .column {
+    height: 185px;
+    align-items: center;
+  }
+}
+#sunpower.case-study .row.approach .title {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #F8F9D2;
+  margin-top: 45px;
+  display: block;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.approach .title {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+}
+#sunpower.case-study .row.approach p {
+  font-family: "Klinic Slab", sans-serif;
+  font-size: 21px;
+  color: #ffffff;
+  max-width: 460px;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.approach p {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+#sunpower.case-study .row.approach img {
+  max-width: 335px;
+  width: 35%;
+  position: relative;
+  top: -100px;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.approach img {
+    top: 0;
+    max-width: 125px;
+  }
+}
+#sunpower.case-study .row.approach .right {
+  margin-left: 80px;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.approach .right {
+    margin-left: 10px;
+  }
+}
+#sunpower.case-study .row.quote {
+  background-color: #ffffff;
+  color: #C55227;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+#sunpower.case-study .row.quote .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#sunpower.case-study .row.quote img {
+  margin-bottom: 25px;
+}
+#sunpower.case-study .row.quote .text {
+  font-family: "Klinic Slab", sans-serif;
+  font-size: 32px;
+  display: inline-block;
+  max-width: 530px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+#sunpower.case-study .row.quote .name {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+#sunpower.case-study .row.quote .title {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.quote {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  #sunpower.case-study .row.quote img {
+    width: 30px;
+    margin-bottom: 15px;
+  }
+  #sunpower.case-study .row.quote .text {
+    font-size: 21px;
+    margin-bottom: 15px;
+  }
+  #sunpower.case-study .row.quote .name {
+    font-size: 14px;
+  }
+  #sunpower.case-study .row.quote .title {
+    font-size: 10px;
+  }
+}
+#sunpower.case-study .row.services {
+  background-color: #84827e;
+  max-height: 490px;
+  height: auto;
+  overflow: visible;
+}
+#sunpower.case-study .row.services .column {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.services .column {
+    align-items: center;
+    height: 170px;
+  }
+}
+#sunpower.case-study .row.services .left {
+  display: inline-block;
+  margin-left: 75px;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.services .left {
+    margin-left: 0;
+  }
+}
+#sunpower.case-study .row.services .title {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  display: block;
+  color: #F8F9D2;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.services .title {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+#sunpower.case-study .row.services ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#sunpower.case-study .row.services ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  color: #ffffff;
+  font-family: "Futura W01", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.services ul li {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+}
+#sunpower.case-study .row.services img {
+  width: 100%;
+  max-width: 590px;
+  position: relative;
+  top: -60px;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.services img {
+    width: 100%;
+    max-width: 200px;
+    position: relative;
+    top: -10px;
+  }
+}
+#sunpower.case-study .row.next {
+  margin-top: 10px;
+  min-height: 158px;
+  width: 100%;
+  background-image: url("/images/cases/uscellular/next-sunpower.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#sunpower.case-study .row.next .text {
+  font-family: "Futura W01", sans-serif;
+  font-weight: 300;
+  color: #F8F9D2;
+  font-size: 18px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+#sunpower.case-study .row.next .title {
   font-family: "Futura W01", sans-serif;
   font-weight: 700;
   color: #ffffff;

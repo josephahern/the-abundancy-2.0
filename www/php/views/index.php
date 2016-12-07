@@ -50,11 +50,11 @@
                     <li><a href="#"><img src="images/home/clients/uscellular.png" alt="U.S. Cellular"></a></li>
                     <li><a href="#"><img src="images/home/clients/lincoln_park_zoo.png" alt="Lincoln Park Zoo"></a></li>
                     <li><a href="#"><img src="images/home/clients/sunpower.png" alt="Sun Power"></a></li>
-                    <li><a href="#"><img src="images/home/clients/ulta.png" alt="Ulta"></a></li>
                     <li><a href="#"><img src="images/home/clients/campbells.png" alt="Campbell's"></a></li>
+                    <li><a href="#"><img src="images/home/clients/sephora.png" alt="Sephora"></a></li>
                     <li><a href="#"><img src="images/home/clients/conagra.png" alt="ConAgra Foods"></a></li>
                     <li><a href="#"><img src="images/home/clients/jackson_hewitt.png" alt="Jackson Hewitt"></a></li>
-                    <li><a href="#"><img src="images/home/clients/caterpillar.png" alt="Caterpillar"></a></li>
+                    <li><a href="#"><img src="images/home/clients/ounce.png" alt="The Ounce"></a></li>
                 </ul>
             </section>
         </div>
