@@ -1,0 +1,288 @@
+//
+
+.input {
+
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  max-width: 300px;
+  width: 90%;
+  vertical-align: top;
+  margin-bottom: 27px;
+
+  .input-field {
+    position: relative;
+    display: block;
+    float: right;
+    border: none;
+    border-radius: 0;
+    font-family: $font-family-primary;
+    font-size: 18px;
+    font-weight: normal;
+    -webkit-appearance: none;
+    padding: 15px 15px;
+    width: 100%;
+    background: transparent;
+    color: #000000;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+
+  .input-label {
+    display: inline-block;
+    float: right;
+    color: #f3dcd4;
+    font-weight: bold;
+    font-size: 70.25%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    pointer-events: none;
+  }
+
+  .input-content {
+    font-family: $font-family-primary;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+    color: $abundancy-cream;
+    padding: 10px 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+  }
+
+  .input-label::before,
+  .input-label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  .input-label::before {
+    border-top: 2px solid #f3dcd4;
+    -webkit-transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
+    transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+
+  .input-label::after {
+    z-index: -1;
+    background: #f3dcd4;
+    -webkit-transform: scale3d(1, 0, 1);
+    transform: scale3d(1, 0, 1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+
+  .input-field:focus,
+  &.input-filled .input-field {
+    opacity: 1;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    outline:0;
+  }
+
+  .input-field:focus + .input-label .input-content,
+  &.input-filled .input-content {
+    -webkit-transform: translate3d(0, -80%, 0);
+    transform: translate3d(0, -80%, 0);
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+
+  .input-field:focus + .input-label::before,
+  &.input-filled .input-label::before {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+
+  .input-field:focus + .input-label::before,
+  &.input-filled .input-label::before {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .input-field:focus + .input-label::after,
+  &.input-filled .input-label::after {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  }
+
+  &#input-email.input-filled {
+    top: 15px;
+    transition: all 0.3s;
+
+  }
+
+  &#input-name {
+
+    @media only screen and (max-width: 680px) {
+      margin-top: 25px;
+    }
+
+  }
+
+}
+
+// fancy select
+
+div.fancy-select {
+  position: relative;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+div.fancy-select.disabled {
+  opacity: 0.5;
+}
+
+
+div.fancy-select select:focus + div.trigger.open {
+  box-shadow: none;
+}
+
+div.fancy-select div.trigger {
+  cursor: pointer;
+  padding: 10px 0px 9px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  border-bottom: 2px solid #f3dcd4;
+  font-family: $font-family-primary;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 26px;
+  color: #F8F9D2;
+  width: 100%;
+  transition: all 240ms ease-out;
+  -webkit-transition: all 240ms ease-out;
+  -moz-transition: all 240ms ease-out;
+  -ms-transition: all 240ms ease-out;
+  -o-transition: all 240ms ease-out;
+  z-index: 1;
+}
+
+div.fancy-select div.trigger:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 19px;
+  height: 11px;
+  background-image: url("/images/icons/down-arrow.png");
+  background-size: 19px 11px;
+  top: 21px;
+  right: 9px;
+  z-index: 1;
+}
+
+div.fancy-select ul.options {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  max-height: 200px;
+  overflow: auto;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 0;
+  z-index: 5005;
+  transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+  -o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.open {
+  visibility: visible;
+  top: 45px;
+  opacity: 1;
+
+  /* have to use a non-visibility transition to prevent this iOS issue (bug?): */
+  /*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
+  transition: opacity 300ms ease-out, top 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+  -o-transition: opacity 300ms ease-out, top 300ms ease-out;
+  z-index: 5005;
+}
+
+div.fancy-select ul.options.overflowing {
+  top: auto;
+  bottom: 40px;
+
+  transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+  -o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing.open {
+  top: auto;
+  bottom: 50px;
+
+  transition: opacity 300ms ease-out, bottom 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+  -o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+
+div.fancy-select ul.options li {
+  padding: 8px 12px;
+  color: $abundancy-copper;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: $font-family-primary;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 26px;
+  transition: all 150ms ease-out;
+  -webkit-transition: all 150ms ease-out;
+  -moz-transition: all 150ms ease-out;
+  -ms-transition: all 150ms ease-out;
+  -o-transition: all 150ms ease-out;
+  z-index: 5005;
+}
+
+div.fancy-select ul.options li.selected {
+  background: #db734c;
+  color: #fff;
+}
+
+div.fancy-select ul.options li.hover {
+  color: #fff;
+}

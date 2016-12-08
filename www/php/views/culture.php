@@ -177,7 +177,24 @@
                     <div class="letters wow fadeInUp" id="letter-s"></div>
                 </div>
                 <div class="block infograph">
-                    <img src="images/culture/show-integrity_icon.svg" height="200">
+                    <div class="svg-icon star-icon">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 30 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                            <g id="star-lines">
+                                <line fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="12.1868" x1="51.3" y1="46.8" x2="70.6" y2="67.2"/>
+                                <line fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="12.1868" x1="149.2" y1="46.8" x2="129.9" y2="67.2"/>
+                                <line fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="12.1868" x1="38" y1="150.7" x2="57.3" y2="130.4"/>
+                                <line fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="8.1246" x1="168.5" y1="144" x2="149.2" y2="123.6"/>
+                                <line fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="8.1246" x1="102" y1="18.7" x2="102" y2="48.7"/>
+                                <line fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="8.1246" x1="190" y1="94.9" x2="162" y2="94.9"/>
+                                <line fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="8.1246" x1="10" y1="94.9" x2="38" y2="95.3"/>
+                                <g>
+                                    <line fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="102.4" y1="181.3" x2="102.4" y2="173.1"/>
+                                    <line fill="none" stroke="#f8f9d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="102.4" y1="161.3" x2="102.4" y2="153.2"/>
+                                </g>
+                             </g>
+                            <polygon id="STAR" fill="#AAC3BC" stroke="#84827e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="100,58.9 113.7,86.6 144.3,91 122.1,112.6 127.4,143.1 100,128.7 72.6,143.1 77.9,112.6 55.7,91 86.3,86.6 "/>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </section>

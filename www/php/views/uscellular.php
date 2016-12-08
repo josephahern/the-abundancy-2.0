@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
     <div id="uscellular" class="case-study">
-        <section class="row primary">
+        <section class="row primary parallax">
             <div class="column">
                 <h2>U.S. Cellular<sup>&reg;</sup></h2>
                 <p>U.S. Cellular was competing with telecom companies that had louder voices and larger budgets. They called us to find a smarter way to attract people to their pre-paid services. We knew just the thing.</p>
@@ -49,9 +49,9 @@
                 <img src="/images/cases/uscellular/phone2.png" alt="" class="wow fadeInRight">
             </div>
         </div>
-        <div class="row next">
+        <a href="/work/ulta"class="row next">
             <span class="text">Next Case Study</span>
-            <span class="title">Sunpower</span>
-        </div>
+            <span class="title">Ulta Beauty<sup>&reg;</sup></span>
+        </a>
     </div>
 <?php include 'footer.php'; ?>

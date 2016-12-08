@@ -72,6 +72,8 @@
 
     //PAGES
 
+        /* Interactive Masthead */
+
         /* Home */
         if($("#home").length){
 
@@ -147,7 +149,7 @@
 
                             chosenSmall.css({
                                 color: '#F8F9D2',
-                                top: totalDistanceNeededToTravel,
+                                top: totalDistanceNeededToTravel + 14,
                                 left: -(totalLeftDistanceNeededToTravel),
                                 fontSize: "60px",
                                 lineHeight: "60px",
@@ -163,6 +165,10 @@
                             chosenSmall.addClass("complete");
 
                             setTimeout(function(){
+                                chosenSmall.hide();
+                                chosenLarge.css({
+                                    opacity: 1
+                                });
                                 $(".btn.home.parallax-btn").addClass("animated fadeIn");
                             }, 500);
 

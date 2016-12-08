@@ -10,6 +10,7 @@
 
 // Components
 @import "components/buttons";
+@import "components/forms";
 @import "components/images";
 @import "components/lists";
 @import "components/modal";
@@ -256,3 +257,41 @@ animation-timing-function: linear;
 
 // Begin template
 
+#home-overlay {
+    z-index: 11;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: transparent;
+    color: #fff;
+    font-family: "Futura",sans-serif;
+}
+
+#home-overlay-key {
+    width: 225px;
+    height: 300px;
+    margin-right: 50px;
+}
+
+#home-overlay-text {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#container canvas {
+    background: transparent;
+}

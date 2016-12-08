@@ -623,6 +623,133 @@ a.btn.contact.submit-btn:hover {
   background-color: #42403C;
 }
 
+.input {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  max-width: 300px;
+  width: 90%;
+  vertical-align: top;
+  margin-bottom: 27px;
+}
+.input .input-field {
+  position: relative;
+  display: block;
+  float: right;
+  border: none;
+  border-radius: 0;
+  font-family: "Futura W01", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  -webkit-appearance: none;
+  padding: 15px 15px;
+  width: 100%;
+  background: transparent;
+  color: #000000;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.input .input-label {
+  display: inline-block;
+  float: right;
+  color: #f3dcd4;
+  font-weight: bold;
+  font-size: 70.25%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  pointer-events: none;
+}
+.input .input-content {
+  font-family: "Futura W01", sans-serif;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 26px;
+  color: #F8F9D2;
+  padding: 10px 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+.input .input-label::before,
+.input .input-label::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+.input .input-label::before {
+  border-top: 2px solid #f3dcd4;
+  -webkit-transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
+  transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.input .input-label::after {
+  z-index: -1;
+  background: #f3dcd4;
+  -webkit-transform: scale3d(1, 0, 1);
+  transform: scale3d(1, 0, 1);
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+.input .input-field:focus, .input.input-filled .input-field {
+  opacity: 1;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  outline: 0;
+}
+.input .input-field:focus + .input-label .input-content, .input.input-filled .input-content {
+  -webkit-transform: translate3d(0, -80%, 0);
+  transform: translate3d(0, -80%, 0);
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.input .input-field:focus + .input-label::before, .input.input-filled .input-label::before {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.input .input-field:focus + .input-label::before, .input.input-filled .input-label::before {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.input .input-field:focus + .input-label::after, .input.input-filled .input-label::after {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.input#input-email.input-filled {
+  top: 15px;
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 680px) {
+  .input#input-name {
+    margin-top: 25px;
+  }
+}
+
 div.fancy-select {
   position: relative;
   font-weight: bold;
@@ -656,6 +783,7 @@ div.fancy-select div.trigger {
   -moz-transition: all 240ms ease-out;
   -ms-transition: all 240ms ease-out;
   -o-transition: all 240ms ease-out;
+  z-index: 1;
 }
 
 div.fancy-select div.trigger:after {
@@ -668,6 +796,7 @@ div.fancy-select div.trigger:after {
   background-size: 19px 11px;
   top: 21px;
   right: 9px;
+  z-index: 1;
 }
 
 div.fancy-select ul.options {
@@ -678,13 +807,13 @@ div.fancy-select ul.options {
   left: 0;
   visibility: hidden;
   opacity: 0;
-  z-index: 5005;
   max-height: 200px;
   overflow: auto;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   width: 100%;
   padding: 0;
+  z-index: 5005;
   transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
   -webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
   -moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
@@ -703,6 +832,7 @@ div.fancy-select ul.options.open {
   -moz-transition: opacity 300ms ease-out, top 300ms ease-out;
   -ms-transition: opacity 300ms ease-out, top 300ms ease-out;
   -o-transition: opacity 300ms ease-out, top 300ms ease-out;
+  z-index: 5005;
 }
 
 div.fancy-select ul.options.overflowing {
@@ -739,6 +869,7 @@ div.fancy-select ul.options li {
   -moz-transition: all 150ms ease-out;
   -ms-transition: all 150ms ease-out;
   -o-transition: all 150ms ease-out;
+  z-index: 5005;
 }
 
 div.fancy-select ul.options li.selected {
@@ -879,6 +1010,18 @@ img {
     width: 100px;
     position: relative;
     top: -7px;
+    height: 150px;
+  }
+}
+.svg-icon.star-icon {
+  width: 205px;
+  height: 132px;
+}
+@media only screen and (max-width: 750px) {
+  .svg-icon.star-icon {
+    width: 138px;
+    position: relative;
+    top: -4px;
     height: 150px;
   }
 }
@@ -1079,6 +1222,9 @@ img {
     opacity: 1;
   }
   80% {
+    opacity: 1;
+  }
+  81% {
     opacity: 0;
   }
 }
@@ -1210,7 +1356,7 @@ img {
     transform: translateX(-16px);
   }
   50% {
-    transform: translateX(-10px);
+    transform: translateX(-16px);
   }
   55% {
     transform: translateX(-16px);
@@ -1233,7 +1379,7 @@ img {
     transform: translateX(16px);
   }
   50% {
-    transform: translateX(10px);
+    transform: translateX(16px);
   }
   55% {
     transform: translateX(16px);
@@ -1253,6 +1399,9 @@ img {
     opacity: 0;
   }
   67% {
+    opacity: 1;
+  }
+  99% {
     opacity: 1;
   }
   100% {
@@ -1415,6 +1564,76 @@ img {
   animation-delay: 3s;
 }
 
+/* star */
+@keyframes star {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  73% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.97);
+  }
+  77% {
+    transform: scale(1.03);
+  }
+  79% {
+    transform: scale(0.97);
+  }
+  81% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#star-lines {
+  transform-origin: center;
+  transform: scale(0) rotate(0deg);
+  animation: star-lines 6s ease-in-out infinite;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes star-lines {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(0);
+  }
+  35% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.9);
+  }
+  45% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  55% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  65% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 .list {
   margin: 0;
   padding: 0;
@@ -1455,8 +1674,8 @@ img {
 .modal-contain .modal {
   position: relative;
   width: 100%;
-  max-width: 1000px;
-  background-color: #ffffff;
+  max-width: 750px;
+  background-color: #42403C;
   border: 10px solid #AAC3BC;
   padding: 40px;
   flex-direction: row;
@@ -1502,26 +1721,26 @@ img {
 .modal-contain .modal .who {
   display: block;
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   font-size: 12px;
 }
 .modal-contain .modal .who .name {
   font-family: "Futura W01", sans-serif;
-  color: #42403C;
+  color: #fff;
   font-weight: bold;
   display: inline-block;
   text-transform: uppercase;
 }
 .modal-contain .modal .who .seperator {
   font-family: "Futura W01", sans-serif;
-  color: #42403C;
+  color: #F8F9D2;
   font-weight: bold;
   display: inline-block;
   text-transform: uppercase;
 }
 .modal-contain .modal .who .title {
   font-family: "Futura W01", sans-serif;
-  color: #42403C;
+  color: #F8F9D2;
   font-weight: 300;
   display: inline-block;
   text-transform: uppercase;
@@ -1529,56 +1748,35 @@ img {
 @media only screen and (max-width: 750px) {
   .modal-contain .modal .who {
     margin-top: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 12px;
   }
 }
-.modal-contain .modal .left {
-  width: 49%;
-}
-.modal-contain .modal .left img {
-  width: 100%;
-  display: block;
-}
-@media only screen and (max-width: 750px) {
-  .modal-contain .modal .left {
-    width: 100%;
-  }
-}
-.modal-contain .modal .right {
-  width: 49%;
-}
-.modal-contain .modal .right .i_am_a {
+.modal-contain .modal .i_am_a {
   font-family: "Futura W01", sans-serif;
-  color: #C55227;
+  color: #AAC3BC;
   font-size: 32px;
   line-height: 32px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-weight: bold;
   display: block;
   text-transform: uppercase;
 }
 @media only screen and (max-width: 750px) {
-  .modal-contain .modal .right .i_am_a {
+  .modal-contain .modal .i_am_a {
     font-family: "Futura W01",sans-serif;
     color: #C55227;
     font-size: 32px;
     line-height: 34px;
-    margin-top: 15px;
     margin-bottom: 20px;
   }
 }
-.modal-contain .modal .right .text {
+.modal-contain .modal .text {
   font-family: "Klinic Slab", sans-serif;
   font-weight: 300;
-  font-size: 16px;
-  color: #42403C;
+  font-size: 21px;
+  color: #fff;
   display: block;
-}
-@media only screen and (max-width: 750px) {
-  .modal-contain .modal .right {
-    width: 100%;
-  }
 }
 @media only screen and (max-width: 750px) {
   .modal-contain .modal {
@@ -1979,6 +2177,15 @@ footer .copyright {
   display: inline-block;
   position: absolute;
 }
+#home .parallax .column .text-block-one div.small span #mobile-get-chosen {
+  display: none;
+}
+@media only screen and (max-width: 680px) {
+  #home .parallax .column .text-block-one div.small span #mobile-get-chosen {
+    display: inline;
+    margin-left: 5px;
+  }
+}
 #home .parallax .column .text-block-one div.small span.wrapper {
   top: 0;
   left: 492px;
@@ -1996,7 +2203,7 @@ footer .copyright {
 }
 @media only screen and (max-width: 680px) {
   #home .parallax .column .text-block-one div.small span {
-    font-size: 19px;
+    font-size: 18px;
     line-height: 22px;
     transition: all 0.5s ease;
     max-width: 330px;
@@ -2540,7 +2747,7 @@ footer .copyright {
 }
 #approach .primary .statement {
   font-family: "Futura W01", sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 300;
   color: #ffffff;
   z-index: 500;
@@ -2642,6 +2849,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 15px;
 }
 #approach .steps .step .block.infograph img {
   margin-bottom: 20px;
@@ -2731,6 +2939,11 @@ footer .copyright {
   align-items: center;
   font-size: 32px;
 }
+@media only screen and (max-width: 920px) {
+  #approach .capabilities .column .container .block.title {
+    font-size: 28px;
+  }
+}
 #approach .capabilities .column .container .block span {
   display: block;
   font-family: "Futura W01", sans-serif;
@@ -2739,10 +2952,23 @@ footer .copyright {
   color: #42403C;
   margin-bottom: 15px;
 }
+@media only screen and (max-width: 920px) {
+  #approach .capabilities .column .container .block span {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 920px) {
+  #approach .capabilities .container .block.title {
+    font-size: 28px;
+  }
+  #approach .capabilities .container .block span {
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 750px) {
   #approach .capabilities {
-    padding-top: 50px;
-    padding-bottom: 35px;
+    padding-top: 30px;
+    padding-bottom: 25px;
   }
   #approach .capabilities .column .title {
     text-align: center;
@@ -2759,7 +2985,7 @@ footer .copyright {
     margin-bottom: 15px;
   }
   #approach .capabilities .column .container .block span {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
   }
 }
@@ -3349,128 +3575,6 @@ footer .copyright {
   width: 40%;
   display: block;
 }
-#contact #contact-form .column .fields .left .input {
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  max-width: 300px;
-  width: 90%;
-  vertical-align: top;
-  margin-bottom: 27px;
-}
-#contact #contact-form .column .fields .left .input .input-field {
-  position: relative;
-  display: block;
-  float: right;
-  border: none;
-  border-radius: 0;
-  font-family: "Futura W01", sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  -webkit-appearance: none;
-  padding: 15px 15px;
-  width: 100%;
-  background: transparent;
-  color: #000000;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-#contact #contact-form .column .fields .left .input .input-label {
-  display: inline-block;
-  float: right;
-  color: #f3dcd4;
-  font-weight: bold;
-  font-size: 70.25%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: left;
-  pointer-events: none;
-}
-#contact #contact-form .column .fields .left .input .input-content {
-  font-family: "Futura W01", sans-serif;
-  font-weight: normal;
-  font-size: 21px;
-  line-height: 26px;
-  color: #F8F9D2;
-  padding: 10px 0;
-  position: relative;
-  display: block;
-  width: 100%;
-  -webkit-transition: -webkit-transform 0.3s 0.3s;
-  transition: transform 0.3s 0.3s;
-}
-#contact #contact-form .column .fields .left .input .input-label::before,
-#contact #contact-form .column .fields .left .input .input-label::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-}
-#contact #contact-form .column .fields .left .input .input-label::before {
-  border-top: 2px solid #f3dcd4;
-  -webkit-transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
-  transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-#contact #contact-form .column .fields .left .input .input-label::after {
-  z-index: -1;
-  background: #f3dcd4;
-  -webkit-transform: scale3d(1, 0, 1);
-  transform: scale3d(1, 0, 1);
-  -webkit-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-}
-#contact #contact-form .column .fields .left .input .input-field:focus,
-#contact #contact-form .column .fields .left .input .input-filled .input-field {
-  opacity: 1;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-  outline: 0;
-}
-#contact #contact-form .column .fields .left .input .input-field:focus + .input-label .input-content,
-#contact #contact-form .column .fields .left .input .input-filled .input-content {
-  -webkit-transform: translate3d(0, -80%, 0);
-  transform: translate3d(0, -80%, 0);
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-#contact #contact-form .column .fields .left .input .input-field:focus + .input-label::before,
-#contact #contact-form .column .fields .left .input .input-filled .input-label::before {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-#contact #contact-form .column .fields .left .input .input-field:focus + .input-label::before,
-#contact #contact-form .column .fields .left .input .input-filled .input-label::before {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-#contact #contact-form .column .fields .left .input .input-field:focus + .input-label::after,
-#contact #contact-form .column .fields .left .input .input-filled .input-label::after {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
 #contact #contact-form .column .fields .right {
   width: 60%;
   display: block;
@@ -3771,11 +3875,11 @@ footer .copyright {
     width: 100%;
     padding: 20px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
   }
   #contact #jobs .column .recruiter-box .right address {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
   }
   #contact #jobs .column .recruiter-box .right address span {
@@ -3790,8 +3894,8 @@ footer .copyright {
     font-size: 11px;
     color: #84827e;
     text-transform: uppercase;
-    margin-top: 3px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
   }
   #contact #jobs .column .recruiter-box .right span.digits {
     font-family: "Futura W01", sans-serif;
@@ -3806,8 +3910,8 @@ footer .copyright {
     font-size: 11px;
     color: #42403C;
     text-transform: uppercase;
-    margin-top: 15px;
-    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
   #contact #jobs .column .recruiter-box .right hr {
     display: none;
@@ -3854,8 +3958,8 @@ footer .copyright {
     font-size: 11px;
     color: #84827e;
     text-transform: uppercase;
-    margin-top: 3px;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 5px;
   }
   #contact #jobs .recruiter-box .right span.digits {
     font-family: "Futura W01", sans-serif;
@@ -3870,8 +3974,8 @@ footer .copyright {
     font-size: 11px;
     color: #42403C;
     text-transform: uppercase;
-    margin-top: 15px;
-    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
   #contact #jobs .recruiter-box .right hr {
     display: none;
@@ -4236,7 +4340,7 @@ footer .copyright {
   margin-top: 10px;
   min-height: 158px;
   width: 100%;
-  background-image: url("/images/cases/uscellular/next-sunpower.jpg");
+  background-image: url("/images/cases/uscellular/next-ulta.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -4251,6 +4355,11 @@ footer .copyright {
   display: inline-block;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.next .text {
+    font-size: 12px;
+  }
+}
 #uscellular.case-study .row.next .title {
   font-family: "Futura W01", sans-serif;
   font-weight: 700;
@@ -4258,6 +4367,33 @@ footer .copyright {
   font-size: 28px;
   display: inline-block;
   text-transform: uppercase;
+}
+#uscellular.case-study .row.next .title sup {
+  font-size: 50%;
+  position: relative;
+  left: 2px;
+  top: -4px;
+}
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.next .title sup {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.next .title {
+    font-size: 20px;
+    margin-top: -3px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  #uscellular.case-study .row.next {
+    background-position-x: -35px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #uscellular.case-study .row.next {
+    min-height: 75px;
+  }
 }
 
 #jackson-hewitt.case-study {
@@ -4612,7 +4748,7 @@ footer .copyright {
   margin-top: 10px;
   min-height: 158px;
   width: 100%;
-  background-image: url("/images/cases/uscellular/next-sunpower.jpg");
+  background-image: url("/images/cases/jh/next-sunpower.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -4627,6 +4763,11 @@ footer .copyright {
   display: inline-block;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.next .text {
+    font-size: 12px;
+  }
+}
 #jackson-hewitt.case-study .row.next .title {
   font-family: "Futura W01", sans-serif;
   font-weight: 700;
@@ -4634,6 +4775,33 @@ footer .copyright {
   font-size: 28px;
   display: inline-block;
   text-transform: uppercase;
+}
+#jackson-hewitt.case-study .row.next .title sup {
+  font-size: 50%;
+  position: relative;
+  left: 2px;
+  top: -4px;
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.next .title sup {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.next .title {
+    font-size: 20px;
+    margin-top: -3px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  #jackson-hewitt.case-study .row.next {
+    background-position-x: -35px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #jackson-hewitt.case-study .row.next {
+    min-height: 75px;
+  }
 }
 
 #sunpower.case-study {
@@ -4988,7 +5156,7 @@ footer .copyright {
   margin-top: 10px;
   min-height: 158px;
   width: 100%;
-  background-image: url("/images/cases/uscellular/next-sunpower.jpg");
+  background-image: url("/images/cases/sunpower/next-uscellular.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -5003,6 +5171,11 @@ footer .copyright {
   display: inline-block;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.next .text {
+    font-size: 12px;
+  }
+}
 #sunpower.case-study .row.next .title {
   font-family: "Futura W01", sans-serif;
   font-weight: 700;
@@ -5010,6 +5183,33 @@ footer .copyright {
   font-size: 28px;
   display: inline-block;
   text-transform: uppercase;
+}
+#sunpower.case-study .row.next .title sup {
+  font-size: 50%;
+  position: relative;
+  left: 2px;
+  top: -4px;
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.next .title sup {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.next .title {
+    font-size: 20px;
+    margin-top: -3px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  #sunpower.case-study .row.next {
+    background-position-x: -35px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #sunpower.case-study .row.next {
+    min-height: 75px;
+  }
 }
 
 .lock {
@@ -5244,4 +5444,42 @@ animation-timing-function: linear;
     -webkit-transform: rotate(-45deg) translateY(-5px);
     transform: rotate(-45deg) translateY(-5px);
   }
+}
+#home-overlay {
+  z-index: 11;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: transparent;
+  color: #fff;
+  font-family: "Futura",sans-serif;
+}
+
+#home-overlay-key {
+  width: 225px;
+  height: 300px;
+  margin-right: 50px;
+}
+
+#home-overlay-text {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#container canvas {
+  background: transparent;
 }

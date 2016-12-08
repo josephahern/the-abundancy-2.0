@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
     <div id="jackson-hewitt" class="case-study">
-        <section class="row primary">
+        <section class="row primary parallax">
             <div class="column">
                 <h2>Jackson Hewitt<sup>&reg;</sup></h2>
                 <p>Jackson Hewitt had a tax headache of their own. People were struggling to book appointments online, and the company was losing leads and revenue. We had a way to get them to return.</p>
@@ -50,9 +50,9 @@
                 <img src="/images/cases/jh/phone2.png" alt="" class="wow fadeInRight">
             </div>
         </div>
-        <div class="row next">
+        <a href="/work/sunpower"class="row next">
             <span class="text">Next Case Study</span>
-            <span class="title">Sunpower</span>
-        </div>
+            <span class="title">SunPower<sup>&reg;</sup></span>
+        </a>
     </div>
 <?php include 'footer.php'; ?>

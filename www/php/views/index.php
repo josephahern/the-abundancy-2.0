@@ -1,6 +1,31 @@
 <?php include 'header.php'; ?>
-<div id="loader"></div>
-<div id="container"></div>
+    <div id="loader"></div>
+    <div id="home-overlay">
+
+        <div id="home-overlay-key">
+            <div>WHO WE ARE</div>
+            <div><span style="color:#c65230;">•</span> Account Management</div>
+            <div><span style="color:#fd9a34;">•</span> Analytics </div>
+            <div><span style="color:#fece5c;">•</span> Creative</div>
+            <div><span style="color:#abc3bc;">•</span> Media</div>
+            <div><span style="color:#f8f8d4;">•</span> Resourcing</div>
+            <div><span style="color:#d24141;">•</span> Project Management</div>
+            <div><span style="color:#b8640e;">•</span> Executives</div>
+            <div><span style="color:#a5bf6d;">•</span> Strategy</div>
+            <div><span style="color:#5599b2;">•</span> Technology</div>
+        </div>
+
+        <div id="home-overlay-text">
+            <div class="">SEE THESE DOTS?</div>
+            <div class="">
+                That’s us.<br />
+                Each point’s a person and every shade a specialty.<br />
+                Connecting more is a beautiful thing.
+            </div>
+        </div>
+
+    </div>
+    <div id="container"></div>
 <div id="home">
     <div class="parallax row" id="intro">
         <div class="triangle"></div>
@@ -32,7 +57,7 @@
                     &amp; Analytics<br />
                 </div>
                 <div class="small">
-                    <span>to create custom solutions that help brands</span>
+                    <span>to create custom solutions that help brands <span id="mobile-get-chosen">get chosen.</span></span>
                     <span class="wrapper">
                         <div id="get-chosen-small">get chosen<span>.</span></div>
                     </span>
@@ -336,17 +361,11 @@
                 <span class="seperator">/</span>
                 <span class="title">Title</span>
             </div>
-            <div class="left">
-                <img src="/images/home/leadership/gif/andrew.gif" alt="image">
-            </div>
-            <div class="right">
-                <div class="i_am_a">I am a gourmand</div>
-                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus. Nunc massa mauris, egestas eget quam ut, lobortis hendrerit quam. In libero felis, vulputate id gravida at, iaculis nec lectus. Curabitur lobortis gravida nibh, a venenatis neque malesu ada semper.</span>
-            </div>
+            <div class="i_am_a">I am a gourmand</div>
+            <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ligula porttitor, interdum lacus quis, blandit ligula. Nullam quis urna finibus, consectetur odio ac, semper lectus. Nunc massa mauris, egestas eget quam ut, lobortis hendrerit quam. In libero felis, vulputate id gravida at, iaculis nec lectus. Curabitur lobortis gravida nibh, a venenatis neque malesu ada semper.</span>
         </div>
     </div>
 </div>
-
 <script type="x-shader/x-vertex" id="vertexshader">
     attribute float size;
     attribute vec3 customColor;
@@ -367,5 +386,4 @@
         gl_FragColor = gl_FragColor * texture2D( texture, gl_PointCoord );
     }
 </script>
-
 <?php include 'footer.php' ?>

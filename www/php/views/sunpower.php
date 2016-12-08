@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
     <div id="sunpower" class="case-study">
-        <section class="row primary">
+        <section class="row primary parallax">
             <div class="column">
                 <h2>SunPower<sup>&reg;</sup></h2>
                 <p>SunPower makes the best solar panels on the market, but they were getting lost among low-price competitors. They asked us to help them shine for a more discerning audience and attract new dealers.</p>
@@ -49,9 +49,9 @@
                 <img src="/images/cases/sunpower/phone2.png" alt="" class="wow fadeInRight">
             </div>
         </div>
-        <div class="row next">
+        <a href="/work/us-cellular" class="row next">
             <span class="text">Next Case Study</span>
-            <span class="title">Sunpower</span>
-        </div>
+            <span class="title">U.S. Cellular<sup>&reg;</sup></span>
+        </a>
     </div>
 <?php include 'footer.php'; ?>

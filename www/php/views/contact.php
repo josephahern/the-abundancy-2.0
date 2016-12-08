@@ -15,13 +15,13 @@
             </div>
             <div class="fields">
                 <div class="left">
-                    <span class="input">
+                    <span class="input" id="input-name">
 					    <input class="input-field" type="text" id="input-10">
 					    <label class="input-label" for="input-10">
                             <span class="input-content">Name</span>
                         </label>
 				    </span>
-                    <span class="input">
+                    <span class="input" id="input-email">
 					    <input class="input-field" type="text" id="input-10">
 					    <label class="input-label" for="input-10">
                             <span class="input-content">Email Address</span>

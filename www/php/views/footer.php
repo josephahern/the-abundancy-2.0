@@ -20,6 +20,7 @@
 <script src="/js/libs/jquery.slotmachine.min.js"></script>
 
 <!-- Addt'l Dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
 <script src="/js/libs/three.min.js"></script>
 <script src="/js/libs/controls/OrbitControls.js"></script>
 <script src="/js/libs/renderers/Projector.js"></script>

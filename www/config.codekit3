@@ -36,7 +36,7 @@
 		"oF": 0
 		},
 	"\/config.rb": {
-		"ft": 8192,
+		"ft": 131072,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
@@ -66,6 +66,93 @@
 		"oA": 2,
 		"oAP": "\/css\/main.css.map",
 		"oF": 0
+		},
+	"\/extra\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/extra\/index.html",
+		"oF": 0
+		},
+	"\/extra\/js\/classie.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/extra\/js\/min\/classie-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/extra\/js\/controls\/OrbitControls.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/extra\/js\/controls\/min\/OrbitControls-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/extra\/js\/libs\/dat.gui.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/extra\/js\/libs\/min\/dat.gui.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/extra\/js\/libs\/stats.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/extra\/js\/libs\/min\/stats.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/extra\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/extra\/js\/min\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/extra\/js\/renderers\/CanvasRenderer.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/extra\/js\/renderers\/min\/CanvasRenderer-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/extra\/js\/renderers\/Detector.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/extra\/js\/renderers\/min\/Detector-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/extra\/js\/renderers\/Projector.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/extra\/js\/renderers\/min\/Projector-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/extra\/js\/three.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/extra\/js\/min\/three-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/fonts\/futura\/184895ac-545b-450b-9d3a-c0a0a7620977.woff": {
 		"ft": 8192,
@@ -171,7 +258,7 @@
 		},
 	"\/images\/approach\/graph-icon.png": {
 		"ft": 32768,
-		"iS": 3535,
+		"iS": 1660,
 		"oA": 0,
 		"oAP": "\/images\/approach\/graph-icon.png",
 		"oF": 0,
@@ -179,7 +266,7 @@
 		},
 	"\/images\/approach\/lightbulb-icon.png": {
 		"ft": 32768,
-		"iS": 5521,
+		"iS": 2340,
 		"oA": 0,
 		"oAP": "\/images\/approach\/lightbulb-icon.png",
 		"oF": 0,
@@ -187,7 +274,7 @@
 		},
 	"\/images\/approach\/mail-icon.png": {
 		"ft": 32768,
-		"iS": 3470,
+		"iS": 1335,
 		"oA": 0,
 		"oAP": "\/images\/approach\/mail-icon.png",
 		"oF": 0,
@@ -195,7 +282,7 @@
 		},
 	"\/images\/approach\/stars-icon.png": {
 		"ft": 32768,
-		"iS": 5537,
+		"iS": 2428,
 		"oA": 0,
 		"oAP": "\/images\/approach\/stars-icon.png",
 		"oF": 0,
@@ -214,72 +301,200 @@
 		"iS": 4011,
 		"oA": 0,
 		"oAP": "\/images\/ball.png",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1
+		},
+	"\/images\/cases\/jh\/laptop.png": {
+		"ft": 32768,
+		"iS": 208014,
+		"oA": 0,
+		"oAP": "\/images\/cases\/jh\/laptop.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/jh\/masthead.jpg": {
+		"ft": 16384,
+		"iS": 57120,
+		"oA": 0,
+		"oAP": "\/images\/cases\/jh\/masthead.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/jh\/next-sunpower.jpg": {
+		"ft": 16384,
+		"iS": 275495,
+		"oA": 0,
+		"oAP": "\/images\/cases\/jh\/next-sunpower.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/jh\/phone.png": {
+		"ft": 32768,
+		"iS": 91305,
+		"oA": 0,
+		"oAP": "\/images\/cases\/jh\/phone.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/jh\/phone2.png": {
+		"ft": 32768,
+		"iS": 115555,
+		"oA": 0,
+		"oAP": "\/images\/cases\/jh\/phone2.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/images\/cases\/panel_jacksonhewitt-bg.png": {
 		"ft": 32768,
-		"iS": 616623,
+		"iS": 248510,
 		"oA": 0,
 		"oAP": "\/images\/cases\/panel_jacksonhewitt-bg.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/cases\/panel_sunpower-bg.png": {
 		"ft": 32768,
-		"iS": 1432100,
+		"iS": 344530,
 		"oA": 0,
 		"oAP": "\/images\/cases\/panel_sunpower-bg.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/cases\/panel_ulta-bg.png": {
 		"ft": 32768,
-		"iS": 733789,
+		"iS": 244785,
 		"oA": 0,
 		"oAP": "\/images\/cases\/panel_ulta-bg.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/cases\/panel_uscellular-bg.png": {
 		"ft": 32768,
-		"iS": 1245090,
+		"iS": 323335,
 		"oA": 0,
 		"oAP": "\/images\/cases\/panel_uscellular-bg.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
+		},
+	"\/images\/cases\/sunpower\/laptop.png": {
+		"ft": 32768,
+		"iS": 69754,
+		"oA": 0,
+		"oAP": "\/images\/cases\/sunpower\/laptop.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/sunpower\/masthead.jpg": {
+		"ft": 16384,
+		"iS": 291241,
+		"oA": 0,
+		"oAP": "\/images\/cases\/sunpower\/masthead.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/sunpower\/next-uscellular.jpg": {
+		"ft": 16384,
+		"iS": 72807,
+		"oA": 0,
+		"oAP": "\/images\/cases\/sunpower\/next-uscellular.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/sunpower\/phone.png": {
+		"ft": 32768,
+		"iS": 121675,
+		"oA": 0,
+		"oAP": "\/images\/cases\/sunpower\/phone.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/sunpower\/phone2.png": {
+		"ft": 32768,
+		"iS": 227138,
+		"oA": 0,
+		"oAP": "\/images\/cases\/sunpower\/phone2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/ulta\/next-jacksonhewitt.jpg": {
+		"ft": 16384,
+		"iS": 25419,
+		"oA": 0,
+		"oAP": "\/images\/cases\/ulta\/next-jacksonhewitt.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/uscellular\/laptop.png": {
+		"ft": 32768,
+		"iS": 58168,
+		"oA": 0,
+		"oAP": "\/images\/cases\/uscellular\/laptop.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/uscellular\/masthead.jpg": {
+		"ft": 16384,
+		"iS": 152564,
+		"oA": 0,
+		"oAP": "\/images\/cases\/uscellular\/masthead.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/uscellular\/next-ulta.jpg": {
+		"ft": 16384,
+		"iS": 14337,
+		"oA": 0,
+		"oAP": "\/images\/cases\/uscellular\/next-ulta.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/uscellular\/phone.png": {
+		"ft": 32768,
+		"iS": 121675,
+		"oA": 0,
+		"oAP": "\/images\/cases\/uscellular\/phone.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/uscellular\/phone2.png": {
+		"ft": 32768,
+		"iS": 127223,
+		"oA": 0,
+		"oAP": "\/images\/cases\/uscellular\/phone2.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/images\/contact\/social_icon-facebook.png": {
 		"ft": 32768,
-		"iS": 14879,
+		"iS": 307,
 		"oA": 0,
 		"oAP": "\/images\/contact\/social_icon-facebook.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/contact\/social_icon-instagram.png": {
 		"ft": 32768,
-		"iS": 15461,
+		"iS": 566,
 		"oA": 0,
 		"oAP": "\/images\/contact\/social_icon-instagram.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/contact\/social_icon-linkedin.png": {
 		"ft": 32768,
-		"iS": 15062,
+		"iS": 384,
 		"oA": 0,
 		"oAP": "\/images\/contact\/social_icon-linkedin.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/contact\/social_icon-twitter.png": {
 		"ft": 32768,
-		"iS": 15501,
+		"iS": 603,
 		"oA": 0,
 		"oAP": "\/images\/contact\/social_icon-twitter.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/culture\/background-logo.png": {
 		"ft": 32768,
@@ -301,51 +516,51 @@
 		},
 	"\/images\/culture\/letters\/letters-a.png": {
 		"ft": 32768,
-		"iS": 8037,
+		"iS": 3471,
 		"oA": 0,
 		"oAP": "\/images\/culture\/letters\/letters-a.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/culture\/letters\/letters-e.png": {
 		"ft": 32768,
-		"iS": 1438,
+		"iS": 642,
 		"oA": 0,
 		"oAP": "\/images\/culture\/letters\/letters-e.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/culture\/letters\/letters-l.png": {
 		"ft": 32768,
-		"iS": 1157,
+		"iS": 521,
 		"oA": 0,
 		"oAP": "\/images\/culture\/letters\/letters-l.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/culture\/letters\/letters-s.png": {
 		"ft": 32768,
-		"iS": 10861,
+		"iS": 4436,
 		"oA": 0,
 		"oAP": "\/images\/culture\/letters\/letters-s.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/culture\/letters\/letters-u.png": {
 		"ft": 32768,
-		"iS": 5824,
+		"iS": 2736,
 		"oA": 0,
 		"oAP": "\/images\/culture\/letters\/letters-u.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/culture\/letters\/letters-v.png": {
 		"ft": 32768,
-		"iS": 7975,
+		"iS": 3636,
 		"oA": 0,
 		"oAP": "\/images\/culture\/letters\/letters-v.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/culture\/listen-first_icon.svg": {
 		"ft": 2097152,
@@ -389,63 +604,79 @@
 		},
 	"\/images\/home\/clients\/campbells.png": {
 		"ft": 32768,
-		"iS": 6651,
+		"iS": 3082,
 		"oA": 0,
 		"oAP": "\/images\/home\/clients\/campbells.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/clients\/caterpillar.png": {
 		"ft": 32768,
-		"iS": 2386,
+		"iS": 1515,
 		"oA": 0,
 		"oAP": "\/images\/home\/clients\/caterpillar.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/clients\/conagra.png": {
 		"ft": 32768,
-		"iS": 14480,
+		"iS": 4353,
 		"oA": 0,
 		"oAP": "\/images\/home\/clients\/conagra.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/clients\/jackson_hewitt.png": {
 		"ft": 32768,
-		"iS": 4615,
+		"iS": 2635,
 		"oA": 0,
 		"oAP": "\/images\/home\/clients\/jackson_hewitt.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/clients\/lincoln_park_zoo.png": {
 		"ft": 32768,
-		"iS": 4782,
+		"iS": 2526,
 		"oA": 0,
 		"oAP": "\/images\/home\/clients\/lincoln_park_zoo.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
+		},
+	"\/images\/home\/clients\/ounce.png": {
+		"ft": 32768,
+		"iS": 2416,
+		"oA": 0,
+		"oAP": "\/images\/home\/clients\/ounce.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/home\/clients\/sephora.png": {
+		"ft": 32768,
+		"iS": 1896,
+		"oA": 0,
+		"oAP": "\/images\/home\/clients\/sephora.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/images\/home\/clients\/sunpower.png": {
 		"ft": 32768,
-		"iS": 4246,
+		"iS": 2129,
 		"oA": 0,
 		"oAP": "\/images\/home\/clients\/sunpower.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/clients\/ulta.png": {
 		"ft": 32768,
-		"iS": 3905,
+		"iS": 2057,
 		"oA": 0,
 		"oAP": "\/images\/home\/clients\/ulta.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/clients\/us cellular.png": {
 		"ft": 32768,
-		"iS": 4230,
+		"iS": 2231,
 		"oA": 0,
 		"oAP": "\/images\/home\/clients\/us cellular.png",
 		"oF": 0,
@@ -453,15 +684,15 @@
 		},
 	"\/images\/home\/clients\/uscellular.png": {
 		"ft": 32768,
-		"iS": 4478,
+		"iS": 2231,
 		"oA": 0,
-		"oAP": "\/images\/home\/clients\/us cellular.png",
+		"oAP": "\/images\/home\/clients\/uscellular.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/leadership\/andrew_swinand.jpg": {
 		"ft": 16384,
-		"iS": 34812,
+		"iS": 17238,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/andrew_swinand.jpg",
 		"oF": 0,
@@ -469,7 +700,7 @@
 		},
 	"\/images\/home\/leadership\/brenda_strong.jpg": {
 		"ft": 16384,
-		"iS": 39205,
+		"iS": 20683,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/brenda_strong.jpg",
 		"oF": 0,
@@ -477,7 +708,7 @@
 		},
 	"\/images\/home\/leadership\/brian_schinazi.jpg": {
 		"ft": 16384,
-		"iS": 38051,
+		"iS": 19756,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/brian_schinazi.jpg",
 		"oF": 0,
@@ -485,7 +716,7 @@
 		},
 	"\/images\/home\/leadership\/bryan_simkins.jpg": {
 		"ft": 16384,
-		"iS": 38781,
+		"iS": 20046,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/bryan_simkins.jpg",
 		"oF": 0,
@@ -493,7 +724,7 @@
 		},
 	"\/images\/home\/leadership\/caitlin_winkworth.jpg": {
 		"ft": 16384,
-		"iS": 42021,
+		"iS": 21873,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/caitlin_winkworth.jpg",
 		"oF": 0,
@@ -501,23 +732,23 @@
 		},
 	"\/images\/home\/leadership\/chris_marshall.jpg": {
 		"ft": 16384,
-		"iS": 33649,
+		"iS": 16541,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/chris_marshall.jpg",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/leadership\/david_brown.jpg": {
 		"ft": 16384,
-		"iS": 36459,
+		"iS": 19358,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/david_brown.jpg",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/leadership\/deb_myszynski.jpg": {
 		"ft": 16384,
-		"iS": 36121,
+		"iS": 18357,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/deb_myszynski.jpg",
 		"oF": 0,
@@ -525,7 +756,7 @@
 		},
 	"\/images\/home\/leadership\/eric_langshur.jpg": {
 		"ft": 16384,
-		"iS": 33967,
+		"iS": 16567,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/eric_langshur.jpg",
 		"oF": 0,
@@ -589,15 +820,15 @@
 		},
 	"\/images\/home\/leadership\/katie_newman.jpg": {
 		"ft": 16384,
-		"iS": 39437,
+		"iS": 20806,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/katie_newman.jpg",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/leadership\/larry_byrne.jpg": {
 		"ft": 16384,
-		"iS": 33612,
+		"iS": 16855,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/larry_byrne.jpg",
 		"oF": 0,
@@ -605,7 +836,7 @@
 		},
 	"\/images\/home\/leadership\/linda_wolf.jpg": {
 		"ft": 16384,
-		"iS": 40945,
+		"iS": 21467,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/linda_wolf.jpg",
 		"oF": 0,
@@ -613,7 +844,7 @@
 		},
 	"\/images\/home\/leadership\/mary_baglivo.jpg": {
 		"ft": 16384,
-		"iS": 41022,
+		"iS": 22049,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/mary_baglivo.jpg",
 		"oF": 0,
@@ -621,7 +852,7 @@
 		},
 	"\/images\/home\/leadership\/melissa_healy.jpg": {
 		"ft": 16384,
-		"iS": 39418,
+		"iS": 20522,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/melissa_healy.jpg",
 		"oF": 0,
@@ -629,7 +860,7 @@
 		},
 	"\/images\/home\/leadership\/stephanie_ridley.jpg": {
 		"ft": 16384,
-		"iS": 37396,
+		"iS": 19046,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/stephanie_ridley.jpg",
 		"oF": 0,
@@ -637,7 +868,7 @@
 		},
 	"\/images\/home\/leadership\/suzanne_michaels.jpg": {
 		"ft": 16384,
-		"iS": 32704,
+		"iS": 16005,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/suzanne_michaels.jpg",
 		"oF": 0,
@@ -645,7 +876,7 @@
 		},
 	"\/images\/home\/leadership\/tim_suther.jpg": {
 		"ft": 16384,
-		"iS": 35224,
+		"iS": 17833,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/tim_suther.jpg",
 		"oF": 0,
@@ -653,7 +884,7 @@
 		},
 	"\/images\/home\/leadership\/tom_hack.jpg": {
 		"ft": 16384,
-		"iS": 30970,
+		"iS": 15052,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/tom_hack.jpg",
 		"oF": 0,
@@ -661,35 +892,35 @@
 		},
 	"\/images\/home\/letters\/letters-k.png": {
 		"ft": 32768,
-		"iS": 2010,
+		"iS": 1056,
 		"oA": 0,
 		"oAP": "\/images\/home\/letters\/letters-k.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/letters\/letters-o.png": {
 		"ft": 32768,
-		"iS": 6194,
+		"iS": 2780,
 		"oA": 0,
 		"oAP": "\/images\/home\/letters\/letters-o.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/letters\/letters-r.png": {
 		"ft": 32768,
-		"iS": 3600,
+		"iS": 1846,
 		"oA": 0,
 		"oAP": "\/images\/home\/letters\/letters-r.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/letters\/letters-w.png": {
 		"ft": 32768,
-		"iS": 14710,
+		"iS": 5893,
 		"oA": 0,
 		"oAP": "\/images\/home\/letters\/letters-w.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/home\/videos-bg-01.svg": {
 		"ft": 2097152,
@@ -711,11 +942,27 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/images\/icons\/ball.png": {
+		"ft": 32768,
+		"iS": 2617,
+		"oA": 0,
+		"oAP": "\/images\/icons\/ball.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/icons\/bouncing_icon.png": {
 		"ft": 32768,
-		"iS": 3579,
+		"iS": 1231,
 		"oA": 0,
 		"oAP": "\/images\/icons\/bouncing_icon.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/icons\/down-arrow.png": {
+		"ft": 32768,
+		"iS": 345,
+		"oA": 0,
+		"oAP": "\/images\/icons\/down-arrow.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -749,33 +996,41 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/images\/icons\/quote-icon.png": {
+		"ft": 32768,
+		"iS": 390,
+		"oA": 0,
+		"oAP": "\/images\/icons\/quote-icon.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/icons\/social_icon-facebook.png": {
 		"ft": 32768,
-		"iS": 506,
+		"iS": 296,
 		"oA": 0,
 		"oAP": "\/images\/icons\/social_icon-facebook.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/icons\/social_icon-instagram.png": {
 		"ft": 32768,
-		"iS": 1146,
+		"iS": 567,
 		"oA": 0,
 		"oAP": "\/images\/icons\/social_icon-instagram.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/icons\/social_icon-linkedin.png": {
 		"ft": 32768,
-		"iS": 706,
+		"iS": 386,
 		"oA": 0,
 		"oAP": "\/images\/icons\/social_icon-linkedin.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/icons\/social_icon-twitter.png": {
 		"ft": 32768,
-		"iS": 1110,
+		"iS": 599,
 		"oA": 0,
 		"oAP": "\/images\/icons\/social_icon-twitter.png",
 		"oF": 0,
@@ -806,16 +1061,16 @@
 		"iS": 32796,
 		"oA": 0,
 		"oAP": "\/images\/logo-nowtv.png",
-		"oF": 0,
-		"opt": 0
+		"oF": 1,
+		"opt": 1
 		},
 	"\/images\/logo-signagerocket.png": {
 		"ft": 32768,
 		"iS": 18136,
 		"oA": 0,
 		"oAP": "\/images\/logo-signagerocket.png",
-		"oF": 0,
-		"opt": 0
+		"oF": 1,
+		"opt": 1
 		},
 	"\/images\/menu\/theabundancy-logo.png": {
 		"ft": 32768,
@@ -830,7 +1085,7 @@
 		"iS": 15444,
 		"oA": 0,
 		"oAP": "\/images\/pattern_plus-sign_2x.png",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1
 		},
 	"\/images\/svg\/index.html": {
@@ -844,7 +1099,7 @@
 		"iS": 11120,
 		"oA": 0,
 		"oAP": "\/images\/the_abundancy-logo-w-text.png",
-		"oF": 0,
+		"oF": 1,
 		"opt": 1
 		},
 	"\/images\/the_abundancy-nav-logo.png": {
@@ -852,12 +1107,12 @@
 		"iS": 8032,
 		"oA": 0,
 		"oAP": "\/images\/the_abundancy-nav-logo.png",
-		"oF": 0,
-		"opt": 0
+		"oF": 1,
+		"opt": 1
 		},
 	"\/index.php": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/index.php",
 		"oF": 0
 		},
@@ -920,6 +1175,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/libs\/controls\/min\/OrbitControls-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/libs\/fancySelect.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/min\/fancySelect-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1041,6 +1305,18 @@
 		"oAP": "\/php\/views\/index.php",
 		"oF": 0
 		},
+	"\/php\/views\/jacksonhewitt.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/php\/views\/jacksonhewitt.php",
+		"oF": 0
+		},
+	"\/php\/views\/sunpower.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/php\/views\/sunpower.php",
+		"oF": 0
+		},
 	"\/php\/views\/uscellular.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -1049,7 +1325,7 @@
 		},
 	"\/php\/views\/work.php": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/php\/views\/work.php",
 		"oF": 0
 		},
@@ -1114,6 +1390,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/_buttons.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"\/sass\/components\/_forms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_forms.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
@@ -1184,16 +1473,16 @@
 		"uL": 1
 		},
 	"\/sass\/main.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/main.css",
-		"oF": 1,
-		"oS": 3,
+		"oF": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/sass\/pages\/_approach.scss": {
@@ -1244,6 +1533,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/_home.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"\/sass\/pages\/_jacksonhewitt.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_jacksonhewitt.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"\/sass\/pages\/_sunpower.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_sunpower.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1

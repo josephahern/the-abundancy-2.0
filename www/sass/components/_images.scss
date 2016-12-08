@@ -150,6 +150,19 @@ img {
 
   }
 
+  &.star-icon {
+    width: 205px;
+    height: 132px;
+
+    @media only screen and (max-width: 750px){
+      width: 138px;
+      position: relative;
+      top: -4px;
+      height: 150px;
+    }
+
+  }
+
   svg {
     width: 100%;
     overflow: visible;
@@ -282,7 +295,8 @@ img {
 @keyframes ear {
   0%        {opacity: 0;}
   10%       {opacity: 1;}
-  80%      {opacity: 0;}
+  80%      {opacity: 1;}
+  81%      {opacity: 0;}
 }
 
 .ear-line {
@@ -354,7 +368,7 @@ img {
   0%        {transform: translateX(0px);}
   35%       {transform: translateX(0px);}
   45%       {transform: translateX(-16px);}
-  50%       {transform: translateX(-10px);}
+  50%       {transform: translateX(-16px);}
   55%       {transform: translateX(-16px);}
   98%       {transform: translateX(-16px);}
   100%      {transform: translateX(0px);}
@@ -364,7 +378,7 @@ img {
   0%        {transform: translateX(0px);}
   35%       {transform: translateX(0px);}
   45%       {transform: translateX(16px);}
-  50%       {transform: translateX(10px);}
+  50%       {transform: translateX(16px);}
   55%       {transform: translateX(16px);}
   98%       {transform: translateX(16px);}
   100%      {transform: translateX(0px);}
@@ -374,6 +388,7 @@ img {
   0%        {opacity: 0;}
   66%       {opacity: 0;}
   67%       {opacity: 1;}
+  99%       {opacity: 1;}
   100%       {opacity: 0;}
 }
 
@@ -488,4 +503,42 @@ img {
   animation-fill-mode: none;
   animation: punch 3s ease-in-out infinite;
   animation-delay: 3s;
+}
+
+/* star */
+
+@keyframes star {
+  0%        {transform: scale(0);}
+  50%       {transform: scale(1);}
+
+  73%       {transform: scale(1);}
+  75%       {transform: scale(0.97);}
+  77%       {transform: scale(1.03);}
+  79%       {transform: scale(0.97);}
+  81%       {transform: scale(1);}
+
+  100%       {transform: scale(1);}
+
+}
+
+#star-lines {
+  transform-origin: center;
+  transform: scale(0) rotate(0deg);
+  animation: star-lines 6s ease-in-out infinite;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes star-lines {
+  0%        {transform: scale(0);}
+  25%       {transform: scale(0);}
+  35%       {transform: scale(1);}
+  40%       {transform: scale(0.9);}
+  45%       {transform: scale(1.1);}
+  50%       {transform: scale(0.9);}
+  55%       {transform: scale(1.1);}
+  60%       {transform: scale(0.9);}
+  65%       {transform: scale(1);}
+  75%       {transform: scale(0);}
+  100%      {transform: scale(0);}
 }

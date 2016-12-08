@@ -100,6 +100,17 @@
                             display: inline-block;
                             position: absolute;
 
+                            #mobile-get-chosen {
+
+                                display: none;
+
+                                @media only screen and (max-width: 680px) {
+                                    display: inline;
+                                    margin-left: 5px;
+                                }
+
+                            }
+
                             &.wrapper {
                                 top: 0;
                                 left: 492px;
@@ -124,7 +135,7 @@
 
 
                             @media only screen and (max-width: 680px) {
-                                font-size: 19px;
+                                font-size: 18px;
                                 line-height: 22px;
                                 transition: all 0.5s ease;
                                 max-width: 330px;

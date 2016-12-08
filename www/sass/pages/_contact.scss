@@ -69,142 +69,6 @@
                     width: 40%;
                     display: block;
 
-                    .input {
-
-                        position: relative;
-                        z-index: 1;
-                        display: inline-block;
-                        max-width: 300px;
-                        width: 90%;
-                        vertical-align: top;
-                        margin-bottom: 27px;
-
-                        .input-field {
-                            position: relative;
-                            display: block;
-                            float: right;
-                            border: none;
-                            border-radius: 0;
-                            font-family: $font-family-primary;
-                            font-size: 18px;
-                            font-weight: normal;
-                            -webkit-appearance: none;
-                            padding: 15px 15px;
-                            width: 100%;
-                            background: transparent;
-                            color: #000000;
-                            opacity: 0;
-                            -webkit-transition: opacity 0.3s;
-                            transition: opacity 0.3s;
-                        }
-
-                        .input-label {
-                            display: inline-block;
-                            float: right;
-                            color: #f3dcd4;
-                            font-weight: bold;
-                            font-size: 70.25%;
-                            -webkit-font-smoothing: antialiased;
-                            -moz-osx-font-smoothing: grayscale;
-                            -webkit-touch-callout: none;
-                            -webkit-user-select: none;
-                            -khtml-user-select: none;
-                            -moz-user-select: none;
-                            -ms-user-select: none;
-                            user-select: none;
-                            position: absolute;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            text-align: left;
-                            pointer-events: none;
-                        }
-
-                        .input-content {
-                            font-family: $font-family-primary;
-                            font-weight: normal;
-                            font-size: 21px;
-                            line-height: 26px;
-                            color: $abundancy-cream;
-                            padding: 10px 0;
-                            position: relative;
-                            display: block;
-                            width: 100%;
-                            -webkit-transition: -webkit-transform 0.3s 0.3s;
-                            transition: transform 0.3s 0.3s;
-                        }
-
-                        .input-label::before,
-                        .input-label::after {
-                            content: '';
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            -webkit-transition: -webkit-transform 0.3s;
-                            transition: transform 0.3s;
-                        }
-
-                        .input-label::before {
-                            border-top: 2px solid #f3dcd4;
-                            -webkit-transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
-                            transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
-                            -webkit-transition-delay: 0.3s;
-                            transition-delay: 0.3s;
-                        }
-
-                        .input-label::after {
-                            z-index: -1;
-                            background: #f3dcd4;
-                            -webkit-transform: scale3d(1, 0, 1);
-                            transform: scale3d(1, 0, 1);
-                            -webkit-transform-origin: 50% 0%;
-                            transform-origin: 50% 0%;
-                        }
-
-                        .input-field:focus,
-                        .input-filled .input-field {
-                            opacity: 1;
-                            -webkit-transition-delay: 0.3s;
-                            transition-delay: 0.3s;
-                            outline:0;
-                        }
-
-                        .input-field:focus + .input-label .input-content,
-                        .input-filled .input-content {
-                            -webkit-transform: translate3d(0, -80%, 0);
-                            transform: translate3d(0, -80%, 0);
-                            -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-                            transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-                            font-size: 14px;
-                            transition: all 0.3s ease;
-                        }
-
-                        .input-field:focus + .input-label::before,
-                        .input-filled .input-label::before {
-                            -webkit-transition-delay: 0s;
-                            transition-delay: 0s;
-                        }
-
-                        .input-field:focus + .input-label::before,
-                        .input-filled .input-label::before {
-                            -webkit-transform: translate3d(0, 0, 0);
-                            transform: translate3d(0, 0, 0);
-                        }
-
-                        .input-field:focus + .input-label::after,
-                        .input-filled .input-label::after {
-                            -webkit-transform: scale3d(1, 1, 1);
-                            transform: scale3d(1, 1, 1);
-                            -webkit-transition-delay: 0.3s;
-                            transition-delay: 0.3s;
-                            -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-                            transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-                        }
-
-                    }
-
                 }
 
                 .right {
@@ -585,11 +449,11 @@
                         width: 100%;
                         padding: 20px;
                         flex-direction: row;
-                        justify-content: space-around;
+                        justify-content: space-between;
                         align-items: flex-start;
 
                         address {
-                            font-size: 20px;
+                            font-size: 18px;
                             line-height: 24px;
 
                             span {
@@ -608,8 +472,8 @@
                                 font-size: 11px;
                                 color: #84827e;
                                 text-transform: uppercase;
-                                margin-top: 3px;
-                                margin-bottom: 10px;
+                                margin-top: 0px;
+                                margin-bottom: 5px;
                             }
 
                             &.digits {
@@ -626,8 +490,8 @@
                                 font-size: 11px;
                                 color: $abundancy-slate;
                                 text-transform: uppercase;
-                                margin-top: 15px;
-                                margin-bottom: 0px;
+                                margin-top: 10px;
+                                margin-bottom: 5px;
                             }
 
                         }
@@ -699,8 +563,8 @@
                             font-size: 11px;
                             color: #84827e;
                             text-transform: uppercase;
-                            margin-top: 3px;
-                            margin-bottom: 10px;
+                            margin-top: 0;
+                            margin-bottom: 5px;
                         }
 
                         &.digits {
@@ -717,8 +581,8 @@
                             font-size: 11px;
                             color: $abundancy-slate;
                             text-transform: uppercase;
-                            margin-top: 15px;
-                            margin-bottom: 0px;
+                            margin-top: 10px;
+                            margin-bottom: 5px;
                         }
 
                     }

@@ -392,7 +392,7 @@
       margin-top: 10px;
       min-height: 158px;
       width: 100%;
-      background-image: url("/images/cases/uscellular/next-sunpower.jpg");
+      background-image: url("/images/cases/sunpower/next-uscellular.jpg");
       background-size: cover;
       display: flex;
       flex-direction: column;
@@ -406,6 +406,11 @@
         font-size: 18px;
         display: inline-block;
         text-transform: uppercase;
+
+        @media only screen and (max-width: 750px) {
+          font-size: 12px;
+        }
+
       }
 
       .title {
@@ -415,6 +420,32 @@
         font-size: 28px;
         display: inline-block;
         text-transform: uppercase;
+
+        sup {
+          font-size: 50%;
+          position: relative;
+          left: 2px;
+          top: -4px;
+
+          @media only screen and (max-width: 750px) {
+            font-size: 40%;
+          }
+
+        }
+
+        @media only screen and (max-width: 750px) {
+          font-size: 20px;
+          margin-top: -3px;
+        }
+
+      }
+
+      @media only screen and (max-width: 570px) {
+        background-position-x: -35px;
+      }
+
+      @media only screen and (max-width: 750px) {
+        min-height: 75px;
       }
 
     }
