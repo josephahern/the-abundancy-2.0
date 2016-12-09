@@ -6,10 +6,10 @@
             <a href="/contact#careers">Careers</a>
         </div>
         <div class="social">
-            <a href="https://www.linkedin.com/company/10785212" target="_blank" class="linkedin"></a>
-            <a href="https://www.facebook.com/TheAbundancy/" target="_blank" class="facebook"></a>
-            <a href="https://twitter.com/theabundancy" target="_blank" class="twitter"></a>
-            <a href="https://www.instagram.com/theabundancy/" target="_blank" class="instagram"></a>
+            <a href="https://www.linkedin.com/company/10785212" target="_blank" class="linkedin"><span class="icon"></span></a>
+            <a href="https://www.facebook.com/TheAbundancy/" target="_blank" class="facebook"><span class="icon"></span></a>
+            <a href="https://twitter.com/theabundancy" target="_blank" class="twitter"><span class="icon"></span></a>
+            <a href="https://www.instagram.com/theabundancy/" target="_blank" class="instagram"><span class="icon"></span></a>
         </div>
     </div>
     <div class="copyright">&copy; The Abundancy 2016</div>

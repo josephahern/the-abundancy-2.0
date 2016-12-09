@@ -21,6 +21,12 @@
 		"oAP": "\/.htaccess",
 		"oF": 0
 		},
+	"\/abundancy.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/abundancy.zip",
+		"oF": 0
+		},
 	"\/composer.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -36,7 +42,7 @@
 		"oF": 0
 		},
 	"\/config.rb": {
-		"ft": 131072,
+		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
@@ -304,6 +310,14 @@
 		"oF": 1,
 		"opt": 1
 		},
+	"\/images\/cases\/gray-triangle-bg.png": {
+		"ft": 32768,
+		"iS": 27417,
+		"oA": 0,
+		"oAP": "\/images\/cases\/gray-triangle-bg.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/cases\/jh\/laptop.png": {
 		"ft": 32768,
 		"iS": 208014,
@@ -341,6 +355,14 @@
 		"iS": 115555,
 		"oA": 0,
 		"oAP": "\/images\/cases\/jh\/phone2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/orange-triangle-bg.png": {
+		"ft": 32768,
+		"iS": 19216,
+		"oA": 0,
+		"oAP": "\/images\/cases\/orange-triangle-bg.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -416,6 +438,30 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/cases\/sunpower\/tablet.png": {
+		"ft": 32768,
+		"iS": 947774,
+		"oA": 0,
+		"oAP": "\/images\/cases\/sunpower\/tablet.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cases\/ulta\/laptop.png": {
+		"ft": 32768,
+		"iS": 208014,
+		"oA": 0,
+		"oAP": "\/images\/cases\/ulta\/laptop.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/cases\/ulta\/masthead.jpg": {
+		"ft": 16384,
+		"iS": 206570,
+		"oA": 0,
+		"oAP": "\/images\/cases\/ulta\/masthead.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/cases\/ulta\/next-jacksonhewitt.jpg": {
 		"ft": 16384,
 		"iS": 25419,
@@ -423,6 +469,14 @@
 		"oAP": "\/images\/cases\/ulta\/next-jacksonhewitt.jpg",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/images\/cases\/ulta\/phone.png": {
+		"ft": 32768,
+		"iS": 91305,
+		"oA": 0,
+		"oAP": "\/images\/cases\/ulta\/phone.png",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/images\/cases\/uscellular\/laptop.png": {
 		"ft": 32768,
@@ -462,7 +516,7 @@
 		"oA": 0,
 		"oAP": "\/images\/cases\/uscellular\/phone2.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/contact\/social_icon-facebook.png": {
 		"ft": 32768,
@@ -470,7 +524,7 @@
 		"oA": 0,
 		"oAP": "\/images\/contact\/social_icon-facebook.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/contact\/social_icon-instagram.png": {
 		"ft": 32768,
@@ -478,7 +532,7 @@
 		"oA": 0,
 		"oAP": "\/images\/contact\/social_icon-instagram.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/contact\/social_icon-linkedin.png": {
 		"ft": 32768,
@@ -486,7 +540,7 @@
 		"oA": 0,
 		"oAP": "\/images\/contact\/social_icon-linkedin.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/contact\/social_icon-twitter.png": {
 		"ft": 32768,
@@ -494,7 +548,7 @@
 		"oA": 0,
 		"oAP": "\/images\/contact\/social_icon-twitter.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/culture\/background-logo.png": {
 		"ft": 32768,
@@ -714,6 +768,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/home\/leadership\/bryan_schinazi.jpg": {
+		"ft": 16384,
+		"iS": 183043,
+		"oA": 0,
+		"oAP": "\/images\/home\/leadership\/bryan_schinazi.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/home\/leadership\/bryan_simkins.jpg": {
 		"ft": 16384,
 		"iS": 20046,
@@ -759,62 +821,6 @@
 		"iS": 16567,
 		"oA": 0,
 		"oAP": "\/images\/home\/leadership\/eric_langshur.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/home\/leadership\/gif\/andrew_swinand.gif": {
-		"ft": 4194304,
-		"iS": 5220638,
-		"oA": 0,
-		"oAP": "\/images\/home\/leadership\/gif\/andrew_swinand.gif",
-		"oF": 0,
-		"opt": 1
-		},
-	"\/images\/home\/leadership\/gif\/bryan_simkins.gif": {
-		"ft": 4194304,
-		"iS": 3556330,
-		"oA": 0,
-		"oAP": "\/images\/home\/leadership\/gif\/bryan_simkins.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/home\/leadership\/gif\/caitlin_winkworth.gif": {
-		"ft": 4194304,
-		"iS": 3760488,
-		"oA": 0,
-		"oAP": "\/images\/home\/leadership\/gif\/caitlin_winkworth.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/home\/leadership\/gif\/eric_langshur.gif": {
-		"ft": 4194304,
-		"iS": 3023478,
-		"oA": 0,
-		"oAP": "\/images\/home\/leadership\/gif\/eric_langshur.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/home\/leadership\/gif\/larry_byrne.gif": {
-		"ft": 4194304,
-		"iS": 4899020,
-		"oA": 0,
-		"oAP": "\/images\/home\/leadership\/gif\/larry_byrne.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/home\/leadership\/gif\/suzanne_michaels.gif": {
-		"ft": 4194304,
-		"iS": 5029729,
-		"oA": 0,
-		"oAP": "\/images\/home\/leadership\/gif\/suzanne_michaels.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/home\/leadership\/gif\/tom_hack.gif": {
-		"ft": 4194304,
-		"iS": 4235188,
-		"oA": 0,
-		"oAP": "\/images\/home\/leadership\/gif\/tom_hack.gif",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1012,11 +1018,27 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/icons\/social_icon-facebook_on.png": {
+		"ft": 32768,
+		"iS": 436,
+		"oA": 0,
+		"oAP": "\/images\/icons\/social_icon-facebook_on.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/icons\/social_icon-instagram.png": {
 		"ft": 32768,
 		"iS": 567,
 		"oA": 0,
 		"oAP": "\/images\/icons\/social_icon-instagram.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/icons\/social_icon-instagram_on.png": {
+		"ft": 32768,
+		"iS": 982,
+		"oA": 0,
+		"oAP": "\/images\/icons\/social_icon-instagram_on.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1028,6 +1050,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/icons\/social_icon-linkedin_on.png": {
+		"ft": 32768,
+		"iS": 603,
+		"oA": 0,
+		"oAP": "\/images\/icons\/social_icon-linkedin_on.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/icons\/social_icon-twitter.png": {
 		"ft": 32768,
 		"iS": 599,
@@ -1035,6 +1065,14 @@
 		"oAP": "\/images\/icons\/social_icon-twitter.png",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/images\/icons\/social_icon-twitter_on.png": {
+		"ft": 32768,
+		"iS": 1063,
+		"oA": 0,
+		"oAP": "\/images\/icons\/social_icon-twitter_on.png",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/images\/logo-gulp-webpack-pink.svg": {
 		"ft": 2097152,
@@ -1188,11 +1226,29 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/libs\/headroom.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/min\/headroom.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/libs\/jquery.slotmachine.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/libs\/min\/jquery.slotmachine.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/libs\/min\/headroom.min-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/min\/min\/headroom.min-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1315,6 +1371,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/php\/views\/sunpower.php",
+		"oF": 0
+		},
+	"\/php\/views\/ulta.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/php\/views\/ulta.php",
 		"oF": 0
 		},
 	"\/php\/views\/uscellular.php": {
@@ -1473,12 +1535,12 @@
 		"uL": 1
 		},
 	"\/sass\/main.scss": {
-		"aP": 0,
-		"bl": 0,
+		"aP": 1,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
 		"oAP": "\/css\/main.css",
 		"oF": 0,
@@ -1559,6 +1621,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/_sunpower.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"\/sass\/pages\/_ulta.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_ulta.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1

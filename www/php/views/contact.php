@@ -28,7 +28,7 @@
                             <span class="input-content">Email Address</span>
                         </label>
 				    </span>
-                    <span class="input">
+                    <span class="input select">
 					    <select class="dropdown" id="input-subject">
                             <option value="">Subject</option>
                             <option>General Inquiry</option>
@@ -36,7 +36,7 @@
                             <option>Careers</option>
                         </select>
 				    </span>
-                    <span class="input">
+                    <span class="input select">
 					    <select class="dropdown" id="input-iama">
                             <option value="">I am a</option>
                             <option>Backseat Driver</option>
@@ -87,10 +87,10 @@
                         <hr>
                         <span class="follow">Follow Us</span>
                         <div class="social">
-                            <a href="https://www.linkedin.com/company/10785212" target="_blank" class="linkedin"></a>
-                            <a href="https://www.facebook.com/TheAbundancy/" target="_blank" class="facebook"></a>
-                            <a href="https://twitter.com/theabundancy" target="_blank" class="twitter"></a>
-                            <a href="https://www.instagram.com/theabundancy/" target="_blank" class="instagram"></a>
+                            <a href="https://www.linkedin.com/company/10785212" target="_blank" class="linkedin"><span class="icon"></span></a>
+                            <a href="https://www.facebook.com/TheAbundancy/" target="_blank" class="facebook"><span class="icon"></span></a>
+                            <a href="https://twitter.com/theabundancy" target="_blank" class="twitter"><span class="icon"></span></a>
+                            <a href="https://www.instagram.com/theabundancy/" target="_blank" class="instagram"><span class="icon"></span></a>
                         </div>
                     </div>
                 </div>

@@ -124,6 +124,7 @@ img {
       height: 100px;
       position: relative;
       top: -48px;
+      left: -4px;
     }
 
   }
@@ -145,6 +146,7 @@ img {
       width: 100px;
       position: relative;
       top: -7px;
+      left: -9px;
       height: 150px;
     }
 
@@ -187,10 +189,10 @@ img {
 
 #graph-lines {
   transform-origin: center;
+  transform-box: fill-box;
   transform: scale(1);
   animation-fill-mode: none;
   animation: graph-grow 3s ease-in-out infinite;
-
 }
 
 /* stars animation */
@@ -230,8 +232,8 @@ img {
 /* arrow */
 
 @keyframes arrow-1 {
-  0%        {x: 0;}
-  100%      {x: 200px;}
+  0%        {transform: translate(0, 0);}
+  100%      {transform: translate(200px, 0);}
 }
 
 @keyframes arrow-2 {
@@ -240,12 +242,12 @@ img {
 }
 
 @keyframes arrow {
-  0%        {padding-left: 0px;}
-  24%       {padding-left: 0px;}
-  26%       {padding-left: 15px;}
-  30%       {padding-left: 7px;}
-  32%       {padding-left: 15px;}
-  38%       {padding-left: 0px;}
+  0%        {left: 0;}
+  24%       {left: 0;}
+  26%       {left: 15px;}
+  30%       {left: 7px;}
+  32%       {left: 15px;}
+  38%       {left: 0;}
 
 }
 
@@ -267,6 +269,13 @@ img {
   animation-delay: 1.25s;
   animation-fill-mode: forwards;
   transform-origin: right;
+}
+
+#Layer_3 {
+  overflow: visible;
+  animation: arrow 8s ease-out infinite;
+  animation-delay: 3.5s;
+  position: relative;
 }
 
 /* bulb */
@@ -444,8 +453,8 @@ img {
 /* bolt*/
 
 @keyframes bolt {
-  0%        {y: 2.3px;}
-  100%      {y: 200px;}
+  0%        {transform: translate(0, 0px);}
+  100%      {transform: translate(0, 200px);}
 }
 
 @keyframes bolt-lines {
@@ -477,6 +486,7 @@ img {
   animation: bolt 0.75s ease-out;
   animation-delay: 0.25s;
   animation-fill-mode: forwards;
+  position: relative;
 }
 
 #bolt-lines {

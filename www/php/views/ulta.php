@@ -16,12 +16,12 @@
                     <span class="percentage">57%</span>
                     <span class="subtext">Increase in subscriber<br />growth</span>
                 </div>
-                <img src="/images/cases/jh/laptop.png" alt="">
+                <img src="/images/cases/ulta/laptop.png" alt="">
             </div>
         </div>
         <div class="row approach">
             <div class="column">
-                <img src="/images/cases/jh/phone.png" alt="" class="wow fadeInUp">
+                <img src="/images/cases/ulta/phone.png" alt="" class="wow fadeInUp">
                 <div class="right">
                     <span class="title">The Approach</span>
                     <p>To get ULTA chosen we created a triple threat: videos that mattered to specific viewers, featured ULTA’s expertise, and created actual sales. We began by analyzing search data to find beauty questions that were going unanswered online. Then we created tip and idea videos to answer them featuring Beauty Advisors from ULTA’s 700 locations, with products that could be purchased right from the video. YouTube took notice.</p>

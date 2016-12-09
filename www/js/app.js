@@ -152,6 +152,17 @@
                 $("html").removeClass("noscroll");
             });
 
+            $(".modal-contain").on("click", function(){
+                $(".modal-contain").toggleClass("open");
+                $(".modal").toggleClass("animated fadeInUp");
+                $("html").removeClass("noscroll");
+            }).children().click(function(e) {
+                return false;
+            });
+
+
+
+
             // Animate Get Chosen text
 
             function animateGetChosen() {
@@ -318,7 +329,6 @@
                 type: 'GET',
                 data: {access_token: token, count: num_photos},
                 success: function(data){
-                    console.log(data);
 
                     var imageCount = 0;
 
@@ -330,7 +340,6 @@
                             $('.instagram-feed').append('<div class="box"><img src="'+data.data[num].images.standard_resolution.url+'"><a class="insta-overlay" href="'+ data.data[num].link +'" target="_blank"><div class="insta-heart">'+ data.data[num].likes.count + '</div><div class="insta-comments">'+ data.data[num].comments.count + '</div></a></div>');
                             imageCount++;
                         }
-                        console.log(imageCount);
                     }
 
                 },
@@ -373,8 +382,8 @@
 
                 var name = $("#input-name input").val(),
                     mail = $("#input-email input").val(),
-                    subject = $("input-subject").val(),
-                    iama = $("input-iama").val();
+                    subject = $("#input-subject").val(),
+                    iama = $("#input-iama").val();
 
                 alert("Name: " + name + " Email: " + mail + " Subject: " + subject + " I am a: " + iama);
 

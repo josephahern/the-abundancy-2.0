@@ -20,7 +20,7 @@
         </div>
         <div class="row approach">
             <div class="column">
-                <img src="/images/cases/uscellular/phone.png" alt="" class="wow fadeInUp">
+                <img src="/images/cases/sunpower/tablet.png" alt="" class="wow fadeInUp">
                 <div class="right">
                     <span class="title">The Approach</span>
                     <p>To get chosen, SunPower needed to tell a different story. So we broke price-based conventions and focused on the innovative design that sets SunPower apart. We created immersive site and video content that put SunPower technology front-and-center, and presented it with high-end design that would appeal to sophisticated audiences and dealers. People plugged in instantly.</p>
