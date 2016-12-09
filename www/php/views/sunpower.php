@@ -50,6 +50,7 @@
             </div>
         </div>
         <a href="/work/us-cellular" class="row next">
+            <div class="overlay"></div>
             <span class="text">Next Case Study</span>
             <span class="title">U.S. Cellular<sup>&reg;</sup></span>
         </a>

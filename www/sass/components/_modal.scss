@@ -132,6 +132,11 @@
       font-size: 21px;
       color: #fff;
       display: block;
+
+      @media only screen and (max-width: 750px){
+        font-size: 18px;
+      }
+
     }
 
     @media only screen and (max-width: 750px){

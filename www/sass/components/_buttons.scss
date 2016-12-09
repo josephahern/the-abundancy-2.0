@@ -26,9 +26,9 @@ a {
                 opacity: 0;
 
                 &:hover {
-                    color: $abundancy-foam-green;
+                    color: $abundancy-copper;
                     background-color: transparent;
-                    border: 3px solid $abundancy-beige;
+                    border: 3px solid $abundancy-cream;
                 }
 
                 @media only screen and (max-width: 750px) {
@@ -86,9 +86,9 @@ a {
                 }
 
                 @media only screen and (max-width: 760px) {
-                    height: 50px;
+                    height: 44px;
+                    line-height: 40px;
                     width: 110px;
-                    line-height: 48px;
                 }
 
             }
@@ -96,7 +96,16 @@ a {
 
         }
 
+    }
+}
+
+input {
+
+    &.btn {
+
         &.contact {
+            background: none;
+            border: none;
             display: inline-block;
             color: $abundancy-cream;
             font-family: $font-family-primary;
@@ -108,13 +117,15 @@ a {
             &.submit-btn {
                 height: 40px;
                 width: 145px;
-                line-height: 44px;
+                line-height: 38px;
                 background-color: $abundancy-brown;
                 transition: all 0.3s ease;
+                z-index: 600;
 
                 &:hover {
                     color: $abundancy-foam-green;
                     background-color: $abundancy-slate;
+                    cursor: pointer;
                 }
 
             }
@@ -122,4 +133,5 @@ a {
         }
 
     }
+
 }

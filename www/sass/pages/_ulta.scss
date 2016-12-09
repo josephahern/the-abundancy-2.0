@@ -1,0 +1,510 @@
+#ulta.case-study {
+  background-color: #ffffff;
+
+  .primary {
+    min-height: 500px;
+    display: flex;
+    padding-bottom: 0;
+    position: relative;
+    background-image: url("/images/cases/ulta/masthead.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h2 {
+
+      @media only screen and (max-width: 680px){
+        font-size: 22px;
+      }
+
+      sup {
+        font-size: 50%;
+        position: relative;
+        left: 1px;
+        top: -4px;
+      }
+
+
+    }
+
+    .column {
+      margin-bottom: 50px;
+
+      @media only screen and (max-width: 680px){
+        margin-bottom: 0;
+      }
+
+    }
+
+    p {
+      font-family: $font-family-secondary;
+      font-size: 21px;
+      max-width: 550px;
+      margin-top: 10px;
+      font-weight: bold;
+
+      @media only screen and (max-width: 680px){
+        font-size: 14px;
+        max-width: 375px;
+      }
+
+    }
+
+    @media only screen and (max-width: 680px){
+      min-height: 0px;
+    }
+
+    @media only screen and (max-width: 400px){
+      background-position-x: -100px;
+    }
+
+  }
+
+  .row {
+
+    &.stats {
+      background-color: #ffffff;
+      padding-top: 75px;
+      padding-bottom: 100px;
+      position: relative;
+
+      .column {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media only screen and (max-width: 750px) {
+          align-items: center;
+        }
+
+      }
+
+      .left {
+        display: inline-block;
+        margin-top: 50px;
+
+        @media only screen and (max-width: 750px) {
+          margin-top: 0px;
+        }
+
+      }
+
+      .divider {
+        display: block;
+        height: 5px;
+        background-color: $abundancy-copper;
+        width: 75%;
+        margin-top: 25px;
+        margin-bottom: 30px;
+
+        @media only screen and (max-width: 750px) {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          height: 2px;
+        }
+
+      }
+
+      .percentage {
+        font-family: $font-family-primary;
+        font-weight: 300;
+        font-size: 75px;
+        display: block;
+        color: $abundancy-copper;
+        text-align: left;
+
+        @media only screen and (max-width: 750px) {
+          font-size: 46px;
+        }
+
+        @media only screen and (max-width: 550px) {
+          font-size: 24px;
+        }
+
+
+      }
+
+      .subtext {
+        font-family: $font-family-primary;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        display: block;
+        color: $abundancy-slate;
+        text-transform: uppercase;
+        max-width: 275px;
+
+        @media only screen and (max-width: 850px) {
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        @media only screen and (max-width: 750px) {
+          font-size: 10px;
+          line-height: 12px;
+        }
+
+      }
+
+      img {
+        max-width: 720px;
+        width: 75%;
+
+        @media only screen and (max-width: 550px) {
+          max-width: 245px;
+        }
+
+
+      }
+
+      @media only screen and (max-width: 750px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+
+    }
+
+    &.approach {
+      background-color: $abundancy-copper;
+      background-image: url("/images/cases/orange-triangle-bg.png");
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: auto 100%;
+      max-height: 360px;
+      overflow: visible;
+
+      .column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 360px;
+
+        @media only screen and (max-width: 750px){
+          min-height: 185px;
+          align-items: center;
+        }
+
+      }
+
+      .title {
+        font-family: $font-family-primary;
+        font-weight: 700;
+        font-size: 32px;
+        color: $abundancy-cream;
+        display: block;
+
+        @media only screen and (max-width: 750px) {
+          font-size: 18px;
+          margin-top: 0px;
+          margin-bottom: 5px;
+        }
+
+      }
+
+      p {
+        font-family: $font-family-secondary;
+        font-weight: bold;
+        font-size: 21px;
+        color: #ffffff;
+        max-width: 460px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 15px;
+
+        @media only screen and (max-width: 750px) {
+          font-size: 14px;
+          margin-top: 5px;
+        }
+
+      }
+
+      img {
+        max-width: 335px;
+        width: 35%;
+        position: relative;
+
+        @media only screen and (max-width: 750px) {
+          display: none;
+        }
+
+      }
+
+      .right {
+        margin-left: 60px;
+        transition: all 0.3s ease;
+
+        @media only screen and (max-width: 820px) {
+          margin-left: 30px;
+          transition: all 0.3s ease;
+        }
+
+        @media only screen and (max-width: 750px) {
+          margin-left: 0px;
+          transition: all 0.3s ease;
+        }
+
+      }
+
+      @media only screen and (max-width: 750px){
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+    }
+
+    &.quote{
+      background-color: #ffffff;
+      color: $abundancy-copper;
+      padding-top: 90px;
+      padding-bottom: 50px;
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        margin-bottom: 25px;
+      }
+
+      .text {
+        font-family: $font-family-secondary;
+        font-size: 32px;
+        display: inline-block;
+        max-width: 530px;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .name {
+        font-family: $font-family-primary;
+        font-weight: 700;
+        font-size: 18px;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .title {
+        font-family: $font-family-primary;
+        font-weight: 500;
+        font-size: 12px;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      @media only screen and (max-width: 750px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        img {
+          width: 30px;
+          margin-bottom: 15px;
+        }
+
+        .text {
+          font-size: 21px;
+          margin-bottom: 15px;
+        }
+
+        .name {
+          font-size: 14px;
+        }
+
+        .title {
+          font-size: 10px;
+        }
+
+      }
+
+    }
+
+    &.services {
+
+      background-color: #84827e;
+      background-image: url("/images/cases/gray-triangle-bg.png");
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: auto 100%;
+      max-height: 490px;
+      height: auto;
+      overflow: visible;
+
+
+      .column {
+        max-height: 490px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        @media only screen and (max-width: 750px) {
+          min-height: 170px;
+        }
+
+      }
+
+      .left {
+        display: inline-block;
+
+        @media only screen and (max-width: 750px) {
+          margin-left: 0;
+        }
+
+      }
+
+      .title {
+        font-family: $font-family-primary;
+        font-weight: 700;
+        font-size: 32px;
+        display: block;
+        color: $abundancy-cream;
+        margin-bottom: 10px;
+
+        @media only screen and (max-width: 750px) {
+          font-size: 18px;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+
+      }
+
+      ul {
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          display: block;
+          color: #ffffff;
+          font-family: $font-family-primary;
+          font-weight: 700;
+          font-size: 21px;
+          margin-bottom: 5px;
+
+          @media only screen and (max-width: 750px) {
+            font-size: 12px;
+            margin-top: 0px;
+            margin-bottom: 0;
+          }
+
+        }
+
+      }
+
+      img {
+        width: 55%;
+        max-width: 590px;
+        position: relative;
+        margin-left: 60px;
+        top: -30px;
+
+        @media only screen and (max-width: 850px) {
+          margin-left: 30px;
+        }
+
+        @media only screen and (max-width: 750px) {
+          max-width: 160px;
+          margin-left: 20px;
+          top: 0;
+        }
+
+      }
+
+    }
+
+    &.next {
+      margin-top: 10px;
+      min-height: 158px;
+      width: 100%;
+      background-image: url("/images/cases/ulta/next-jacksonhewitt.jpg");
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      .overlay {
+        background-color: $abundancy-slate;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .text {
+        font-family: $font-family-primary;
+        font-weight: 300;
+        color: $abundancy-copper;
+        font-size: 18px;
+        display: inline-block;
+        text-transform: uppercase;
+        z-index: 500;
+
+        @media only screen and (max-width: 750px) {
+          font-size: 12px;
+        }
+
+      }
+
+      .title {
+        font-family: $font-family-primary;
+        font-weight: 700;
+        color: $abundancy-foam-green;
+        font-size: 28px;
+        display: inline-block;
+        text-transform: uppercase;
+        z-index: 500;
+
+        sup {
+          font-size: 50%;
+          position: relative;
+          left: 2px;
+          top: -4px;
+
+          @media only screen and (max-width: 750px) {
+            font-size: 40%;
+          }
+
+        }
+
+        @media only screen and (max-width: 750px) {
+          font-size: 20px;
+          margin-top: -3px;
+        }
+
+      }
+
+      &:hover {
+
+        .overlay {
+          transition: opacity 0.3s ease;
+          opacity: 0.6;
+        }
+
+      }
+
+      @media only screen and (max-width: 570px) {
+        background-position-x: -35px;
+      }
+
+      @media only screen and (max-width: 750px) {
+        min-height: 75px;
+        margin-top: 2px;
+      }
+
+    }
+
+  }
+
+}

@@ -3,13 +3,13 @@
         <img src="/images/the_abundancy-logo-w-text.png" id="footer-logo" alt="The Abundancy">
         <div class="navigation">
             <a href="/approach">Our Approach</a> | <a href="/work">Our Work</a> | <a href="/culture">Our Culture</a> | <a href="/contact">Contact Us</a> |
-            <a href="/contact">Careers</a>
+            <a href="/contact#careers">Careers</a>
         </div>
         <div class="social">
-            <a href="#" class="linkedin"></a>
-            <a href="#" class="facebook"></a>
-            <a href="#" class="twitter"></a>
-            <a href="#" class="instagram"></a>
+            <a href="https://www.linkedin.com/company/10785212" target="_blank" class="linkedin"></a>
+            <a href="https://www.facebook.com/TheAbundancy/" target="_blank" class="facebook"></a>
+            <a href="https://twitter.com/theabundancy" target="_blank" class="twitter"></a>
+            <a href="https://www.instagram.com/theabundancy/" target="_blank" class="instagram"></a>
         </div>
     </div>
     <div class="copyright">&copy; The Abundancy 2016</div>
@@ -29,6 +29,7 @@
 <script src="/js/libs/wow.min.js"></script>
 <script src="/js/libs/fancySelect.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script src="https://npmcdn.com/headroom.js@0.9.3/dist/headroom.min.js"></script>
 <!-- <script src="js/components/main.js"></script> -->
 
 <!-- Main Script File -->
@@ -36,6 +37,11 @@
 <script src="/js/app.js"></script>
 <script>
     new WOW().init();
+    var myElement = document.querySelector("header");
+    // construct an instance of Headroom, passing the element
+    var headroom  = new Headroom(myElement);
+    // initialise
+    headroom.init();
 </script>
 </body>
 </html>

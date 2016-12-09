@@ -2,13 +2,37 @@
 
     //GLOBAL VARIABLES
 
+    var isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+        },
+        any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
+
     //GLOBAL FUNCTIONS
+
+        console.log(isMobile.any());
 
         /* Menu */
         if($("#menu").length){
 
             $(".menu-button").on("click", function(){
                 $("#menu").toggleClass("open");
+                $("header").toggleClass("headroom--pinned, headroom--unpinned");
             });
 
             $(".close-button").on("click", function(){
@@ -18,43 +42,49 @@
 
         /* On Scroll Line Animation */
 
-        if($(".vertical-title").length){
+        if(isMobile.any() == null){
+            if($(".vertical-title").length){
 
-            $(window).scroll(function() { //when window is scrolled
+                $(window).scroll(function() { //when window is scrolled
 
-                $(".vertical-title").each(function(){
+                    $(".vertical-title").each(function(){
 
-                    var eTop = $(this).offset().top; //get the offset top of the element
-                    var distanceFromTop = eTop - $(window).scrollTop();
+                        var eTop = $(this).offset().top; //get the offset top of the element
+                        var distanceFromTop = eTop - $(window).scrollTop();
 
-                    if(distanceFromTop < 375 && !$(this).hasClass("active")){
-                        $(this).addClass("active");
-                    }
+                        if(distanceFromTop < 375 && !$(this).hasClass("active")){
+                            $(this).addClass("active");
+                        }
+
+                    });
 
                 });
 
-            });
 
 
-
+            }
         }
 
+
         /* Parallax */
-        if($(".parallax").length){
 
-            var parallax = document.querySelectorAll(".parallax"),
-                speed = 0.15;
+        if(isMobile.any() == null) {
+            if ($(".parallax").length) {
 
-            window.onscroll = function(){
-                [].slice.call(parallax).forEach(function(el,i){
+                var parallax = document.querySelectorAll(".parallax"),
+                    speed = 0.15;
 
-                    var windowYOffset = window.pageYOffset;
+                window.onscroll = function () {
+                    [].slice.call(parallax).forEach(function (el, i) {
 
-                    el.style.backgroundPosition = "0 " + (windowYOffset * speed) + "px";
+                        var windowYOffset = window.pageYOffset;
 
-                });
-            };
+                        el.style.backgroundPosition = "0 " + (windowYOffset * speed) + "px";
 
+                    });
+                };
+
+            }
         }
 
         /* Text Shuffle */
@@ -71,9 +101,7 @@
         }
 
     //PAGES
-
-        /* Interactive Masthead */
-
+    
         /* Home */
         if($("#home").length){
 
@@ -82,17 +110,19 @@
             var modal = $(".modal");
 
             // Background flying triangles
-            $(".triangle").each(function(){
-                var triangle = $(this),
-                    randomDecimal = generateDecimal();
+            if(isMobile.any() == null) {
+                $(".triangle").each(function(){
+                    var triangle = $(this),
+                        randomDecimal = generateDecimal();
 
-                TweenMax.set(triangle,{ top: generateStringPercentage(), left: generateStringPercentage(), scale:randomDecimal} );
+                    TweenMax.set(triangle,{ top: generateStringPercentage(), left: generateStringPercentage(), scale:randomDecimal} );
 
-                var bezier_path = [{ top: generateStringPercentage(), left: generateStringPercentage() }, { top: generateStringPercentage(), left: generateStringPercentage() }, { top: generateStringPercentage(), left: generateStringPercentage() }];
+                    var bezier_path = [{ top: generateStringPercentage(), left: generateStringPercentage() }, { top: generateStringPercentage(), left: generateStringPercentage() }, { top: generateStringPercentage(), left: generateStringPercentage() }];
 
-                TweenMax.to(triangle, 50, { bezier: { type: 'thru', values: bezier_path,curviness: 1, autoRotate: true}, ease: Power1.easeInOut, yoyo: true, repeat:-1});
+                    TweenMax.to(triangle, 50, { bezier: { type: 'thru', values: bezier_path,curviness: 1, autoRotate: true}, ease: Power1.easeInOut, yoyo: true, repeat:-1});
 
-            });
+                });
+            }
 
             // Leadership profile squares
             $(".leadership li").on("click", function(){
@@ -123,12 +153,6 @@
             });
 
             // Animate Get Chosen text
-
-            var chosenSmall = $("#get-chosen-small"),
-                chosenLarge = $("#get-chosen-large");
-
-            var totalDistanceNeededToTravel = chosenLarge.offset().top - chosenSmall.offset().top;
-            var totalLeftDistanceNeededToTravel = chosenSmall.offset().left - chosenLarge.offset().left;
 
             function animateGetChosen() {
 
@@ -222,18 +246,25 @@
                 animateGetChosen();
             }
 
-            // window.scroll()
-            $(window).scroll(function() {
-                animateGetChosen();
-            });
+            if(isMobile.any() == null) {
+                var chosenSmall = $("#get-chosen-small"),
+                    chosenLarge = $("#get-chosen-large");
 
-            // window.resize()
-            $(window).resize(function() {
-                animateGetChosen();
-            });
+                var totalDistanceNeededToTravel = chosenLarge.offset().top - chosenSmall.offset().top;
+                var totalLeftDistanceNeededToTravel = chosenSmall.offset().left - chosenLarge.offset().left;
 
+                // window.scroll()
+                $(window).scroll(function() {
+                    animateGetChosen();
+                });
 
-            initHome();
+                // window.resize()
+                $(window).resize(function() {
+                    animateGetChosen();
+                });
+
+                initHome();
+            }
 
         }
 
@@ -336,6 +367,18 @@
             });
 
             $('.dropdown').fancySelect();
+
+            $("#contact-us-form").submit(function(e){
+                e.preventDefault();
+
+                var name = $("#input-name input").val(),
+                    mail = $("#input-email input").val(),
+                    subject = $("input-subject").val(),
+                    iama = $("input-iama").val();
+
+                alert("Name: " + name + " Email: " + mail + " Subject: " + subject + " I am a: " + iama);
+
+            });
 
             // Recruiter box
             $.ajax({

@@ -1,32 +1,5 @@
 <?php include 'header.php'; ?>
-    <div id="loader"></div>
-    <div id="home-overlay">
-
-        <div id="home-overlay-key">
-            <div>WHO WE ARE</div>
-            <div><span style="color:#c65230;">•</span> Account Management</div>
-            <div><span style="color:#fd9a34;">•</span> Analytics </div>
-            <div><span style="color:#fece5c;">•</span> Creative</div>
-            <div><span style="color:#abc3bc;">•</span> Media</div>
-            <div><span style="color:#f8f8d4;">•</span> Resourcing</div>
-            <div><span style="color:#d24141;">•</span> Project Management</div>
-            <div><span style="color:#b8640e;">•</span> Executives</div>
-            <div><span style="color:#a5bf6d;">•</span> Strategy</div>
-            <div><span style="color:#5599b2;">•</span> Technology</div>
-        </div>
-
-        <div id="home-overlay-text">
-            <div class="">SEE THESE DOTS?</div>
-            <div class="">
-                That’s us.<br />
-                Each point’s a person and every shade a specialty.<br />
-                Connecting more is a beautiful thing.
-            </div>
-        </div>
-
-    </div>
-    <div id="container"></div>
-<div id="home">
+    <div id="home">
     <div class="parallax row" id="intro">
         <div class="triangle"></div>
         <div class="triangle"></div>
@@ -69,7 +42,7 @@
                 <div class="vertical-title">
                     <span class="number">02</span>
                     <span class="line"></span>
-                    <span class="text">Brands like these</span>
+                    <span class="text">Lucky Clients</span>
                 </div>
                 <ul>
                     <li><a href="#"><img src="images/home/clients/uscellular.png" alt="U.S. Cellular"></a></li>
@@ -102,10 +75,10 @@
             </div>
             <a href="/work" class="btn home video-btn">See More Work</a>
         </div>
-        <div class="letters wow fadeInLeft" id="letter-w"></div>
-        <div class="letters wow fadeInUp" id="letter-o"></div>
-        <div class="letters wow fadeInRight" id="letter-r"></div>
-        <div class="letters wow fadeInLeft" id="letter-k"></div>
+        <div class="letters wow fadeInLeft" data-wow-offset="50" id="letter-w"></div>
+        <div class="letters wow fadeInUp" data-wow-offset="50" id="letter-o"></div>
+        <div class="letters wow fadeInRight" data-wow-offset="50" id="letter-r"></div>
+        <div class="letters wow fadeInLeft" data-wow-offset="50" id="letter-k"></div>
     </section>
     <section class="leadership row">
         <div class="column">
@@ -119,7 +92,7 @@
                 <li data-person="andrew_swinand">
                     <div class="details">
                         <span class="name">Andrew Swinand</span>
-                        <span class="title">CEO</span>
+                        <span class="title">Founder & CEO</span>
                     </div>
                     <div class="modal-content">
                         <span class="modal-name">Andrew Swinand</span>
@@ -158,7 +131,7 @@
                 <li data-person="bryan_simkins">
                     <div class="details">
                         <span class="name">Bryan Simkins</span>
-                        <span class="title">Technology Partner</span>
+                        <span class="title">Marketing Technology Partner</span>
                     </div>
                     <div class="modal-content">
                         <span class="modal-name">Bryan Simkins</span>
@@ -203,7 +176,7 @@
                         <span class="modal-name">David Brown</span>
                         <span class="modal-title">President</span>
                         <span class="modal-i_am_a">I am a father</span>
-                        <span class="modal-bio">David has the best lead on a good scotch egg. He was previously the head of Meredith Xcelerated Marketing, during which time the agency won Content Marketing Agency of the Year at the Content Marketing World. At that time, MXM was recognized as the “father of content marketing”. Today his focus is on using data-driven insights to inform best-in-breed content marketing models. David is, regrettably, a Dodgers fan.</span>
+                        <span class="modal-bio">David has the best lead on a good Scotch Egg. He was previously the head of Meredith Xcelerated Marketing, during which time the agency won Content Marketing Agency of the Year at the Content Marketing Awards. At that time, MXM was recognized as the “father of content marketing”. Today his focus is on using data-driven insights to inform best-in-breed content marketing models. David is, regrettably, a Dodgers fan.</span>
                     </div>
                     <img src="/images/home/leadership/david_brown.jpg">
                 </li>
@@ -215,7 +188,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Debbie Myszynski</span>
                         <span class="modal-title">Group Account Director</span>
-                        <span class="modal-i_am_a">I am culinary MacGyver</span>
+                        <span class="modal-i_am_a">I am a culinary MacGyver</span>
                         <span class="modal-bio">Deb makes sure we’re eating well. A former SVP Group Account Director from Digitas, she brings more than 16 years of experience on both the agency and client side, and a slew of wards from an EFFIEs to BMA-ACEs. She’s Six Sigma Certified, which helps her deliver great work with transparency and efficiency. When in need of inspiration, Deb can always count on mountains of Colorado or a good bourbon to do the trick.</span>
                     </div>
                     <img src="/images/home/leadership/deb_myszynski.jpg">
@@ -254,7 +227,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Melissa Healy</span>
                         <span class="modal-title">Group Creative Director</span>
-                        <span class="modal-i_am_a">I am a banna hater</span>
+                        <span class="modal-i_am_a">I am a banana hater</span>
                         <span class="modal-bio">Melissa reminds us that Bon Jovi exists. She came to us after time as an award-collecting VP Director of Creative at Digitas working on Always, Tampax, Intuit, Sprint, and Emerson. She has served as a panel member for SheSays Chicago, and is passionate about increasing leadership by women in advertising. Melissa is guided by three core values: enjoyment, trust, and empowerment. </span>
                     </div>
                     <img src="/images/home/leadership/melissa_healy.jpg">
@@ -268,7 +241,7 @@
                         <span class="modal-name">Suzanne Michaels</span>
                         <span class="modal-title">Executive Creative Director</span>
                         <span class="modal-i_am_a">I am a Scrabble Champ</span>
-                        <span class="modal-bio">Suzanne keeps us asking, “What if?” She’s held creative leadership roles at DDB, Digitas, Critical Mass, and BBDO over her 20 years of experience, developing integrated programs for major brands like eBay, P&G, PepsiCo, Nissan, and McDonald’s. She is passionate about defining a brand’s purpose, and making it real through actions and interactions. Suzanne is inspired by the psychology of interaction, the music and math of e.e. cummings.</span>
+                        <span class="modal-bio">Suzanne keeps us asking, “What if?” She’s held creative leadership roles at DDB, Digitas, Critical Mass, and BBDO over her 20 years of experience, developing integrated programs for major brands like eBay, P&G, PepsiCo, Nissan, and McDonald’s. She is passionate about defining a brand’s purpose, and making it real through actions and interactions. Suzanne is inspired by the psychology of interaction, and the music and math of e.e. cummings.</span>
                     </div>
                     <img src="/images/home/leadership/suzanne_michaels.jpg">
                 </li>
@@ -326,11 +299,11 @@
                 </li>
                 <li data-person=linda_wolf">
                     <div class="details">
-                        <span class="name">Linda S. Wolf</span>
+                        <span class="name">Linda Wolf</span>
                         <span class="title">Board Member</span>
                     </div>
                     <div class="modal-content">
-                        <span class="modal-name">Linda S. Wolf</span>
+                        <span class="modal-name">Linda Wolf</span>
                         <span class="modal-title">Board Member</span>
                         <span class="modal-i_am_a">I am a Curious Cook</span>
                         <span class="modal-bio">Linda was Chairman and CEO of Leo Burnett Worldwide from 2001 to 2005, and CEO of Leo Burnett USA from 1996 through 2000. Today she is a Director of Wal-Mart Stores Inc., InnerWorkings, Inc, and Wrapports, LLC. She serves on the Board of Trustees of Janus Funds, and is a member of the Board of Directors of Lurie Children’s Hospital, The Chicago Council on Global Affairs, the Rehabilitation Institute of Chicago, and The Chicago Community Trust.</span>

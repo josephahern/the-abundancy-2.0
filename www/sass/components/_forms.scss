@@ -57,7 +57,7 @@
     font-size: 21px;
     line-height: 26px;
     color: $abundancy-cream;
-    padding: 10px 0;
+    padding: 20px 0 0 0;
     position: relative;
     display: block;
     width: 100%;
@@ -110,6 +110,8 @@
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
     font-size: 14px;
     transition: all 0.3s ease;
+    position: relative;
+    top: -10px;
   }
 
   .input-field:focus + .input-label::before,
@@ -165,6 +167,7 @@ div.fancy-select.disabled {
 
 div.fancy-select select:focus + div.trigger.open {
   box-shadow: none;
+  z-index: 101;
 }
 
 div.fancy-select div.trigger {
@@ -186,7 +189,6 @@ div.fancy-select div.trigger {
   -moz-transition: all 240ms ease-out;
   -ms-transition: all 240ms ease-out;
   -o-transition: all 240ms ease-out;
-  z-index: 1;
 }
 
 div.fancy-select div.trigger:after {
@@ -210,8 +212,7 @@ div.fancy-select ul.options {
   left: 0;
   visibility: hidden;
   opacity: 0;
-  max-height: 200px;
-  overflow: auto;
+  overflow: visible;
   background: rgba(255,255,255,0.9);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   width: 100%;
@@ -262,7 +263,7 @@ div.fancy-select ul.options.overflowing.open {
 }
 
 div.fancy-select ul.options li {
-  padding: 8px 12px;
+  padding: 8px 20px;
   color: $abundancy-copper;
   cursor: pointer;
   white-space: nowrap;
@@ -285,4 +286,5 @@ div.fancy-select ul.options li.selected {
 
 div.fancy-select ul.options li.hover {
   color: #fff;
+  background: #db734c;
 }

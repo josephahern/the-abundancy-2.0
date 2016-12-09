@@ -4,7 +4,7 @@
         <section class="row primary parallax">
             <div class="column">
                 <h2>Jackson Hewitt<sup>&reg;</sup></h2>
-                <p>Jackson Hewitt had a tax headache of their own. People were struggling to book appointments online, and the company was losing leads and revenue. We had a way to get them to return.</p>
+                <p>Jackson Hewitt had a tax headache of their own. People were struggling to book appointments online and the company was losing leads and revenue. We had a way to get them to return.</p>
             </div>
         </section>
         <div class="row stats">
@@ -24,14 +24,14 @@
                 <img src="/images/cases/jh/phone.png" alt="" class="wow fadeInUp">
                 <div class="right">
                     <span class="title">The Approach</span>
-                    <p>To get Jackson Hewitt chosen, we needed to make their site friendlier to visitors. So we reimagined the site to streamlined the experience while also delivering more of what mattered to people. We created localized landing pages and optimized content for mobile, making the site more engaging while being more intuitive. It led to some beautiful numbers.</p>
+                    <p>To get Jackson Hewitt chosen, we needed to make their site friendlier to visitors. So we reimagined the site to streamline the experience while also delivering more of what mattered to people. We created localized landing pages and optimized content for mobile, making the site more engaging while also being more intuitive. It led to some beautiful numbers.</p>
                 </div>
             </div>
         </div>
         <div class="row quote">
             <div class="column">
                 <img src="/images/icons/quote-icon.png" alt="">
-                <span class="text">Design is more than beauty.<br />Design needs to be functional</span>
+                <span class="text">Design is more than beauty.<br />Design needs to be functional.</span>
                 <span class="name">Melissa Healy</span>
                 <span class="title">Group Creative Director</span>
             </div>
@@ -51,6 +51,7 @@
             </div>
         </div>
         <a href="/work/sunpower"class="row next">
+            <div class="overlay"></div>
             <span class="text">Next Case Study</span>
             <span class="title">SunPower<sup>&reg;</sup></span>
         </a>

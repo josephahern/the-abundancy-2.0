@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
 <div id="contact">
-    <section class="row" id="contact-form">
+    <section class="row clearfix" id="contact-form">
         <div class="bouncing-logo icon-1"></div>
         <div class="bouncing-logo icon-2"></div>
         <div class="bouncing-logo icon-3"></div>
@@ -13,22 +13,23 @@
                 <span class="line"></span>
                 <span class="text">A Handy Form</span>
             </div>
-            <div class="fields">
-                <div class="left">
+            <form action="mail.php" method="post" id="contact-us-form">
+                <div class="fields">
+                    <div class="left">
                     <span class="input" id="input-name">
-					    <input class="input-field" type="text" id="input-10">
+					    <input class="input-field" type="text" id="input-10" required>
 					    <label class="input-label" for="input-10">
                             <span class="input-content">Name</span>
                         </label>
 				    </span>
                     <span class="input" id="input-email">
-					    <input class="input-field" type="text" id="input-10">
+					    <input class="input-field" type="email" id="input-10" required>
 					    <label class="input-label" for="input-10">
                             <span class="input-content">Email Address</span>
                         </label>
 				    </span>
                     <span class="input">
-					    <select class="dropdown">
+					    <select class="dropdown" id="input-subject">
                             <option value="">Subject</option>
                             <option>General Inquiry</option>
                             <option>New Business</option>
@@ -36,7 +37,7 @@
                         </select>
 				    </span>
                     <span class="input">
-					    <select class="dropdown">
+					    <select class="dropdown" id="input-iama">
                             <option value="">I am a</option>
                             <option>Backseat Driver</option>
                             <option>Shower Singer</option>
@@ -45,17 +46,19 @@
                             <option>Early Riser</option>
                         </select>
 				    </span>
+                    </div>
+                    <div class="right">
+                        <textarea name="message" id="contact-message" placeholder="Type message here"></textarea>
+                    </div>
                 </div>
-                <div class="right">
-                    <textarea name="message" id="contact-message" placeholder="Type message here"></textarea>
+                <div class="bottom">
+                    <input type="submit" value="Submit" class="btn contact submit-btn" />
                 </div>
-            </div>
-            <div class="bottom">
-                <a href="" class="btn contact submit-btn">Submit</a>
-            </div>
+            </form>
+
         </div>
     </section>
-    <section class="row" id="jobs">
+    <section class="row" id="careers">
         <div class="column">
             <div class="vertical-title">
                 <span class="number">02</span>
@@ -75,7 +78,7 @@
                             Suite 300<br />
                             Chicago, IL 60601
                         </address>
-                        <a href="#" class="directions">Get Directions</a>
+                        <a href="https://goo.gl/maps/vuXLgEUjv2B2" class="directions" target="_blank">Get Directions</a>
                     </div>
                     <div class="bottom">
                         <hr>
@@ -84,10 +87,10 @@
                         <hr>
                         <span class="follow">Follow Us</span>
                         <div class="social">
-                            <a href="#" class="linkedin"></a>
-                            <a href="#" class="facebook"></a>
-                            <a href="#" class="twitter"></a>
-                            <a href="#" class="instagram"></a>
+                            <a href="https://www.linkedin.com/company/10785212" target="_blank" class="linkedin"></a>
+                            <a href="https://www.facebook.com/TheAbundancy/" target="_blank" class="facebook"></a>
+                            <a href="https://twitter.com/theabundancy" target="_blank" class="twitter"></a>
+                            <a href="https://www.instagram.com/theabundancy/" target="_blank" class="instagram"></a>
                         </div>
                     </div>
                 </div>

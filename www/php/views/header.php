@@ -28,14 +28,9 @@
 </nav>
 <!-- end Primary Navigation -->
 
-<div class="home-logo">
-    <a href="/" id="theabundancy"></a>
-    <button class="menu-button" id="open-button"></button>
-</div>
-
-<div id="scroll-down">
-    <div class="scroll-down-text">SCROLL</div>
-    <div class="scroll-down-box">
-        <div class="scroll-down-arrow bounce"></div>
+<header>
+    <div class="home-logo">
+        <a href="/" id="theabundancy"></a>
+        <button class="menu-button" id="open-button"></button>
     </div>
-</div>
+</header>

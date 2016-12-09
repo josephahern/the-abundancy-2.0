@@ -10,19 +10,19 @@
             <div class="title-shuffle">
                 <h2><span>We're</span> all about</h2>
                 <div id="shuffler">
-                    <span class="option">the Janes</span>
-                    <span class="option">the Sams</span>
-                    <span class="option">the Benjamins</span>
-                    <span class="option">People</span>
+                    <span class="option">the Janes.</span>
+                    <span class="option">the Sams.</span>
+                    <span class="option">the Benjamins.</span>
+                    <span class="option">People.</span>
                 </div>
             </div>
             <div class='video-container'>
                 <div class="video-object">
-                    <iframe src='https://player.vimeo.com/video/43417094' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    <iframe src='https://player.vimeo.com/video/194847203' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                 </div>
             </div>
             <div class="statement">
-                <span>We help brands get chosen.</span> People have enough choices to get exactly what they want &mdash; the only question is whether they'll get it from you. We help your brand matter to the right people in the right moments.
+                People can get exactly what they want&mdash;the only question is if they'll get it from you. We help brands matter to the right people in the right moments to get chosen.
             </div>
             <div class="bottom-title">Here's How</div>
         </div>
@@ -121,7 +121,7 @@
                         <rect id="COVER3" x="35.2" y="117.5" fill="#FFFFFF" width="52" height="10.2"/>
                     </svg>
                 </div>
-                <div class="summary">Once in-market, we constantly optimize our work to stay relevant to people’s wants and needs.</div>
+                <div class="summary">After launch, we constantly optimize our work to stay relevant to people’s wants and needs.</div>
             </div>
         </div>
     </section>
@@ -137,7 +137,7 @@
                     <span>Experience Design</span>
                 </div>
                 <div class="block">
-                    <span>Digital & Video</span>
+                    <span>Digital & Video Production</span>
                     <span>Performance Measurement</span>
                     <span>Testing & Optimization</span>
                     <span>MarTech Consulting</span>

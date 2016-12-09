@@ -37,6 +37,10 @@ $router->map( 'GET', '/work/us-cellular', function() {
     require __DIR__ . '/php/views/uscellular.php';
 }, 'uscellular');
 
+$router->map( 'GET', '/work/ulta-beauty', function() {
+    require __DIR__ . '/php/views/ulta.php';
+}, 'ulta');
+
 $router->map( 'GET', '/work/jackson-hewitt', function() {
     require __DIR__ . '/php/views/jacksonhewitt.php';
 }, 'jacksonhewitt');

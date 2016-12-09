@@ -3,8 +3,8 @@
 <div id="cases">
     <section class="row primary">
         <div class="column">
-            <h1>Case Studies</h1>
-            <h2>Here's the story</h2>
+            <h1>Our Work</h1>
+            <h2>Here's the story.</h2>
         </div>
     </section>
     <div class="case" id="uscc-case">
@@ -25,7 +25,7 @@
             <div class="block">
                 <span class="title">ULTA<sup>&reg;</sup> Beauty</span>
                 <span class="blurb">We boosted ULTA’s YouTube engagement with data-driven beauty content.</span>
-                <a href="/work/us-cellular" class="btn cases more">Read More</a>
+                <a href="/work/ulta-beauty" class="btn cases more">Read More</a>
             </div>
         </div>
     </div>
@@ -46,7 +46,7 @@
         <div class="column right">
             <div class="block">
                 <span class="title">SunPower<sup>&reg;</sup></span>
-                <span class="blurb">Our immersive web content made SunPower stand out and secured new dealers.</span>
+                <span class="blurb">Our immersive web content made SunPower stand out, and secured new dealers.</span>
                 <a href="/work/sunpower" class="btn cases more">Read More</a>
             </div>
         </div>

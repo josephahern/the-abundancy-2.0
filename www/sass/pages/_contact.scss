@@ -6,7 +6,6 @@
         padding: 120px 20px 55px 20px;
         display: block;
         position: relative;
-        overflow: hidden;
 
         .column {
 
@@ -169,10 +168,11 @@
 
     }
 
-    #jobs {
+    #careers {
         padding: 55px 20px 55px 20px;
         background-color: #ffffff;
         display: block;
+        z-index: 600;
 
         .column {
 
@@ -339,7 +339,7 @@
                             font-size: 11px;
                             color: #84827e;
                             text-transform: uppercase;
-                            margin-bottom: 10px;
+                            margin-bottom: 5px;
                         }
 
                         &.digits {

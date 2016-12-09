@@ -1,8 +1,13 @@
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 6005;
+    height: 78px;
+}
+
 .home-logo {
     width: 1000px;
-    position: fixed;
-    left: calc(50% - 500px);
-    z-index: 4005;
+    margin: auto;
 
     @media only screen and (max-width: 1030px) {
         width: 100%;
@@ -153,3 +158,58 @@ nav#menu {
     opacity: 0.6;
 }
 
+.headroom {
+    will-change: transform;
+    transition: all 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+    background-color: rgba(0,0,0,0.3);
+    transition: background 0.3s ease;
+
+    #theabundancy {
+        margin-top: 11px;
+        transition: all 0.3s ease;
+
+        @media only screen and (max-width: 750px){
+            margin-top: 20px;
+        }
+
+    }
+
+    .menu-button {
+        margin-top: 20px;
+    }
+
+}
+.headroom--top {
+    transform: translateY(0%);
+    background-color: transparent;
+    transition: background 0.3s ease;
+
+    #theabundancy {
+        margin-top: 25px;
+        transition: all 0.3s ease;
+    }
+
+    .menu-button {
+        margin-top: 2.5em;
+    }
+
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+    #theabundancy {
+        margin-top: 11px;
+        transition: all 0.3s ease;
+
+        @media only screen and (max-width: 750px){
+            margin-top: 20px;
+        }
+
+    }
+
+    .menu-button {
+        margin-top: 20px;
+    }
+}
