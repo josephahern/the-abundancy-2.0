@@ -10,10 +10,12 @@
             <div class="title-shuffle">
                 <h2><span>We're</span> all about</h2>
                 <div id="shuffler">
-                    <span class="option">the Janes.</span>
-                    <span class="option">the Sams.</span>
-                    <span class="option">the Benjamins.</span>
-                    <span class="option">People.</span>
+                    <ul>
+                        <li class="option">the Janes.</li>
+                        <li class="option">the Sams.</li>
+                        <li class="option">the Benjamins.</li>
+                        <li class="option">People.</li>
+                    </ul>
                 </div>
             </div>
             <div class='video-container'>
@@ -144,7 +146,7 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 
 <?php include 'footer.php'; ?>

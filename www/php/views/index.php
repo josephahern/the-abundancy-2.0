@@ -1,6 +1,42 @@
 <?php include 'header.php'; ?>
+    <div id="loader"></div>
+    <div id="home-overlay">
+
+        <!--<div id="home-overlay-key">
+            <div>WHO WE ARE</div>
+            <div><span style="color:#c65230;">•</span> Account Management</div>
+            <div><span style="color:#fd9a34;">•</span> Analytics </div>
+            <div><span style="color:#fece5c;">•</span> Creative</div>
+            <div><span style="color:#abc3bc;">•</span> Media</div>
+            <div><span style="color:#f8f8d4;">•</span> Resourcing</div>
+            <div><span style="color:#d24141;">•</span> Project Management</div>
+            <div><span style="color:#b8640e;">•</span> Executives</div>
+            <div><span style="color:#a5bf6d;">•</span> Strategy</div>
+            <div><span style="color:#5599b2;">•</span> Technology</div>
+        </div> -->
+
+        <div id="home-overlay-text">
+            <div class="title">SEE THESE DOTS?</div>
+            <div class="text">
+                That’s us.<br />
+                Each point’s a person and every shade a specialty.<br />
+                Connecting more is a beautiful thing.
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <img src="/images/the_abundancy-logo-w-text.png">
+        <span id="curious-text"><span style="color:#c65230;">•</span> Curious?</span>
+        <span class="primary-text">What a beautiful variety.</span>
+        <span class="secondary-text">We're reinventing marketing<br />for modern clients.</span>
+        <div class="tooltip">
+            <span class="department">Creative</span>
+            <span class="text">This is the text for creative.</span>
+        </div>
+    </div>
     <div id="home">
     <div class="parallax row" id="intro">
+        <div id="container-gradient"></div>
         <div class="triangle"></div>
         <div class="triangle"></div>
         <div class="triangle"></div>
@@ -97,7 +133,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Andrew Swinand</span>
                         <span class="modal-title">Founder & CEO</span>
-                        <span class="modal-i_am_a">I am a Veteran</span>
+                        <span class="modal-i_am_a">I am a Veteran.</span>
                         <span class="modal-bio">Andrew is our fearless leader and resident tall guy. He was President of Starcom MediaVest Group, partnering with world’s biggest brands like P&G, Coke, Disney, Microsoft, and Samsung. Prior to that, he worked at P&G in brand management in Beauty Care. Andrew has been named one of the “40 under 40” by Crain’s Chicago Business, and was inducted into the American Advertising Federation Hall of Achievement in 2008. He proudly served his country as a platoon leader in the U.S. Army, and has a passion for growing everything from gardens to new companies.</span>
                     </div>
                     <img src="/images/home/leadership/andrew_swinand.jpg">
@@ -110,7 +146,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Brenda Strong</span>
                         <span class="modal-title">Executive Operations Director</span>
-                        <span class="modal-i_am_a">I am an Organizer</span>
+                        <span class="modal-i_am_a">I am an Organizer.</span>
                         <span class="modal-bio">Brenda’s the person with the keys to the booze. She’s been leading digital marketing and advertising teams with a firm but fair hand for more than 15 years, including as Director of Project Management at Arc Worldwide. When not bringing order from chaos or straightening out hoodlums like us, Brenda enjoys reading, cat snuggling, gardening, good beer, and listing items listed in a series.</span>
                     </div>
                     <img src="/images/home/leadership/brenda_strong.jpg">
@@ -123,7 +159,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Brian Schinazi</span>
                         <span class="modal-title">Group Technology Director</span>
-                        <span class="modal-i_am_a">I am a world traveler</span>
+                        <span class="modal-i_am_a">I am a world traveler.</span>
                         <span class="modal-bio">Brian adds a touch of class to any occasion. In his past lives he was Director of Software Development at Starcom Worldwide and Ninah Consulting, crafting marketing analytics software and data visualization solutions. Prior to that, he served as a Submarine Officer in the US Navy, completing five strategic deterrent patrols in the Atlantic Fleet, and instructing junior officers at the Nuclear Power School in Charleston, SC. Brian can often be found in his kitchen, whipping up Mexican delicacies.</span>
                     </div>
                     <img src="/images/home/leadership/brian_schinazi.jpg">
@@ -136,7 +172,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Bryan Simkins</span>
                         <span class="modal-title">Technology Partner</span>
-                        <span class="modal-i_am_a">I am an INTJ*</span>
+                        <span class="modal-i_am_a">I am an INTJ*.</span>
                         <span class="modal-bio">Bryan is our sarcastic Obi-Wan Kenobi. He was Senior VP of Technology & Activation at Starcom USA, where he oversaw the execution of more than 400 billion digital media impressions per year. He’s excited about living in a time when the world is more connected than ever in history, and believes marketing is the last major business function that will be transformed by information technology. Bryan runs on Venti Americanos and plays a mean guitar.</span>
                     </div>
                     <img src="/images/home/leadership/bryan_simkins.jpg">
@@ -162,12 +198,12 @@
                     <div class="modal-content">
                         <span class="modal-name">Chris Marshall</span>
                         <span class="modal-title">Group Analytics Director</span>
-                        <span class="modal-i_am_a">I am a boater</span>
+                        <span class="modal-i_am_a">I am a boater.</span>
                         <span class="modal-bio">Chris is our guide to Chicago's dive bars. Previously, he was Analytics Director at Starcom, where he developed and implemented custom analytics connecting user-level data across multiple platforms. Currently, he’s developing a suite of solutions for The Abundancy that bridge qualitative and quantitative analytics. When not slaving over a hot computer, Chris enjoys contemplative strolls along Chicago’s harbors with his family.</span>
                     </div>
                     <img src="/images/home/leadership/chris_marshall.jpg">
                 </li>
-                <li data-person="david_brown">
+                <!--<li data-person="david_brown">
                     <div class="details">
                         <span class="name">David Brown</span>
                         <span class="title">President</span>
@@ -175,11 +211,11 @@
                     <div class="modal-content">
                         <span class="modal-name">David Brown</span>
                         <span class="modal-title">President</span>
-                        <span class="modal-i_am_a">I am a father</span>
+                        <span class="modal-i_am_a">I am a father.</span>
                         <span class="modal-bio">David has the best lead on a good Scotch Egg. He was previously the head of Meredith Xcelerated Marketing, during which time the agency won Content Marketing Agency of the Year at the Content Marketing Awards. At that time, MXM was recognized as the “father of content marketing”. Today his focus is on using data-driven insights to inform best-in-breed content marketing models. David is, regrettably, a Dodgers fan.</span>
                     </div>
                     <img src="/images/home/leadership/david_brown.jpg">
-                </li>
+                </li> -->
                 <li data-person="debbie_myszynski">
                     <div class="details">
                         <span class="name">Debbie Myszynski</span>
@@ -188,7 +224,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Debbie Myszynski</span>
                         <span class="modal-title">Group Account Director</span>
-                        <span class="modal-i_am_a">I am a culinary MacGyver</span>
+                        <span class="modal-i_am_a">I am a culinary MacGyver.</span>
                         <span class="modal-bio">Deb makes sure we’re eating well. A former SVP Group Account Director from Digitas, she brings more than 16 years of experience on both the agency and client side, and a slew of wards from an EFFIEs to BMA-ACEs. She’s Six Sigma Certified, which helps her deliver great work with transparency and efficiency. When in need of inspiration, Deb can always count on mountains of Colorado or a good bourbon to do the trick.</span>
                     </div>
                     <img src="/images/home/leadership/deb_myszynski.jpg">
@@ -201,7 +237,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Katie Newman</span>
                         <span class="modal-title">Chief Marketing Officer</span>
-                        <span class="modal-i_am_a">I am a karaoke animal</span>
+                        <span class="modal-i_am_a">I am a karaoke animal.</span>
                         <span class="modal-bio">Katie is the shot of espresso in our morning coffee. Over almost two decades, her work has inspired double-digit sales increases and better ROI for clients, not to mention EMMY, Cannes, One Show and EFFIE recognition. She oversaw Allstate’s iconic Mayhem campaign, and helped pioneer some of Burger King's most memorable campaigns at Crispin Porter + Bogusky. She’s an intensely curious person, who loves experiencing new things from music, food, culture, and technology.</span>
                     </div>
                     <img src="/images/home/leadership/katie_newman.jpg">
@@ -227,7 +263,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Melissa Healy</span>
                         <span class="modal-title">Group Creative Director</span>
-                        <span class="modal-i_am_a">I am a banana hater</span>
+                        <span class="modal-i_am_a">I am a banana hater.</span>
                         <span class="modal-bio">Melissa reminds us that Bon Jovi exists. She came to us after time as an award-collecting VP Director of Creative at Digitas working on Always, Tampax, Intuit, Sprint, and Emerson. She has served as a panel member for SheSays Chicago, and is passionate about increasing leadership by women in advertising. Melissa is guided by three core values: enjoyment, trust, and empowerment. </span>
                     </div>
                     <img src="/images/home/leadership/melissa_healy.jpg">
@@ -240,7 +276,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Suzanne Michaels</span>
                         <span class="modal-title">Executive Creative Director</span>
-                        <span class="modal-i_am_a">I am a Scrabble Champ</span>
+                        <span class="modal-i_am_a">I am a Scrabble Champ.</span>
                         <span class="modal-bio">Suzanne keeps us asking, “What if?” She’s held creative leadership roles at DDB, Digitas, Critical Mass, and BBDO over her 20 years of experience, developing integrated programs for major brands like eBay, P&G, PepsiCo, Nissan, and McDonald’s. She is passionate about defining a brand’s purpose, and making it real through actions and interactions. Suzanne is inspired by the psychology of interaction, and the music and math of e.e. cummings.</span>
                     </div>
                     <img src="/images/home/leadership/suzanne_michaels.jpg">
@@ -253,7 +289,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Stephanie Ridley</span>
                         <span class="modal-title">Marketing Technology Accounts</span>
-                        <span class="modal-i_am_a">I am a Sci-Fi Nerd</span>
+                        <span class="modal-i_am_a">I am a Sci-Fi Nerd.</span>
                         <span class="modal-bio">Stephanie has the loudest laugh in our office. She came to us from working as SVP Global Business Director at Starcom Worldwide, driving communications and media strategy for Blackberry, P&G Hair Care, and DeVry. She serves as a board member for Chicago HOPE, a non-profit that provides mentoring and scholarships for low-income High School students in Chicago. Stephanie owns an expansive collection of workout DVDs from the 2000’s.</span>
                     </div>
                     <img src="/images/home/leadership/stephanie_ridley.jpg">
@@ -266,7 +302,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Tom Hack</span>
                         <span class="modal-title">Executive Finance Director</span>
-                        <span class="modal-i_am_a">I am a Swiss Army Knife</span>
+                        <span class="modal-i_am_a">I am a Swiss Army Knife.</span>
                         <span class="modal-bio">Tom knows where the gold’s at. He is a Certified Public Accountant who came to us from working as VP Finance Director at Starcom MediaVest Group, prior to which he was an audit professional with KPMG. When not crunching our numbers, he serves as a volunteer tax preparer for the Illinois Center for Economic Progress and a youth mentor with Spark, and keeps busy spending time with his wife and three kids. Tom is outdoors as much as humanly possible.</span>
                     </div>
                     <img src="/images/home/leadership/tom_hack.jpg">
@@ -279,7 +315,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Eric Langshur</span>
                         <span class="modal-title">Board Member</span>
-                        <span class="modal-i_am_a">I am a Canadian</span>
+                        <span class="modal-i_am_a">I am a Canadian.</span>
                         <span class="modal-bio">Eric is co-founder of Abundant Venture Partners, and co-founder and CEO of AVIA, the nation’s leading health care system innovator network. He is also co-founder and director of LIFE CrossTraining and PatientWisdom, and a director for Healthfinch, PUSH Wellness, Ardent IO and Transparent Media Partners. Before focusing on value-based entrepreneurship, he held top corporate executive positions at United Technologies Corporation and Bombardier Aerospace. Eric holds an MBA from Columbia University, and lives in Chicago with his wife Sharon and their three children.</span>
                     </div>
                     <img src="/images/home/leadership/eric_langshur.jpg">
@@ -292,7 +328,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Mary Baglivo</span>
                         <span class="modal-title">Board Member</span>
-                        <span class="modal-i_am_a">I am a Jersey Girl</span>
+                        <span class="modal-i_am_a">I am a Jersey Girl.</span>
                         <span class="modal-bio">Mary is Vice President Global Marketing and Chief Marketing Officer at Northwestern University, and on the board of directors for Host Hotels & Resorts and PVH Corp. She served as Chairman & CEO Americas at Saatchi & Saatchi, and president of Arnold Worldwide. Mary has received the AAF Diversity Achievement Award for Industry Career Achiever, and was named Advertising Woman of the Year by Advertising Women of New York.</span>
                     </div>
                     <img src="/images/home/leadership/mary_baglivo.jpg">
@@ -305,7 +341,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Linda Wolf</span>
                         <span class="modal-title">Board Member</span>
-                        <span class="modal-i_am_a">I am a Curious Cook</span>
+                        <span class="modal-i_am_a">I am a Curious Cook.</span>
                         <span class="modal-bio">Linda was Chairman and CEO of Leo Burnett Worldwide from 2001 to 2005, and CEO of Leo Burnett USA from 1996 through 2000. Today she is a Director of Wal-Mart Stores Inc., InnerWorkings, Inc, and Wrapports, LLC. She serves on the Board of Trustees of Janus Funds, and is a member of the Board of Directors of Lurie Children’s Hospital, The Chicago Council on Global Affairs, the Rehabilitation Institute of Chicago, and The Chicago Community Trust.</span>
                     </div>
                     <img src="/images/home/leadership/linda_wolf.jpg">
@@ -318,7 +354,7 @@
                     <div class="modal-content">
                         <span class="modal-name">Tim Suther</span>
                         <span class="modal-title">Board Member</span>
-                        <span class="modal-i_am_a">I am a Live Music Devotee</span>
+                        <span class="modal-i_am_a">I am a Live Music Devotee.</span>
                         <span class="modal-bio">Tim is a customer experience champion, data-infused product innovator, and transformative strategist and operator. He’s served as managing director of JPMorgan Chase, Chief Marketing & Strategy Officer of Acxiom, and is a member of the North American Advisory Board for CMO Council. He has been recognized as a Top CMO by ExecRank, a Social Media Marketing Top CMO on Twitter, and he received the CMO club President’s Award in 2015.</span>
                     </div>
                     <img src="/images/home/leadership/tim_suther.jpg">

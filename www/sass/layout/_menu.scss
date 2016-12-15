@@ -21,10 +21,10 @@ header {
 #theabundancy {
     display: inline-block;
     margin-top: 25px;
-    width: 70px;
-    height: 52px;
-    background-image: url('../images/the_abundancy-nav-logo.png');
-    background-size: 70px 52px;
+    width: 192px;
+    height: 40px;
+    background-image: url('../images/the_abundancy-nav-logo-lockup.png');
+    background-size: 192px 40px;
     z-index: 5005;
 
     &:hover{
@@ -33,9 +33,9 @@ header {
     }
 
     @media only screen and (max-width: 750px) {
-        width: 54px;
-        height: 40px;
-        background-size: 54px 40px;
+        width: 144px;
+        height: 30px;
+        background-size: 144px 30px;
     }
 
 }
@@ -88,7 +88,6 @@ nav#menu {
                 opacity: 1;
             }
 
-
         }
 
     }
@@ -133,6 +132,28 @@ nav#menu {
         width: 100%;
     }
 
+    &.mobile-orientation {
+
+        @media only screen and (orientation:landscape){
+            width: 100% !important;
+            padding: 1em 0 2.5em 0.5em !important;
+
+            a {
+                padding: 10px 0.8em !important;
+
+                &#menu-logo {
+                    display: none;
+                }
+
+            }
+        }
+
+
+
+    }
+
+
+
 }
 
 /* Menu Button */
@@ -164,11 +185,11 @@ nav#menu {
 }
 .headroom--pinned {
     transform: translateY(0%);
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.5);
     transition: background 0.3s ease;
 
     #theabundancy {
-        margin-top: 11px;
+        margin-top: 18px;
         transition: all 0.3s ease;
 
         @media only screen and (max-width: 750px){
@@ -178,6 +199,7 @@ nav#menu {
     }
 
     .menu-button {
+        transition: all 0.3s ease;
         margin-top: 20px;
     }
 
@@ -193,6 +215,7 @@ nav#menu {
     }
 
     .menu-button {
+        transition: all 0.3s ease;
         margin-top: 2.5em;
     }
 
@@ -200,16 +223,22 @@ nav#menu {
 .headroom--unpinned {
     transform: translateY(-100%);
     #theabundancy {
-        margin-top: 11px;
+        margin-top: 18px;
         transition: all 0.3s ease;
 
         @media only screen and (max-width: 750px){
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
     }
 
     .menu-button {
+        transition: all 0.3s ease;
         margin-top: 20px;
     }
+}
+
+.noscroll .headroom {
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }

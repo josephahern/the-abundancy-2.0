@@ -32,6 +32,8 @@
 @import "pages/sunpower";
 @import "pages/ulta";
 
+//404 Page
+@import "pages/404";
 
 // Anthony's Shit //
 
@@ -44,28 +46,24 @@ a {
     text-decoration: none;
 }
 
-/*
+
 #loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -25px;
-    margin-left: -25px;
-    width: 50px;
-    height: 50px;
-    background: #FF0000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 7000;
+    opacity: 1;
+    display: block;
+    background-color: #441C12;
 
-    -webkit-animation-name: spin;
--webkit-animation-duration: 4000ms;
--webkit-animation-iteration-count: infinite;
--webkit-animation-timing-function: linear;
+    @media only screen and (max-width: 680px) {
+        //display: none;
+    }
 
-    animation-name: spin;
-animation-duration: 4000ms;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
 }
-*/
+
 
 #stats {
     z-index: 99;
@@ -260,9 +258,8 @@ animation-timing-function: linear;
 // ANTHONY'S SHIT HERE
 
 #home-overlay {
-    z-index: 11;
     display: none;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -276,12 +273,35 @@ animation-timing-function: linear;
     background: transparent;
     color: #fff;
     font-family: "Futura",sans-serif;
+    z-index: 200;
 }
 
 #home-overlay-key {
-    width: 225px;
-    height: 300px;
+    display: inline-block;
+    padding: 25px;
     margin-right: 50px;
+    border: 1px solid #fff;
+    position: relative;
+
+    div {
+        margin-bottom: 10px;
+
+        &:first-of-type {
+            position: absolute;
+            top: calc(50% - 5px);
+            background-color: $abundancy-brown;
+            padding: 0 8px;
+            left: -62px;
+            margin-bottom: 0;
+            transform: rotate(-90deg);
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+    }
+
 }
 
 #home-overlay-text {
@@ -292,18 +312,187 @@ animation-timing-function: linear;
     justify-content: center;
     align-items: center;
     align-content: center;
-}
 
-#container canvas {
-    background: transparent;
+    .title {
+        font-family: $font-family-primary;
+        font-weight: bold;
+        font-size: 36px;
+        color: #ffffff;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text{
+        font-family: $font-family-primary;
+        font-weight: 500;
+        font-size: 21px;
+        color: $abundancy-cream;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+    }
+
 }
 
 #container {
-    position: fixed;
+    background: #441C12;
+    position: relative;
+    min-height: 900px;
+    height: 100vh;
+    display: block;
+
+    img{
+        width: 100%;
+        max-width: 275px;
+        display: none;
+        z-index: 200;
+        position: relative;
+        margin-top: 25px;
+
+        @media only screen and (max-width: 720px) {
+            display: block;
+        }
+
+    }
+
+    #curious-text {
+        display: block;
+        position: absolute;
+        font-family: $font-family-primary;
+        font-size: 14px;
+        line-height: 12px;
+        color: rgba(255,155,32,1);
+        z-index: 200;
+        right: 350px;
+        bottom: 205px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: #ffffff;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 0;
+            height: 12px;
+            width: 12px;
+            background-image: url(../images/blue-ball.png);
+        }
+
+        @media only screen and (max-width: 720px) {
+            display: none;
+        }
+
+    }
+
+    .primary-text {
+        display: none;
+        width: 100%;
+        text-align: center;
+        color: #DDDDDC;
+        text-transform: uppercase;
+        font-family: $font-family-primary;
+        font-weight: bold;
+        font-size: 22px;
+        margin-top: 25px;
+        z-index: 500;
+        position: relative;
+
+        @media only screen and (max-width: 720px) {
+            display: block;
+        }
+
+    }
+
+    .secondary-text {
+        display: none;
+        width: 100%;
+        text-align: center;
+        color: #F8F9D1;
+        text-transform: uppercase;
+        font-family: $font-family-primary;
+        font-weight: normal;
+        font-size: 16px;
+        z-index: 500;
+        position: relative;
+        margin-top: 5px;
+
+        @media only screen and (max-width: 720px) {
+            display: block;
+        }
+
+    }
+
+    .tooltip {
+        //display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        z-index: 500;
+        color: $abundancy-cream;
+        position: absolute;
+        bottom: 100px;
+        left: 250px;
+        display: none;
+
+        .department {
+            font-family: $font-family-primary;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text {
+            font-family: $font-family-primary;
+            font-size: 14px;
+            font-weight: normal;
+            padding-left: 10px;
+            margin-left: 10px;
+            border-left: 1px solid $abundancy-cream;
+            max-width: 500px;
+            text-align: left;
+        }
+
+    }
+
+
+    @media only screen and (max-width: 720px) {
+        width: 100%;
+        max-width: 720px;
+        height: 100vh;
+        min-height: 500px;
+        max-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        //overflow: hidden;
+    }
+
 }
 
 #container canvas {
-    background: transparent;
+    background: #441C12;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    @media only screen and (max-width: 720px) {
+        top: -320px;
+        transition: top 0.3s ease;
+    }
+
 }
 
 .slide {
@@ -316,14 +505,21 @@ animation-timing-function: linear;
     align-content: center;
 }
 
-#home-first {
-    background: #763c25; /* Old browsers */
-    background: -moz-radial-gradient(center bottom, ellipse cover, rgba(118,60,37,1) 0%, rgba(118,60,37,1) 25%, rgba(75,48,36,1) 50%, rgba(75,48,36,0) 75% ); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center bottom, ellipse cover, rgba(118,60,37,1) 0%, rgba(118,60,37,1) 25%, rgba(75,48,36,1) 50%, rgba(75,48,36,0) 75% ); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center bottom, rgba(118,60,37,1) 0%, rgba(118,60,37,1) 25%, rgba(75,48,36,1) 50%, rgba(75,48,36,0) 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#763c25', endColorstr='#4b3024',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+#container-gradient {
+    position: absolute;
+    height: 100px;
+    min-height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #441C12;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4b3024+0,441c12+100 */
+    //background: -moz-linear-gradient(top, rgba(75,48,36,1) 0%, rgba(68,28,18,1) 100%); /* FF3.6-15 */
+    //background: -webkit-linear-gradient(top, rgba(75,48,36,1) 0%, rgba(68,28,18,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(68,28,18,1) 0%, rgba(68,28,18,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
 
-#home-second {
-    background: #441c12;
+.wow {
+    visibility: hidden;
 }

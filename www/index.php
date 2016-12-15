@@ -67,6 +67,10 @@ $router->map( 'GET', '/contact', function() {
     require __DIR__ . '/php/views/contact.php';
 }, 'contact');
 
+$router->map( 'POST', '/contact', function() {
+    require __DIR__ . '/mail.php';
+}, 'contactForm');
+
 //
 //
 //
@@ -77,6 +81,5 @@ $match = $router->match();
 if( $match && is_callable( $match['target'] ) ) {
     call_user_func_array( $match['target'], $match['params'] );
 } else {
-    // no route was matched
-    header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
+    require __DIR__ . '/php/views/404.php';
 }

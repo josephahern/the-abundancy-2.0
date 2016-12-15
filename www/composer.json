@@ -4,7 +4,8 @@
     "type": "project",
     "require": {
         "altorouter/altorouter": "^1.2",
-        "klein/klein": "^2.1"
+        "klein/klein": "^2.1",
+        "phpmailer/phpmailer": "^5.2"
     },
     "authors": [
         {

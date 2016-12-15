@@ -3,7 +3,7 @@
 <head>
     <title>The Abundancy</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Web Fonts -->
     <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/b8898fd3-6341-4d29-97da-84247416006a.css"/>
     <!-- CSS Dependencies -->

@@ -1,3 +1,4 @@
 RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/data-vis/.*$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule . index.php [L]
