@@ -1,29 +1,5 @@
 <?php include 'header.php'; ?>
     <div id="loader"></div>
-    <div id="home-overlay">
-
-        <!--<div id="home-overlay-key">
-            <div>WHO WE ARE</div>
-            <div><span style="color:#c65230;">•</span> Account Management</div>
-            <div><span style="color:#fd9a34;">•</span> Analytics </div>
-            <div><span style="color:#fece5c;">•</span> Creative</div>
-            <div><span style="color:#abc3bc;">•</span> Media</div>
-            <div><span style="color:#f8f8d4;">•</span> Resourcing</div>
-            <div><span style="color:#d24141;">•</span> Project Management</div>
-            <div><span style="color:#b8640e;">•</span> Executives</div>
-            <div><span style="color:#a5bf6d;">•</span> Strategy</div>
-            <div><span style="color:#5599b2;">•</span> Technology</div>
-        </div> -->
-
-        <div id="home-overlay-text">
-            <div class="title">SEE THESE DOTS?</div>
-            <div class="text">
-                That’s us.<br />
-                Each point’s a person and every shade a specialty.<br />
-                Connecting more is a beautiful thing.
-            </div>
-        </div>
-    </div>
     <div id="container">
         <img src="/images/the_abundancy-logo-w-text.png">
         <span id="curious-text"><span style="color:#c65230;">•</span> Curious?</span>
@@ -32,6 +8,16 @@
         <div class="tooltip">
             <span class="department">Creative</span>
             <span class="text">This is the text for creative.</span>
+        </div>
+        <div id="home-overlay">
+            <div id="home-overlay-text">
+                <div class="title">SEE THESE DOTS?</div>
+                <div class="text">
+                    That’s us.<br />
+                    Each point’s a person and every shade a specialty.<br />
+                    Connecting more is a beautiful thing.
+                </div>
+            </div>
         </div>
     </div>
     <div id="home">
@@ -203,27 +189,14 @@
                     </div>
                     <img src="/images/home/leadership/chris_marshall.jpg">
                 </li>
-                <!--<li data-person="david_brown">
-                    <div class="details">
-                        <span class="name">David Brown</span>
-                        <span class="title">President</span>
-                    </div>
-                    <div class="modal-content">
-                        <span class="modal-name">David Brown</span>
-                        <span class="modal-title">President</span>
-                        <span class="modal-i_am_a">I am a father.</span>
-                        <span class="modal-bio">David has the best lead on a good Scotch Egg. He was previously the head of Meredith Xcelerated Marketing, during which time the agency won Content Marketing Agency of the Year at the Content Marketing Awards. At that time, MXM was recognized as the “father of content marketing”. Today his focus is on using data-driven insights to inform best-in-breed content marketing models. David is, regrettably, a Dodgers fan.</span>
-                    </div>
-                    <img src="/images/home/leadership/david_brown.jpg">
-                </li> -->
                 <li data-person="debbie_myszynski">
                     <div class="details">
                         <span class="name">Debbie Myszynski</span>
-                        <span class="title">Group Account Director</span>
+                        <span class="title">Executive Account Director</span>
                     </div>
                     <div class="modal-content">
                         <span class="modal-name">Debbie Myszynski</span>
-                        <span class="modal-title">Group Account Director</span>
+                        <span class="modal-title">Executive Account Director</span>
                         <span class="modal-i_am_a">I am a culinary MacGyver.</span>
                         <span class="modal-bio">Deb makes sure we’re eating well. A former SVP Group Account Director from Digitas, she brings more than 16 years of experience on both the agency and client side, and a slew of wards from an EFFIEs to BMA-ACEs. She’s Six Sigma Certified, which helps her deliver great work with transparency and efficiency. When in need of inspiration, Deb can always count on mountains of Colorado or a good bourbon to do the trick.</span>
                     </div>
@@ -284,11 +257,11 @@
                 <li data-person="stephanie_ridley">
                     <div class="details">
                         <span class="name">Stephanie Ridley</span>
-                        <span class="title">Marketing Technology Accounts</span>
+                        <span class="title">Marketing Technology Partner</span>
                     </div>
                     <div class="modal-content">
                         <span class="modal-name">Stephanie Ridley</span>
-                        <span class="modal-title">Marketing Technology Accounts</span>
+                        <span class="modal-title">Marketing Technology Partner</span>
                         <span class="modal-i_am_a">I am a Sci-Fi Nerd.</span>
                         <span class="modal-bio">Stephanie has the loudest laugh in our office. She came to us from working as SVP Global Business Director at Starcom Worldwide, driving communications and media strategy for Blackberry, P&G Hair Care, and DeVry. She serves as a board member for Chicago HOPE, a non-profit that provides mentoring and scholarships for low-income High School students in Chicago. Stephanie owns an expansive collection of workout DVDs from the 2000’s.</span>
                     </div>

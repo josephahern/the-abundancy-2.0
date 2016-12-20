@@ -19,25 +19,15 @@
 
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="/js/libs/jquery.vticker.min.js"></script>
 
 <!-- Addt'l Dependencies -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
-<script src="/js/libs/three.min.js"></script>
-<script src="/js/libs/controls/OrbitControls.js"></script>
-<script src="/js/libs/renderers/Projector.js"></script>
-<script src="/js/libs/renderers/CanvasRenderer.js"></script>
-<script src="/js/libs/renderers/threex.window.resize.js"></script>
-<script src="/js/libs/classie.js"></script>
-<script src="/js/libs/wow.min.js"></script>
-<script src="/js/libs/fancySelect.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <script src="https://npmcdn.com/headroom.js@0.9.3/dist/headroom.min.js"></script>
 <!-- <script src="js/components/main.js"></script> -->
 
 <!-- Main Script File -->
 
-<script src="/js/app.js"></script>
+<script src="/js/app-min.js"></script>
 <script>
     new WOW().init();
     var myElement = document.querySelector("header");

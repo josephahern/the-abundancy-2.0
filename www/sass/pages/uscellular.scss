@@ -1,4 +1,6 @@
-#sunpower.case-study {
+@import "../variables";
+
+#uscellular.case-study {
   background-color: #ffffff;
 
   .primary {
@@ -6,7 +8,7 @@
     display: flex;
     padding-bottom: 0;
     position: relative;
-    background-image: url("/images/cases/sunpower/masthead.jpg");
+    background-image: url("/images/cases/uscellular/masthead.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -23,6 +25,7 @@
         top: -4px;
       }
 
+
     }
 
     .column {
@@ -37,9 +40,9 @@
     p {
       font-family: $font-family-secondary;
       font-size: 21px;
+      font-weight: bold;
       max-width: 550px;
       margin-top: 10px;
-      font-weight: bold;
 
       @media only screen and (max-width: 680px){
         font-size: 14px;
@@ -82,7 +85,7 @@
         margin-top: 50px;
 
         @media only screen and (max-width: 750px) {
-          margin-top: 0px;
+          margin-top: 10px;
         }
 
       }
@@ -149,7 +152,7 @@
         width: 75%;
 
         @media only screen and (max-width: 550px) {
-          max-width: 245px;
+          max-width: 275px;
         }
 
 
@@ -219,7 +222,8 @@
       }
 
       img {
-        width: 50%;
+        max-width: 335px;
+        width: 35%;
         position: relative;
 
         @media only screen and (max-width: 750px) {
@@ -232,8 +236,8 @@
         margin-left: 60px;
         transition: all 0.3s ease;
 
-        @media only screen and (max-width: 850px) {
-          margin-left: 20px;
+        @media only screen and (max-width: 820px) {
+          margin-left: 30px;
           transition: all 0.3s ease;
         }
 
@@ -421,7 +425,7 @@
       margin-top: 10px;
       min-height: 158px;
       width: 100%;
-      background-image: url("/images/cases/sunpower/next-uscellular.jpg");
+      background-image: url("/images/cases/uscellular/next-ulta.jpg");
       background-size: cover;
       display: flex;
       flex-direction: column;

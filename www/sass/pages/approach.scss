@@ -1,0 +1,444 @@
+@import "../variables";
+
+.primary {
+
+    padding-bottom: 75px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right bottom, $abundancy-copper 50%, #aa451f 50%);
+
+    .title-shuffle {
+
+        h2 {
+            display: inline-block;
+
+            span {
+                display: inline-block;
+            }
+
+        }
+
+        #shuffler {
+
+            display: inline-block;
+            width: 100%;
+            max-width: 315px;
+            position: relative;
+            top: 1px;
+            left: 7px;
+
+            ul {
+                line-height: normal;
+            }
+
+            .option {
+                display: block;
+                width: 100%;
+                font-size: 36px;
+                line-height: normal;
+                font-family: $font-family-primary;
+                color: $abundancy-cream;
+                font-weight: bold;
+                text-transform: uppercase;
+
+                span {
+                    color: $abundancy-foam-green;
+                }
+
+            }
+
+        }
+
+        @media only screen and (max-width: 690px) {
+
+            h2 {
+                font-size: 22px;
+                transition: all 0.3s ease;
+
+                span {
+                    display: none;
+                }
+
+            }
+
+            #shuffler {
+
+                display: inline-block;
+                width: 100%;
+                max-width: 195px;
+                position: relative;
+                top: 1px;
+                left: 3px;
+                overflow: hidden;
+
+                .option {
+                    display: block;
+                    width: 100%;
+                    font-size: 22px;
+
+                    span {
+                        color: $abundancy-foam-green;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .video-container {
+        display: block;
+        background-color: gray;
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+        margin-bottom: 35px;
+
+        .video-object {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            z-index: 500;
+
+            iframe, object, embed {
+                position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 750px) {
+            margin-top: 5px;
+        }
+
+    }
+
+    .statement {
+
+        font-family: $font-family-primary;
+        font-size: 24px;
+        font-weight: 400;
+        color: #ffffff;
+        z-index: 500;
+        margin-top: 50px;
+
+        span {
+            font-weight: bold;
+            color: $abundancy-cream;
+        }
+
+        @media only screen and (max-width: 750px) {
+            font-size: 20px;
+            padding: 0 20px;
+            margin-top: 25px;
+        }
+
+    }
+
+    .bottom-title {
+        font-family: "Futura W01", sans-serif;
+        font-size: 21px;
+        font-weight: bold;
+        color: #ffffff;
+        width: 100%;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        z-index: 1000;
+
+        @media only screen and (max-width: 750px) {
+            font-size: 16px;
+        }
+
+    }
+
+    @media only screen and (max-width: 750px) {
+        padding: 85px 15px 75px 15px
+    }
+
+    @media only screen and (max-width: 690px) {
+        h1 {
+            font-size: 12px;
+        }
+    }
+
+}
+
+.steps {
+
+    width: 100%;
+    display: block;
+    min-height: 340px;
+
+    .step {
+
+        display: flex;
+
+        &.even {
+            flex-direction: row-reverse;
+        }
+
+        &.odd {
+            flex-direction: row;
+        }
+
+        .block {
+
+            width: 50%;
+            min-height: 340px;
+            display: block;
+
+            &.title {
+                background-color: $abundancy-brown;
+                background-image: url(/images/pattern_plus-sign_2x.png);
+                background-repeat: repeat;
+                background-size: 83px 82px;
+                background-attachment: fixed;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .number {
+                    font-family: $font-family-primary;
+                    font-weight: bold;
+                    font-size: 50px;
+                    color: $abundancy-copper;
+                    margin-bottom: 10px;
+                }
+
+                .text {
+
+                    font-family: $font-family-primary;
+                    font-weight: bold;
+                    font-size: 36px;
+                    color: $abundancy-cream;
+                    padding-bottom: 5px;
+                    display: inline-block;
+                    border-bottom: 4px solid #c55227;
+                    margin-bottom: 35px;
+
+                    span {
+                        color: $abundancy-copper;
+                    }
+
+                }
+
+            }
+
+            &.infograph{
+                background-color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 15px;
+
+                img {
+                    margin-bottom: 20px;
+                }
+
+                .summary {
+                    max-width: 380px;
+                    width: 100%;
+                    font-family: $font-family-secondary;
+                    font-weight: normal;
+                    font-size: 21px;
+                    color: $abundancy-slate;
+                }
+
+            }
+
+        }
+
+    }
+
+    @media only screen and (max-width: 750px) {
+
+        .step {
+
+            &.even {
+                flex-direction: column;
+            }
+
+            &.odd {
+                flex-direction: column;
+            }
+
+            .block {
+
+                width: 100%;
+                min-height: 0px;
+                display: block;
+
+                &.title {
+                    background-color: $abundancy-brown;
+                    background-image: none;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .number {
+                        font-family: $font-family-primary;
+                        font-weight: bold;
+                        font-size: 28px;
+                        color: $abundancy-copper;
+                        margin: 20px 0 5px 0;
+                    }
+
+                    .text {
+
+                        font-family: $font-family-primary;
+                        font-weight: bold;
+                        font-size: 22px;
+                        color: $abundancy-cream;
+                        padding-bottom: 5px;
+                        display: inline-block;
+                        border-bottom: 2px solid $abundancy-copper;
+
+                        span {
+                            color: $abundancy-copper;
+                        }
+
+                    }
+
+                }
+
+                &.infograph {
+
+                    padding: 30px 20px;
+
+                    img {
+                        display: none;
+                    }
+
+                    .summary {
+                        font-size: 20px;
+                        text-align: center;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.capabilities {
+    background-color: $abundancy-off-white;
+    min-height: 260px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    display: block;
+
+    .column {
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .block {
+
+                display: inline-block;
+
+                &.title {
+                    font-family: $font-family-primary;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: #c55227;
+                    margin-bottom: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 32px;
+
+                    @media only screen and (max-width: 920px){
+                        font-size: 28px;
+                    }
+
+                }
+
+                span {
+                    display: block;
+                    font-family: $font-family-primary;
+                    font-weight: bold;
+                    font-size: 21px;
+                    color: $abundancy-slate;
+                    margin-bottom: 15px;
+
+                    @media only screen and (max-width: 920px){
+                        font-size: 18px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    @media only screen and (max-width: 920px){
+
+        .container {
+
+            .block {
+
+                &.title {
+                    font-size: 28px;
+                }
+
+                span {
+                    font-size: 18px;
+                }
+            }
+
+        }
+    }
+    @media only screen and (max-width: 750px) {
+
+        padding-top: 30px;
+        padding-bottom: 25px;
+
+        .column {
+
+            .title {
+
+                text-align: center;
+            }
+
+            .container {
+
+                flex-direction: column;
+
+                .block {
+                    width: 100%;
+                    text-align: center;
+
+                    &.title {
+                        font-size: 22px;
+                        margin-bottom: 15px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+}

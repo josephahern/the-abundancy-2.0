@@ -129,20 +129,59 @@
             });
 
             function generateTickerMobile(){
-                $('#shuffler').vTicker('init', {
-                    speed: 400,
-                    pause: 1500,
-                    height: 26
-                });
+
+                if($("#approach").length){
+
+                    $('#shuffler').vTicker('init', {
+                        speed: 400,
+                        pause: 1500,
+                        height: 26,
+                        autoAppend: false
+                    });
+
+                    $('#shuffler').on('vticker.afterTick', function(e) {
+                        if($("#shuffler li").length < 3) {
+                            $('#shuffler').vTicker('stop');
+                        }
+                    });
+
+                } else {
+                    $('#shuffler').vTicker('init', {
+                        speed: 400,
+                        pause: 1500,
+                        height: 26
+                    });
+                }
+
+
             }
 
             function generateTickerDesktop(){
 
-                $('#shuffler').vTicker('init', {
-                    speed: 400,
-                    pause: 1500,
-                    height: 42
-                });
+                if($("#approach").length){
+
+                    $('#shuffler').vTicker('init', {
+                        speed: 400,
+                        pause: 1500,
+                        height: 42,
+                        autoAppend: false
+                    });
+
+                    $('#shuffler').on('vticker.beforeTick', function(e) {
+                        if($("#shuffler li").length < 3) {
+                            $('#shuffler').vTicker('stop');
+                        }
+                    });
+
+                } else {
+                    $('#shuffler').vTicker('init', {
+                        speed: 400,
+                        pause: 1500,
+                        height: 42
+                    });
+                }
+
+
 
             }
 
@@ -152,7 +191,7 @@
 
         /* Interactive Masthead */
         /* ANTHONY'S STUFF HERE */
-    if($("#home").length){
+        if($("#home").length){
         // Loader Load
 
         function preLoader() {
@@ -295,13 +334,9 @@
 
         firstPromise.done(function(response) {
 
-            //console.log(response);
-            console.log(window.devicePixelRatio);
-
             var countParticles = 0;
 
             var responseJSON = $.parseJSON(response);
-            console.log(responseJSON);
             var departments = [];
             var creativeDept = 0;
             var transparentDept = 0;
@@ -323,8 +358,6 @@
 
             departments.push(creativeDept);
             departments.push(transparentDept);
-
-            console.log(departments);
 
             $("#loader").fadeOut("slow").css({"display":"none !important"});
 
@@ -558,7 +591,7 @@
                 };
 
                 // Materials
-                triangleMaterial = new THREE.MeshBasicMaterial( {side: THREE.DoubleSide, wireframe: true, color: 0xc65027, alphaTest:0.1, wireframeLinewidth: 10, transparent: true } );
+                triangleMaterial = new THREE.MeshBasicMaterial( {side: THREE.DoubleSide, wireframe: true, color: 0xc65027, alphaTest:0.1, wireframeLinewidth: 2, transparent: true } );
                 console.log(triangleMaterial);
                 // LEFT
                 var scaleneTriangle1 = new ScaleneTriangleGeometry(200, 1, 220);
@@ -804,7 +837,7 @@
 
                 raycaster = new THREE.Raycaster();
                 mouse = new THREE.Vector2();
-                raycaster.params.Points.threshold = 20;
+                raycaster.params.Points.threshold = 40;
 
                 window.addEventListener( 'resize', resizeDataViz, false );
                 windowResize = THREEx.WindowResize(renderer, camera);
@@ -1225,7 +1258,7 @@
                                 convertedColor = color.getHexString();
 
                                 attributes.size.needsUpdate = true;
-                                document.getElementById("container").style.cursor = "pointer";
+                                $("#container").css({'cursor': 'pointer !important'});
 
                                 switch(convertedColor){
                                     case ("ac4329"):
@@ -1257,7 +1290,7 @@
                             attributes.size.array[ INTERSECTED ] = PARTICLE_SIZE;
                             attributes.size.needsUpdate = true;
                             INTERSECTED = null;
-                            document.getElementById("container").style.cursor = "auto";
+                            $("#container").css({'cursor': 'auto'});
                         }
 
                         /* if ( curiousIntersect.length > 0 ) {
@@ -1368,7 +1401,6 @@
                 }
 
             });
-
 
             // Animate Get Chosen text
 
@@ -1489,9 +1521,7 @@
             }
 
             function initHome(){
-                $("#theabundancy").css({'display':'none'});
                 animateGetChosen();
-                primaryLogoLogic();
             }
 
             if(isMobile.any() == null) {
@@ -1517,6 +1547,9 @@
             $(window).scroll(function() {
                 primaryLogoLogic();
             });
+
+            $("#theabundancy").css({'display':'none'});
+            primaryLogoLogic();
 
         }
 

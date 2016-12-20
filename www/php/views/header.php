@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Web Fonts -->
     <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/b8898fd3-6341-4d29-97da-84247416006a.css"/>
-    <!-- CSS Dependencies -->
-    <link rel="stylesheet" href="/css/animate.css">
-    <link rel="stylesheet" href="http://josex2r.github.io/jQuery-SlotMachine/dist/jquery.slotmachine.css">
     <!-- Primary Stylesheet -->
     <link rel="stylesheet" href="/css/main.css">
+    <!-- Secondary Styelsheet -->
+    <?php
+        if(!empty($cssRoute)){
+    ?>
+    <link rel="stylesheet" href="<?php echo $cssRoute; ?>">
+    <?php
+        }
+    ?>
 </head>
 <body id="content">
 

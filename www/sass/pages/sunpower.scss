@@ -1,4 +1,6 @@
-#ulta.case-study {
+@import "../variables";
+
+#sunpower.case-study {
   background-color: #ffffff;
 
   .primary {
@@ -6,7 +8,7 @@
     display: flex;
     padding-bottom: 0;
     position: relative;
-    background-image: url("/images/cases/ulta/masthead.jpg");
+    background-image: url("/images/cases/sunpower/masthead.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -22,7 +24,6 @@
         left: 1px;
         top: -4px;
       }
-
 
     }
 
@@ -220,8 +221,7 @@
       }
 
       img {
-        max-width: 335px;
-        width: 35%;
+        width: 50%;
         position: relative;
 
         @media only screen and (max-width: 750px) {
@@ -234,8 +234,8 @@
         margin-left: 60px;
         transition: all 0.3s ease;
 
-        @media only screen and (max-width: 820px) {
-          margin-left: 30px;
+        @media only screen and (max-width: 850px) {
+          margin-left: 20px;
           transition: all 0.3s ease;
         }
 
@@ -339,12 +339,9 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        padding: 35px 0;
-        flex-direction: row;
 
         @media only screen and (max-width: 750px) {
           min-height: 170px;
-          flex-direction: column-reverse;
         }
 
       }
@@ -354,38 +351,8 @@
 
         @media only screen and (max-width: 750px) {
           margin-left: 0;
-          width: 100%;
-          margin-top: 25px;
         }
 
-      }
-
-      .video-container {
-        display: block;
-        background-color: gray;
-        width: 58%;
-        max-width: 580px;
-        height: auto;
-        z-index: 5000;
-        margin-left: 40px;
-
-        @media only screen and (max-width: 750px) {
-          width: 100%;
-          margin-left: 0;
-        }
-
-      }
-
-      .video-object {
-        position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
-        overflow: hidden;
-        max-width: 100%;
-
-        iframe, object, embed {
-          position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-        }
       }
 
       .title {
@@ -400,8 +367,6 @@
           font-size: 18px;
           margin-top: 0;
           margin-bottom: 0;
-          width: 100%;
-          text-align: center;
         }
 
       }
@@ -427,16 +392,8 @@
             font-size: 12px;
             margin-top: 0px;
             margin-bottom: 0;
-            width: 100%;
-            text-align: center;
           }
 
-        }
-
-        @media only screen and (max-width: 750px) {
-          display: block;
-          width: 100%;
-          text-align: center;
         }
 
       }
@@ -466,7 +423,7 @@
       margin-top: 10px;
       min-height: 158px;
       width: 100%;
-      background-image: url("/images/cases/ulta/next-jacksonhewitt.jpg");
+      background-image: url("/images/cases/sunpower/next-uscellular.jpg");
       background-size: cover;
       display: flex;
       flex-direction: column;
@@ -490,7 +447,7 @@
       .text {
         font-family: $font-family-primary;
         font-weight: 300;
-        color: $abundancy-copper;
+        color: $abundancy-cream;
         font-size: 18px;
         display: inline-block;
         text-transform: uppercase;
@@ -505,7 +462,7 @@
       .title {
         font-family: $font-family-primary;
         font-weight: 700;
-        color: $abundancy-foam-green;
+        color: #ffffff;
         font-size: 28px;
         display: inline-block;
         text-transform: uppercase;
