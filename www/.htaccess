@@ -1,4 +1,6 @@
 RewriteEngine on
-RewriteCond %{REQUEST_URI} !^/data-vis/.*$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^(.+)/$
+RewriteRule ^(.+)/$  /$1 [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule . index.php [L]

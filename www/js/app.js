@@ -1759,5 +1759,97 @@
 
         }
 
+        if($("#holiday_2016").length){
+
+            $(".overlay").click(function(){
+                var modalContain = $(".modal-contain");
+                var image = $(this).find(".enlarge").attr("data-image");
+                var count = $(this).find(".enlarge").attr("data-count");
+
+                modalContain
+                    .find("#card")
+                    .attr("src", "/images/holiday-2016/" + image)
+                    .attr("data-count", count)
+                    .toggleClass("animated fadeInUp");
+
+                modalContain.toggleClass("open");
+                $("header").removeClass("headroom--pinned").addClass("headroom--unpinned");
+                $("html").addClass("noscroll");
+                setTimeout(function(){
+                    modalContain.removeClass("animated");
+                    modalContain.removeClass("fadeInUp");
+                }, 1000);
+            });
+
+            $(".modal-contain .close").on("click", function(){
+                var modalContain = $(".modal-contain");
+                modalContain.toggleClass("open");
+                modalContain.find("#card").toggleClass("animated fadeInUp");
+                $("html").removeClass("noscroll");
+                console.log("modal closed");
+            }).children().click(function(e) {
+                return false;
+            });
+
+            $(".left").click(function(){
+                if($(".modal-contain").hasClass("open")){
+                    var currentCount = $(".modal-contain").find("#card").attr("data-count"),
+                        nextCount = (currentCount > 1) ? (parseInt(currentCount) - 1) : 9;
+
+                    var nextSlideImage = $("a[data-count='" + nextCount + "']").attr("data-image");
+
+
+                    $(".modal-contain")
+                        .find("#card")
+                        .hide()
+                        .attr("src", "/images/holiday-2016/" + nextSlideImage)
+                        .attr("data-count", nextCount)
+                        .fadeIn();
+                }
+            });
+
+            $(".right").click(function(){
+                if($(".modal-contain").hasClass("open")){
+                    var currentCount = $(".modal-contain").find("#card").attr("data-count"),
+                        nextCount = (currentCount < 9) ? (parseInt(currentCount) + 1) : 1;
+
+                    var nextSlideImage = $("a[data-count='" + nextCount + "']").attr("data-image");
+
+
+                    $(".modal-contain")
+                        .find("#card")
+                        .hide()
+                        .attr("src", "/images/holiday-2016/" + nextSlideImage)
+                        .attr("data-count", nextCount)
+                        .fadeIn();
+                }
+            });
+
+            $(".center").click(function(){
+                if($(".modal-contain").hasClass("open")){
+                    $(".modal-contain").toggleClass("open");
+                    $("html").removeClass("noscroll")
+                }
+            });
+
+            $(document).keydown(function(e) {
+                switch(e.which) {
+                    case 37: // left
+                        $(".left").trigger("click");
+                        break;
+
+                    case 39: // right
+                        $(".right").trigger("click");
+                        break;
+
+                    case 27:
+                        $(".center").trigger("click");
+                        break;
+                    default: return; // exit this handler for other keys
+                }
+                e.preventDefault(); // prevent the default action (scroll / move caret)
+            });
+
+        }
 
 })();

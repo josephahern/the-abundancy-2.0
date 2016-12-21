@@ -1,5 +1,82 @@
 @import "../variables";
 
+.modal-contain {
+  padding: 100px;
+  flex-direction: column;
+  transition: padding 0.3s ease;
+
+  .buttons {
+    max-width: 900px;
+    width: 100%;
+    margin-top: 25px;
+    position: relative;
+
+    .left, .right, .center {
+      opacity: 0.75;
+      transition: all 0.3s ease;
+
+      &:hover {
+        opacity: 1;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+    }
+
+  }
+
+  .left {
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+  }
+
+  .right {
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: right;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+  }
+
+  .center {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 15px);
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+  }
+
+  img {
+    max-width: 900px;
+  }
+
+  @media only screen and (max-width: 750px){
+    padding: 25px;
+    transition: padding 0.3s ease;
+  }
+
+}
+
 .primary {
 
   padding-bottom: 75px;
@@ -14,6 +91,36 @@
     flex-direction: column;
   }
 
+  h2 {
+    text-align: center;
+    text-transform: none;
+    font-size: 36px;
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    @media only screen and (max-width: 750px){
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  h3 {
+    font-size: 18px;
+    color: $abundancy-cream;
+    text-align: center;
+    max-width: 725px;
+    margin: auto;
+    margin-bottom: 35px;
+
+    @media only screen and (max-width: 750px){
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+  }
+
   ul {
     list-style: none;
     width: 100%;
@@ -23,20 +130,101 @@
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    z-index: 200;
   }
 
   li {
-    width: 32%;
+    width: 49%;
     background-color: gray;
     display: inline-block;
     list-style: none;
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
 
     img {
       width: 100%;
       display: block;
+      max-width: 1000px;
+    }
+
+    .overlay {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      background-color: rgba(0,0,0, 0.4);
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: all 0.3s ease;
+      opacity: 0;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:hover {
+      .overlay {
+        opacity: 1;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        a.enlarge {
+          transform: scale(1.35,1.35);
+          opacity: 1;
+          transition: all 0.3s ease;
+          display: inline;
+        }
+
+      }
+    }
+
+    a.download {
+      opacity: 0.65;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 15px;
+      bottom: 15px;
+
+      img {
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      span {
+        display: inline-block;
+        font-family: $font-family-primary;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #ffffff;
+        position: relative;
+        top: 3px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+
+    }
+
+    a.enlarge {
+      transform: scale(.5, .5);
+      width: 25px;
+      height: 25px;
+      opacity: 0.75;
+      transition: all 0.3s ease;
+      display: inline;
     }
 
     @media only screen and (max-width: 750px) {
@@ -53,6 +241,16 @@
     margin-top: 25px;
     font-family: $font-family-primary;
     font-weight: bold;
+    color: #ffffff;
+    z-index: 500;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $abundancy-copper;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
   }
 
   @media only screen and (max-width: 750px) {
