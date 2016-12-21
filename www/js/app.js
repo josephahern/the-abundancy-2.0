@@ -1781,7 +1781,7 @@
                 }, 1000);
             });
 
-            $(".modal-contain .close").on("click", function(){
+            $(".modal-contain .close, .modal-contain").on("click", function(){
                 var modalContain = $(".modal-contain");
                 modalContain.toggleClass("open");
                 modalContain.find("#card").toggleClass("animated fadeInUp");
