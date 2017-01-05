@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>The Abundancy</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>The Abundancy | <?php echo $meta->title ?></title>
+    <meta name="description" content="<?php echo $meta->description; ?>">
+
     <!-- Web Fonts -->
     <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/b8898fd3-6341-4d29-97da-84247416006a.css"/>
     <!-- Primary Stylesheet -->
     <link rel="stylesheet" href="/css/main.css">
-    <!-- Secondary Styelsheet -->
+    <!-- Secondary Stylesheet -->
     <?php
-        if(!empty($cssRoute)){
+        if(!empty($meta->customCss)){
     ?>
-    <link rel="stylesheet" href="<?php echo $cssRoute; ?>">
+    <link rel="stylesheet" href="<?php echo $meta->customCss; ?>">
     <?php
         }
     ?>

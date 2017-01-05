@@ -1397,6 +1397,7 @@
                     if($(".modal-contain").hasClass("open")){
                         $(".modal-contain").toggleClass("open");
                         $(".modal").toggleClass("animated fadeInUp");
+                        $("html").removeClass("noscroll");
                     }
                 }
 
