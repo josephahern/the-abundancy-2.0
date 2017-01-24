@@ -78,7 +78,11 @@
             <div class="recruiter-box">
                 <div class="left">
                     <h2>We've got jobs.</h2>
-                    <ul class="openings"></ul>
+                    <ul class="openings">
+                        <li>
+                            <div class="error">There are currently no positions that we are looking to fill. Please check back later for opportunities or fill out the form above to get in contact.</div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="right">
                     <div class="top">

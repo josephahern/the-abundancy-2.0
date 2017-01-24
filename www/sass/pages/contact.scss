@@ -334,6 +334,14 @@
                             border-bottom: none;
                         }
 
+                        .error {
+                            font-family: $font-family-secondary;
+                            font-weight: 500;
+                            font-size: 18px;
+                            color: #000000;
+                            width: 100%;
+                        }
+
                         .position {
                             font-family: $font-family-secondary;
                             font-weight: 500;

@@ -1739,24 +1739,23 @@
             }
 
             // Recruiter box
-            $.ajax({
-                url: 'https://jsapi.recruiterbox.com/v1/openings?client_name=theabundancy',
-                contentType: 'application/json',
-                success: function(response) {
-
-                    for(var x = 0; x < response.objects.length; x++){
-
-                        var position = response.objects[x];
-                        var formatted = '<li>' + '<div class="position">' + position.title + '<br />' +
-                                        position.location.city + ', ' + position.location.state + ', ' + position.location.country +
-                                        '</div>' + '<div class="type">' + position.position_type.replace(/[_-]/g, " ") + '</div>' +
-                                        '<a href="'+ position.hosted_url +'" class="read-more" target="_blank">READ MORE</a>' +
-                                        '</li>';
-                        $(".openings").append(formatted);
-                    }
-
-                }
-            });
+            //$.ajax({
+            //    url: 'https://jsapi.recruiterbox.com/v1/openings?client_name=theabundancy',
+            //    contentType: 'application/json',
+            //    success: function(response) {
+            //
+            //        for(var x = 0; x < response.objects.length; x++){
+            //
+            //            var position = response.objects[x];
+            //            var formatted = '<li>' + '<div class="position">' + position.title + '<br />' +
+            //                            position.location.city + ', ' + position.location.state + ', ' + position.location.country +
+            //                            '</div>' + '<div class="type">' + position.position_type.replace(/[_-]/g, " ") + '</div>' +
+            //                          '<a href="'+ position.hosted_url +'" class="read-more" target="_blank">READ MORE</a>' +
+            //                           '</li>';
+            //           $(".openings").append(formatted);
+            //       }
+            //   }
+            //});
 
         }
 

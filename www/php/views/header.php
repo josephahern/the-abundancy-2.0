@@ -29,7 +29,7 @@
     <a href="/approach">OUR APPROACH</a>
     <a href="/work">OUR WORK</a>
     <a href="/culture">OUR CULTURE</a>
-    <a href="/contact">CONTACT + CAREERS</a>
+    <a href="/contact">CONTACT</a>
     <a href="/" id="menu-logo">
         <img src="/images/menu/theabundancy-logo.png" alt="The Abundancy">
     </a>
