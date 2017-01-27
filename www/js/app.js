@@ -392,7 +392,8 @@
                 canvas2, context2, texture2, material2,
                 canvas3, context3, texture3, material3,
                 canvas4, context4, texture4, material4,
-                canvas5, context5, texture5, material5;
+                canvas5, context5, texture5, material5,
+                canvas6, context6, texture6, material6;
 
             var triangleMaterial;
             var triangleGroup = new THREE.Group();
@@ -643,6 +644,10 @@
                 canvas5.needsUpdate = true;
                 canvas5.width = 350;
 
+                canvas6 = document.createElement('canvas');
+                canvas6.needsUpdate = true;
+                canvas6.width = 530;
+
                 context1 = canvas1.getContext('2d');
                 context1.font = "Bold 64px 'Futura W01'";
                 context1.fillStyle = "rgba(255,255,255,1)";
@@ -676,6 +681,14 @@
                 context5.fillStyle = "rgba(255,255,255,1)";
                 context5.fillText("ABUNDANCY", 0, 64);
 
+                context6 = canvas6.getContext('2d');
+                context6.fillStyle = 'rgba(255,255,255,0.01)';
+                context6.fillRect(0,64,canvas6.width,canvas6.height);
+                context6.fillStyle = 'rgba(170,195,188, 1)';
+                context6.font = "500 39px 'Futura W01'";
+                context6.fillStyle = 'rgba(170,195,188, 1)';
+                context6.fillText("NOW PART OF LEO BURNETT", 0, 64);
+
                 texture1 = new THREE.Texture( canvas1 );
                 texture1.needsUpdate = true;
                 texture1.minFilter = THREE.LinearFilter;
@@ -698,6 +711,11 @@
                 texture5.premultiplyAlpha = false;
                 texture5.minFilter = THREE.LinearFilter;
 
+                texture6 = new THREE.Texture( canvas6 );
+                texture6.needsUpdate = true;
+                texture6.premultiplyAlpha = false;
+                texture6.minFilter = THREE.LinearFilter;
+
                 material1 = new THREE.MeshBasicMaterial( { map: texture1, color: 0xFFFFFF, transparent: true, opacity: 1, side: THREE.DoubleSide, alphaTest: 0.1 });
                 material1.needsUpdate = true;
 
@@ -712,6 +730,9 @@
 
                 material5 = new THREE.MeshBasicMaterial( { map: texture5, color: 0xFFFFFF, transparent: true, opacity: 1, side: THREE.DoubleSide, alphaTest: 0.1 });
                 material5.needsUpdate = true;
+
+                material6 = new THREE.MeshBasicMaterial( { map: texture6, color: 0xFFFFFF, transparent: true, opacity: 1, side: THREE.DoubleSide, alphaTest: 0.1 });
+                material6.needsUpdate = true;
 
 
                 var mesh1 = new THREE.Mesh( new THREE.PlaneGeometry(canvas1.width, canvas1.height), material1 );
@@ -735,11 +756,16 @@
                 mesh5.position.set(65,196,0);
                 mesh5.needsUpdate = true;
 
+                var mesh6 = new THREE.Mesh( new THREE.PlaneGeometry(canvas6.width, canvas6.height), material6 );
+                mesh6.position.set(0, 135,0);
+                mesh6.needsUpdate = true;
+
                 scene.add( mesh1 );
                 scene.add( mesh2 );
                 scene.add( mesh3 );
                 scene.add( mesh4 );
                 scene.add( mesh5 );
+                scene.add( mesh6 );
 
                 /*var staticParticleGeometry = new THREE.Geometry();
                 staticParticleGeometry.vertices.push(
